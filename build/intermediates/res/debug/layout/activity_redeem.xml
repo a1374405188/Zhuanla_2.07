@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48.5dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_panel_margin"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+                
+                           <LinearLayout
+                    android:id="@+id/linear_credit_card_master0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="到账银行卡" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textview_credit_card"
+                        style="@style/custom_textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+
+                    android:background="@color/line2" />
+                <LinearLayout
+                    android:id="@+id/linear_credit_card_master"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accounting_date" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textview_accounting_date"
+                        style="@style/custom_textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1到3个工作日"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+
+                    android:background="@color/line2" />
+               <RelativeLayout
+                     android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                   >
+                <LinearLayout
+                       android:id="@+id/ll_ll1"
+                  
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手续费" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                    <LinearLayout
+                     
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView 
+                             android:id="@+id/tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="免手续费"
+                               style="@style/custom_textview2"
+                            />
+                    <!--      <TextView 
+                            android:id="@+id/tv_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" 
+                            android:text="限当月首笔"                           
+                            />
+                    -->
+                    </LinearLayout>
+                 
+                </LinearLayout>
+                <ImageView 
+                    android:id="@+id/iv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:src="@drawable/redeem_dialog_gb"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_panel_margin"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+
+                <LinearLayout
+                    android:id="@+id/linear_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/redeem_money" />
+
+                    <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/clearedittext_redeem_money"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_textview_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/input_money"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rmb" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_button_topmargin"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_next"
+                    style="@style/custom_button"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toast_height"
+        android:layout_marginTop="-22dp"
+
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_toast"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_toast"
+            style="@style/custom_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/activity_redeem.xml -->

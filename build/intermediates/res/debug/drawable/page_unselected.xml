@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+            <!-- 圆角 -->
+    <corners
+        android:radius="3px"
+        />
+     <!-- 填充 -->
+    <solid
+        android:color="#ffb0b0b0"/>
+       <!-- 描边 -->
+
+</shape>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/page_unselected.xml -->

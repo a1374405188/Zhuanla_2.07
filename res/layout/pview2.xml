@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+    
+   <RelativeLayout
+             
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+              
+             
+               android:gravity="center"
+               android:layout_marginTop="20dp"
+              >
+      
+      
+ <!--  标的部分-->   
+
+      <LinearLayout 
+         android:id="@+id/ll_xiangqing"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center_horizontal"
+        >
+        
+         
+<!--收益部分-->        
+          <RelativeLayout
+              android:id="@+id/rl1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              
+             
+               android:gravity="center"
+              >
+          <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+              
+              >
+              
+        
+            <com.beikbank.android.widget2.YuanView
+              android:id="@+id/yv"
+              android:layout_width="300px"
+              android:layout_height="300px"
+             
+            
+              />
+              </LinearLayout>    
+              <!-- 收益部分-->
+        <LinearLayout
+            android:id="@+id/ll_shouyi"
+            android:layout_width="match_parent"
+          
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+           
+           
+            >
+           
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                     android:textSize="13sp"
+                     android:textColor="#ff999999"
+                     android:text="年化收益率(%)"
+                     android:gravity="center"
+                      android:layout_marginTop="6dp"
+                />
+             <TextView
+                android:id="@+id/tv12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                     android:textColor="#ffe4393c"
+                     android:text="+0.00%"
+                     android:gravity="right|center_vertical"
+                     android:layout_marginRight="50dp"
+                     android:layout_marginTop="10dp"
+                     
+                     
+                />
+             <com.beikbank.android.widget.MagicTextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:textColor="#ffe4393c"
+                android:text="0.00"
+                     android:gravity="center"
+                      android:layout_marginTop="-10dp"
+                />
+             
+              <TextView
+                android:id="@+id/tv13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#ff5c5c5c"
+                android:text="万份收益0.00元"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+              
+              <TextView
+                android:id="@+id/tv14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#ff999999"
+                android:text="剩余可够金额0.00元"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+              
+        </LinearLayout>
+          </RelativeLayout>
+          
+
+     <!-- 选几个月-->
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+       
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+         
+         
+ <!--  立即购买-->
+        <Button
+            android:id="@+id/bu_goumai"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_height2"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="立即购买"
+            android:textColor="#ffffffff"
+           
+            android:background="@drawable/btn_selector_button3"
+            />        
+         
+       
+        
+        
+        </LinearLayout>
+        
+       <ImageView
+            android:id="@+id/iv_biaoshi"
+            android:layout_width="65dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+           
+           
+           />
+     </RelativeLayout>
+</LinearLayout>

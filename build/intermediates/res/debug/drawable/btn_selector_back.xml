@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_back" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_back" android:state_checked="true"/>
+    <item android:drawable="@drawable/ic_back"/>
+
+
+</selector><!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/btn_selector_back.xml -->

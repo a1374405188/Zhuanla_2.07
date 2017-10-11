@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    >
+
+   
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zhichan56"
+        android:paddingLeft="@dimen/global_left_space"
+        android:background="#ffffffff"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/global_text2"
+            android:text="定期产品1"
+            android:textSize="@dimen/global_text_size16"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/global_text3"
+            android:text="活期名"
+            android:textSize="@dimen/global_text_size16"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_item1_space"
+            />
+    </RelativeLayout>
+-->
+<!-- huoqi 
+    <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="gone"
+     >
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb0b0b0"
+        android:layout_alignParentBottom="true"
+        />
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/zhichan_img5"
+         android:layout_marginLeft="60dp"
+         android:layout_alignParentBottom="true"
+         />
+      
+ </RelativeLayout>
+ -->
+<LinearLayout 
+     android:id="@+id/ll7"
+    android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/zhichan56"
+     android:paddingLeft="@dimen/global_left_space"
+     android:gravity="center_vertical"
+      android:orientation="vertical"
+    >
+ <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="0px"
+         android:layout_weight="1"
+      
+        android:background="#ffffffff"
+       
+        android:gravity="bottom"
+        >
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+               android:textColor="#ff747474"
+               android:text="活期赎回中(元)"
+               android:textSize="@dimen/global_text_size16"
+               android:layout_alignParentLeft="true"
+               />
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#ff2d2d2d"
+                android:text="0.00"
+                android:textSize="@dimen/global_text_size16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="29dp"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/global_text4"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv4"
+                 android:paddingRight="@dimen/global_left_space"
+            android:paddingLeft="@dimen/global_left_space"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赎回"
+            android:gravity="center"
+            android:textColor="@color/global_text4"
+            android:textSize="@dimen/global_text_size16"
+             android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+      
+       
+         android:background="#ffffffff"
+          android:layout_height="0px"
+        android:layout_weight="1"
+          android:gravity="center_vertical"
+        >
+        <ImageView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhichan_img6"
+            />
+        <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="成功后24:00进入钱包"
+             android:textColor="#ffb0b0b0"
+             android:textSize="13sp"
+             android:layout_marginLeft="3dp"
+             
+            />
+        
+        
+    </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="gone"
+     >
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb0b0b0"
+        android:layout_alignParentBottom="true"
+        />
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/zhichan_img5"
+         android:layout_marginLeft="60dp"
+         android:layout_alignParentBottom="true"
+         />
+      
+ </RelativeLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe7e7e7"
+        />
+    <!-- dingqi -->
+     <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="gone"
+     >
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe7e7e7"
+        android:layout_alignParentBottom="true"
+        />
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/zhichan_img5"
+         android:layout_marginLeft="60dp"
+         android:layout_alignParentBottom="true"
+         />
+      
+ </RelativeLayout>
+<LinearLayout 
+    android:id="@+id/ll8"
+    android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/zhichan56"
+     android:paddingLeft="@dimen/global_left_space"
+     android:gravity="center_vertical"
+      android:orientation="vertical"
+    >
+
+    
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+         android:layout_weight="1"
+        
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        
+        >
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+               android:textColor="#ff747474"
+               android:text="定期募集中(元)"
+               android:textSize="@dimen/global_text_size16"
+               android:layout_alignParentLeft="true"
+               />
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#ff2d2d2d"
+                android:text="0.00"
+                android:textSize="@dimen/global_text_size16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="29dp"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/global_text4"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv6"
+                 android:paddingRight="@dimen/global_left_space"
+            android:paddingLeft="@dimen/global_left_space"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赎回"
+            android:gravity="center"
+            android:textColor="@color/global_text4"
+            android:textSize="@dimen/global_text_size16"
+             android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+       android:layout_height="0px"
+       android:layout_weight="1"
+       
+         android:background="#ffffffff"
+         
+         android:gravity="center_vertical"
+        >
+        <ImageView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhichan_img4"
+            />
+        <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="满标后计入赚啦定期"
+             android:textColor="#ffb0b0b0"
+             android:textSize="13sp"
+             android:layout_marginLeft="3dp"
+             
+            />
+        
+        
+    </LinearLayout>
+
+ </LinearLayout>
+
+       <RelativeLayout
+     android:id="@+id/rl8"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="gone"
+     >
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe7e7e7"
+        android:layout_alignParentBottom="true"
+        />
+     <ImageView 
+         android:id="@+id/img1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/zhichan_img5"
+         android:layout_marginLeft="60dp"
+         android:layout_alignParentBottom="true"
+         />
+      
+ </RelativeLayout>
+
+</LinearLayout>

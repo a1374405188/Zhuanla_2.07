@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white2"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+
+<!--title --> 
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+         android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/tv_tv1"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器繁忙"
+            android:textColor="#ff1f1f1f"
+            android:textSize="@dimen/dialog_text_size2"
+            android:layout_marginRight="@dimen/dialog_space_size"
+            />
+
+    </LinearLayout>
+
+<!--content--> 
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:orientation="vertical"
+       
+        >
+        <TextView
+            android:id="@+id/tv_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请稍后在“交易记录”中查看订单处理结果。"
+            android:gravity="center_vertical|left"
+            android:textColor="#ff747474"
+            android:textSize="@dimen/dialog_text_size2"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            />
+    <TextView
+            android:id="@+id/tv_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请稍后在“交易记录”中查看订单处理结果。"
+            android:gravity="center_vertical|left"
+            android:textColor="#ff747474"
+            android:textSize="@dimen/dialog_text_size2"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            />
+    </LinearLayout>
+
+
+
+
+   <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_line_size"
+            android:background="@color/dialog_line"
+        />
+<!-- 底部 -->
+      <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="44dp"
+         android:gravity="center"
+        >
+        
+
+        <TextView 
+            android:id="@+id/tv_tv5"
+            android:gravity="center"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/dialog_text5"
+            android:textSize="@dimen/dialog_text_size2"
+            android:layout_marginRight="@dimen/dialog_space_size"
+            android:text="@string/dialog_text3"
+            />
+    </LinearLayout>
+</LinearLayout>

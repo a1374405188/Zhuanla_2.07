@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+   <item android:state_selected="true" android:color="@color/global_text1"/>
+    <item android:state_pressed="true" android:color="@color/global_text1"/>
+   <item android:state_selected="false" android:color="@color/global_text4"/>
+  
+</selector>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/button_color_select1.xml -->

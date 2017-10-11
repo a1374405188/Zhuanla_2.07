@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48.5dip" >
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="97.5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_phone_enlarge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/register_enlarge_height"
+                android:background="@color/red5"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textview_phone_enlarge"
+                    style="@style/custom_textview6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/ll1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginRight="16dp"
+                  android:visibility="gone"
+                  >
+                  <TextView
+
+                      android:textColor="@color/global_text2"
+                      android:textSize="14sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="更改实名认证的剩余次数: "
+                      />
+                  <TextView
+                      android:id="@+id/tv6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/global_text4"
+                      android:textSize="14sp"
+                      />
+               </LinearLayout>
+           
+
+                <include layout="@layout/error_info"/>
+            
+<!--温馨提醒-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+                <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/ic_warmly_remind"
+        android:drawablePadding="@dimen/activity_small_margin"
+        android:gravity="bottom"
+        android:text="@string/warmly_remind"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+    <ImageView 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_warm_line"
+        android:layout_marginTop="@dimen/activity_small_margin"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/realname_remind"
+        android:textColor="@color/ziti5"
+        android:textSize="13sp" />
+              
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/register_top_panel"
+                android:gravity="center_vertical" 
+                android:background="@color/gray">
+
+                <TextView
+                    style="@style/custom_textview10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/input_realname_info" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_divide_height"
+                android:background="@color/line2" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/realname" />
+
+                    <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/clearedittext_realname"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_realname"
+                        android:inputType="text"
+                      
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+
+                    android:background="@color/line2" />
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/icnumber" />
+
+                    <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/clearedittext_icnumber"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_icnumber"
+                        android:digits="1234567890Xx"
+                        android:maxLength="18"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_divide_height"
+                android:background="@color/line2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toast_height"
+        android:layout_marginTop="-22dp"
+
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_toast"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_toast"
+            style="@style/custom_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+</RelativeLayout>

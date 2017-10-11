@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg1"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:gravity="center_vertical"
+       android:background="#ffffffff"
+       android:layout_marginTop="16dp"
+       >
+       
+       <TextView
+           android:id="@+id/tv_congzhi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_alignParentLeft="true"
+           android:text="充值金额"
+        
+           style="@style/custom_textview1"
+           />
+         <TextView
+           android:id="@+id/tv_money"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_alignParentRight="true"
+           android:text="0元"
+           android:textColor="#ffdd2238"
+           android:layout_marginRight="16dp"
+           android:textSize="16sp"
+           />
+   </RelativeLayout>
+   
+     <View
+       
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+   
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center_vertical"
+          >
+          <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           
+           android:text="验证码已发送至手机"
+           android:textColor="#ffb0b0b0"
+           />
+            <TextView
+                android:id="@+id/tv_phone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+          
+           android:text=""
+           android:textColor="#ffb0b0b0"
+           />
+       </LinearLayout>
+   
+   <View
+       
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:paddingRight="@dimen/line_space_left"
+        android:background="#ffffffff"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+           
+            android:layout_height="match_parent"
+            android:text="@string/test3"
+            android:gravity="center_vertical"
+           
+            style="@style/custom_textview1"
+            />
+              <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/ed_ed2"
+                
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+               
+                android:paddingLeft="2dp"
+                android:layout_width="0px"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="@string/test2"
+                android:inputType="number"
+             
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+         <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/ic_line"
+                        android:contentDescription="@null" />
+        <TextView 
+            android:id="@+id/tv_fasong"
+            style="@style/custom_textview0"
+            android:layout_width="wrap_content"
+             
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:text="@string/test4"
+            android:gravity="center_vertical"
+
+            />
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/ziti5"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    />
+
+    </LinearLayout>
+    
+    <include layout="@layout/error_info"/>
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <CheckBox
+                android:id="@+id/cb_xieyi"
+                style="@style/custom_checkbox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:checked="true" />
+
+            <TextView
+                style="@style/custom_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/agree_read" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical" >
+
+              <TextView
+                    android:id="@+id/textview_agreement"
+                    style="@style/custom_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                      android:text="@string/pay_agreement_text11"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_agreement2"
+                    style="@style/custom_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                      android:text="@string/pay_agreement_text12"
+                       android:visibility="gone"
+                     />
+                
+                  <TextView
+                    android:id="@+id/textview_agreement5"
+                    style="@style/custom_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                     android:text="@string/pay_agreement_text15"
+                      android:visibility="gone"
+                    />
+               
+                    <TextView
+                    android:id="@+id/textview_agreement4"
+                    style="@style/custom_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                      android:text="@string/pay_agreement_text14"
+                     android:visibility="gone"
+                    />
+                      <TextView
+                    android:id="@+id/textview_agreement3"
+                    style="@style/custom_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                     android:text="@string/pay_agreement_text13"
+                       android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

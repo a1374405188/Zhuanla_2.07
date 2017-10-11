@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" 
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@drawable/btn_selector_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:textColor="@color/ziti1"
+            android:textSize="18sp" />
+        <ImageView 
+            android:id="@+id/imageview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_small_margin"
+            android:contentDescription="@null"
+            android:background="@drawable/ic_arrow_down"/>
+        
+    </LinearLayout>
+
+
+</RelativeLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/title_bar_with_arrow.xml -->

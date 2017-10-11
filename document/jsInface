@@ -1,0 +1,42 @@
+//本地供js调用接口
+1:得到用户id
+  wv.getid();
+2:网页返回上一级
+  wv.back();
+3:关闭当前页
+  wv.close();  
+4:设置title
+  wv.set_title(string title);
+5:设置返回键功能   0关闭当前页 1网页返回上一级
+  wv.set_back(string index);
+6:得到系统版标示号  现在返回1
+  wv.get_version();  
+7:微信分享
+  /**
+  **title 标题  text 内容  url链接  icon 小图标url
+  **/
+  wv.share_weixin(string title,string text,string url,string icon);
+8:微信朋友圈分享
+  wv.share_friends(string title,string text,string url,string icon);
+9:qq分享
+  wv.share_qq(string title,string text,string url,string icon);   
+10:qq空间分享
+  wv.share_qq_zone(string title,string text,string url,string icon);
+11:得到加密id
+  wv.getid2();
+12:发送get请求
+  /**
+  *url:请求的全地址如http://www.baidu.com
+  *params:参数 如"param1=1&param2=2"
+  *name:回调方法名称
+  *返回服务器返回的json 
+  */
+  wv.send_get(string url,string params,string name);
+ 
+13:发送post请求
+/**
+**参数和返回值同上
+*/
+  wv.send_post(string url,string params,string name); 
+
+ 

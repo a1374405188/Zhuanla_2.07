@@ -1,0 +1,571 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefeff4"
+    android:orientation="vertical" >
+ <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+       
+       >
+       
+     <LinearLayout 
+          android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+    <ScrollView
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:background="#ffefeff4"
+        >
+        
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+            >
+               <View
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:visibility="gone"
+                  />
+             <LinearLayout
+                   android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="#ffffffff"
+                 >
+                 <TextView
+                     
+                        android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"                      
+                      android:gravity="center_vertical"
+                      android:text="头像"
+                      android:textColor="#ff323232"
+                     
+                     
+                     />
+                 
+                 <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                         android:src="@drawable/img_jinxuan_touxiang"
+                     
+                     />
+             </LinearLayout>
+            
+            
+ <!--手机号码-->
+           
+             
+             
+              <View
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:visibility="gone"
+                  />
+            
+              <LinearLayout
+                  android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="#ffffffff"
+                  >
+                  <TextView
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="手机号码"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:id="@+id/tv_phone"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      />
+                  
+              </LinearLayout>
+           
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            >
+         <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                  />
+         </LinearLayout>
+  <!--实名认证-->         
+            <LinearLayout
+                    android:id="@+id/ll_shimin"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                      android:background="@drawable/bg_item"
+                  >
+                  <TextView
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="实名认证"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:id="@+id/tv_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      android:text="(未认证)"
+                      />
+                    <ImageView
+                        android:id="@+id/iv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           
+           />
+              </LinearLayout>
+          
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            >
+         <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                  />
+         </LinearLayout>
+  <!--银行卡-->     
+           
+            <LinearLayout
+                    android:id="@+id/ll_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                  android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="@drawable/bg_item"
+                  >
+                  <TextView
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="银行卡"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:id="@+id/tv_bank"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      android:text="(未绑定 )"
+                      />
+                    <ImageView
+                        android:id="@+id/iv_bank"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           
+           />
+              </LinearLayout>
+          
+           <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:visibility="gone"
+                  />  
+<!--登录密码-->
+              
+              <View
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                    android:visibility="gone"
+                  />
+              <LinearLayout
+                    android:id="@+id/ll_xiugai"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="@drawable/bg_item"
+                     android:layout_marginTop="8dp"
+                  >
+                  <TextView
+                      android:id="@+id/tv_denglu"
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="修改密码"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      />
+                     <ImageView
+                       
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           />
+              </LinearLayout>
+           
+    
+ <!--交易密码-->
+              <LinearLayout
+                  
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:background="#ffffffff"
+                  >
+              <View
+                  
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                  />
+              </LinearLayout>
+              <LinearLayout
+                    android:id="@+id/ll_zhaohui"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="@drawable/bg_item"
+                  >
+                  <TextView
+                      android:id="@+id/tv_jiaoyi"
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="找回密码"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      />
+                     <ImageView
+                       
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           />
+              </LinearLayout>
+              
+              
+        
+                    <LinearLayout
+                  
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:background="#ffffffff"
+                  >
+              <View
+                  
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                  />
+              </LinearLayout>
+<!--手势密码-->              
+                    
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="#ffffffff"
+                  >
+                  <TextView
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="手势密码"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                   <com.beikbank.android.widget.SwitchButton
+                    android:id="@+id/sb_shoushi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+          
+              </LinearLayout>      
+                    
+                <LinearLayout
+                  
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:background="#ffffffff"
+                  >
+             
+              </LinearLayout>
+              
+                 <View
+                    android:id="@+id/v_xgshoushi"
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                    android:visibility="gone"
+                  />
+              
+              <LinearLayout
+                    android:id="@+id/ll_xgshoushi"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                   android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     android:background="@drawable/bg_item"
+                     android:visibility="gone"
+                  >
+                  <TextView
+                     
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="修改手势密码"
+                      android:textColor="#ff323232"
+                      />
+                  <View
+                       
+                       android:layout_height="match_parent"
+                      android:layout_width="0px"
+                      android:layout_weight="1"        
+                      
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ffb0b0b0"
+                      />
+                     <ImageView
+                       
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           />
+              </LinearLayout>
+              
+                
+                
+                
+               <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                      android:visibility="gone"
+                  />  
+                  
+               
+                 <View
+                   android:layout_marginTop="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                    android:visibility="gone"
+                  /> 
+                 <LinearLayout
+                     android:id="@+id/ll_tuichu"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center"
+                     android:background="#ffffffff"
+                     android:visibility="gone"
+                  >
+                  <TextView
+                      android:layout_height="match_parent"
+                      android:layout_width="wrap_content"                      
+                      android:gravity="center"
+                      android:text="退出登录"
+                      android:textColor="#ffe4393c"
+                      />
+                
+                  
+              </LinearLayout>      
+                <View
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                  /> 
+         </LinearLayout>
+
+    
+    </ScrollView>
+    
+    
+    </LinearLayout>
+    
+     
+          <LinearLayout
+           android:id="@+id/ll_mima"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentBottom="true"
+           android:background="#80000000"
+           android:gravity="bottom"
+           android:visibility="gone"
+         >
+            <LinearLayout
+         
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:orientation="vertical"
+         >
+                     <TextView
+           android:id="@+id/tv_xiugai_denglu"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="修改登录密码"
+           android:textSize="18sp"
+           android:textColor="#ff666666"
+           android:gravity="center"
+           android:paddingTop="16dp"
+           android:paddingBottom="16dp"
+           
+           />
+           <View
+               
+               android:layout_width="match_parent"
+               android:layout_height="1px"
+               android:background="@color/line2"
+               
+               />
+                      <TextView
+                   android:id="@+id/tv_xiugai_jiaoyi"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="修改交易密码"
+        android:textSize="18sp"
+           android:textColor="#ff666666"
+           android:gravity="center"
+           android:paddingTop="16dp"
+           android:paddingBottom="16dp"></TextView>
+                      
+              <View
+               
+               android:layout_width="match_parent"
+               android:layout_height="10dp"
+               android:background="@color/global_bg3"
+               
+               />           
+                         <TextView
+                   android:id="@+id/tv_qvxiao"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="取消"
+        android:textSize="18sp"
+           android:textColor="#ff666666"
+           android:gravity="center"
+           android:paddingTop="16dp"
+           android:paddingBottom="16dp"
+           
+           />
+         </LinearLayout>  
+         
+         
+      </LinearLayout>  
+      </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/bg_corners2"
+    android:padding="@dimen/activity_horizontal_margin" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@null" >
+
+        <TextView
+            style="@style/custom_textview2"
+            android:id="@+id/textview_transaction_records_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            />
+        <View 
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textview_transaction_records_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ziti7"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/ic_arrow"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/image_arrow"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:background="@null" >
+
+        <TextView
+            android:id="@+id/textview_transaction_records_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red2"
+            android:textSize="17sp"
+            android:text="12"
+             android:gravity="right|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/textview_transaction_records_flag"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="12"
+            />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/item_transaction_records.xml -->

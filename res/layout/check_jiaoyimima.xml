@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/count_shouyi_6"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_count_shouyi"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+        
+        >
+        
+        <TextView 
+             android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="输入交易密码，以验证身份"
+              android:textColor="#ff333333"
+              android:textSize="15sp"
+            
+            />
+        
+    </LinearLayout>
+   <View
+          android:layout_width="match_parent"
+         android:layout_height="1px"
+         android:background="@color/line2"
+       />
+   
+           <com.beikbank.android.widget.ClearableEditText
+            android:id="@+id/et_mima"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="44dp"
+            android:textSize="@dimen/count_shouyi_30"
+            android:hint="请输入交易密码"
+           android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/global_left_space"
+            android:background="@drawable/bg_count_shouyi11"
+            android:textColor="@color/global_text5"
+            android:numeric="decimal"
+            android:textColorHint="@color/global_text5"
+          
+            />
+           <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+               >
+           <LinearLayout 
+               android:id="@+id/ll_error"
+               android:layout_width="0px"
+               android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginLeft="16dp"
+               >
+                     <ImageView 
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/error_img"
+                    
+                    />
+                    <TextView
+                         android:id="@+id/tv_error"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:textColor="#ffdd2238"
+                       
+                         android:gravity="center"
+                        />
+         
+            </LinearLayout>
+            <TextView 
+                android:id="@+id/tv_mima"
+              android:gravity="center_vertical|right"
+              android:layout_width="wrap_content"
+           
+              android:layout_height="wrap_content"
+              android:text="忘记密码"
+              android:textColor="#ff0097e2"
+              android:textSize="14sp"
+            
+            /> 
+            </LinearLayout>  
+        <View
+          android:layout_width="match_parent"
+         android:layout_height="1px"
+         android:background="@color/line2"
+       />    
+    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="16dp"
+           
+        >
+             <TextView 
+                 android:id="@+id/tv_qvxiao"
+              android:gravity="center"
+              android:layout_width="0px"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="取消"
+              android:textColor="#ff333333"
+              android:textSize="15sp"
+            
+            />
+            <View
+          android:layout_width="1px"
+         android:layout_height="match_parent"
+         android:background="@color/line2"
+       /> 
+              <TextView 
+                 android:id="@+id/tv_quereng"    
+              android:gravity="center"
+              android:layout_width="0px"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:text="确认"
+              android:textColor="#ff999999"
+              android:textSize="15sp"
+            
+            />
+    </LinearLayout>    
+</LinearLayout>

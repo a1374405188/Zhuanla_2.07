@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_item_height">56dp</dimen>
+    <dimen name="register_top_panel">38dp</dimen>
+    <dimen name="activity_button_height">48dp</dimen>
+    <dimen name="activity_button_topmargin">29dp</dimen>
+    <dimen name="activity_divide_height">0.5dp</dimen>
+    <dimen name="activity_panel_margin">12dp</dimen>
+    <dimen name="activity_pink_panel_margin">20dp</dimen>
+    <dimen name="activity_textview_margin">10dp</dimen>
+    <dimen name="activity_small_margin">5dp</dimen>
+    <dimen name="activity_toast_height">70dp</dimen>
+    <dimen name="register_enlarge_height">54dp</dimen>
+    <dimen name="mywealth_yesterday_income_height">148dp</dimen>
+    <dimen name="mywealth_total_capital_height">124dp</dimen>
+    <dimen name="income_item_height">66dp</dimen>
+    <dimen name="product_detail_bottom_height">58dp</dimen>
+    <dimen name="product_detail_margin">6dp</dimen>
+    <dimen name="redeem_status_height">88dp</dimen>
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="shadow_width">3dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <!-- PullWidget -->
+    <dimen name="minimum_height">40dip</dimen>
+    <dimen name="minimum_content_height">25dip</dimen>
+    
+    <!--mdpi-->
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="text_height">35dp</dimen>
+    
+         <!--银行卡-->
+    <dimen name="bank_xiane">10sp</dimen>
+<!--页面中一行的高度-->
+    <dimen name="line_height">56dp</dimen>
+<!--页面中一行空格的高度-->
+    <dimen name="line_space_height">8dp</dimen>
+<!--页面中一行左边的空格-->
+    <dimen name="line_space_left">16dp</dimen>
+<!--页面中一行右边的空格-->
+    <dimen name="line_space_right">16dp</dimen>    
+    
+    
+<!--主界面左边菜单-->
+    <dimen name="left_text_size">18sp</dimen>
+    
+   <!--投资项目-->
+   <dimen name="project_h1">36dip</dimen>
+    <dimen name="project_text_size">14sp</dimen>
+    <dimen name="project_space">8dp</dimen>
+<!--dialog -->
+    <dimen name="dialog_text_size1">13sp</dimen>
+    <dimen name="dialog_text_size2">15sp</dimen>
+    <dimen name="dialog_text_size3">17sp</dimen>
+    <dimen name="dialog_text_size4">8dp</dimen>
+    <dimen name="dialog_line_size">1px</dimen>
+    <dimen name="dialog_space_size">3dp</dimen>
+     <dimen name="dialog_space_size2">60dp</dimen>
+<!--global_marginLeft -->
+    <!--  <dimen name="global_left_margin">16dp</dimen>
+
+      <dimen name="global_right_margin">16dp</dimen> -->
+       <dimen name="global_top_margin">16dp</dimen>
+      <dimen name="global_buttom_margin">16dp</dimen>
+   </resources>

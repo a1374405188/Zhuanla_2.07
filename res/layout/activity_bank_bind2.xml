@@ -1,0 +1,467 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" 
+    android:orientation="vertical"
+    >
+
+
+             <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="44dp"
+                     android:background="@color/white" >
+
+                     <LinearLayout
+                         android:id="@+id/linear_left"
+                         android:layout_width="50dp"
+                         android:layout_height="match_parent"
+                         android:layout_alignParentLeft="true"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:contentDescription="@null"
+                             android:background="@drawable/btn_selector_back"/>
+                     </LinearLayout>
+
+                     <TextView
+                         android:id="@+id/titleTv"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerInParent="true"
+                         android:textColor="@color/ziti1"
+                         android:textSize="18sp" />
+                     <TextView
+                         android:id="@+id/right"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_alignParentRight="true"
+                         android:textColor="@color/global_text2"
+                         android:textSize="16sp"
+                         android:layout_marginRight="@dimen/global_right_space"
+                         android:gravity="center"
+                         android:text="支持银行卡"
+                         />
+
+                 </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            >
+
+           
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_top_panel"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/custom_textview10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="@string/input_bind_bank" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+
+               <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:stretchColumns="1" >
+
+                   
+
+                   
+
+                    <TableRow
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                        <TextView
+                            style="@style/custom_textview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/activity_item_height"
+                            android:layout_marginRight="@dimen/activity_textview_margin"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/cardnumber" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="@dimen/activity_item_height"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" >
+
+                            <com.beikbank.android.widget.ClearableEditText
+                                android:id="@+id/clearedittext_cardnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|left"
+                                android:background="@null"
+                                android:hint="@string/input_cardnumber"
+                                android:inputType="number"
+                                android:maxLength="19"
+                                android:textColor="@color/ziti6"
+                                android:textColorHint="@color/ziti7"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </TableRow>
+                    
+                     <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_divide_height"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@color/line2"
+                         android:visibility="gone"
+                         />
+                    
+                    
+                      <TableRow
+                        android:id="@+id/tablerow_bankname"
+                        android:background="@drawable/bg_more_item"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:visibility="gone"
+                         >
+
+                      
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="@dimen/activity_item_height"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1" >
+                            
+                              <TextView
+                            style="@style/custom_textview1"
+                           
+                            android:layout_width="0px"
+                            android:layout_weight="2"
+                            android:layout_height="@dimen/activity_item_height"
+                           
+                            android:gravity="center_vertical|left"
+                            android:text="@string/bank" />
+                            
+                            <TextView
+                                android:id="@+id/textview_bankname"
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                               
+                                android:textColor="@color/ziti7"
+                                android:textSize="17sp"/>
+<!-- 
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_arrow"
+                                android:contentDescription="@null" />
+
+                            -->
+                             <View 
+                               android:layout_width="2dp"
+                               android:layout_height="30dp"
+                               android:background="@color/gray"
+                               />
+                             <TextView 
+           
+                                android:textColor="@color/ziti6"
+                                android:layout_width="0px"
+                                 android:layout_weight="3"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="5dp"
+                                android:text="支持银行"
+                                android:gravity="center_vertical"
+                             />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+            </LinearLayout>
+        </LinearLayout>
+<!--  
+           <LinearLayout
+                android:id="@+id/linear_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linear_cardnumber_enlarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_enlarge_height"
+                    android:background="@color/red5"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textview_cardnumber_enlarge"
+                        style="@style/custom_textview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            
+            <include layout="@layout/error_info"/>
+            </LinearLayout>
+-->  
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray"
+    >
+   
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        >
+          <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space_height"
+        />
+ <!-- 发送短信后提示 -->
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/test9"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="187****2741"
+            android:hint="@string/test2"
+            />
+    </LinearLayout>
+ <!-- 手机号 -->    
+      <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:background="#ffffffff"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/test1"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            style="@style/custom_textview1"
+            />
+          <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/ed_ed1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_textview_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/test2"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+    </LinearLayout>
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+
+     
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space_height"
+        />
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:background="#ffffffff"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="0px"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="@string/test3"
+            android:gravity="center_vertical"
+           
+            style="@style/custom_textview1"
+            />
+              <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/ed_ed2"
+                
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+               
+               
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/test2"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ff747474"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView 
+            android:id="@+id/tv1"
+            style="@style/custom_textview0"
+            android:layout_width="0px"
+             android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:text="@string/test4"
+            android:gravity="center_vertical"
+
+            />
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="0px"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textColor="@color/ziti5"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    />
+
+    </LinearLayout>
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_cardnumber_enlarge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/register_enlarge_height"
+                android:background="@color/red5"
+                android:visibility="gone"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textview_cardnumber_enlarge"
+                    style="@style/custom_textview6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <include layout="@layout/error_info"/>
+        </LinearLayout>
+
+    
+<!-- 温馨提示 -->
+<LinearLayout 
+    android:id="@+id/ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_warmly_remind"
+        android:drawablePadding="@dimen/activity_small_margin"
+        android:gravity="bottom"
+        android:text="@string/warmly_remind"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_warm_line"
+        android:layout_marginTop="@dimen/activity_small_margin"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/test5"
+        android:textColor="@color/ziti5"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/test6"
+        android:textColor="@color/ziti5"
+        android:textSize="13sp" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

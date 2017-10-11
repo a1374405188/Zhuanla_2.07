@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@drawable/btn_selector_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/ziti1"
+        android:textSize="18sp" />
+
+     <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ff747474"
+        android:textSize="16sp"
+        android:text="验证银行卡"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+
+    <RelativeLayout
+        android:id="@+id/relative_bankmaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_bank_guangda" >
+
+
+        <TextView
+            android:id="@+id/textview_icnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当日限额"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_daypay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear_day"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单笔限额"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_singlepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/activity_bank_master.xml -->

@@ -1,0 +1,191 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#-ignorewarnings
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+-dontoptimize
+-dontpreverify
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+-dontwarn android.support.**
+
+
+
+
+#youmeng start
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep class com.facebook.**
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.socialize.sensor.**
+
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+-keep public class [your_pkg].R$*{
+    public static final int *;
+}
+#youmeng end
+
+
+
+
+
+
+
+
+
+
+-libraryjars libs/universal-image-loader-1.9.3.jar
+-keep class com.nostra13.**{*;}
+
+-libraryjars libs/umeng-analytics-v5.2.4.jar
+-keep class com.umeng.**{*;}
+
+-libraryjars libs/ShareSDK-Core-2.4.0.jar
+-keep class cn.sharesdk.**{*;}
+
+-libraryjars libs/ShareSDK-QQ-2.4.0.jar
+-libraryjars libs/ShareSDK-QZone-2.4.0.jar
+-libraryjars libs/ShareSDK-ShortMessage-2.4.0.jar
+-libraryjars libs/ShareSDK-SinaWeibo-2.4.0.jar
+-libraryjars libs/ShareSDK-Wechat-2.4.0.jar
+-libraryjars libs/ShareSDK-Wechat-Core-2.4.0.jar
+-libraryjars libs/ShareSDK-Wechat-Moments-2.4.0.jar
+
+-libraryjars libs/nineoldandroids-2.4.0.jar
+-keep class com.nineoldandroids.**{*;}
+
+
+-keep class com.beikbank.android.webwiew.**{*;}
+           
+-libraryjars libs/gson-2.2.4.jar
+-keep class com.google.**{*;}
+-keepattributes Signature 
+-keep class com.beikbank.android.data.** { *;}
+-keep class com.beikbank.android.data2.** { *;}
+-keep class com.beikbank.android.jni.** { *;}
+-keep class sun.misc.Unsafe { *; }
+-keep class com.beikbank.android.dataparam.**{*;}
+-keep class com.beikbank.android.dataparam2.**{*;}
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+
+
+
+-keep,allowshrinking class org.android.agoo.service.* {
+    public <fields>;
+    public <methods>;
+}
+
+-keep,allowshrinking class com.umeng.message.* {
+    public <fields>;
+    public <methods>;
+}
+-keep public class com.beikbank.android.R$*{
+   public static final int *;
+}
+
+#jiguang start
+-libraryjars libs/jpush-android-2.1.7.jar
+-dontwarn cn.jpush.**
+-dontwarn com.google.gson.**
+-keep class cn.jpush.** { *; }
+
+-keep class com.google.gson.jpush.** { *; }
+
+#jiguang end
+
+
+
+-dontwarn   com.sun.mail.imap.protocol.**
+-keep class com.sun.mail.imap.protocol.**{*;}
+
+-libraryjars libs/additionnal.jar
+-dontwarn    org.apache.harmony.awt.datatransfer.**
+-dontwarn    org.apache.harmony.awt.**
+-keep class  org.apache.harmony.awt.datatransfer.**{*;}
+-keep class  org.apache.harmony.awt.**{*;}
+
+
+-dontwarn    javax.activation.**
+-keep class  javax.activation.**{*;}
+
+-keep class com.beikbank.android.widget2.**{*;}

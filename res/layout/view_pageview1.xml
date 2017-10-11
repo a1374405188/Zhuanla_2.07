@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+            <!-- 头部 -->
+  <LinearLayout
+      android:id="@+id/ll_top"
+         android:layout_width="match_parent"
+         android:layout_height="44dp"
+         android:gravity="center"
+         android:paddingLeft="16dp"
+         android:paddingRight="16dp"
+         android:background="@color/bg_hong"
+      >
+     
+        <LinearLayout 
+               android:id="@+id/ll_touxiang"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:gravity="center"
+            
+            
+            >
+           <LinearLayout 
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:gravity="center"
+              android:background="@drawable/bg_yuan1"
+            >
+        <ImageView 
+            android:id="@+id/iv_top1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_jinxuan_touxiang"
+            
+            />
+        </LinearLayout>
+        </LinearLayout>
+      <TextView
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="精选"
+            
+             android:textColor="#ffffffff"
+             android:textSize="17sp"/>
+  
+
+      
+      <RelativeLayout 
+            android:layout_width="30dp"
+             android:layout_height="20dp"
+            
+          >
+           <ImageView
+             android:id="@+id/iv_xiaoxi1"
+             android:layout_width="5dp"
+             android:layout_height="5dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/bg_yuan_huang"
+             android:visibility="gone"
+               />
+            
+            <TextView
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/iv_xiaoxi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="消息"
+             
+             android:textColor="#ffffdddd"
+             android:textSize="14sp"/>
+    </RelativeLayout>
+
+  </LinearLayout>
+  
+  
+     <LinearLayout
+           android:id="@+id/ll_msg_show"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="#ffffeeee"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           android:visibility="gone"
+           >
+           <ImageView 
+               
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:src="@drawable/msg_show"
+               
+               
+               />
+           <TextView 
+               android:id="@+id/tv_msg_show"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="网络连接不可用，请检查网络"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="10dp"
+               />
+           
+       </LinearLayout>
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/ll_parent"
+       android:orientation="vertical"
+      >
+  </LinearLayout>
+   
+</LinearLayout>

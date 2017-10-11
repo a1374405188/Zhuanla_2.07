@@ -1,0 +1,218 @@
+﻿<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<SCRIPT type="text/javascript" src="../js/jquery-1.11.3.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="../js/yhq/yhq1.js"></SCRIPT>
+<link rel="stylesheet" type="text/css" href="../css/yhq/yhq1.css">
+<STYLE>
+       html,body{ 
+margin:0px; 
+height:100%;
+overflow:scroll;
+}
+.left
+{
+  
+  background-image:url(../files/yhq/left2.png);
+  width:40%;
+  float:left;
+
+  text-align:center;
+  color:#ffffff;
+}
+</STYLE>
+
+
+</HEAD>
+
+<BODY style="background:#fbf3ef;margin:0px; padding:0px;height:100%;">
+  <!--head start-->
+
+   <div id="head">
+    <div id="div_img" onclick="window.wv.back()">
+	
+	 <img id="head_img1" src="../files/yhq/ic_back.png"/>
+	</div>
+	<div id="head_p1">
+	  使用说明
+	</div>
+	 
+	<div id="head_p2">
+	
+	</div>
+	
+	
+	<div id="head_d1">
+    </div>
+   </div>
+    
+
+
+  <!--head end-->
+  
+  
+  <div id="d6">
+  <!--
+      <div class="line_space"></div>
+     <div class="left">
+	  8元
+	 </div>
+     <div class="right">
+	  <div class="right_d1">
+	     <div class="p1">
+		   红包
+		 </div>
+		 <div class="p2">
+		   购买500
+		 </div>
+		 <div class="p3">
+		   有效期
+		 </div>
+	  </div>
+	 </div>
+	 
+    -->
+	我是流氓我怕谁
+	<div id="d7">
+	
+	</div>
+  </div>
+ 
+  
+  
+  
+  
+  
+  
+  <!--body start-->
+  <div id="none">
+  <div id="d1">
+      
+      <img  src="../files/yhq/none.png"/>
+	  <div id="d2">
+	      <div id="d3">
+	       没有可用优惠券
+	      </div>
+		  <div id="d4">
+	        赶快参加活动领取吧
+	      </div>
+	  </div>
+  </div>
+  
+  
+  <!--body end-->
+  
+     <div  class="a5  link">
+       历史优惠券>>
+     </div>
+  </div>
+  
+  
+  
+</BODY>
+<script type="text/javascript">
+ function addDiv(data)
+ {    
+
+      var array=data.data;
+      var obj;
+	   for(var i=0;i<array.length;i++)
+	   {
+	        obj=array[i];
+			if(obj.isOld==0)
+			{
+			   continue;
+			}
+			
+            var d2=$("#d7");
+			
+			  var s0='<div class="line_space" style="width:100%;height:10px;clear:both"></div>';
+			  d2.append(s0);
+			
+			
+			 var s1='<div class="left">';
+	         var obj2=window.JSON.parse(obj.content);
+	         s1=s1+obj2.couponAmont+"元";
+	         s1=s1+'</div>';
+			 
+	         d2.append(s1);
+			
+			 var s2='<div class="right"><div class="right_d1"><div class="p1">';
+			 s2=s2+obj.name;
+			 s2=s2+'</div><div class="p2">';
+			 s2=s2+obj.aim;
+			 s2=s2+'</div><div class="p3">';
+			 s2=s2+obj.endTime;
+			 s2=s2+'</div></div>';
+			 d2.append(s2);	 
+	   }
+	   addEnd();
+       initDiv();
+ }
+ 
+ function addEnd()
+ {    
+   
+     var d2=$("#d7");
+	
+	 var s1='<div class="a6" style="padding-top:15px;padding-bottom:15px;;clear:both;color:#b0b0b0">没有更多了</div>';
+     d2.append(s1);
+	 
+	 
+ }
+ //初始化div高度函数
+ function  initDiv()
+ {
+    var s=$(document).height();
+   //var w=$(document).width();
+    $("#d7").height(s-s/15-1);
+	
+    $(".left").css("line-height",s/5+"px");
+	$(".left").height(s/5);
+	  //$(".right").css("line-height",s/5+"px");
+	$(".right").height(s/5);
+
+	
+ }
+ function addData()
+   {  
+      var host1=window.location.host;
+	  host1="http://"+host1+"/beikbankapp/appapi/coupon/getUserCoupon.action";
+      $.get(host1,{userid:"59"},function(data){
+	        if(data.result=="error")
+			{
+			   // alert(JSON.stringify(data));
+			    // $("#e4").text(data.message);
+			    // $("#e4").show();
+				alert(data.message);
+			}
+			if(data.result=="success")
+			{
+			   
+				addDiv(data);
+				
+			}
+           
+			
+       },"json");
+       
+   }
+   //addData();
+   function test()
+   {
+             var d2=$("#d7");
+			
+			 var s1='<div class="left">weer</div>';
+	   
+	         //s1=s1+"sdf";
+	        // s1=s1+'</div>';
+	         d2.append(s1);
+			
+			
+			initDiv();
+			 
+   }
+   //test();
+</script>
+</HTML>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   	<item android:state_pressed="true" >
+                 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+       <!-- 圆角 -->
+                    <corners
+        android:radius="0dp"
+            />
+     <!-- 填充 -->
+                     <solid
+        android:color="#fffaf8f8"/><!-- 填充的颜色 -->
+    
+    <!-- 描边 -->
+    
+              <stroke
+        android:width="0dp"
+        android:color="#ffb0b0b0"/>
+
+                        </shape>
+   	</item>
+   	
+   	
+   	<item android:state_enabled="false" >
+                     <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+       <!-- 圆角 -->
+                    <corners
+                       android:radius="0dp"
+            />
+     <!-- 填充 -->
+                     <solid
+                       android:color="#ffffffff"/><!-- 填充的颜色 -->
+    
+    <!-- 描边 -->
+    
+              <stroke
+        android:width="0dp"
+        android:color="#ffb0b0b0"/>
+
+                        </shape>
+   	</item>
+   	
+   	
+   	
+   	</selector>

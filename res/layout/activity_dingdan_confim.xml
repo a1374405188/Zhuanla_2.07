@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg1"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_panel_margin"
+                     />
+
+ <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买活期" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                     <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:textColor="@color/red2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        style="@style/custom_textview2"
+                        android:text="0.00元"
+                        />
+
+                    
+                </LinearLayout>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/activity_divide_height"
+       android:background="#ffffffff"
+        >
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2"
+            android:layout_marginLeft="16dp"
+            
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_more_item"
+        android:gravity="center"
+       
+        >
+       <TextView
+           android:id="@+id/tv3"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="钱包"
+           style="@style/custom_textview1"
+           android:gravity="center"
+           />
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv4"
+            android:text="0.00元"
+            style="@style/custom_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+   <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_panel_margin"
+                     />
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_more_item"
+        android:gravity="center"
+       
+        >
+       <TextView
+           android:id="@+id/tv5"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="选择红包"
+           style="@style/custom_textview1"
+           android:gravity="center"
+           />
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv6"
+            android:text="0.00元"
+            style="@style/custom_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/hongbao8"
+            android:layout_marginLeft="6dp"
+            />
+
+    </LinearLayout>
+
+         
+      
+
+
+    <include layout="@layout/error_info"/>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_bg1"
+    >
+    <include layout="@layout/title_bar" />
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        android:background="@drawable/bg_more_item"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" 
+       
+        >
+        
+        <TextView
+            style="@style/custom_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付银行卡" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_purchase_bank"
+                style="@style/custom_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textview_purchase_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ziti5"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="充值金额"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            style="@style/custom_textview1"
+            />
+        <com.beikbank.android.widget.ClearableEditText
+            android:id="@+id/et_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:textSize="15sp"
+            android:background="#ffffffff"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="元"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            style="@style/custom_textview1"
+            />
+     </LinearLayout>
+     <include layout="@layout/error_info"/>
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_selector_button"
+        android:layout_height="@dimen/global_button_height"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="充值"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/global_text_size19"
+        android:enabled="false"
+        android:visibility="gone"
+        />
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <CheckBox
+            android:id="@+id/checkbox_agreement"
+            style="@style/custom_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top"
+            android:checked="true" />
+
+        <TextView
+            style="@style/custom_textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/agree_read" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_agreement"
+                style="@style/custom_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textview_agreement2"
+                style="@style/custom_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/textview_agreement3"
+                style="@style/custom_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+       
+    </LinearLayout>
+     -->
+</LinearLayout>

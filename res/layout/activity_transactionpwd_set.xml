@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48.5dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_top_panel"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/custom_textview10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/input_setting_transaction_password" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:layout_marginRight="@dimen/activity_textview_margin"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/transaction_password" />
+
+                <com.beikbank.android.widget.ClearableEditText
+                    android:id="@+id/clearedittext_transactionpassword"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_transaction_password"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textColor="@color/ziti6"
+                    android:textColorHint="@color/ziti7"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_divide_height"
+
+                android:background="@color/line2" />
+
+            <TableRow
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:layout_marginRight="@dimen/activity_textview_margin"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/repeat_password" />
+
+                <com.beikbank.android.widget.ClearableEditText
+                    android:id="@+id/clearedittext_repeat_password"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_transaction_repeat_password"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textColor="@color/ziti6"
+                    android:textColorHint="@color/ziti7"
+                    android:textSize="17sp" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+
+<include layout="@layout/error_info"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toast_height"
+        android:layout_marginTop="-22dp"
+
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_toast"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_toast"
+            style="@style/custom_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+</RelativeLayout>

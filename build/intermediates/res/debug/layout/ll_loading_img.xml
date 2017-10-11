@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="#ffffffff"
+    >
+    <View 
+         android:layout_width="match_parent"
+         android:layout_height="10dp"
+         android:background="#ffd6d6d6"
+        />
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:gravity="center"
+        >
+            <ImageView 
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/load_net_img_def"
+        />
+<!-- 已结束 --> 
+        <ImageView 
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/load_net_img_end"
+        android:visibility="gone"
+        />
+
+            
+
+
+     <WebView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         />
+        
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/ll_loading_img.xml -->

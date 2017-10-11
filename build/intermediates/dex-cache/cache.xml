@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\gson-2.2.4-aa6b727639891f47d428a2466d70a2f1664073fa.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-Core-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e2b6e0428cc9cbaa878a5e108b6a7ac355f7a25">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.4.0-52dc04079fd88c8b51ccd6b6e8162509ae4c1357.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-0db73312d943ffd59cc7d6d06c926cd58d6558e2.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bd6479f5dd592790607e0504e66e0f31c2b4d308">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\android-support-v4-b23f15465a897b7e0bab01116fcdcea275340e08.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-SinaWeibo-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cec84743caab9edacaedef4efe93ff967c36844">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-SinaWeibo-2.4.0-d5f9663591f67961da37fc3477926e0441388586.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\umeng-analytics-v5.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4-e16d02471660af6e7e398fd35937a9a68efa9485.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-Wechat-Core-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb4aa13636e75514f06d689cd6dab3e26220c9df">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.4.0-165919033ae5747f60c0a2d3ed7d48ef07b268e9.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-ShortMessage-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7f048d2e80f38c1e964164dc5bb50c4fd1ac3183">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-ShortMessage-2.4.0-fbb1b0934a69bca65c09fd7dd07e00bd80b9b2c9.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-Wechat-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0ef5bf61c8d32974846483bf9321f567f547d77e">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.4.0-15dcc38ddebd8b9523329814d49a2d9d58a8d74f.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-a55d8f0770f49c08427fc0429e7f0887d6680fed.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\com.umeng.message.lib.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="677c0952a131b25534391ee916f180de4fde8371">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\com.umeng.message.lib-bb4c4d9f515cca7cf9b3ae0fd162ba6fb733395d.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-Wechat-Moments-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7b8afbc966fec173ca3ddc87486264f485a01e71">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.4.0-c1ee8c902f8b7864a6d4f31c6f87a0fc20494ad3.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-QQ-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5ba5ea252bb2add182f28023a445d5c2ec45e786">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.4.0-e633a061cc9ef93f04b3ff6a04482dfa6f987fab.jar" />
+    </item>
+    <item
+        jar="D:\works\Zhuanla_1.0.7\libs\ShareSDK-QZone-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ba1bce66a1a171bfcae204ea4d86f25563ebcb58">
+        <dex dex="D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.4.0-57f9ad474c518b16e3b571d53db44325f5e7ed17.jar" />
+    </item>
+
+</items>

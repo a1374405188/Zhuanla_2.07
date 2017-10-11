@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff4f4f4"
+    >
+    <include layout="@layout/title_bar"/>
+<View
+       android:layout_width="match_parent"
+         android:layout_height="1px"
+         android:background="@color/line2"
+    
+    />
+             <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:background="#ffffffff"
+         
+        >
+        <TextView
+            android:id="@+id/tv_shouyi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="累计收益(元)"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            />
+         <TextView
+             android:id="@+id/tv_leiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.00"
+            android:textColor="#fffb5a5c"
+            android:textSize="40sp"
+            android:layout_marginBottom="20dp"
+            />
+        
+    </LinearLayout
+        >
+  <!--     <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="135dp"
+     android:orientation="vertical" 
+     android:background="#fffadee1"
+     android:gravity="center"
+     >
+     <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="0px"
+          android:layout_weight="1"
+          android:gravity="bottom"
+          android:text="累计收益    (元)"
+          android:textColor="#ff747474"
+          android:textSize="15sp"
+          />
+     <TextView 
+          android:id="@+id/total_money"
+          android:layout_width="wrap_content"
+          android:layout_height="0px"
+          android:layout_weight="2"
+          android:gravity="center_horizontal"
+          android:text="0.00"
+          android:textSize="50sp"
+          android:textColor="#ff000000"
+         />
+ </LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="12px"
+       android:background="#fff4f4f4"
+       
+       />
+       -->
+   <LinearLayout 
+       android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+      
+        android:orientation="vertical"
+        android:background="#fff4f4f4"
+      
+         android:scrollbars="none"
+          android:fadingEdge="none"
+          android:gravity="center"
+       >
+     <!--  
+        <com.beikbank.android.pullrefresh.PullToRefreshListView
+        android:id="@+id/listview_transaction_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+        -->
+        
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:divider="#fff4f4f4"
+           android:dividerHeight="6dp" 
+            android:layout_marginTop="10dp"
+            
+            
+            />
+   </LinearLayout>
+ 
+</LinearLayout>

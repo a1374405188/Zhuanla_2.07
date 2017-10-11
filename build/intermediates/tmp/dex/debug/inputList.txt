@@ -1,0 +1,15 @@
+D:\works\Zhuanla_1.0.7\build\intermediates\classes\debug
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.4.0-15dcc38ddebd8b9523329814d49a2d9d58a8d74f.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.4.0-c1ee8c902f8b7864a6d4f31c6f87a0fc20494ad3.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-ShortMessage-2.4.0-fbb1b0934a69bca65c09fd7dd07e00bd80b9b2c9.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-SinaWeibo-2.4.0-d5f9663591f67961da37fc3477926e0441388586.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.4.0-e633a061cc9ef93f04b3ff6a04482dfa6f987fab.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.4.0-57f9ad474c518b16e3b571d53db44325f5e7ed17.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.4.0-165919033ae5747f60c0a2d3ed7d48ef07b268e9.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-a55d8f0770f49c08427fc0429e7f0887d6680fed.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.4.0-52dc04079fd88c8b51ccd6b6e8162509ae4c1357.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-0db73312d943ffd59cc7d6d06c926cd58d6558e2.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\gson-2.2.4-aa6b727639891f47d428a2466d70a2f1664073fa.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4-e16d02471660af6e7e398fd35937a9a68efa9485.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\android-support-v4-b23f15465a897b7e0bab01116fcdcea275340e08.jar
+D:\works\Zhuanla_1.0.7\build\intermediates\pre-dexed\debug\com.umeng.message.lib-bb4c4d9f515cca7cf9b3ae0fd162ba6fb733395d.jar

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.beikbank.android.scroller.ListItemDelete xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="#ffffffff"
+    >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:orientation="vertical" 
+      android:background="#fff4efef"
+      android:gravity="center"
+         >
+         <LinearLayout 
+               android:background="#ffffffff"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" 
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="5dp"
+             >
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+           
+           >
+            <ImageView 
+            android:id="@+id/iv_yidu"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+             android:layout_marginLeft="5dp"
+            android:src="@drawable/img_xiaoxi_hong"
+            />
+       <TextView 
+           android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:textColor="#ff323232"
+            android:textSize="15sp" 
+            android:text="标题"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            />
+       </LinearLayout>
+         <TextView 
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:textColor="#ffb0b0b0"
+            android:textSize="10sp" 
+            android:text="时间"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+       
+         <TextView 
+                android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textColor="#ffb0b0b0"
+            android:textSize="13sp" 
+            android:text="aaa"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+         <View
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="#ffd7d7d7"
+             />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="5dp"
+             >
+             
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:textColor="#ff323232"
+            android:textSize="15sp" 
+            android:text="立即查看"
+           
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+             
+               <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/home2_right_img"
+                    android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                    android:gravity="center"
+                    />
+         </RelativeLayout>
+         </LinearLayout>
+    </LinearLayout>
+   <LinearLayout 
+         android:id="@+id/ll_del"
+         android:layout_width="88dp"
+         android:layout_height="180dp"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:background="#ffdd2238"
+         android:paddingTop="14dp"
+         android:paddingBottom="14dp"
+        
+        >
+       
+         
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+          
+            android:src="@drawable/message_del"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:textColor="#ffffffff"
+            android:textSize="13sp" 
+            android:text="删除"
+            android:gravity="center"
+            />
+     </LinearLayout>
+ 
+</com.beikbank.android.scroller.ListItemDelete>

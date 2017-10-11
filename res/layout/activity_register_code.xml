@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48.5dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_top_panel"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/custom_textview10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/identify_code_sended" />
+
+            <TextView
+                android:id="@+id/textview_phonenumber"
+                style="@style/custom_textview10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_item_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                style="@style/custom_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|left"
+                android:text="@string/identify_code" />
+
+            <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/clearedittext_identify_code"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_textview_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/input_identifying_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/ic_line"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/textview_get_identifying_code"
+                style="@style/custom_textview0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/get_identifying_code" />
+
+            <LinearLayout
+                android:id="@+id/linear_reload_identify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_identifying_code_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ziti5"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    <include layout="@layout/error_info"/>
+    <!--     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_button_topmargin"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_next"
+                style="@style/custom_button"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/next" />
+        </LinearLayout>
+         -->  
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toast_height"
+        android:layout_marginTop="-22dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_toast"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_toast"
+            style="@style/custom_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+</RelativeLayout>

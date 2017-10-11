@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp" 
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:gravity="bottom"
+    
+    >
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+     
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+			<com.beikbank.android.widget.CustomProgressBar
+                android:id="@+id/head_progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_textview_margin"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/head_tipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p2refresh_release_refresh"
+                android:textColor="@color/ziti5"
+                android:textSize="17sp" />
+
+          
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

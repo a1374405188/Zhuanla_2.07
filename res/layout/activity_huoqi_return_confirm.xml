@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48.5dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_divide_height"
+                android:background="@color/line2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@color/white"
+                >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:text="转让金额"
+                   style="@style/custom_textview1"
+                   />
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    style="@style/custom_textview1"
+                    />
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0.00元"
+                   android:textColor="@color/bg_hong"
+                   android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_divide_height"
+                android:background="@color/line2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_panel_margin"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height"
+                    android:background="@drawable/bg_more_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transaction_password" />
+
+                    <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/clearedittext_transaction_password"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_textview_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/input_transaction_password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/ic_line"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/textview_forget_transaction_password"
+                        style="@style/custom_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forget_password" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:background="@color/line2" />
+            </LinearLayout>
+
+         <include layout="@layout/error_info"/>
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableLeft="@drawable/ic_warmly_remind"
+                    android:drawablePadding="@dimen/activity_small_margin"
+                    android:gravity="bottom"
+                    android:text="@string/warmly_remind"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_warm_line"
+                    android:layout_marginTop="@dimen/activity_small_margin"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:text="1，转让金额于当日24时返回钱包"
+                    android:textColor="@color/ziti5"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:text="2，银行暂不支持非工作日对公业务，请合理安排赎回和提现时间"
+                    android:textColor="@color/ziti5"
+                    android:textSize="13sp"
+                   
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:text="3，每天23:50至次日0:30为系统结算处理时间，不支持交易。"
+                    android:textColor="@color/ziti5"
+                    android:textSize="13sp"
+                   
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/warmly_remind_text3"
+                    android:textColor="@color/ziti5"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toast_height"
+        android:layout_marginTop="-22dp"
+
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_toast"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_toast"
+            style="@style/custom_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+
+</RelativeLayout>

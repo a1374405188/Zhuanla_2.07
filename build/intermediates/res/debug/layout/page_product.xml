@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="68dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                style="@style/custom_textview8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_income_gray"
+                android:drawablePadding="@dimen/activity_small_margin"
+                android:gravity="center"
+                android:text="@string/annual_income2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_textview_margin"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <com.beikbank.android.widget.MagicTextView
+                    android:id="@+id/magictextview_annual_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red2"
+                    android:textSize="90sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/percent"
+                    android:textColor="@color/red2"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万份收益" />
+
+                <TextView
+                    android:id="@+id/textview_wanfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_textview_margin"
+                    android:textColor="@color/red2"
+                    android:textSize="17sp" />
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_small_margin"
+                            android:text="赚啦收益"
+                            android:textColor="@color/ziti5"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_small_margin"
+                            android:text="理财基金"
+                            android:textColor="@color/ziti5"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行活期"
+                            android:textColor="@color/ziti5"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_small_margin"
+                        android:background="@drawable/bg_axis"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="1dp" >
+
+                        <com.beikbank.android.widget.NumberProgressBar
+                            android:id="@+id/numberprogress_rate"
+                            style="@style/NumberProgressBar_Default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            custom:max="1000"
+                            custom:progress="0"
+                            custom:progress_reached_bar_height="4dip"
+                            custom:progress_reached_color="@color/red2"
+                            custom:progress_text_visibility="invisible"
+                            custom:progress_unreached_bar_height="6dip"
+                            custom:progress_unreached_color="@color/transparent" />
+
+                        <com.beikbank.android.widget.NumberProgressBar
+                            style="@style/NumberProgressBar_Default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            custom:max="1000"
+                            custom:progress="280"
+                            custom:progress_reached_bar_height="4dip"
+                            custom:progress_reached_color="@color/ziti5"
+                            custom:progress_text_visibility="invisible"
+                            custom:progress_unreached_bar_height="6dip"
+                            custom:progress_unreached_color="@color/transparent" />
+
+                        <com.beikbank.android.widget.NumberProgressBar
+                            style="@style/NumberProgressBar_Default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:max="1000"
+                            custom:progress="35"
+                            custom:progress_reached_bar_height="4dip"
+                            custom:progress_reached_color="@color/ziti5"
+                            custom:progress_text_visibility="invisible"
+                            custom:progress_unreached_bar_height="6dip"
+                            custom:progress_unreached_color="@color/transparent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.35%"
+                        android:textColor="@color/ziti5"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:text="4.00%"
+                        android:textColor="@color/ziti5"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textview_product_incomepercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ziti5"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_page_repeat"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_yiyuan"
+                            android:contentDescription="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_textview_margin"
+                                android:text="1元起投"
+                                android:textColor="@color/ziti6"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="无门槛"
+                                android:textColor="@color/ziti7"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_suimai"
+                            android:contentDescription="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_textview_margin"
+                                android:text="随买随卖"
+                                android:textColor="@color/ziti6"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="天天收益"
+                                android:textColor="@color/ziti7"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_huafan"
+                            android:contentDescription="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_textview_margin"
+                                android:text="化繁为简"
+                                android:textColor="@color/ziti6"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="整合分散投资"
+                                android:textColor="@color/ziti7"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_anquan"
+                            android:contentDescription="@null" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/activity_textview_margin"
+                                android:text="安全可靠"
+                                android:textColor="@color/ziti6"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="专业风控团队"
+                                android:textColor="@color/ziti7"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@color/lightgray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计投资" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_totalInvestment"
+                    style="@style/custom_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收益" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_totalIncome"
+                    style="@style/custom_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@color/lightgray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资人数" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_totalInvestors"
+                    style="@style/custom_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_projects"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资项目" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_totalProjects"
+                    style="@style/custom_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_small_margin"
+                    android:background="@drawable/ic_arrow"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_riskcontrol"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@color/lightgray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全保障" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <RelativeLayout
+        android:id="@+id/relative_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"  >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_error"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击屏幕  重新加载"
+                android:layout_marginTop="22dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/ziti7"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_error2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:contentDescription="@null" />
+    </RelativeLayout> -->
+
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/page_product.xml -->

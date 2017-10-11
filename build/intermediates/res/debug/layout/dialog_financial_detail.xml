@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_small_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_small_margin" >
+
+        <ImageView
+            android:id="@+id/imageview_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_close"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_item_height"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                style="@style/custom_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="赚啦预期收益(元)" />
+
+            <TextView
+                android:id="@+id/textview_product_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/red2"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_item_height"
+            android:background="@color/gray"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                style="@style/custom_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="银行活期收益(元)" />
+
+            <TextView
+                android:id="@+id/textview_bank_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/ziti1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_item_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageview_ic_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_small_margin"
+                    android:background="@drawable/ic_money"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:id="@+id/textview_rmb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_small_margin"
+                    android:text="@string/rmb" />
+
+                <com.beikbank.android.widget.ClearableEditText
+                    android:id="@+id/clearedittext_financial_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/textview_rmb1"
+                    android:layout_toRightOf="@id/imageview_ic_money"
+                    android:background="@null"
+                    android:hint="@string/input_financial_money"
+                    android:inputType="phone"
+                    android:textColor="@color/ziti6"
+                    android:textColorHint="@color/ziti7"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageview_ic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_small_margin"
+                    android:background="@drawable/ic_time"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:id="@+id/textview_rmb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_small_margin"
+                    android:text="@string/day"/>
+
+                <com.beikbank.android.widget.ClearableEditText
+                    android:id="@+id/clearedittext_financial_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/textview_rmb2"
+                    android:layout_toRightOf="@id/imageview_ic_time"
+                    android:background="@null"
+                    android:hint="@string/input_financial_time"
+                    android:inputType="phone"
+                    android:textColor="@color/ziti6"
+                    android:textColorHint="@color/ziti7"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/button_thinking"
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:text="@string/thinking" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/dialog_financial_detail.xml -->

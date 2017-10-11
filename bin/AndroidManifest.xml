@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comc.beikbank.android"
+    android:versionCode="2000"
+    android:versionName="2.0.0" 
+    android:installLocation="auto"
+    >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+    
+       <!--  jiguang start-->  
+     <permission
+        android:name="coma.beikbank.android.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="coma.beikbank.android.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+   
+   <!--  jiguang end-->
+    
+    
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+   <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+     <uses-permission android:name="android.permission.RESTART_PACKAGES"/>  
+    
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>  
+    
+   <!-- Push service 运行需要的权限 -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!-- 富媒体需要声明的权限 -->
+<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+<!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
+<!--  
+<uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.beikbank.android" />
+<permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.beikbank.android"
+        android:protectionLevel="normal">
+</permission>
+-->    
+    
+    
+    
+    
+    
+    <application
+        android:hardwareAccelerated="false"
+        android:name="com.beikbank.android.fragment.BeikBankApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo3"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.beikbank.android.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        
+        
+ <!--  qq share start-->       
+        <activity
+android:name="com.tencent.tauth.AuthActivity" 
+android:noHistory="true" 
+android:launchMode="singleTask" >
+<intent-filter>
+  <action android:name="android.intent.action.VIEW" />
+   <category android:name="android.intent.category.DEFAULT" />
+   <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="1103529245" />
+</intent-filter>
+</activity>
+
+        
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+android:theme="@android:style/Theme.Translucent.NoTitleBar"
+android:configChanges="orientation|keyboardHidden|screenSize" 
+/>
+<!--  qq share end-->
+<!--  youmeng share start-->
+     
+        
+<!--  youmeng share end-->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1103194959" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beikbank.android.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beikbank.android.activity.GesturePwdGuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.GesturePwdCreateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.GesturePwdUnlockActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.LoginRegActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.LoginPwdInputActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ForgetPwdAnonymousActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ForgetPwdRealnameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ForgetPwdRealnameActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RegisterPwdSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.FeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.HelpCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RegisterCodeInputActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.AgreementLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RedeemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RedeemConfirmActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RedeemStatusActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RealnameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.LoginPwdUpdateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionPwdSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionPwdSetActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.PurchaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.PurchaseConfirmActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankBindActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankConfirmActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankCheckActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.HomeActivity2"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.AgreementPurchaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankSupportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.GesturePwdLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.GesturePwdOldActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankMasterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionPwdUpdateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.BankBindedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.PurchaseSuccessActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.RiskControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ProjectListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.AgreementLogin2Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.AgreementPurchase2Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+          <activity
+            android:name="com.beikbank.android.activity.PurchaseSumbitInfo"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+         <activity
+            android:name="com.beikbank.android.activity.RedeemFinishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+          <activity
+            android:name="com.beikbank.android.activity.BandTestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+            <activity
+            android:name="com.beikbank.android.activity.GesturePwdGuideActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+        <activity
+            android:name="com.beikbank.android.activity.MessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.MessageDetail"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.ActionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ActionListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.ActionDetial"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.UserRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.DingqiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.DingdanHuoqiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.DingdanDingqiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.DingqiDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+           <activity
+            android:name="com.beikbank.android.activity.DingqiDetailActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.DingqiGouMaiConfirmActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.DingqiGouMaiState"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.TransactionDQDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+          <activity
+            android:name="com.beikbank.android.activity.DingqiGoumaiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.DingqiZhichanDetial"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+          <activity
+            android:name="com.beikbank.android.activity.HuoqiDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TransactionListActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.ZhiChanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ZhiChanActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+           <activity
+            android:name="com.beikbank.android.activity.BankBindActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.TestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.ProjectListActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+        <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity4"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity5"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity6"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity7"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+         <activity
+            android:name="com.beikbank.android.activity.QianbaoActivity8"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.DingqiZaiquanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+           <activity
+            android:name="com.beikbank.android.activity.YigouActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.HuoqiReturnIActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.HuoqiReturnActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+          <activity
+            android:name="com.beikbank.android.activity.HuoqiReturnStatusActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.HuodongActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+          <activity
+            android:name="com.beikbank.android.activity.HuodongActivity2"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.HuoqiZaiquanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.HuoqiZaiquanActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.YouHuiQuanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.YouHuiQuanActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.YouHuiQuanActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+           <activity
+            android:name="com.beikbank.android.activity.YouHuiQuanActivity4"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+         <activity
+            android:name="com.beikbank.android.activity.SelectHongbaoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+           <activity
+            android:name="com.beikbank.android.activity.DingdanConfimActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+         <activity
+            android:name="com.beikbank.android.activity.UserRecordActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+        </activity>
+        
+          <activity
+            android:name="com.beikbank.android.activity.AgreementPurchaseActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+          
+          
+            <activity
+            android:name="com.beikbank.android.activity.QueRenJiaoYiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           <activity
+            android:name="com.beikbank.android.activity.QueRenJiaoYiActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+           
+            <activity
+            android:name="com.beikbank.android.activity.HomeActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+             <activity
+            android:name="com.beikbank.android.activity.HomeActivity4"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+            
+            
+            <activity
+            android:name="com.beikbank.android.activity.XiaoXiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+            <activity
+            android:name="com.beikbank.android.activity.XiTongGGActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+             <activity
+            android:name="com.beikbank.android.activity.GerenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+          <activity
+            android:name="com.beikbank.android.activity.GengDuoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+          
+          <activity
+            android:name="com.beikbank.android.activity.HelpCenterActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+            <activity
+            android:name="com.beikbank.android.activity.HelpCenterActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+              <activity
+            android:name="com.beikbank.android.activity.BankMasterActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+              
+              
+               <activity
+            android:name="com.beikbank.android.activity.YingdaoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+                         <activity
+            android:name="com.beikbank.android.activity.UpdatePhoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+               
+                  <activity
+            android:name="com.beikbank.android.activity.JiaoYiXiangQingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+                 <activity
+            android:name="com.beikbank.android.activity.JiaoYiXiangQingActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+                      <activity
+            android:name="com.beikbank.android.activity.LinHuoBaoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+                                 <activity
+            android:name="com.beikbank.android.activity.DingqiLicaiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+                                                          <activity
+            android:name="com.beikbank.android.activity.ZhicanFenbuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>
+           
+                                                             <activity
+            android:name="com.beikbank.android.activity.ZuoriShouyiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>     
+           
+                                                                <activity
+            android:name="com.beikbank.android.activity.ChanPinActivityV2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>  
+           
+                                                                                                                       <activity
+            android:name="com.beikbank.android.activity.ZuoriShouyiActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>  
+            <activity
+            android:name="com.beikbank.android.activity.UserRecordActivity_v2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>  
+           
+            
+            
+            
+              <activity
+            android:name="com.beikbank.android.activity.HuoqiDetailActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>  
+             <activity
+            android:name="com.beikbank.android.activity.HuoqiDetailActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+               <activity
+            android:name="com.beikbank.android.activity.HuoqiDetailActivity4"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity>   
+           
+               
+               <activity
+            android:name="com.beikbank.android.activity.HuoqiZhuanRangActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+              <activity
+            android:name="com.beikbank.android.activity.ShouZhiMinXiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+  <!--  start-->
+   <!--
+    <receiver
+    android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+    android:exported="false" >
+</receiver>
+<receiver android:name="com.umeng.message.RegistrationReceiver" >
+    <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+        <data android:scheme="package" />
+    </intent-filter>
+
+ 
+    <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+    </intent-filter>
+
+</receiver>
+<receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+    <intent-filter>
+        <action android:name="org.agoo.android.intent.action.RECEIVE" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="com.beikbank.android.intent.action.COMMAND" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+    </intent-filter>
+</receiver>
+<receiver android:name="com.umeng.message.BootBroadcastReceiver" >
+    <intent-filter>
+       <action android:name="android.intent.action.BOOT_COMPLETED" />
+   </intent-filter>
+</receiver>
+<service
+    android:name="com.umeng.message.UmengService"
+   android:label="PushService" 
+    android:exported="true" 
+    android:process=":pushService_v1" >
+
+
+    <intent-filter>
+        <action android:name="com.beikbank.android.intent.action.START" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="com.beikbank.android.intent.action.COCKROACH" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="org.agoo.android.intent.action.PING" />
+    </intent-filter>
+</service>
+<service
+    android:name="org.android.agoo.service.ElectionService"
+    android:exported="true"
+    android:process=":pushService_v1" >
+    <intent-filter>
+        <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+    </intent-filter>
+</service>
+<service android:name="com.umeng.message.UmengIntentService" />
+
+<service android:name="com.umeng.message.UmengDownloadResourceService" />
+-->
+
+<!--  end-->
+
+
+<!-- push service start -->
+<!--  
+
+<receiver android:name="com.beikbank.android.utils2.PushReceiver">
+    <intent-filter>
+      
+        <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+       
+        <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+      
+        <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+    </intent-filter>
+</receiver>
+
+
+
+<receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+    android:process=":bdservice_v1" >
+    <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+        <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+       
+        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+        <action android:name="android.intent.action.USER_PRESENT" />
+        <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+    </intent-filter>
+</receiver>
+
+<receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+    android:process=":bdservice_v1" >
+    <intent-filter>
+        <action android:name="com.baidu.android.pushservice.action.METHOD" />
+        <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+        <data android:scheme="package" />
+    </intent-filter>
+</receiver>
+<service android:name="com.baidu.android.pushservice.PushService" android:exported="true"
+    android:process=":bdservice_v1" >
+    <intent-filter >
+            <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+    </intent-filter>
+</service>
+
+
+<service android:name="com.baidu.android.pushservice.CommandService"
+    android:exported="true" />
+
+
+<provider
+    android:name="com.baidu.android.pushservice.PushInfoProvider"
+    android:authorities="YourPackageName.bdpush"
+    android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.beikbank.android"
+    android:protectionLevel = "signature"
+    android:exported="true" />
+ <meta-data android:name="api_key" android:value="qalIsXIyP2LATIG1zFnGGaxX" /> 
+-->
+<!-- push结束 -->
+
+
+
+
+<!--jiguang tuisong  start-->
+     
+     
+     
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="true">
+        </activity>
+
+      
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="coma.beikbank.android" />
+            </intent-filter>
+        </activity>
+     
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    
+        
+    
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+      
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="coma.beikbank.android" />
+            </intent-filter>
+
+        </service>
+        
+     
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="true">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />  
+                <category android:name="coma.beikbank.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+          
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="coma.beikbank.android" />
+            </intent-filter>
+   
+        </receiver>
+        
+       
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="true"/>
+        
+      
+      
+        <receiver
+            android:name="com.beikbank.android.utils2.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> 
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> 
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> 
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      
+                <category android:name="coma.beikbank.android" />
+            </intent-filter>
+        </receiver>
+
+        
+        <activity android:name="com.beikbank.android.utils2.TestActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+     
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+       <meta-data android:name="JPUSH_APPKEY" android:value="f0ef7ccb92a609148aac4760" />
+        
+         <meta-data android:name="JPUSH_APPKEY" android:value="cabf5440a2831331b4b761ee" />
+      
+         
+
+<!--jiguang tuisong  end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- error  -->
+         <activity
+            android:name="com.beikbank.android.activity.NoNetErrorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.exception.GlobalErrorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54238347fd98c5855f04f56e" >
+        </meta-data>
+       <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="21fcf1a1d01d8d520a353b95c485b0f4" >
+        </meta-data>
+       
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="CODE_NDUO" />
+    </application>
+
+</manifest>

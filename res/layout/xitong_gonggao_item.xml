@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ff323232"
+        android:text="系统公告"
+        android:paddingTop="10dp"
+        />
+     <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#ffb0b0b0"
+        android:text="2016-7-27"
+        
+        android:paddingTop="10dp"
+        />
+      <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="13sp"
+        android:textColor="#ff666666"
+        android:text="公告公告"
+        android:ellipsize="end"
+        android:paddingTop="10dp"
+        />
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:paddingTop="10dp"
+          
+          >
+           <TextView
+        android:id="@+id/tv_cankan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ff323232"
+        android:text="立即查看"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+           
+            <View
+           android:layout_width="0px"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           
+           
+           />
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:src="@drawable/img_fangxiang_right"
+           
+           />
+      </LinearLayout>
+      
+    
+</LinearLayout>

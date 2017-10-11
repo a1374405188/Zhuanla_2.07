@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launch"
+    android:orientation="vertical" >
+     <include layout="@layout/title_bar" />
+
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0px"
+       android:layout_weight="5"
+        >
+        
+    
+     <ImageView
+            android:id="@+id/imageview_guidegif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_textview_margin"
+            android:contentDescription="@null" />
+     
+   
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+       <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" 
+           />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/gesture_password_guide_text1"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/gesture_password_guide_text2"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+       
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="17"
+        />
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" 
+        >    
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_white3"
+            android:text="@string/gesture_password_guide_creat_btn"/>
+     </LinearLayout>
+         <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        />
+   </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>

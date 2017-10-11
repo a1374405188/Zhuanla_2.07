@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+ <!-- 1 -->
+             <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="56dp"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="16dp"
+                 android:background="#ffe7e7e7"
+                 android:gravity="center_vertical"
+                 >
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/riskcontrol_img1"
+                     />
+                 <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="严格筛选优质投资平台→极致分散投资"
+                     android:layout_marginLeft="8dp"
+                     android:textSize="15sp"
+                     android:textColor="#ff2d2d2d"
+                     />
+             </LinearLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+                 android:layout_marginTop="24dp"
+                 >
+                 <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/riskcontrol_img2"
+                      android:layout_marginTop="8dp"
+                     />
+
+             <!--     <com.beikbank.android.widget.MyTextView2
+                     android:id="@+id/tv_tv1"
+                       android:textSize="15sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="    赚啦专业投资团队实时监控市场上3300余家 P2P网贷平台每日交易动态数据，并根 据这些平台近3年的所有交易历史数据建立了金融投 资市场大数据动态风控模型，按投资平台单月成交量、保障模式、借贷资金数量比、上线运营时间、累计逾期产品及逾期处理方式等评定标准，将所有平台按照质量从高到低，精选出最优质的三百家平台."
+                      test:textSize="15sp"
+                      test:marginLeft="16dp"
+                      test:marginRight="16dp"
+                      test:textColor="#ff747474"
+                     />
+              --> 
+             </RelativeLayout>
+               <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="16dp"
+                 android:layout_marginTop="24dp"
+                 >
+                 <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/riskcontrol_img2"
+                      android:layout_marginTop="8dp"
+                     />
+             <!--      <com.beikbank.android.widget.MyTextView2
+                       android:id="@+id/tv_tv2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                         test:textSize="15sp"
+                      test:marginLeft="16dp"
+                      test:marginRight="16dp"
+                      android:text="    赚啦专业投资团队按照历史投资金额、债权产品时长、收益高低、风险大小等定制最佳配比投资方案，进行极致的分散投资，即一元金额都可分散至三百家债权，把投资人的资金全部分散到三百家优质平台中进行理财投资，使“赚啦”用户获得丰厚收益的同时，不仅避免了单一P2P投资的触雷可能，也免除个体投资者进行分散投资的复杂学习、挑选过程，从而达到简单快乐理财的目的。"
+                    test:textColor="#ff747474"
+                     />
+                      --> 
+             </RelativeLayout>
+<!-- 2 -->             
+           <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="56dp"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="16dp"
+                 android:background="#ffe7e7e7"
+                 android:gravity="center_vertical"
+                 android:layout_marginTop="24dp"
+                 >
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/riskcontrol_img1"
+                     />
+                 <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="三重风险保障机制"
+                     android:layout_marginLeft="8dp"
+                     android:textSize="15sp"
+                     android:textColor="#ff2d2d2d"
+                     />
+             </LinearLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="16dp"
+                 android:layout_marginTop="24dp"
+                 android:layout_marginBottom="60dp"
+                 >
+                 <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/riskcontrol_img2"
+                    android:layout_marginTop="8dp"
+                     />
+              <!--    <com.beikbank.android.widget.MyTextView2
+                      android:id="@+id/tv_tv3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                        test:textSize="15sp"
+                      test:marginLeft="16dp"
+                      test:marginRight="16dp"
+                      android:text="    运营初期，除赚啦平台自身的资金安全保证机制，我们从每笔交易资金中提取风险准备金， 再从自有资金中追加同等数额资金组成风险保障金，共准备了8%的风险保障金，比例是同类平台的8倍！抗兑付抗风险冲击能力更强！"
+                      test:textColor="#ff747474"
+                     />
+               --> 
+             </RelativeLayout>
+
+        </LinearLayout>
+       
+    </ScrollView>
+
+</LinearLayout>

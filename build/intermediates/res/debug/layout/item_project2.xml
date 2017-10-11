@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corners2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffdd2238"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp" >
+
+        <TextView
+            android:id="@+id/textview_platformName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" 
+            android:text="1234"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#e7e7e7"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp" >
+
+        <TextView
+            android:id="@+id/textview_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/project_text1"
+            android:textSize="17sp" 
+            android:text="1234"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+
+        android:orientation="vertical"
+        >
+<!-- 1 -->
+        <LinearLayout
+            
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/project_h1"
+        android:gravity="center_vertical"
+        android:background="#ffffffff"
+             >
+               <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="#ffffffff"
+              android:layout_weight="1"
+              android:orientation="horizontal"
+             >  
+                <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="原始收益率:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                     android:id="@+id/project_text1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="18%"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+              </LinearLayout>
+              
+                 <LinearLayout
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+             >
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="13dp"
+                   android:background="@color/project_line"
+                   />
+              </LinearLayout>
+             <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="#ffffffff"
+              android:layout_weight="1"
+             >
+                 <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="募集资金:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="200"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+<!-- 2 -->
+        <LinearLayout
+            
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/project_h1"
+        android:gravity="center_vertical"
+        android:background="@color/project_bg1"
+             >
+               <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:layout_weight="1"
+             >  
+                <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="还款方式:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="到期还款"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+              </LinearLayout>
+              
+                 <LinearLayout
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+             >
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="13dp"
+                   android:background="@color/project_line"
+                   />
+              </LinearLayout>
+             <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:layout_weight="1"
+             >  
+                  <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="债券类型:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="担保"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+         
+ <!-- 3-->
+        <LinearLayout
+            
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/project_h1"
+        android:gravity="center_vertical"
+        android:background="#ffffffff"
+             >
+               <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="#ffffffff"
+              android:layout_weight="1"
+             >   
+                <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="投资日期:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="2014-09-09"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+              </LinearLayout>
+              
+                 <LinearLayout
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+             >
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="13dp"
+                   android:background="@color/project_line"
+                   />
+              </LinearLayout>
+             <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="#ffffffff"
+              android:layout_weight="1"
+             >  
+                <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="到期日期:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text6"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="2014-12-12"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+<!-- 4-->
+        <LinearLayout
+            
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/project_h1"
+        android:gravity="center_vertical"
+        android:background="@color/project_bg1"
+             >
+               <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:layout_weight="1"
+             >   
+                <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="投标金额:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                     android:id="@+id/project_text7"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="5000元"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+              </LinearLayout>
+              
+                 <LinearLayout
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+             >
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="13dp"
+                   android:background="@color/project_line"
+                   />
+              </LinearLayout>
+             <LinearLayout
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:layout_weight="1"
+             >  
+                <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text2"
+                     android:text="风险准备金:"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+                 <TextView 
+                      android:id="@+id/project_text8"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/project_text_size"
+                     android:textColor="@color/project_text1"
+                     android:text="3%"
+                     android:layout_marginLeft="@dimen/project_space"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+            
+            
+        </LinearLayout>
+
+
+
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/item_project2.xml -->

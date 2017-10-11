@@ -1,0 +1,404 @@
+﻿<!DOCTYPE HTML>
+<HTML lang="en" style="overflow-x:hidden">
+<HEAD>
+ <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+ <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ <STYLE>
+ html,body{ 
+margin:0px; 
+height:100%; 
+} 
+ input{
+   border-radius:0px;
+ }
+p{
+margin:0px; 
+color:#ffffff
+}
+
+
+     
+     .error{
+	   color:red;
+	   font-size:0.4em;
+	   margin-top:5px;
+	 }
+	     /* box */
+.box{position:absolute;width:80%;height:auto;z-index:98;background-color:#fff;border:1px #ddd solid;padding:1px;display:none;}
+
+#bg{text-align:center;background-color:#000;position:absolute;z-index:97;left:0;top:0;display:none;width:100%;height:100%;opacity:0.6;filter: alpha(opacity=60);-moz-opacity: 0.6;}    
+
+  </STYLE>
+
+<SCRIPT type="text/javascript" src="../js/jquery-1.11.3.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="../js/json2.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="../js/md5.js"></SCRIPT>
+
+<SCRIPT type="text/javascript">
+     var countdown=30; 
+     function settime(val) { 
+          if (countdown == 0) 
+		   { 
+                val.removeAttribute("disabled");    
+                val.value="获取验证码"; 
+                countdown = 30;
+				 val.style.backgroundColor="#b3b3b3";
+				return;
+           } 
+		   else 
+		     { 
+			 if(countdown==30)
+			 {
+			     var s=check_input1();
+			     if(s==-1)
+	             {  
+	              return;
+	             }
+			     sentm();
+			 }
+			  else
+			 {
+				
+				
+			 }
+			 
+              val.setAttribute("disabled", true); 
+              val.value="重新发送(" + countdown + ")"; 
+              countdown--; 
+             }
+			 
+            setTimeout(function() { 
+            settime(val) 
+           },1000) 
+     }
+   function sentm()
+   {  
+      
+      $.post("http://172.16.100.188:8080/beikbankapp/appapi/register/sendVerificode.action",{phoneNumber:$("#phone").val()},function(data){
+	        if(data.result=="error")
+			{
+			   // alert(JSON.stringify(data));
+			   alertText(data.message);
+			}
+           
+			
+       },"json");
+   
+   }
+   //
+    function register()
+   {  
+      
+      $.post("http://172.16.100.188:8080/beikbankapp/appapi/register/registerByRecommender.action",{shareCode:getUrlParam("shareCode"),phoneNumber:$("#phone").val(),loginPassword:hex_md5($("#passwd").val()),verificode:$("#yzm").val()},function(data){
+	        if(data.result=="error")
+			{
+			   // alert(JSON.stringify(data));
+			    // $("#e4").text(data.message);
+			    // $("#e4").show();
+				//alert(data.message);
+				alertText(data.message);
+			}
+			if(data.result=="success")
+			{
+			    // alert("success");
+				location.href = "register_su.html";
+			}
+           
+			
+       },"json");
+       
+   }
+   //检查输入
+   function check_input()
+   {
+       
+	   var b=check_input2();
+	   if(b==-1)
+	   {
+	     return;
+	   }
+	   var c=check_input3();
+	   if(c==-1)
+	   {
+	     return;
+	   }
+       return 1;
+   }
+   //检查手机号
+   function check_input1()
+   {  
+   
+      
+	  
+      //检查手机号
+      var phone=$("#phone").val();
+	   if(phone.length==11&&phone.charAt(0)=='1')
+	  {
+	      
+		  
+	  }
+	  else
+	  {
+	      $("#e1").show();
+		   return -1;
+	  }
+	  
+	  //检查验证码
+	  
+	  showDialog();
+	  
+	  
+	  //检查密码
+	  return 1;
+   }
+    //检查验证码
+   function check_input2()
+   {  
+     
+      var phone=$("#yzm").val();
+	   if(phone.length>=4)
+	  {
+	       return 1;
+		  
+	  }
+	  else
+	  {
+	       $("#e2").show();
+		   return -1;
+	  }
+   }
+      //检查密码
+   function check_input3()
+   {  
+     
+      var phone=$("#passwd").val();
+	   if(phone.length>=6)
+	  {
+	       return 1;
+		  
+	  }
+	  else
+	  {    
+	       $("#e3").text("密码太过简单");
+	       $("#e3").show();
+		   return -1;
+	  }
+   }
+   
+   
+   
+   //提交表单
+   function doform()
+   {  
+       var a=check_input();
+	    if(a==1)
+		{
+		   //$("#form").submit();
+		   register();
+		}
+
+   }
+   
+   function do1(a)
+   
+   {      
+      $("#e4").hide();
+   if(a==1)
+      {
+   	      $("#e1").hide();
+     }
+	 else if(a==2)
+	 {
+	     $("#e2").hide();
+	 }
+	
+	 $("#e3").hide();
+	 
+	     
+   }
+   
+   
+	 $(document).ready(function(){
+	 
+	   var s=$(document).height();
+	  
+        $(".ds1").height(s/15);
+		
+	   //fnOpen();
+	  
+    });
+	//获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+		//
+		function checkit(isChecked){
+      if(isChecked)
+        $("#submit").attr('disabled',false); 
+      else
+        $("#submit").attr('disabled',true); 
+}
+//dialog show
+  function showDialog()
+  {
+     $("#bg").css({
+            display: "block", height: $(document).height()
+        });
+  
+       var $box = $('.box');
+        $box.css({
+            //设置弹出层距离左边的位置
+            left: ($("body").width() - $box.width()) / 2  + "px",
+            //设置弹出层距离上面的位置
+            top: ($(window).height() - $box.height()) / 2  + $(window).scrollTop()+ "px",
+            display: "block"
+        });
+  }
+  //alert
+  function alertText(text)
+  {
+	   // $("#dialog,#dialog_d1").css("display", "block");
+	   // $("#dialog_p").text(text);
+	    $("#e3").text(text);
+	    $("#e3").css("display", "block");
+  }
+ //dialog close
+ function closeDialog(va)
+ {
+    if(va==1)
+	{
+		$("#bg,.box").css("display", "none");
+	}
+    if(va==2)
+	{
+		$("#dialog,#dialog_d1").css("display", "none");
+	}
+ 
+ 
+ }
+
+
+//
+   function my_change()
+   {
+	   
+	   
+	   }
+//
+</SCRIPT>
+</HEAD> 
+<BODY style="background:#fbf3ef;height:100%;margin:0px; padding:0px;overflow-x:hidden">
+    
+    <IMG  id="d1" style="width:100%" src="../files/head.png">
+	
+	
+	<div  class="ds1" style="clear:both">
+    </div>
+	
+     <div id="d2" style="margin-left:8%;margin-right:8%;">
+		
+    
+       
+       
+	    <form id="form" action="http://172.16.100.188:8080/beikbankapp/register/html5/test/register_su.html" method="get" novalidate>
+	   
+	   
+	  
+	   
+	    <div  class="ds1" style="width:60%;height:8%;float:left;overflow:visible;">
+		  
+		
+	         <input type="text" id="phone"  onfocus="do1(1)" placeholder="请输入手机号立即抢标" style="border-radius:0px;width:100%;height:100%;float:left;margin:0px; padding:0px; border: 1px solid #cccccc;"/>
+		</div>
+	   <div class="ds1" style="overflow:visible;height:8%;float:left;width:40%;text-align:center;line-height:8%;">
+	   <input type="button" value="立即领取" style=";border-radius:0px;height:100%;width:100%;text-align:center;line-height:100%;background:#db5043;margin:0px; padding:0px; border: 1px solid #ccc;-webkit-appearance: none;box-sizing:content-box;-webkit-box-sizing:content-box;color:#ffffff" onclick="check_input1()";>
+	
+	   </input>
+	   
+	   </div>
+	   
+	  
+	  
+	  
+	   </form>
+	   
+</div>   
+         <p id="e1" class="error" style="display:none;clear:both;padding-top:2%;margin-left:8%"><font  size="1.5em">格式错误</font></p>
+		 <div class="ds1" style="clear:both"> </div>
+	    
+		
+        <div id="d3" style="width:100%;">
+		   <IMG style="width:20%;margin-left:8%;float:left" src="../files/img6.png">
+		  
+		   <IMG style="width:20%;margin-left:12%;margin-right:11%;" src="../files/img7.png">
+		   
+		   <IMG style="width:20%;margin-right:8%;float:right" src="../files/img8.png">
+		</div>
+		<div class="ds1" style="clear:both;">
+		</div>
+		
+		<div id="d4" style="clear:both;background:#737373;padding-top:5%;padding-bottom:5%;margin-left:2%;margin-right:2%"   onclick="fnOpen()">
+	    
+        
+		
+	    <p  class="p" style="text-align:center;">新手标说明</p>
+		<p class="p" style="margin-left:3%;padding-top:2%;padding-bottom:2%">1,新手标是赚啦为新用户定制的特权产品。</p>
+		<p class="p" style="margin-left:3%;padding-bottom:2%">2,仅限第一次购买赚啦理财产品的新用户。</p>
+		<p class="p" style="margin-left:3%">3,新手标年化收益高于普通标，赎回方式一致。</p>
+	   </div>
+	   
+ <!--弹出提示部分-->
+ <div id="dialog" " style="width: 50%; height: 20%; position: absolute; left: 25%; top: 40%; z-index: 99; border-radius: 5px; display: none; background-color: #fff; text-align: center;">
+     <p id="dialog_p" style="font-size:1em; color: #000; height:60%;;text-align: center;vertical-align:middle; padding-top:3%;"></p>
+     <div id="dialog_d1" onclick="closeDialog(2)" style="position:absolute;z-index:99;height:29%;padding-bottom:3%;text-align: center;width: 100%;"><font color="#66FF66" size="4em">知道了</font></div>
+ </div>
+ 
+ 
+ 
+ 
+
+ <!--弹出提示部分-->
+<div id="bg" onclick="closeDialog(1)" style="width:100%;height:100%;"></div>
+    <div class="box" >
+	  <div  style="margin:5%">
+	   <div style="height:5%">
+	   </div>
+	   <div  class="ds1" style="width:60%;height:8%;float:left;">
+		  
+		
+	         <input type="text" id="yzm"  onfocus="do1(2)" placeholder="请输入验证码" style="width:100%;height:100%;float:left;margin:0px; padding:0px; border: 1px solid #cccccc;"/>
+		</div>
+	   <div class="ds1" style="height:8%;float:left;width:40%;text-align:center;line-height:8%;">
+	   <input type="button" value="获取验证码" style="height:100%;width:100%;text-align:center;line-height:100%;background-image:url(../files/img9.png);margin:0px; padding:0px; border: 1px solid #ccc;-webkit-appearance: none;box-sizing:content-box;-webkit-box-sizing:content-box;color:#ffffff" onclick="settime(this)">
+	
+	   </input>
+	   
+	   </div>
+	   <div  style="clear:both">
+	   </div>
+	    <p id="e2" class="error" style="display:none;clear:both">格式错误</p>
+	   <div  class="ds1" style="clear:both">
+	   </div>
+	   
+      <div  class="ds1"  >
+	      <input type="password"  id="passwd"  onfocus="do1(3)" style="width:100%;height:100%;margin:0px; padding:0px; border: 1px solid #cccccc;" placeholder="请设置您的登录密码"/>
+	  </div>
+	   <p id="e3" class="error" style="display:none;">密码太过简单</p>
+	   
+	   <div  class="ds1">
+	   </div>
+	   
+	   <div  style="margin-bottom:10px;text-align:center">
+	   <input type="checkbox" onclick="checkit(this.checked)" checked="false"><font  size="1.5em">已阅读并同意</font><a href="beikbank_license.html" style="text"><font  size="1.5em"><<赚啦用户使用协议>></font></a>
+	    </div>
+		<p id="e4" class="error" style="display:none;clear:both"></p>
+	   <div  class="ds1" style="height:8%;width:100%">
+	    <input type="button" id="submit" onclick="doform()" style="height:100%;width:100%;background:#db5043;-webkit-appearance: none;margin:0px; padding:0px; border: 1px solid #ccc;color:#ffffff" value="确认注册"/>
+	   </div>
+	   </div>
+	  </div>
+	  
+ </BODY>
+</HTML>

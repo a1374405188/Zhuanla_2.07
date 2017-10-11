@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <ImageView
+                android:id="@+id/imageview_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_menu"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" 
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="赚啦"
+                    android:textColor="@color/ziti6"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="@dimen/activity_small_margin"
+                    android:orientation="horizontal" 
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageview_page_left"
+                        android:layout_width="18dp"
+                        android:layout_height="3dp"
+                        android:background="@drawable/page_selected"
+                        android:contentDescription="@null" />
+
+                    <ImageView
+                        android:id="@+id/imageview_page_right"
+                        android:layout_width="18dp"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="@dimen/activity_small_margin"
+                        android:background="@drawable/page_unselected"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView 
+                android:id="@+id/tv_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="登录"
+                android:textColor="@color/ziti5"
+                android:textSize="17sp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/imageview_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_share"
+                android:contentDescription="@null"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+     <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/linear_top"
+          android:orientation="vertical"
+         >
+         <include layout="@layout/notice"/>
+       <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+       </android.support.v4.view.ViewPager>
+         
+     </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_corners2" >
+
+        <LinearLayout
+            android:id="@+id/linear_redeem"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_textview_margin"
+                android:background="@drawable/ic_quxian"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/redeem"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_putmoney"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red2"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_textview_margin"
+                android:background="@drawable/ic_putmoney"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_corners2"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_yuan1"
+                    />
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/img_yuan2"
+                    />
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_yuan1"
+                    />
+                <ImageView
+
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/img_yuan2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_yuan1"
+                    />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/img_yuan2"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageview_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c1000000"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <include 
+        layout="@layout/dialog_invite_friend" />
+
+</RelativeLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/view_pager2.xml -->

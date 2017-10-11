@@ -1,0 +1,566 @@
+# view res/layout/layout_slideshow.xml #generated:6
+# view res/layout/view_pager2.xml #generated:107
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:1014
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:980
+-keep class cn.jpush.android.service.DaemonService { <init>(...); }
+
+# view AndroidManifest.xml #generated:959
+-keep class cn.jpush.android.service.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:992
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:967
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:940
+-keep class cn.jpush.android.ui.PopWinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:947
+-keep class cn.jpush.android.ui.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class cn.sharesdk.framework.ShareSDKUIShell { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.beikbank.android.activity.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:396
+-keep class com.beikbank.android.activity.ActionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class com.beikbank.android.activity.ActionDetial { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.beikbank.android.activity.ActionListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:351
+-keep class com.beikbank.android.activity.AgreementLogin2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.beikbank.android.activity.AgreementLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:356
+-keep class com.beikbank.android.activity.AgreementPurchase2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:301
+-keep class com.beikbank.android.activity.AgreementPurchaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:628
+-keep class com.beikbank.android.activity.AgreementPurchaseActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.beikbank.android.activity.BandTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.beikbank.android.activity.BankBindActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:486
+-keep class com.beikbank.android.activity.BankBindActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:331
+-keep class com.beikbank.android.activity.BankBindedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:290
+-keep class com.beikbank.android.activity.BankCheckActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:285
+-keep class com.beikbank.android.activity.BankConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:321
+-keep class com.beikbank.android.activity.BankMasterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:695
+-keep class com.beikbank.android.activity.BankMasterActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:306
+-keep class com.beikbank.android.activity.BankSupportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:751
+-keep class com.beikbank.android.activity.ChanPinActivityV2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:616
+-keep class com.beikbank.android.activity.DingdanConfimActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:426
+-keep class com.beikbank.android.activity.DingdanDingqiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:421
+-keep class com.beikbank.android.activity.DingdanHuoqiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:416
+-keep class com.beikbank.android.activity.DingqiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:431
+-keep class com.beikbank.android.activity.DingqiDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:436
+-keep class com.beikbank.android.activity.DingqiDetailActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:441
+-keep class com.beikbank.android.activity.DingqiGouMaiConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:446
+-keep class com.beikbank.android.activity.DingqiGouMaiState { <init>(...); }
+
+# view AndroidManifest.xml #generated:456
+-keep class com.beikbank.android.activity.DingqiGoumaiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:733
+-keep class com.beikbank.android.activity.DingqiLicaiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:543
+-keep class com.beikbank.android.activity.DingqiZaiquanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:461
+-keep class com.beikbank.android.activity.DingqiZhichanDetial { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.beikbank.android.activity.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.beikbank.android.activity.ForgetPwdAnonymousActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.beikbank.android.activity.ForgetPwdRealnameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.beikbank.android.activity.ForgetPwdRealnameActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:677
+-keep class com.beikbank.android.activity.GengDuoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:672
+-keep class com.beikbank.android.activity.GerenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.beikbank.android.activity.GesturePwdCreateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.beikbank.android.activity.GesturePwdGuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:380
+-keep class com.beikbank.android.activity.GesturePwdGuideActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:311
+-keep class com.beikbank.android.activity.GesturePwdLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class com.beikbank.android.activity.GesturePwdOldActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.beikbank.android.activity.GesturePwdUnlockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.beikbank.android.activity.HelpCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:684
+-keep class com.beikbank.android.activity.HelpCenterActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:689
+-keep class com.beikbank.android.activity.HelpCenterActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:295
+-keep class com.beikbank.android.activity.HomeActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:648
+-keep class com.beikbank.android.activity.HomeActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:654
+-keep class com.beikbank.android.activity.HomeActivity4 { <init>(...); }
+
+# view AndroidManifest.xml #generated:569
+-keep class com.beikbank.android.activity.HuodongActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:574
+-keep class com.beikbank.android.activity.HuodongActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:466
+-keep class com.beikbank.android.activity.HuoqiDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:771
+-keep class com.beikbank.android.activity.HuoqiDetailActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:776
+-keep class com.beikbank.android.activity.HuoqiDetailActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:781
+-keep class com.beikbank.android.activity.HuoqiDetailActivity4 { <init>(...); }
+
+# view AndroidManifest.xml #generated:558
+-keep class com.beikbank.android.activity.HuoqiReturnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:553
+-keep class com.beikbank.android.activity.HuoqiReturnIActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:564
+-keep class com.beikbank.android.activity.HuoqiReturnStatusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:580
+-keep class com.beikbank.android.activity.HuoqiZaiquanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:585
+-keep class com.beikbank.android.activity.HuoqiZaiquanActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:788
+-keep class com.beikbank.android.activity.HuoqiZhuanRangActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:716
+-keep class com.beikbank.android.activity.JiaoYiXiangQingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:721
+-keep class com.beikbank.android.activity.JiaoYiXiangQingActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:727
+-keep class com.beikbank.android.activity.LinHuoBaoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.beikbank.android.activity.LoginPwdInputActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:253
+-keep class com.beikbank.android.activity.LoginPwdUpdateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class com.beikbank.android.activity.LoginRegActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:386
+-keep class com.beikbank.android.activity.MessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.beikbank.android.activity.MessageDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:1105
+-keep class com.beikbank.android.activity.NoNetErrorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:346
+-keep class com.beikbank.android.activity.ProjectListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:496
+-keep class com.beikbank.android.activity.ProjectListActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:268
+-keep class com.beikbank.android.activity.PurchaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:274
+-keep class com.beikbank.android.activity.PurchaseConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:336
+-keep class com.beikbank.android.activity.PurchaseSuccessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.beikbank.android.activity.PurchaseSumbitInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:501
+-keep class com.beikbank.android.activity.QianbaoActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:506
+-keep class com.beikbank.android.activity.QianbaoActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:512
+-keep class com.beikbank.android.activity.QianbaoActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:517
+-keep class com.beikbank.android.activity.QianbaoActivity4 { <init>(...); }
+
+# view AndroidManifest.xml #generated:522
+-keep class com.beikbank.android.activity.QianbaoActivity5 { <init>(...); }
+
+# view AndroidManifest.xml #generated:527
+-keep class com.beikbank.android.activity.QianbaoActivity6 { <init>(...); }
+
+# view AndroidManifest.xml #generated:532
+-keep class com.beikbank.android.activity.QianbaoActivity7 { <init>(...); }
+
+# view AndroidManifest.xml #generated:538
+-keep class com.beikbank.android.activity.QianbaoActivity8 { <init>(...); }
+
+# view AndroidManifest.xml #generated:636
+-keep class com.beikbank.android.activity.QueRenJiaoYiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:641
+-keep class com.beikbank.android.activity.QueRenJiaoYiActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.beikbank.android.activity.RealnameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.beikbank.android.activity.RedeemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.beikbank.android.activity.RedeemConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:368
+-keep class com.beikbank.android.activity.RedeemFinishActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class com.beikbank.android.activity.RedeemStatusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class com.beikbank.android.activity.RegisterCodeInputActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.beikbank.android.activity.RegisterPwdSetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:341
+-keep class com.beikbank.android.activity.RiskControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:611
+-keep class com.beikbank.android.activity.SelectHongbaoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:793
+-keep class com.beikbank.android.activity.ShouZhiMinXiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:491
+-keep class com.beikbank.android.activity.TestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:451
+-keep class com.beikbank.android.activity.TransactionDQDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.beikbank.android.activity.TransactionDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.beikbank.android.activity.TransactionListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:471
+-keep class com.beikbank.android.activity.TransactionListActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.beikbank.android.activity.TransactionPwdSetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:263
+-keep class com.beikbank.android.activity.TransactionPwdSetActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:326
+-keep class com.beikbank.android.activity.TransactionPwdUpdateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:709
+-keep class com.beikbank.android.activity.UpdatePhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:411
+-keep class com.beikbank.android.activity.UserRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:622
+-keep class com.beikbank.android.activity.UserRecordActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:762
+-keep class com.beikbank.android.activity.UserRecordActivity_v2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.beikbank.android.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:666
+-keep class com.beikbank.android.activity.XiTongGGActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:661
+-keep class com.beikbank.android.activity.XiaoXiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:548
+-keep class com.beikbank.android.activity.YigouActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:703
+-keep class com.beikbank.android.activity.YingdaoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:590
+-keep class com.beikbank.android.activity.YouHuiQuanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:595
+-keep class com.beikbank.android.activity.YouHuiQuanActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:600
+-keep class com.beikbank.android.activity.YouHuiQuanActivity3 { <init>(...); }
+
+# view AndroidManifest.xml #generated:606
+-keep class com.beikbank.android.activity.YouHuiQuanActivity4 { <init>(...); }
+
+# view AndroidManifest.xml #generated:476
+-keep class com.beikbank.android.activity.ZhiChanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:481
+-keep class com.beikbank.android.activity.ZhiChanActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:739
+-keep class com.beikbank.android.activity.ZhicanFenbuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:745
+-keep class com.beikbank.android.activity.ZuoriShouyiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:757
+-keep class com.beikbank.android.activity.ZuoriShouyiActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:1110
+-keep class com.beikbank.android.exception.GlobalErrorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.beikbank.android.fragment.BeikBankApplication { <init>(...); }
+
+# view res/layout/activity_gesturepwd_guide2.xml #generated:20
+# view res/layout/first_enter_jinxuan.xml #generated:9
+-keep class com.beikbank.android.gif.CustomGifView { <init>(...); }
+
+# view res/layout/activity_licai_item.xml #generated:178
+-keep class com.beikbank.android.huatu.YuanView { <init>(...); }
+
+# view res/layout/activity_project.xml #generated:21
+# view res/layout/activity_transaction.xml #generated:78
+# view res/layout/userrecord_list.xml #generated:6
+# view res/layout/view_rull_util.xml #generated:6
+-keep class com.beikbank.android.pullrefresh.PullToRefreshListView { <init>(...); }
+
+# view res/layout/activity_zhichan_3.xml #generated:7
+# view res/layout/page_product1.xml #generated:8
+# view res/layout/page_wealth1.xml #generated:7
+# view res/layout/page_wealth11.xml #generated:7
+-keep class com.beikbank.android.pullrefresh.PullToRefreshScrollView { <init>(...); }
+
+# view res/layout/item_delete.xml #generated:2
+# view res/layout/item_delete3.xml #generated:2
+-keep class com.beikbank.android.scroller.ListItemDelete { <init>(...); }
+
+# view res/layout/activity_scroller_delete.xml #generated:7
+# view res/layout/scroll_listview_delete.xml #generated:6
+-keep class com.beikbank.android.scroller.ScrollListviewDelete { <init>(...); }
+
+# view AndroidManifest.xml #generated:1018
+-keep class com.beikbank.android.utils2.MyReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:1038
+-keep class com.beikbank.android.utils2.TestActivity { <init>(...); }
+
+# view res/layout/activity_bank_bind.xml #generated:138
+# view res/layout/activity_bank_bind2.xml #generated:118
+# view res/layout/activity_bank_bind2.xml #generated:292
+# view res/layout/activity_bank_bind2.xml #generated:338
+# view res/layout/activity_bank_check.xml #generated:52
+# view res/layout/activity_bank_confirm.xml #generated:102
+# view res/layout/activity_bank_confirm.xml #generated:69
+# view res/layout/activity_bank_test.xml #generated:55
+# view res/layout/activity_bank_test.xml #generated:93
+# view res/layout/activity_feedback.xml #generated:42
+# view res/layout/activity_forgetpwd_anonymous.xml #generated:43
+# view res/layout/activity_forgetpwd_anonymous.xml #generated:82
+# view res/layout/activity_forgetpwd_realname.xml #generated:112
+# view res/layout/activity_forgetpwd_realname.xml #generated:217
+# view res/layout/activity_forgetpwd_realname.xml #generated:255
+# view res/layout/activity_forgetpwd_realname.xml #generated:73
+# view res/layout/activity_gesturepwd_login.xml #generated:49
+# view res/layout/activity_huoqi_return_confirm.xml #generated:84
+# view res/layout/activity_huoqi_return_i.xml #generated:42
+# view res/layout/activity_login_register.xml #generated:138
+# view res/layout/activity_loginpwd_input.xml #generated:49
+# view res/layout/activity_loginpwd_update.xml #generated:116
+# view res/layout/activity_loginpwd_update.xml #generated:155
+# view res/layout/activity_loginpwd_update.xml #generated:43
+# view res/layout/activity_purchase.xml #generated:301
+# view res/layout/activity_purchase_confirm.xml #generated:138
+# view res/layout/activity_qianbao2.xml #generated:69
+# view res/layout/activity_qianbao3.xml #generated:137
+# view res/layout/activity_qianbao6.xml #generated:209
+# view res/layout/activity_querenjiaoyi.xml #generated:96
+# view res/layout/activity_realname.xml #generated:143
+# view res/layout/activity_realname.xml #generated:176
+# view res/layout/activity_redeem.xml #generated:200
+# view res/layout/activity_redeem_confirm.xml #generated:160
+# view res/layout/activity_register_code.xml #generated:55
+# view res/layout/activity_registerpwd_set.xml #generated:49
+# view res/layout/activity_registerpwd_set.xml #generated:82
+# view res/layout/activity_transactionpwd_set.xml #generated:49
+# view res/layout/activity_transactionpwd_set.xml #generated:83
+# view res/layout/activity_transactionpwd_update.xml #generated:116
+# view res/layout/activity_transactionpwd_update.xml #generated:155
+# view res/layout/activity_transactionpwd_update.xml #generated:43
+# view res/layout/activity_update_phone.xml #generated:123
+# view res/layout/activity_update_phone.xml #generated:85
+# view res/layout/check_jiaoyimima.xml #generated:37
+# view res/layout/dialog_financial_detail.xml #generated:113
+# view res/layout/dialog_financial_detail.xml #generated:154
+# view res/layout/zhuangrang_quereng.xml #generated:45
+-keep class com.beikbank.android.widget.ClearableEditText { <init>(...); }
+
+# view res/layout/pull_to_load_footer.xml #generated:16
+# view res/layout/pull_to_refresh_head.xml #generated:34
+-keep class com.beikbank.android.widget.CustomProgressBar { <init>(...); }
+
+# view res/layout/dialog_progress_layout.xml #generated:9
+-keep class com.beikbank.android.widget.CustomProgressBar2 { <init>(...); }
+
+# view res/layout/activity_gesturepwd_create.xml #generated:149
+# view res/layout/activity_gesturepwd_old.xml #generated:149
+# view res/layout/activity_gesturepwd_unlock.xml #generated:81
+-keep class com.beikbank.android.widget.LockPatternView { <init>(...); }
+
+# view res/layout/page_dingqi.xml #generated:116
+# view res/layout/page_product.xml #generated:40
+# view res/layout/page_product2.xml #generated:48
+# view res/layout/page_product3.xml #generated:118
+# view res/layout/page_wealth.xml #generated:38
+# view res/layout/page_wealth.xml #generated:67
+# view res/layout/page_wealth2.xml #generated:141
+# view res/layout/page_wealth2.xml #generated:37
+# view res/layout/pview1.xml #generated:86
+# view res/layout/pview2.xml #generated:92
+# view res/layout/pview3.xml #generated:85
+-keep class com.beikbank.android.widget.MagicTextView { <init>(...); }
+
+# view res/layout/activity_canpin_v2.xml #generated:259
+# view res/layout/view_pager.xml #generated:241
+# view res/layout/view_pageview2.xml #generated:121
+-keep class com.beikbank.android.widget.MyViewPager { <init>(...); }
+
+# view res/layout/dialog_update_layout.xml #generated:26
+# view res/layout/page_product.xml #generated:134
+# view res/layout/page_product.xml #generated:148
+# view res/layout/page_product.xml #generated:161
+# view res/layout/page_product2.xml #generated:144
+# view res/layout/page_product2.xml #generated:158
+# view res/layout/page_product2.xml #generated:171
+-keep class com.beikbank.android.widget.NumberProgressBar { <init>(...); }
+
+# view res/layout/head_pullrefresh.xml #generated:7
+-keep class com.beikbank.android.widget.PullWidget { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:2
+-keep class com.beikbank.android.widget.SlidingMenu { <init>(...); }
+
+# view res/layout/activity_dingqi.xml #generated:463
+# view res/layout/activity_gerenzhongxin.xml #generated:380
+# view res/layout/fragment_menu_chid.xml #generated:321
+-keep class com.beikbank.android.widget.SwitchButton { <init>(...); }
+
+# view res/layout/view_pageview1_1.xml #generated:24
+# view res/layout/view_pageview1_2.xml #generated:24
+# view res/layout/view_pageview1_3.xml #generated:24
+-keep class com.beikbank.android.widget2.SlideShowView { <init>(...); }
+
+# view res/layout/activity_yingdao.xml #generated:8
+-keep class com.beikbank.android.widget2.SlideShowView2 { <init>(...); }
+
+# view res/layout/pview2.xml #generated:47
+# view res/layout/pview3.xml #generated:43
+-keep class com.beikbank.android.widget2.YuanView { <init>(...); }
+
+# view res/layout/activity_zhicanfenbu.xml #generated:44
+-keep class com.beikbank.android.widget3.ZhiCanView { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.beikbank.android.wxapi.WXEntryActivity { <init>(...); }
+
+# view res/layout/activity_guide.xml #generated:12
+-keep class com.beikbank.third.viewpager.ViewPager { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view res/layout/activity_agreement3.xml #generated:13
+-keep class com.joanzapata.pdfview.PDFView { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+

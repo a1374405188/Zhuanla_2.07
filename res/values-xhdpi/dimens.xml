@@ -1,0 +1,227 @@
+<resources>
+    <!--全局字体大小-->
+    <dimen name="global_text_size10">10sp</dimen>
+    <dimen name="global_text_size12">12sp</dimen>
+    <dimen name="global_text_size13">13sp</dimen>
+
+    <dimen name="global_text_size14">14sp</dimen>
+    <dimen name="global_text_size15">15sp</dimen>
+    <dimen name="global_text_size16">16sp</dimen>
+    <dimen name="global_text_size17">17sp</dimen>
+    <dimen name="global_text_size18">18sp</dimen>
+    <dimen name="global_text_size19">19sp</dimen>
+    <dimen name="global_text_size20">20sp</dimen>
+    <dimen name="global_text_size25">25sp</dimen>
+    <dimen name="global_text_size45">45sp</dimen>
+
+    <dimen name="global_left_space">16dp</dimen>
+    <dimen name="global_button_height">48dp</dimen>
+    <dimen name="global_button_text_height">19sp</dimen>
+
+    <dimen name="global_top_space">16dp</dimen>
+    <dimen name="global_right_space">16dp</dimen>
+    <dimen name="global_button_space">16dp</dimen>
+    <dimen name="global_line_height">1px</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--  <dimen name="activity_horizontal_margin">16dp</dimen>
+      <dimen name="activity_vertical_margin">16dp</dimen>
+      -->
+      <dimen name="activity_item_height">56dp</dimen>
+      <dimen name="register_top_panel">38dp</dimen>
+      <dimen name="activity_button_height">48dp</dimen>
+      <dimen name="activity_button_topmargin">29dp</dimen>
+      <dimen name="activity_divide_height">0.5dp</dimen>
+      <dimen name="activity_panel_margin">12dp</dimen>
+      <dimen name="activity_pink_panel_margin">20dp</dimen>
+      <dimen name="activity_textview_margin">10dp</dimen>
+      <dimen name="activity_small_margin">5dp</dimen>
+      <dimen name="activity_toast_height">70dp</dimen>
+      <dimen name="register_enlarge_height">54dp</dimen>
+      <dimen name="mywealth_yesterday_income_height">148dp</dimen>
+      <dimen name="mywealth_total_capital_height">124dp</dimen>
+      <dimen name="income_item_height">66dp</dimen>
+      <dimen name="product_detail_bottom_height">58dp</dimen>
+      <dimen name="product_detail_margin">6dp</dimen>
+      <dimen name="redeem_status_height">88dp</dimen>
+      <dimen name="dialog_padding">25dp</dimen>
+      <dimen name="shadow_width">3dp</dimen>
+      <dimen name="slidingmenu_offset">50dp</dimen>
+      <!-- PullWidget -->
+    <dimen name="minimum_height">40dip</dimen>
+    <dimen name="minimum_content_height">25dip</dimen>
+    <!--page1-->
+    <dimen name="page1_16">16dp</dimen>
+    <dimen name="page1_20">20dp</dimen>
+    <dimen name="page1_76">60dp</dimen>
+    <dimen name="page1_80">80dp</dimen>
+    <dimen name="page1_176">176dp</dimen>
+    <dimen name="page1_58">58dp</dimen>
+    <dimen name="page1_164">164dp</dimen>
+    <dimen name="page1_96">70dp</dimen>
+    <dimen name="page1_18">18dp</dimen>
+    <dimen name="page1_24">24dp</dimen>
+    <dimen name="page1_48">48dp</dimen>
+    <dimen name="page1_50">50dp</dimen>
+    <dimen name="page1_516">504dp</dimen>
+    <dimen name="page1_40">70dp</dimen>
+    <dimen name="page1_100sp">100sp</dimen>
+    <dimen name="page1_14">10dp</dimen>
+    <dimen name="page1__10">-4dp</dimen>
+    <dimen name="page1_10">16dp</dimen>
+    <dimen name="page1_17">17dp</dimen>
+    <dimen name="page1_20sp">16sp</dimen>
+    <dimen name="page1_124">124dp</dimen>
+    <dimen name="page1_180">180dp</dimen>
+    <dimen name="page1_100">100dp</dimen>
+    <dimen name="page1_36">36dp</dimen>
+    <dimen name="page1_14sp">14sp</dimen>
+    <dimen name="page1_1">1dp</dimen>
+    <dimen name="page1_2">2dp</dimen>
+    <dimen name="page1_16sp">16sp</dimen>
+    <!--page2-->
+    <dimen name="page2_40">40dp</dimen>
+    <dimen name="page2_238">238dp</dimen>
+    <dimen name="page2_92">70dp</dimen>
+    <dimen name="page2_180">195dp</dimen>
+    <dimen name="page2_220">220dp</dimen>
+    <dimen name="page2_72">72dp</dimen>
+    <dimen name="page2_114">114dp</dimen>
+    <dimen name="page2_14">14dp</dimen>
+    <dimen name="page2_32">32dp</dimen>
+    <dimen name="page2_5">5dp</dimen>
+    <dimen name="page2_24">24dp</dimen>
+    <dimen name="page2_8">8dp</dimen>
+    <dimen name="page2_52">52dp</dimen>
+    <dimen name="page2_24_2">24dp</dimen>
+    <dimen name="page2_13">22dp</dimen>
+
+ <!--用户资产-->
+    <dimen name="zhichan140">140dp</dimen>
+    <dimen name="zhichan24">24dp</dimen>
+    <dimen name="zhichan20">20dp</dimen>
+    <dimen name="zhichan60">60dp</dimen>
+    <dimen name="zhichan56">56dp</dimen>
+    <dimen name="zhichan36">36dp</dimen>
+    <dimen name="zhichan100">100dp</dimen>
+<!--定期资产信息-->
+    <dimen name="dingqi_zhichan1">48dp</dimen>
+    <dimen name="dingqi_zhichan2">36dp</dimen>
+    <dimen name="dingqi_zhichan3">36dp</dimen>
+
+    <dimen name="dingqi_zhichan30">16sp</dimen>
+    <dimen name="dingqi_zhichan31">14sp</dimen>
+ <!--交易记录-->
+    <dimen name="jiaoyijilu1">56dp</dimen>
+    <dimen name="jiaoyijilu2">13dp</dimen>
+    <dimen name="jiaoyijilu3">3dp</dimen>
+    <dimen name="jiaoyijilu4">16sp</dimen>
+    <!--订单信息-->
+    <dimen name="dingdan1">66dp</dimen>
+    <dimen name="dingdan2">56dp</dimen>
+    <dimen name="dingdan3">12dp</dimen>
+    <dimen name="dingdan4">20dp</dimen>
+    <dimen name="dingdan5">42dp</dimen>
+    <dimen name="dingdan31">20sp</dimen>
+    <dimen name="dingdan32">16sp</dimen>
+    <dimen name="dingdan33">14sp</dimen>
+<!--定期产品-->
+    <dimen name="dingqi1">56dp</dimen>
+    <dimen name="dingqi2">5dip</dimen>
+    <dimen name="dingqi3">1px</dimen>
+    <dimen name="dingqi4">68dp</dimen>
+    <dimen name="dingqi30">15sp</dimen>
+      <dimen name="dingqi31">12sp</dimen>
+    <!-- 收益计算对话框-->
+    <dimen name="count_shouyi_1">56dp</dimen>
+    <dimen name="count_shouyi_2">12dp</dimen>
+    <dimen name="count_shouyi_3">40dp</dimen>
+    <dimen name="count_shouyi_4">32dp</dimen>
+    <dimen name="count_shouyi_5">240dp</dimen>
+    <dimen name="count_shouyi_6">288dp</dimen>
+    <dimen name="count_shouyi_7">232dp</dimen>
+    <dimen name="count_shouyi_8">48dp</dimen>
+    <dimen name="count_shouyi_30">14sp</dimen>
+    <dimen name="count_shouyi_31">28sp</dimen>
+    <dimen name="count_shouyi_32">19sp</dimen>
+    <!--mdpi-->
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size2">14sp</dimen>
+    <dimen name="text_height">42dp</dimen>
+     <dimen name="text_height1">34dp</dimen>
+    <dimen name="text_height2">36dp</dimen>
+
+ <!--手势密码-->
+   <dimen name="shoushi_passwd_top">0dp</dimen>       
+   <dimen name="shoushi_passwd_left">0dp</dimen>    
+ <!-- 主界面左边导航菜单                                                                                                                                                                                                     -->
+<!--左边菜单一级一项的高度 -->    
+    <dimen name="left_item_hight">56dp</dimen>
+<!--左边菜单二级一项的高度 -->       
+    <dimen name="left_item2_hight">25dp</dimen>
+<!--左边菜单一级3项的高度 -->      
+    <dimen name="left_3item_hight">136dp</dimen>
+<!--左边菜单一级4项的高度 -->      
+    <dimen name="left_4item_hight">224dp</dimen>
+<!--左边菜单左边屏幕边距 -->      
+    <dimen name="left_left_space">51dp</dimen> 
+  <!--左边菜单右边屏幕边距-->  
+     <dimen name="left_right_space">51dp</dimen> 
+  <!--实名认证文本大小-->  
+     <dimen name="left_text_1">13dp</dimen> 
+ <!-- 左边菜单消息文本大小 -->
+   <dimen name="left_msg_textsize">14sp</dimen>     
+   <dimen name="left_space_1">28dp</dimen>
+ <!--二级菜单文本离左边的宽度 -->   
+  <dimen name="left_space_2">25dp</dimen>     
+
+
+
+
+     <dimen name="left_item_textsize">17sp</dimen>   
+     <dimen name="left_item_textsize2">17sp</dimen> 
+<!--消息文本的宽度和高度--> 
+  <dimen name="left_xiaoxi_width">25dp</dimen>
+    <dimen name="left_xiaoxi_height">25dp</dimen>     
+<!--主界面左边菜单-->
+    <dimen name="left_text_size">18sp</dimen>
+<!--手机文本大小-->
+   <dimen name="phone_text_size">20sp</dimen>
+<!--消息，交易记录，收益tab圆角-->
+   <dimen name="xiaoxi_tab_1">5dp</dimen>    
+    
+<!-- 登录后用户资产界面 --> 
+    <dimen name="login_view_height1">180dp</dimen>
+    <dimen name="login_view_height2">180dp</dimen>    
+    <dimen name="login_view_height3">83dp</dimen>
+    <dimen name="login_view_height4">92dp</dimen>
+    <dimen name="login_view_height5">50dp</dimen>
+    
+    
+    <dimen name="login_text_size1">60dp</dimen>
+    <dimen name="login_text_size2">60dp</dimen>
+    <dimen name="login_text_size3">83dp</dimen>
+    <dimen name="login_space_height">20dp</dimen> 
+    <dimen name="login_space_height2">0dp</dimen> 
+     
+    
+    
+    
+   <!--投资项目-->
+   <dimen name="project_h1">36dip</dimen>
+    <dimen name="project_text_size">14sp</dimen>
+    <dimen name="project_space">8dp</dimen>
+<!--dialog -->
+    <dimen name="dialog_text_size1">13sp</dimen>
+    <dimen name="dialog_text_size2">15sp</dimen>
+    <dimen name="dialog_text_size3">17sp</dimen>
+    <dimen name="dialog_text_size4">8dp</dimen>
+    <dimen name="dialog_line_size">1px</dimen>
+    <dimen name="dialog_space_size">3dp</dimen>
+     <dimen name="dialog_space_size2">60dp</dimen>
+<!--global_marginLeft -->
+    <!--  <dimen name="global_left_margin">16dp</dimen>
+
+      <dimen name="global_right_margin">16dp</dimen>-->
+       <dimen name="global_top_margin">16dp</dimen>
+      <dimen name="global_buttom_margin">16dp</dimen>
+   </resources>

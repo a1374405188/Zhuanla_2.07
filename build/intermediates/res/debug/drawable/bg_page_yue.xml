@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+       <!-- 圆角 -->
+    <corners
+        android:radius="@dimen/page1_2"
+/>
+     <!-- 填充 -->
+    <solid
+        android:color="@android:color/white"/><!-- 填充的颜色 -->
+    
+    <!-- 描边 -->
+    <stroke
+        android:width="@dimen/page1_1"
+        android:color="#ff747474"/>
+
+</shape>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/bg_page_yue.xml -->

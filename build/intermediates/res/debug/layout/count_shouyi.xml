@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/count_shouyi_6"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_count_shouyi"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/count_shouyi_1"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginBottom="@dimen/count_shouyi_2"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:text="@string/count_shouyi_1"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/count_shouyi_30"
+            android:gravity="bottom"
+            android:textColor="@color/global_text2"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_tv1"
+            android:text="0.00"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/count_shouyi_31"
+            android:gravity="bottom"
+            android:textColor="@color/count_shouyi_2"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/count_shouyi_3"
+        android:gravity="center"
+        android:paddingLeft="@dimen/global_left_space"
+        android:paddingRight="@dimen/global_right_space"
+        android:layout_marginBottom="@dimen/count_shouyi_2"
+        android:background="@color/count_shouyi_3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/count_shouyi_30"
+            android:text="@string/count_shouyi_2"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/global_text2"
+            />
+
+        <TextView
+            android:id="@+id/tv_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/count_shouyi_30"
+            android:text="31"
+            android:textColor="@color/global_text2"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/count_shouyi_3"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginBottom="@dimen/count_shouyi_4"
+        >
+
+        <EditText
+            android:id="@+id/et_et1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/count_shouyi_30"
+            android:hint="@string/count_shouyi_3"
+            android:layout_alignParentLeft="true"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/global_left_space"
+            android:background="@drawable/bg_count_shouyi11"
+            android:textColor="@color/global_text5"
+            android:numeric="decimal"
+            android:textColorHint="@color/global_text5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/count_shouyi_30"
+            android:text="@string/count_shouyi_4"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/global_text2"
+            android:layout_marginLeft="@dimen/count_shouyi_2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/global_left_space"
+        android:layout_marginRight="@dimen/global_right_space"
+        android:layout_marginBottom="@dimen/count_shouyi_2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_button_height"
+        android:layout_gravity="center_vertical">
+        <Button
+            android:id="@+id/bu_bu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/count_shouyi_5"
+            android:textSize="@dimen/count_shouyi_32"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_selector_button"
+            />
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/count_shouyi.xml -->

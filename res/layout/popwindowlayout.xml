@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ffffff"
+    
+    
+     >
+     <RelativeLayout 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         
+         >
+         
+   
+      <LinearLayout 
+        
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#00ffffff"
+          android:orientation="vertical"
+        >
+        
+     <TextView
+         android:id="@+id/tv"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#00000000"
+        
+         
+        />
+ 
+   </LinearLayout>
+  
+  
+    </RelativeLayout>
+     <LinearLayout 
+         android:id="@+id/ll2"
+         android:layout_width="match_parent"
+         android:layout_height="300dp"
+         android:background="#ffffffff"
+         android:orientation="vertical"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="-300dp"
+        
+        >
+  <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:gravity="center"
+      >
+      
+      
+ <View
+      android:layout_height="1dp"
+      android:layout_weight="1"
+      android:layout_width="0px"
+      android:layout_marginRight="16dp"
+      android:layout_marginLeft="16dp"
+      android:background="#ffd9d9d9"
+     />
+  <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="分享到"
+       android:gravity="center"
+       android:textColor="#ff646464"
+      />
+         <View
+      android:layout_height="1dp"
+      android:layout_weight="1"
+      android:layout_width="0px"
+      android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+         android:background="#ffd9d9d9"
+     />
+  </LinearLayout> 
+  <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+      >
+      <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+          >
+          <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+               android:id="@+id/imageview_weixinfriend"
+              android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+                android:background="@drawable/share_weixin" 
+              />
+           <TextView 
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="微信"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+          
+           <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+               android:id="@+id/imageview_weixinmoment"
+             android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+               android:background="@drawable/share_weixinfriend"
+              />
+           <TextView 
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="朋友圈"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+          
+           
+            <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+               android:id="@+id/imageview_weibo"
+             android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+                
+                 android:background="@drawable/share_weibo" 
+              />
+           <TextView 
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="微博"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+      </LinearLayout>
+      
+      <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+          >
+           <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+              android:id="@+id/imageview_qq"
+              android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+               android:background="@drawable/share_qq"
+              />
+           <TextView 
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="QQ"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+          
+           <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+               android:id="@+id/imageview_qqzone"
+              android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+               android:background="@drawable/share_qqzone"
+              />
+           <TextView 
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ空间"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+          
+           
+            <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+            android:gravity="center"
+          >
+          <ImageView 
+              android:id="@+id/imageview_message"
+              android:layout_width="@dimen/share_img_width"
+             android:layout_height="@dimen/share_img_width"
+               android:background="@drawable/share_message"
+              />
+           <TextView 
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="短信"
+                android:textColor="#ff646464"
+                android:gravity="center"
+               />
+          </LinearLayout>
+      </LinearLayout>
+  </LinearLayout>
+  <Button 
+       android:id="@+id/bu"
+       android:layout_width="match_parent"
+       android:layout_height="46dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:text="取消"
+       android:textColor="#ff646464"
+       android:textSize="18sp"
+       android:background="@drawable/bg_button_share"
+       
+      />
+  
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/global_bg1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zhichan56"
+        android:paddingLeft="@dimen/global_left_space"
+        android:background="#ffffffff"
+
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/global_text3"
+            android:text="定期产品1"
+            android:textSize="@dimen/global_text_size16"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/global_text3"
+            android:text="活期名"
+            android:textSize="@dimen/global_text_size16"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_item1_space"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/global_text3"
+                android:text="0.00元"
+                android:textSize="@dimen/global_text_size16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_item1_space"
+                />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textColor="#ffb0b0b0"
+                android:text="距离募集成功还有   0.00元"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_item1_space"
+                />
+         </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/activity_zhichan3.xml -->

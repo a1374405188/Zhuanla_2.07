@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launch" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp" >
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_logo"
+            android:contentDescription="@null" />
+        
+         <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_logo"
+            android:text="盗版可耻，请使用正版软件。"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+           />
+        <TextView
+            android:id="@+id/textview_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageview_logo"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:background="@drawable/ic_version_bg" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_shouhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/souhu_360"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

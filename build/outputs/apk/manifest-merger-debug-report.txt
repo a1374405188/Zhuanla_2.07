@@ -1,0 +1,841 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:5
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+supports-screens
+ADDED from AndroidManifest.xml:7:5
+	android:largeScreens
+		ADDED from AndroidManifest.xml:9:9
+	android:smallScreens
+		ADDED from AndroidManifest.xml:12:9
+	android:normalScreens
+		ADDED from AndroidManifest.xml:10:9
+	android:resizeable
+		ADDED from AndroidManifest.xml:11:9
+	android:anyDensity
+		ADDED from AndroidManifest.xml:8:9
+uses-sdk
+ADDED from AndroidManifest.xml:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:17:9
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:16:9
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.READ_LOGS
+ADDED from AndroidManifest.xml:23:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.READ_SMS
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.CALL_PHONE
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:29:5
+	android:name
+		ADDED from AndroidManifest.xml:29:22
+uses-permission#android.permission.SEND_SMS
+ADDED from AndroidManifest.xml:32:5
+	android:name
+		ADDED from AndroidManifest.xml:32:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:33:5
+	android:name
+		ADDED from AndroidManifest.xml:33:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:34:5
+	android:name
+		ADDED from AndroidManifest.xml:34:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:35:5
+	android:name
+		ADDED from AndroidManifest.xml:35:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:36:5
+	android:name
+		ADDED from AndroidManifest.xml:36:22
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from AndroidManifest.xml:37:5
+	android:name
+		ADDED from AndroidManifest.xml:37:22
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from AndroidManifest.xml:38:5
+	android:name
+		ADDED from AndroidManifest.xml:38:22
+application
+ADDED from AndroidManifest.xml:42:5
+	android:label
+		ADDED from AndroidManifest.xml:47:9
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:43:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:45:9
+	android:icon
+		ADDED from AndroidManifest.xml:46:9
+	android:theme
+		ADDED from AndroidManifest.xml:48:9
+	android:name
+		ADDED from AndroidManifest.xml:44:9
+activity#com.beikbank.android.activity.WelcomeActivity
+ADDED from AndroidManifest.xml:49:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:52:13
+	android:label
+		ADDED from AndroidManifest.xml:51:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:53:13
+	android:name
+		ADDED from AndroidManifest.xml:50:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:54:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:55:17
+	android:name
+		ADDED from AndroidManifest.xml:55:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:57:17
+	android:name
+		ADDED from AndroidManifest.xml:57:27
+activity#cn.sharesdk.framework.ShareSDKUIShell
+ADDED from AndroidManifest.xml:60:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:63:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:64:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:62:13
+	android:name
+		ADDED from AndroidManifest.xml:61:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:65:13
+data
+ADDED from AndroidManifest.xml:66:17
+	android:scheme
+		ADDED from AndroidManifest.xml:66:23
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:68:17
+	android:name
+		ADDED from AndroidManifest.xml:68:25
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:70:17
+	android:name
+		ADDED from AndroidManifest.xml:70:27
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:71:17
+	android:name
+		ADDED from AndroidManifest.xml:71:27
+activity#com.beikbank.android.wxapi.WXEntryActivity
+ADDED from AndroidManifest.xml:74:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:78:13
+	android:exported
+		ADDED from AndroidManifest.xml:77:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:76:13
+	android:name
+		ADDED from AndroidManifest.xml:75:13
+activity#com.beikbank.android.activity.GesturePwdGuideActivity
+ADDED from AndroidManifest.xml:79:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:82:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:81:13
+	android:name
+		ADDED from AndroidManifest.xml:80:13
+activity#com.beikbank.android.activity.GesturePwdCreateActivity
+ADDED from AndroidManifest.xml:84:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:87:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:86:13
+	android:name
+		ADDED from AndroidManifest.xml:85:13
+activity#com.beikbank.android.activity.GesturePwdUnlockActivity
+ADDED from AndroidManifest.xml:89:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:92:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:91:13
+	android:name
+		ADDED from AndroidManifest.xml:90:13
+activity#com.beikbank.android.activity.LoginRegActivity
+ADDED from AndroidManifest.xml:94:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:97:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:96:13
+	android:name
+		ADDED from AndroidManifest.xml:95:13
+activity#com.beikbank.android.activity.LoginPwdInputActivity
+ADDED from AndroidManifest.xml:99:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:102:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:101:13
+	android:name
+		ADDED from AndroidManifest.xml:100:13
+activity#com.beikbank.android.activity.ForgetPwdAnonymousActivity
+ADDED from AndroidManifest.xml:104:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:107:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:106:13
+	android:name
+		ADDED from AndroidManifest.xml:105:13
+activity#com.beikbank.android.activity.ForgetPwdRealnameActivity
+ADDED from AndroidManifest.xml:109:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:112:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:111:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:113:13
+	android:name
+		ADDED from AndroidManifest.xml:110:13
+activity#com.beikbank.android.activity.ForgetPwdRealnameActivity2
+ADDED from AndroidManifest.xml:115:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:118:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:117:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:119:13
+	android:name
+		ADDED from AndroidManifest.xml:116:13
+activity#com.beikbank.android.activity.RegisterPwdSetActivity
+ADDED from AndroidManifest.xml:121:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:124:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:123:13
+	android:name
+		ADDED from AndroidManifest.xml:122:13
+activity#com.beikbank.android.activity.FeedbackActivity
+ADDED from AndroidManifest.xml:126:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:129:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:128:13
+	android:name
+		ADDED from AndroidManifest.xml:127:13
+activity#com.beikbank.android.activity.HelpCenterActivity
+ADDED from AndroidManifest.xml:131:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:134:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:133:13
+	android:name
+		ADDED from AndroidManifest.xml:132:13
+activity#com.beikbank.android.activity.RegisterCodeInputActivity
+ADDED from AndroidManifest.xml:136:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:139:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:138:13
+	android:name
+		ADDED from AndroidManifest.xml:137:13
+activity#com.beikbank.android.activity.AgreementLoginActivity
+ADDED from AndroidManifest.xml:141:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:144:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:143:13
+	android:name
+		ADDED from AndroidManifest.xml:142:13
+activity#com.beikbank.android.activity.TransactionListActivity
+ADDED from AndroidManifest.xml:146:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:149:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:148:13
+	android:name
+		ADDED from AndroidManifest.xml:147:13
+activity#com.beikbank.android.activity.TransactionDetailActivity
+ADDED from AndroidManifest.xml:151:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:154:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:152:13
+activity#com.beikbank.android.activity.RedeemActivity
+ADDED from AndroidManifest.xml:156:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:159:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:158:13
+	android:name
+		ADDED from AndroidManifest.xml:157:13
+activity#com.beikbank.android.activity.RedeemConfirmActivity
+ADDED from AndroidManifest.xml:161:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:165:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:163:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:164:13
+	android:name
+		ADDED from AndroidManifest.xml:162:13
+activity#com.beikbank.android.activity.RedeemStatusActivity
+ADDED from AndroidManifest.xml:167:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:170:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:169:13
+	android:name
+		ADDED from AndroidManifest.xml:168:13
+activity#com.beikbank.android.activity.AboutActivity
+ADDED from AndroidManifest.xml:172:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:175:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:174:13
+	android:name
+		ADDED from AndroidManifest.xml:173:13
+activity#com.beikbank.android.activity.RealnameActivity
+ADDED from AndroidManifest.xml:177:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:180:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:179:13
+	android:name
+		ADDED from AndroidManifest.xml:178:13
+activity#com.beikbank.android.activity.LoginPwdUpdateActivity
+ADDED from AndroidManifest.xml:182:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:185:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:184:13
+	android:name
+		ADDED from AndroidManifest.xml:183:13
+activity#com.beikbank.android.activity.TransactionPwdSetActivity
+ADDED from AndroidManifest.xml:187:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:190:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:189:13
+	android:name
+		ADDED from AndroidManifest.xml:188:13
+activity#com.beikbank.android.activity.TransactionPwdSetActivity2
+ADDED from AndroidManifest.xml:192:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:195:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:194:13
+	android:name
+		ADDED from AndroidManifest.xml:193:13
+activity#com.beikbank.android.activity.PurchaseActivity
+ADDED from AndroidManifest.xml:197:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:200:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:199:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:201:13
+	android:name
+		ADDED from AndroidManifest.xml:198:13
+activity#com.beikbank.android.activity.PurchaseConfirmActivity
+ADDED from AndroidManifest.xml:203:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:206:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:205:13
+	android:name
+		ADDED from AndroidManifest.xml:204:13
+activity#com.beikbank.android.activity.BankBindActivity
+ADDED from AndroidManifest.xml:208:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:211:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:210:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:212:13
+	android:name
+		ADDED from AndroidManifest.xml:209:13
+activity#com.beikbank.android.activity.BankConfirmActivity
+ADDED from AndroidManifest.xml:214:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:217:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:216:13
+	android:name
+		ADDED from AndroidManifest.xml:215:13
+activity#com.beikbank.android.activity.BankCheckActivity
+ADDED from AndroidManifest.xml:219:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:222:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:221:13
+	android:name
+		ADDED from AndroidManifest.xml:220:13
+activity#com.beikbank.android.activity.HomeActivity2
+ADDED from AndroidManifest.xml:224:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:228:13
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:226:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:227:13
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+activity#com.beikbank.android.activity.AgreementPurchaseActivity
+ADDED from AndroidManifest.xml:230:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:233:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:232:13
+	android:name
+		ADDED from AndroidManifest.xml:231:13
+activity#com.beikbank.android.activity.BankSupportActivity
+ADDED from AndroidManifest.xml:235:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:238:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:237:13
+	android:name
+		ADDED from AndroidManifest.xml:236:13
+activity#com.beikbank.android.activity.GesturePwdLoginActivity
+ADDED from AndroidManifest.xml:240:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:243:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:242:13
+	android:name
+		ADDED from AndroidManifest.xml:241:13
+activity#com.beikbank.android.activity.GesturePwdOldActivity
+ADDED from AndroidManifest.xml:245:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:248:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:247:13
+	android:name
+		ADDED from AndroidManifest.xml:246:13
+activity#com.beikbank.android.activity.BankMasterActivity
+ADDED from AndroidManifest.xml:250:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:253:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:252:13
+	android:name
+		ADDED from AndroidManifest.xml:251:13
+activity#com.beikbank.android.activity.TransactionPwdUpdateActivity
+ADDED from AndroidManifest.xml:255:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:258:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:257:13
+	android:name
+		ADDED from AndroidManifest.xml:256:13
+activity#com.beikbank.android.activity.BankBindedActivity
+ADDED from AndroidManifest.xml:260:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:263:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:262:13
+	android:name
+		ADDED from AndroidManifest.xml:261:13
+activity#com.beikbank.android.activity.PurchaseSuccessActivity
+ADDED from AndroidManifest.xml:265:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:268:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:267:13
+	android:name
+		ADDED from AndroidManifest.xml:266:13
+activity#com.beikbank.android.activity.RiskControlActivity
+ADDED from AndroidManifest.xml:270:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:273:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:272:13
+	android:name
+		ADDED from AndroidManifest.xml:271:13
+activity#com.beikbank.android.activity.ProjectListActivity
+ADDED from AndroidManifest.xml:275:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:278:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:277:13
+	android:name
+		ADDED from AndroidManifest.xml:276:13
+activity#com.beikbank.android.activity.AgreementLogin2Activity
+ADDED from AndroidManifest.xml:280:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:283:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:282:13
+	android:name
+		ADDED from AndroidManifest.xml:281:13
+activity#com.beikbank.android.activity.AgreementPurchase2Activity
+ADDED from AndroidManifest.xml:285:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:288:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:287:13
+	android:name
+		ADDED from AndroidManifest.xml:286:13
+activity#com.beikbank.android.activity.PurchaseSumbitInfo
+ADDED from AndroidManifest.xml:291:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:294:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:293:13
+	android:name
+		ADDED from AndroidManifest.xml:292:13
+activity#com.beikbank.android.activity.RedeemFinishActivity
+ADDED from AndroidManifest.xml:297:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:300:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:299:13
+	android:name
+		ADDED from AndroidManifest.xml:298:13
+activity#com.beikbank.android.activity.BandTestActivity
+ADDED from AndroidManifest.xml:303:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:306:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:305:13
+	android:name
+		ADDED from AndroidManifest.xml:304:13
+activity#com.beikbank.android.activity.GesturePwdGuideActivity2
+ADDED from AndroidManifest.xml:309:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:312:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:311:13
+	android:name
+		ADDED from AndroidManifest.xml:310:13
+activity#com.beikbank.android.activity.MessageActivity
+ADDED from AndroidManifest.xml:315:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:318:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:317:13
+	android:name
+		ADDED from AndroidManifest.xml:316:13
+activity#com.beikbank.android.activity.MessageDetail
+ADDED from AndroidManifest.xml:320:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:323:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:322:13
+	android:name
+		ADDED from AndroidManifest.xml:321:13
+activity#com.beikbank.android.activity.ActionActivity
+ADDED from AndroidManifest.xml:325:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:328:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:327:13
+	android:name
+		ADDED from AndroidManifest.xml:326:13
+activity#com.beikbank.android.activity.ActionListActivity
+ADDED from AndroidManifest.xml:330:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:333:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:332:13
+	android:name
+		ADDED from AndroidManifest.xml:331:13
+activity#com.beikbank.android.activity.ActionDetial
+ADDED from AndroidManifest.xml:335:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:338:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:337:13
+	android:name
+		ADDED from AndroidManifest.xml:336:13
+activity#com.beikbank.android.activity.UserRecordActivity
+ADDED from AndroidManifest.xml:340:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:343:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:342:13
+	android:name
+		ADDED from AndroidManifest.xml:341:13
+activity#com.beikbank.android.activity.DingqiActivity
+ADDED from AndroidManifest.xml:345:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:348:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:347:13
+	android:name
+		ADDED from AndroidManifest.xml:346:13
+activity#com.beikbank.android.activity.DingdanHuoqiActivity
+ADDED from AndroidManifest.xml:350:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:353:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:352:13
+	android:name
+		ADDED from AndroidManifest.xml:351:13
+activity#com.beikbank.android.activity.DingdanDingqiActivity
+ADDED from AndroidManifest.xml:355:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:358:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:357:13
+	android:name
+		ADDED from AndroidManifest.xml:356:13
+activity#com.beikbank.android.activity.DingqiDetailActivity
+ADDED from AndroidManifest.xml:360:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:363:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:362:13
+	android:name
+		ADDED from AndroidManifest.xml:361:13
+activity#com.beikbank.android.activity.DingqiGouMaiConfirmActivity
+ADDED from AndroidManifest.xml:365:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:368:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:367:13
+	android:name
+		ADDED from AndroidManifest.xml:366:13
+activity#com.beikbank.android.activity.DingqiGouMaiState
+ADDED from AndroidManifest.xml:370:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:373:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:372:13
+	android:name
+		ADDED from AndroidManifest.xml:371:13
+activity#com.beikbank.android.activity.TransactionDQDetailActivity
+ADDED from AndroidManifest.xml:375:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:378:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:377:13
+	android:name
+		ADDED from AndroidManifest.xml:376:13
+activity#com.beikbank.android.activity.DingqiGoumaiActivity
+ADDED from AndroidManifest.xml:380:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:383:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:382:13
+	android:name
+		ADDED from AndroidManifest.xml:381:13
+activity#com.beikbank.android.activity.DingqiZhichanDetial
+ADDED from AndroidManifest.xml:385:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:388:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:387:13
+	android:name
+		ADDED from AndroidManifest.xml:386:13
+activity#com.beikbank.android.activity.HuoqiDetailActivity
+ADDED from AndroidManifest.xml:390:11
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:393:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:392:13
+	android:name
+		ADDED from AndroidManifest.xml:391:13
+activity#com.beikbank.android.activity.TransactionListActivity2
+ADDED from AndroidManifest.xml:395:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:398:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:397:13
+	android:name
+		ADDED from AndroidManifest.xml:396:13
+activity#com.beikbank.android.activity.ZhiChanActivity
+ADDED from AndroidManifest.xml:400:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:403:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:402:13
+	android:name
+		ADDED from AndroidManifest.xml:401:13
+activity#com.beikbank.android.activity.BankBindActivity2
+ADDED from AndroidManifest.xml:406:12
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:409:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:408:13
+	android:name
+		ADDED from AndroidManifest.xml:407:13
+activity#com.beikbank.android.activity.TestActivity
+ADDED from AndroidManifest.xml:411:10
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:414:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:413:13
+	android:name
+		ADDED from AndroidManifest.xml:412:13
+receiver#com.umeng.message.NotificationProxyBroadcastReceiver
+ADDED from AndroidManifest.xml:417:5
+	android:exported
+		ADDED from AndroidManifest.xml:419:5
+	android:name
+		ADDED from AndroidManifest.xml:418:5
+receiver#com.umeng.message.RegistrationReceiver
+ADDED from AndroidManifest.xml:421:1
+	android:name
+		ADDED from AndroidManifest.xml:421:11
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:422:5
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:423:9
+	android:name
+		ADDED from AndroidManifest.xml:423:17
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:425:5
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:426:9
+	android:name
+		ADDED from AndroidManifest.xml:426:17
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:432:5
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:433:9
+	android:name
+		ADDED from AndroidManifest.xml:433:17
+receiver#com.umeng.message.UmengBroadcastReceiver
+ADDED from AndroidManifest.xml:437:1
+	android:name
+		ADDED from AndroidManifest.xml:437:11
+intent-filter#org.agoo.android.intent.action.RECEIVE
+ADDED from AndroidManifest.xml:438:5
+action#org.agoo.android.intent.action.RECEIVE
+ADDED from AndroidManifest.xml:439:9
+	android:name
+		ADDED from AndroidManifest.xml:439:17
+intent-filter#com.beikbank.android.intent.action.COMMAND
+ADDED from AndroidManifest.xml:441:5
+action#com.beikbank.android.intent.action.COMMAND
+ADDED from AndroidManifest.xml:442:9
+	android:name
+		ADDED from AndroidManifest.xml:442:17
+intent-filter#org.agoo.android.intent.action.RE_ELECTION_V2
+ADDED from AndroidManifest.xml:444:5
+action#org.agoo.android.intent.action.RE_ELECTION_V2
+ADDED from AndroidManifest.xml:445:9
+	android:name
+		ADDED from AndroidManifest.xml:445:17
+receiver#com.umeng.message.BootBroadcastReceiver
+ADDED from AndroidManifest.xml:448:1
+	android:name
+		ADDED from AndroidManifest.xml:448:11
+service#com.umeng.message.UmengService
+ADDED from AndroidManifest.xml:453:1
+	android:process
+		ADDED from AndroidManifest.xml:457:5
+	android:label
+		ADDED from AndroidManifest.xml:455:4
+	android:exported
+		ADDED from AndroidManifest.xml:456:5
+	android:name
+		ADDED from AndroidManifest.xml:454:5
+intent-filter#com.beikbank.android.intent.action.START
+ADDED from AndroidManifest.xml:460:5
+action#com.beikbank.android.intent.action.START
+ADDED from AndroidManifest.xml:461:9
+	android:name
+		ADDED from AndroidManifest.xml:461:17
+intent-filter#com.beikbank.android.intent.action.COCKROACH
+ADDED from AndroidManifest.xml:463:5
+action#com.beikbank.android.intent.action.COCKROACH
+ADDED from AndroidManifest.xml:464:9
+	android:name
+		ADDED from AndroidManifest.xml:464:17
+intent-filter#org.agoo.android.intent.action.PING
+ADDED from AndroidManifest.xml:466:5
+action#org.agoo.android.intent.action.PING
+ADDED from AndroidManifest.xml:467:9
+	android:name
+		ADDED from AndroidManifest.xml:467:17
+service#org.android.agoo.service.ElectionService
+ADDED from AndroidManifest.xml:470:1
+	android:process
+		ADDED from AndroidManifest.xml:473:5
+	android:exported
+		ADDED from AndroidManifest.xml:472:5
+	android:name
+		ADDED from AndroidManifest.xml:471:5
+intent-filter#org.agoo.android.intent.action.ELECTION_V2
+ADDED from AndroidManifest.xml:474:5
+action#org.agoo.android.intent.action.ELECTION_V2
+ADDED from AndroidManifest.xml:475:9
+	android:name
+		ADDED from AndroidManifest.xml:475:17
+service#com.umeng.message.UmengIntentService
+ADDED from AndroidManifest.xml:478:1
+	android:name
+		ADDED from AndroidManifest.xml:478:10
+service#com.umeng.message.UmengDownloadResourceService
+ADDED from AndroidManifest.xml:480:1
+	android:name
+		ADDED from AndroidManifest.xml:480:10
+activity#com.beikbank.android.exception.GlobalErrorActivity
+ADDED from AndroidManifest.xml:486:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:489:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:488:13
+	android:name
+		ADDED from AndroidManifest.xml:487:13
+meta-data#UMENG_APPKEY
+ADDED from AndroidManifest.xml:491:9
+	android:value
+		ADDED from AndroidManifest.xml:493:13
+	android:name
+		ADDED from AndroidManifest.xml:492:13
+meta-data#UMENG_MESSAGE_SECRET
+ADDED from AndroidManifest.xml:495:8
+	android:value
+		ADDED from AndroidManifest.xml:497:13
+	android:name
+		ADDED from AndroidManifest.xml:496:13
+meta-data#UMENG_CHANNEL
+ADDED from AndroidManifest.xml:500:9
+	android:value
+		ADDED from AndroidManifest.xml:502:13
+	android:name
+		ADDED from AndroidManifest.xml:501:13

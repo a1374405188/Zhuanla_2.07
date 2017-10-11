@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="JazzyListView">
+        <attr name="effect" format="enum">
+            <enum name="standard" value="0" />
+            <enum name="grow" value="1" />
+            <enum name="cards" value="2" />
+            <enum name="curl" value="3" />
+            <enum name="wave" value="4" />
+            <enum name="flip" value="5" />
+            <enum name="fly" value="6" />
+            <enum name="reverse_fly" value="7" />
+            <enum name="helix" value="8" />
+            <enum name="fan" value="9" />
+            <enum name="tilt" value="10" />
+            <enum name="zipper" value="11" />
+            <enum name="fade" value="12" />
+            <enum name="twirl" value="13" />
+            <enum name="slide_in" value="14" />
+        </attr>
+        <attr name="only_animate_new_items" format="boolean" />
+        <attr name="only_animate_fling" format="boolean" />
+        <attr name="simulate_grid_with_list" format="boolean" />
+        <attr name="max_velocity" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color"/>
+        <attr name="headerBackground" format="reference|color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="mode1">
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+            <flag name="both" value="0x3"/>
+        </attr>
+    </declare-styleable>
+    
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu2">
+        <attr name="rightPadding" />
+    </declare-styleable>
+        <declare-styleable name="ViewPager">
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+  
+        
+        
+              <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+        
+</resources>

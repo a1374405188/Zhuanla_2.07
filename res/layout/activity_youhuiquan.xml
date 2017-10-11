@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg1"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar" />
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffd6d6d6"
+        />
+     <ScrollView 
+          android:id="@+id/sv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:visibility="gone"
+         >
+      <LinearLayout
+         
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       
+       android:orientation="vertical"
+     >    
+     
+     <!--    <ListView 
+           android:id="@+id/lv"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scrollbars="none"
+          android:fadingEdgeLength="0px"
+          android:fadingEdge="none"
+          android:fadeScrollbars="false"
+               android:divider="@null"
+        android:dividerHeight="12dp"
+        android:cacheColorHint="#00000000"
+           >
+         
+         </ListView>
+         --> 
+            <LinearLayout
+       android:id="@+id/ll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       
+       android:orientation="vertical"
+     >  
+     
+                
+       </LinearLayout>
+         <LinearLayout 
+              android:id="@+id/ll2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:visibility="gone"
+             >
+              <TextView 
+              
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="没有更多可用红包了|"
+               android:textColor="#ff747474"
+               />
+              <TextView 
+               android:id="@+id/tv2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:text="历史红包>>"
+               android:textColor="#ff22a7f0"
+               />
+         </LinearLayout>
+           <LinearLayout 
+              android:id="@+id/ll3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:visibility="gone"
+             >
+           <TextView 
+              android:layout_marginTop="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="没有更多了"
+               android:textColor="#ff747474"
+               />
+             </LinearLayout>
+     </LinearLayout>
+       </ScrollView>
+     <RelativeLayout
+       android:id="@+id/rl"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+     
+    
+     >
+       <LinearLayout
+           android:id="@+id/ll_parent"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_centerInParent="true"
+           android:orientation="vertical"
+           android:gravity="center"
+          
+          
+           >
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/yhq_none"
+               
+               
+               />
+           <TextView 
+               android:layout_marginTop="12dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="没有可用的红包"
+               android:textColor="#ff747474"
+               />
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="赶紧参加活动领取吧"
+               android:textColor="#ff747474"
+               android:visibility="gone"
+               />
+       </LinearLayout>
+       <TextView 
+           android:id="@+id/tv1"
+           android:layout_marginBottom="60dp"
+           android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="历史红包>>"
+             android:textColor="#ff22a7f0"
+           
+           />
+     </RelativeLayout>
+</LinearLayout>

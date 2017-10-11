@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners
+        android:radius="20dp" />
+
+    <solid android:color="#ffffffff" />
+    
+    <size android:width="119dp"
+        android:height="110dp"/>
+
+</shape><!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/bg_toast.xml -->

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingBottom="68dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_yesterday_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red2"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_income"
+                    android:drawablePadding="@dimen/activity_textview_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/yesterday_income_rmb" />
+
+                <com.beikbank.android.widget.MagicTextView
+                    android:id="@+id/magictextview_yesterdayincome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="70sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_total_capital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_moneybag"
+                    android:drawablePadding="@dimen/activity_textview_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_capital_rmb" />
+
+                <com.beikbank.android.widget.MagicTextView
+                    android:id="@+id/magictextview_totalcapital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="0.00"
+                    android:textColor="@color/ziti6"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_page_repeat"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_textview_margin"
+                            android:text="年化收益率"
+                            android:textColor="@color/ziti5"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ziti6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_textview_margin"
+                            android:text="累计收益(元)"
+                            android:textColor="@color/ziti5"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview_interestT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ziti6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_textview_margin"
+                            android:text="近一周收益(元)"
+                            android:textColor="@color/ziti5"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview_interestW"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ziti6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_textview_margin"
+                            android:text="近一月收益(元)"
+                            android:textColor="@color/ziti5"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textview_interestM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/ziti6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_transaction_records"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_item_height"
+                android:background="@color/lightgray"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    style="@style/custom_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/transaction_records" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

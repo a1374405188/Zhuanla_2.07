@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg3"
+    android:orientation="vertical" >
+
+     <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="1px"
+                   android:background="@color/line2"
+                  
+                  /> 
+   <TextView
+           android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:paddingLeft="16dp"
+         android:text="募集中项目"
+          android:textSize="16sp"
+             android:background="@color/global_bg3"
+             android:paddingTop="3dp"
+             android:paddingBottom="3dp"
+         />
+     <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="1px"
+                   android:background="@color/line2"
+                  
+                  /> 
+    <LinearLayout
+            android:id="@+id/ll_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>                
+ 
+    
+
+    
+    
+</LinearLayout>

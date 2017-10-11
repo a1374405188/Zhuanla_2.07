@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@drawable/btn_selector_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/ziti1"
+        android:textSize="18sp" />
+
+     <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ff747474"
+        android:textSize="16sp"
+        android:text="验证银行卡"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+
+    <RelativeLayout
+        android:id="@+id/relative_bankmaster"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+       >
+
+      <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+          >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+            <TextView
+            android:id="@+id/textview_icnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+       </LinearLayout>
+        
+        
+              <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+            >
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当日限额:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_daypay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            >
+
+                   <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单笔限额:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_singlepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            
+            
+         
+        </LinearLayout>
+
+  
+    </RelativeLayout>
+<!-- xiugai yuliushouji -->
+    <LinearLayout
+          android:id="@+id/ll_xiugai"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:gravity="center_vertical"
+         android:visibility="gone"
+        >
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:textColor="#ff747474"
+        android:textSize="16sp"
+        android:text="预留手机号"
+        android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            
+            />
+         <ImageView
+        android:id="@+id/iv_tishi"     
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/why"
+        />
+        <View
+             android:layout_width="0px"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+            
+            />
+        
+         <TextView
+             android:id="@+id/tv_shouji"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:textColor="#ff323232"
+        android:textSize="16sp"
+        android:text="138****0000"
+      
+            android:layout_marginRight="16dp"
+            
+            />
+         
+         
+            <TextView
+                 android:id="@+id/tv_xiugai"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:textColor="#ff0976AA"
+        android:textSize="16sp"
+        android:text="修改"
+      
+            android:layout_marginRight="16dp"
+            
+            />
+    </LinearLayout>
+    
+    
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:visibility="gone"
+            >
+         <View
+                 
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                   android:background="@color/line2"
+                   android:layout_marginLeft="16dp"
+                  />
+         </LinearLayout>
+    <LinearLayout
+     android:id="@+id/ll_add_bank"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_marginTop="30dp"
+     android:layout_marginLeft="16dp"
+     android:layout_marginRight="16dp"
+     android:paddingTop="80dp"
+     android:paddingBottom="80dp"
+   
+     android:background="@drawable/bg_add_bank"
+    >
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/img_bank_add"
+        />
+    
+     <TextView
+         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff999999"
+        android:textSize="16sp"
+        android:text="添加银行卡"
+        android:layout_marginLeft="10dp"
+
+         />
+ </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|bottom"
+        
+        >
+            <TextView
+         android:id="@+id/tv_zhichi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0097e2"
+        android:textSize="16sp"
+        android:text="支持银行卡及限额"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+
+         />
+     </LinearLayout>  
+    
+</LinearLayout>

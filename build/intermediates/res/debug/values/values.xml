@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="dimension" name="rightPadding"/>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/color.xml -->
+    <eat-comment/>
+    <color name="alpha_white">#f7ffffff</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="black1">#99000000</color>
+    <color name="blue">#0976aa</color>
+    <color name="buy_info1">#ff747474</color>
+    <color name="buy_info2">#ff747474</color>
+    <color name="buy_info3">#ff00901f</color>
+    <color name="buy_info4">#ffDD2139</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="count_shouyi_1">#ff747474</color>
+    <color name="count_shouyi_2">#ffdd2238</color>
+    <color name="count_shouyi_3">#fff4f4f4</color>
+    <color name="count_shouyi_4">#ffe7e7e7</color>
+    <color name="count_shouyi_5">#ffb0b0b0</color>
+    <color name="dark_blue">#2593F1</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+    <color name="dialog_line">#ffb0b0b0</color>
+    <color name="dialog_text1">#ff747474</color>
+    <color name="dialog_text2">#ff2d2d2d</color>
+    <color name="dialog_text3">#ffdd2238</color>
+    <color name="dialog_text4">#ffb0b0b0</color>
+    <color name="dialog_text5">#ff0976aa</color>
+    <color name="dingdan1">#ffffffff</color>
+    <color name="dingdan2">#ff747474</color>
+    <color name="dingdan3">#ff2d2d2d</color>
+    <color name="dingqi1">#ffffffff</color>
+    <color name="dingqi2">#ff747474</color>
+    <color name="dingqi3">#ff2d2d2d</color>
+    <color name="divider_color">#11000000</color>
+    <color name="doing1">#2593F1</color>
+    <color name="doing2">#0B6CC0</color>
+    <color name="fail1">#9C9FAC</color>
+    <color name="fail2">#6A6C76</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="global_bg1">#ffe7e7e7</color>
+    <color name="global_red_bg1">#ffDD2139</color>
+    <color name="global_text1">#ffffffff</color>
+    <color name="global_text2">#ff747474</color>
+    <color name="global_text3">#ff2d2d2d</color>
+    <color name="global_text4">#ffdd2238</color>
+    <color name="global_text5">#ffb0b0b0</color>
+    <color name="gray">#f6f6f9</color>
+    <color name="jiaoyijilu1">#ff747474</color>
+    <color name="jiaoyijilu2">#ffdd2238</color>
+    <color name="jiaoyijilu3">#ff747474</color>
+    <color name="light_blue">#BDDEFB</color>
+    <color name="lightgray">#FAFAFA</color>
+    <color name="line1">#9C9FAC</color>
+    <color name="line2">#D3D5E0</color>
+    <color name="line3">#E5E6EF</color>
+    <color name="line4">#ffededed</color>
+    <color name="line6">#00E5E6EF</color>
+    <color name="mohu">#e12593F1</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="mxx_item_theme_color">#ff005092</color>
+    <color name="no_color">#00000000</color>
+    <color name="orange">#e15943</color>
+    <color name="pink">#ffcad1</color>
+    <color name="pop_bg">#e1000000</color>
+    <color name="project_bg1">#ffe7e7e7</color>
+    <color name="project_line">#ffb0b0b0</color>
+    <color name="project_text1">#ff2D2D2D</color>
+    <color name="project_text2">#ff747474</color>
+    <color name="red1">#9D1829</color>
+    <color name="red2">#DD2139</color>
+    <color name="red3">#F26D7E</color>
+    <color name="red4">#FFCAD1</color>
+    <color name="red5">#FFE5E8</color>
+    <color name="red6">#ffdd2238</color>
+    <color name="red7">#fff9465b</color>
+    <color name="scroll_gray">#f6f6f9</color>
+    <color name="scroll_up">#d3d5e0</color>
+    <color name="status2">#F4F4F4</color>
+    <color name="status3">#ffD6D6D6</color>
+    <color name="status4">#2D2D2D</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white1">#FFE5E8</color>
+    <color name="ziti1">#343439</color>
+    <color name="ziti2">#6A6C76</color>
+    <color name="ziti3">#9C9FAC</color>
+    <color name="ziti4">#D3D5E0</color>
+    <color name="ziti5">#ff747474</color>
+    <color name="ziti6">#2d2d2d</color>
+    <color name="ziti7">#B0B0B0</color>
+    <declare-styleable name="JazzyListView"><attr format="enum" name="effect"><enum name="standard" value="0"/><enum name="grow" value="1"/><enum name="cards" value="2"/><enum name="curl" value="3"/><enum name="wave" value="4"/><enum name="flip" value="5"/><enum name="fly" value="6"/><enum name="reverse_fly" value="7"/><enum name="helix" value="8"/><enum name="fan" value="9"/><enum name="tilt" value="10"/><enum name="zipper" value="11"/><enum name="fade" value="12"/><enum name="twirl" value="13"/><enum name="slide_in" value="14"/></attr><attr format="boolean" name="only_animate_new_items"/><attr format="boolean" name="only_animate_fling"/><attr format="boolean" name="simulate_grid_with_list"/><attr format="integer" name="max_velocity"/></declare-styleable>
+    <declare-styleable name="LockPatternView"><attr name="aspect"><enum name="square" value="0"/><enum name="lockWidth" value="1"/><enum name="lockHeight" value="2"/></attr><attr format="color" name="line"/><attr format="reference" name="btnNormal"/><attr format="reference" name="btnTouched"/><attr format="reference" name="circleNormal"/><attr format="reference" name="circleGreen"/><attr format="reference" name="circleRed"/><attr format="reference" name="arrowGreenUp"/><attr format="reference" name="arrowRedUp"/></declare-styleable>
+    <declare-styleable name="MyTextView2"><attr format="dimension" name="marginLeft"/><attr format="dimension" name="marginRight"/><attr format="dimension" name="paddingLeft"/><attr format="dimension" name="paddingRight"/><attr format="dimension" name="textSize"/><attr format="color" name="textColor"/></declare-styleable>
+    <declare-styleable name="NumberProgressBar"><attr format="integer" name="progress"/><attr format="integer" name="max"/><attr format="color" name="progress_unreached_color"/><attr format="color" name="progress_reached_color"/><attr format="dimension" name="progress_reached_bar_height"/><attr format="dimension" name="progress_unreached_bar_height"/><attr format="dimension" name="progress_text_size"/><attr format="color" name="progress_text_color"/><attr format="dimension" name="progress_text_offset"/><attr format="enum" name="progress_text_visibility"><enum name="visible" value="0"/><enum name="invisible" value="1"/></attr></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="adapterViewBackground"/><attr format="reference|color" name="headerBackground"/><attr format="color" name="headerTextColor"/><attr name="mode1"><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/><flag name="both" value="0x3"/></attr></declare-styleable>
+    <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <declare-styleable name="SlidingMenu2"><attr name="rightPadding"/></declare-styleable>
+    <declare-styleable name="Themes"><attr format="reference" name="numberProgressBarStyle"/></declare-styleable>
+    <declare-styleable name="ViewPager"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr></declare-styleable>
+    <declare-styleable name="swipelistviewstyle"><attr format="dimension" name="right_width"/></declare-styleable>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_button_height">48dp</dimen>
+    <dimen name="activity_button_topmargin">29dp</dimen>
+    <dimen name="activity_divide_height">0.5dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_item_height">56dp</dimen>
+    <dimen name="activity_panel_margin">12dp</dimen>
+    <dimen name="activity_pink_panel_margin">20dp</dimen>
+    <dimen name="activity_small_margin">5dp</dimen>
+    <dimen name="activity_textview_margin">10dp</dimen>
+    <dimen name="activity_toast_height">70dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_line_size">1px</dimen>
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="dialog_space_size">3dp</dimen>
+    <dimen name="dialog_space_size2">60dp</dimen>
+    <dimen name="dialog_text_size1">13sp</dimen>
+    <dimen name="dialog_text_size2">15sp</dimen>
+    <dimen name="dialog_text_size3">17sp</dimen>
+    <dimen name="dialog_text_size4">8dp</dimen>
+    <dimen name="global_buttom_margin">16dp</dimen>
+    <dimen name="global_top_margin">16dp</dimen>
+    <dimen name="income_item_height">66dp</dimen>
+    <dimen name="left_text_size">18sp</dimen>
+    <dimen name="line_height">56dp</dimen>
+    <dimen name="line_space_height">8dp</dimen>
+    <dimen name="line_space_left">16dp</dimen>
+    <dimen name="line_space_right">16dp</dimen>
+    <dimen name="minimum_content_height">25dip</dimen>
+    <dimen name="minimum_height">40dip</dimen>
+    <dimen name="mywealth_total_capital_height">124dp</dimen>
+    <dimen name="mywealth_yesterday_income_height">148dp</dimen>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/picture_dimens.xml -->
+    <eat-comment/>
+    <dimen name="pciture_view_pager_margin">80dp</dimen>
+    <dimen name="picture_action_bar_button_margin">0dp</dimen>
+    <dimen name="picture_action_bar_height">48dp</dimen>
+    <dimen name="picture_action_bar_page_index_text_size">18dp</dimen>
+    <dimen name="picture_album_column_margin">5dp</dimen>
+    <dimen name="picture_album_item_title_height">30dp</dimen>
+    <dimen name="picture_album_text_margin">6dp</dimen>
+    <dimen name="picture_album_title_text_size">12dp</dimen>
+    <dimen name="picture_album_top_margin">10dp</dimen>
+    <dimen name="picture_album_view_margin">8dp</dimen>
+    <dimen name="picture_album_view_margin_bottom">9dp</dimen>
+    <dimen name="picture_count_text_size">12dp</dimen>
+    <dimen name="picture_loading_text_top_margin">12dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_reload_text_size">16dp</dimen>
+    <dimen name="picture_user_guide_margin">8dp</dimen>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="product_detail_bottom_height">58dp</dimen>
+    <dimen name="product_detail_margin">6dp</dimen>
+    <dimen name="project_h1">36dip</dimen>
+    <dimen name="project_space">8dp</dimen>
+    <dimen name="project_text_size">14sp</dimen>
+    <dimen name="redeem_status_height">88dp</dimen>
+    <dimen name="register_enlarge_height">54dp</dimen>
+    <dimen name="register_top_panel">38dp</dimen>
+    <dimen name="shadow_width">3dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="text_height">35dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/color.xml -->
+    <eat-comment/>
+    <drawable name="trans">@color/color_hei_8</drawable>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="selected_view" type="id"/>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="about_1">"赚啦理财"正式上线运营 </string>
+    <string name="about_2">"赚啦理财"获得千万元天使融资</string>
+    <string name="about_3">“赚啦理财”项目正式启动</string>
+    <string name="about_4">贝壳财富获上海资信公司征信认证</string>
+    <string name="about_5">贝壳财富累计交易突破2亿元</string>
+    <string name="about_6">与多家小贷公司达成战略合作</string>
+    <string name="about_7">贝壳财富获得百万天使投资</string>
+    <string name="about_8">浙江贝壳财富投资管理有限公司成立</string>
+    <string name="about_bk">关于我们</string>
+    <string name="about_bk_text">        					     
+           “赚啦理财”是浙江贝壳财富投资有限公司旗下的一款理财APP产品，
+        专为有理财需求的投资人打造的“懒人理财神器”，目的是简化投资人的理财投标流程，提高投资人的资金使用效率，让投资者从复杂的投标流程中解放出来，收获轻松理财的快乐。</string>
+    <string name="account">账号</string>
+    <string name="accounting_date">预计到账时间</string>
+    <string name="agree_read">已阅读并同意</string>
+    <string name="agreement">用户使用协议</string>
+    <string name="agreement2">债权转让咨询与服务协议</string>
+    <string name="all">全部</string>
+    <string name="annual_income2">今日年化收益率(%)</string>
+    <string name="app_error">非常抱歉，程序运行期间产生了一个错误，程序重启了</string>
+    <string name="app_name">赚啦理财</string>
+    <string name="back_home">返回首页</string>
+    <string name="bank">银行</string>
+    <string name="bank_master">银行卡管理</string>
+    <string name="beikbank"><b>光伏理财</b></string>
+    <string name="beike_email">service@beikbank.com</string>
+    <string name="beike_qq">232204421</string>
+    <string name="beike_telephone">400-800-5818(9:00--21:00)</string>
+    <string name="beike_website">www.zhuanlalicai.com</string>
+    <string name="beike_weixin_gongzhong">赚啦(微信号:ZLLC01)</string>
+    <string name="beike_xinlang">\@赚啦理财</string>
+    <string name="bind_bank">绑定银行</string>
+    <string name="bind_bank_text">绑定银行卡需要短信确认\n验证码已发送至手机：%1$s，请按提示操作</string>
+    <string name="bind_cardinfo">绑定银行卡</string>
+    <string name="bk_agreement">《用户使用协议》</string>
+    <string name="bk_agreement2">《债权转让咨询与服务协议》</string>
+    <string name="cancel">取  消</string>
+    <string name="cardnumber">卡号</string>
+    <string name="cash_account">取现到账</string>
+    <string name="change_account">更换账号</string>
+    <string name="change_account_text">确定用其他账号登录？</string>
+    <string name="change_gesture_password">修改手势密码</string>
+    <string name="change_login_password">修改登录密码</string>
+    <string name="change_password">修改登录密码</string>
+    <string name="change_transaction_password">修改交易密码</string>
+    <string name="check_function">验证方式</string>
+    <string name="check_update">检查更新</string>
+    <string name="client_data_error">:客户端数据异常</string>
+    <string name="client_net_error">:客户端网络异常</string>
+    <string name="confirm">确认修改</string>
+    <string name="confirm_btn">确    认</string>
+    <string name="confirm_cardinfo">验证银行卡信息</string>
+    <string name="confirm_info">验证信息</string>
+    <string name="confirm_redeem">确认赎回</string>
+    <string name="contact_way">联系方式</string>
+    <string name="cost">购买金额</string>
+    <string name="count_shouyi_1">预期收益(元)</string>
+    <string name="count_shouyi_2">理财期限(天)</string>
+    <string name="count_shouyi_3">请输入理财金额</string>
+    <string name="count_shouyi_4">元</string>
+    <string name="count_shouyi_5">计算</string>
+    <string name="credit_card">到账银行卡</string>
+    <string name="credit_card_master">银行卡管理</string>
+    <string name="day">天</string>
+    <string name="db_error">数据库错误:如果可能请完全卸载程序，再重新安装应用</string>
+    <string name="dial">拨  打</string>
+    <string name="dialog_text1">取消</string>
+    <string name="dialog_text2">确定</string>
+    <string name="dialog_text3">好</string>
+    <string name="dingdan_huoqi1">购买成功</string>
+    <string name="dingdan_huoqi10">取现金额</string>
+    <string name="dingdan_huoqi11">已还款</string>
+    <string name="dingdan_huoqi12">还款金额</string>
+    <string name="dingdan_huoqi13">本金</string>
+    <string name="dingdan_huoqi14">收益</string>
+    <string name="dingdan_huoqi15">期限</string>
+    <string name="dingdan_huoqi16">到期还款中</string>
+    <string name="dingdan_huoqi17">购买成功当日起息(结算时间15:00)；即，当日结算前购买成功，结算后，即可得到收益。</string>
+    <string name="dingdan_huoqi18">取现订单提交后，经确认后，次日回款至扣款银行卡；到账时间视银行而定</string>
+    <string name="dingdan_huoqi19">到期时间</string>
+    <string name="dingdan_huoqi2">购买金额</string>
+    <string name="dingdan_huoqi20">起息时间</string>
+    <string name="dingdan_huoqi21">状态</string>
+    <string name="dingdan_huoqi22">取现订单提交后，经确认后，次日回款至扣款银行卡；到账时间视银行而定；节假日顺延。 </string>
+    <string name="dingdan_huoqi3">交易银行卡</string>
+    <string name="dingdan_huoqi4">订单号</string>
+    <string name="dingdan_huoqi5">交易时间</string>
+    <string name="dingdan_huoqi6">购买处理中</string>
+    <string name="dingdan_huoqi7">购买失败</string>
+    <string name="dingdan_huoqi8">订单详情</string>
+    <string name="dingdan_huoqi9">取现申请已提交</string>
+    <string name="dingqi1">定期产品名</string>
+    <string name="dingqi10">还款时间</string>
+    <string name="dingqi11">到期当日回款至扣款银行卡</string>
+    <string name="dingqi12">到账时间视银行而定</string>
+    <string name="dingqi13">还款方式</string>
+    <string name="dingqi14">到期一次性还本付息</string>
+    <string name="dingqi15">产品特征</string>
+    <string name="dingqi16">收益计算器</string>
+    <string name="dingqi17">购买</string>
+    <string name="dingqi18">建议购买100元以上</string>
+    <string name="dingqi2">年化收益率</string>
+    <string name="dingqi3">加赠年化收益率</string>
+    <string name="dingqi4">资产安全</string>
+    <string name="dingqi5">本息保障</string>
+    <string name="dingqi6">理财期限</string>
+    <string name="dingqi7">起购金额</string>
+    <string name="dingqi8">起息时间</string>
+    <string name="dingqi9">募集成功次日</string>
+    <string name="dingqi_zhichan1">定期资产明细</string>
+    <string name="dingqi_zhichan2">预期收益</string>
+    <string name="dingqi_zhichan3">还款倒计时</string>
+    <string name="dingqi_zhichan4">起息时间</string>
+    <string name="dingqi_zhichan5">到期时间</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="douban">豆瓣</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="email">邮件</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="encourage_u">鼓励一下</string>
+    <string name="error_1">账号或者密码不能为空</string>
+    <string name="error_2">验证码不能为空</string>
+    <string name="error_3">账户余额不足</string>
+    <string name="error_4">反馈意见不能为空</string>
+    <string name="error_5">网络没有连接，请检查网络</string>
+    <string name="error_6">手机格式不正确</string>
+    <string name="error_number">异常编号:</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="evernote">印象笔记</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="exit">退  出</string>
+    <string name="expected_annual">预期年化</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="facebook">Facebook</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">感谢您的支持，请说几句吧…</string>
+    <string name="feedback_left">可输入%1$s字</string>
+    <string name="feedback_time">(09:00–21:00)</string>
+    <string name="financial_period">理财期限</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="flickr">Flickr</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="forget_password">忘记密码</string>
+    <string name="forget_password_text">忘记手势密码，需要重新登录</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="foursquare">FourSquare</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="gesture_password">手势密码</string>
+    <string name="gesture_password2">旧手势密码</string>
+    <string name="gesture_password_guide_creat_btn">创    建</string>
+    <string name="gesture_password_guide_text1">您可以建立手势解锁：</string>
+    <string name="gesture_password_guide_text2">请连接圆点  并记住路径</string>
+    <string name="gesture_unlock">手势解锁</string>
+    <string name="get_identifying_code">获取验证码</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="googleplus">Google+</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="help_center">帮助中心</string>
+    <string name="home_info_text1">赚啦收益</string>
+    <string name="home_info_text2">余    额    宝</string>
+    <string name="home_info_text3">活期存款</string>
+    <string name="huoqi1">本息保障</string>
+    <string name="huoqi2">随买随取</string>
+    <string name="huoqi3">购买成功当日</string>
+    <string name="huoqi4">(每日结算时间15:00)</string>
+    <string name="huoqi5">取现确认后，次日回款至扣款银行卡</string>
+    <string name="huoqi6">(到账时间视银行而定；节假日顺延)</string>
+    <string name="huoqi7">定期产品名</string>
+    <string name="huoqi8">定期产品名</string>
+    <string name="huoqi9">取现</string>
+    <string name="icnumber">身份证</string>
+    <string name="identify_code">验证码</string>
+    <string name="identify_code_reload">秒后重新获取</string>
+    <string name="identify_code_reloading">重新获取验证码</string>
+    <string name="identify_code_sended">已将验证码发送至：</string>
+    <string name="income">收益(元)</string>
+    <string name="income_date">预计收益时间</string>
+    <string name="income_date2">预计到账时间</string>
+    <string name="income_detail">收益详情</string>
+    <string name="info_confirm">提交成功</string>
+    <string name="input_bank_mobile">请输入预留手机号码</string>
+    <string name="input_bind_bank">请确保以下信息与银行卡登记时一致</string>
+    <string name="input_cardnumber">请输入，仅支持储蓄卡</string>
+    <string name="input_contact_way">请输入您的手机号码或qq</string>
+    <string name="input_cost">请输入购买金额</string>
+    <string name="input_financial_money">输入理财金额</string>
+    <string name="input_financial_time">输入理财期限</string>
+    <string name="input_icnumber">请输入身份证号码</string>
+    <string name="input_identifying_code">请输入验证码</string>
+    <string name="input_mobile">请输入手机号码</string>
+    <string name="input_money">请输入</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_old_gesture_password">请绘制旧的手势图案</string>
+    <string name="input_old_password">请输入旧密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_realname">请输入真实姓名</string>
+    <string name="input_realname_info">请确保以下信息与身份证信息一致</string>
+    <string name="input_register_app">欢迎来到赚啦！</string>
+    <string name="input_remittance">请输入汇款金额</string>
+    <string name="input_repeat_password">请再次输入密码</string>
+    <string name="input_setting_password">6–16个字符，区分大小写</string>
+    <string name="input_setting_transaction_password">请设置交易密码，6–16个字符，区分大小写</string>
+    <string name="input_transaction_password">请输入</string>
+    <string name="input_transaction_repeat_password">请再次输入交易密码</string>
+    <string name="inputnumber">登录/注册</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="jiaoyijilu1">交易记录</string>
+    <string name="jiaoyijilu2">全部</string>
+    <string name="jiaoyijilu3">活期</string>
+    <string name="jiaoyijilu4">定期</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="kaixin">开心网</string>
+    <string name="kakaostory">KakaoStory</string>
+    <string name="kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="kakaotalk">KakaoTalk</string>
+    <string name="kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="line">Line</string>
+    <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="linkedin">领英</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="load_again">点击屏幕，重新加载</string>
+    <string name="load_error">下载错误</string>
+    <string name="loading">加载中</string>
+    <string name="lockpattern_need_to_confirm">"请重复手势密码"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重新绘制"</string>
+    <string name="lockpattern_pattern_confirmed_header">""</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重新绘制"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="lockpattern_recording_intro_header">"创建手势密码"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="login">登录</string>
+    <string name="login_password">登录密码</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_text">确定退出登录？</string>
+    <string name="maiorqv1">购买申请已提交</string>
+    <string name="maiorqv10">订单状态，获知订单处理结果</string>
+    <string name="maiorqv11">等到确认</string>
+    <string name="maiorqv12">确认后，次日回款至扣款银行卡；</string>
+    <string name="maiorqv13">（到账时间视银行而定；节假日顺延）</string>
+    <string name="maiorqv14">本次最多可购买：</string>
+    <string name="maiorqv2">申请已提交</string>
+    <string name="maiorqv3">等到处理</string>
+    <string name="maiorqv4">请稍后在“交易记录中”中查询结果</string>
+    <string name="maiorqv5">活期累计收益（元）</string>
+    <string name="maiorqv6">活期累计收益（元）</string>
+    <string name="maiorqv7">活期累计收益（元）</string>
+    <string name="maiorqv8">支付排队中</string>
+    <string name="maiorqv9">请稍后在“交易记录”中查询</string>
+    <string name="message_text1">消息</string>
+    <string name="message_text2">已读</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="mingdao">明道</string>
+    <string name="mingdao_share_content">网页分享</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mobile">手机号码</string>
+    <string name="money">金额</string>
+    <string name="money_safe">资金安全</string>
+    <string name="multi_income">万份收益</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="neteasemicroblog">网易微博</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="new_password">新密码</string>
+    <string name="newest_version">当前已经是最新版本！</string>
+    <string name="next">下一步</string>
+    <string name="no_error">未知错误:请联系客服</string>
+    <string name="no_net">:网络没有连接</string>
+    <string name="not_nection_service">您的网络不能够连接到服务器</string>
+    <string name="ok">确    定</string>
+    <string name="ok2">确  定</string>
+    <string name="okle">知道了</string>
+    <string name="old_password">旧密码</string>
+    <string name="p2refresh_doing_end_refresh">加载中…</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新…</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_pull_to_refresh">下拉可以刷新</string>
+    <string name="p2refresh_refresh_lasttime">最近更新 : </string>
+    <string name="p2refresh_release_refresh">松开即可刷新</string>
+    <string name="page1">活期累计收益（元）</string>
+    <string name="page2">定期累计收益（元）</string>
+    <string name="page21">一元起投</string>
+    <string name="page22">一键分散</string>
+    <string name="page23">当日起息</string>
+    <string name="page24">随时取现</string>
+    <string name="page25">累计投资（元）</string>
+    <string name="page26">累计收益（元）</string>
+    <string name="page27">已投人数（人）</string>
+    <string name="page28">分散债权（个）</string>
+    <string name="page29">取现</string>
+    <string name="page3">交易记录</string>
+    <string name="page30">购买</string>
+    <string name="page31">理财期限（天）</string>
+    <string name="page32">可购金额（元）</string>
+    <string name="page33">资产安全</string>
+    <string name="page34">产品特征</string>
+    <string name="page35">本息保障</string>
+    <string name="page36">一键分散</string>
+    <string name="page37">一个月</string>
+    <string name="page38">三个月</string>
+    <string name="page39">六个月</string>
+    <string name="page4">资产详情</string>
+    <string name="page40">六个月</string>
+    <string name="page41">立即购买</string>
+    <string name="page42">售罄</string>
+    <string name="page43">支付排队中</string>
+    <string name="page44">请稍后在"交易记录"中查询</string>
+    <string name="page45">订单状态，获取订单处理结果</string>
+    <string name="page46">提交已申请</string>
+    <string name="page47">购买申请已提交</string>
+    <string name="page48">购买成功</string>
+    <string name="page49">等待收益</string>
+    <string name="page5">总资产（元）</string>
+    <string name="page50">预计收益时间:</string>
+    <string name="page6">收益</string>
+    <string name="page7">不包含未到期结算的产品收益</string>
+    <string name="page8">知道了</string>
+    <string name="partInvestAmount">起购金额(元)</string>
+    <string name="password">密码</string>
+    <string name="password_error">密码错误</string>
+    <string name="password_error_times">密码错误，还可以再输入%1$d次</string>
+    <string name="pay_account">支付账户</string>
+    <string name="pay_agreement">用户支付服务协议</string>
+    <string name="pay_agreement2">投资授权委托协议</string>
+    <string name="pay_agreement3">债权转让咨询与服务协议</string>
+    <string name="pay_agreement_text">《用户支付服务协议》</string>
+    <string name="pay_agreement_text2">《投资授权委托协议》</string>
+    <string name="pay_agreement_text3">《债券转让咨询与服务协议》</string>
+    <string name="pay_bank">支付银行</string>
+    <string name="percent"><b>%</b></string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/pull_refresh_strings.xml -->
+    <eat-comment/>
+    <string name="picture_image_loading">正在加载…</string>
+    <string name="picture_load_image_failed">点击屏幕，重新加载</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="pinterest">Pinterest</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="poundage">手续费</string>
+    <string name="product_detail">产品详情</string>
+    <string name="project_list">分散债权</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/pull_refresh_strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="purchase">购买</string>
+    <string name="purchase_btn">购  买</string>
+    <string name="purchase_btn_bold"><b>购    买</b></string>
+    <string name="purchase_confirm">确认购买</string>
+    <string name="purchase_detail">购买详情</string>
+    <string name="purchase_info_text1">2-3个工作日</string>
+    <string name="purchase_info_text2">预计收益时间:</string>
+    <string name="purchase_info_text3">上限10000元</string>
+    <string name="purchase_info_text4">购买成功</string>
+    <string name="purchase_startline">起购金额</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/pull_refresh_strings.xml -->
+    <eat-comment/>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="qq">QQ</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="qzone">QQ空间</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="realname">姓名</string>
+    <string name="realname_confirm">实名认证</string>
+    <string name="realname_master">实名认证</string>
+    <string name="realname_remind">购买理财产品需提供实名信息以确保投资安全</string>
+    <string name="receive_redeem">预计到账时间</string>
+    <string name="redeem">取现</string>
+    <string name="redeem_btn">赎  回</string>
+    <string name="redeem_confirm">取现</string>
+    <string name="redeem_confirm2">取现确认</string>
+    <string name="redeem_dialog_text1">提现金额</string>
+    <string name="redeem_dialog_text2">手      续      费</string>
+    <string name="redeem_dialog_text3">到账金额</string>
+    <string name="redeem_dialog_text4">金额不足0.01元，无法交易</string>
+    <string name="redeem_money">取现金额</string>
+    <string name="redeem_test1">取现金额</string>
+    <string name="redeem_test2">取现</string>
+    <string name="redeem_test3">金额不足0.01元，无法交易</string>
+    <string name="register">注册</string>
+    <string name="reload">点击屏幕   重新加载</string>
+    <string name="remittance">汇款金额(元)</string>
+    <string name="remittance_text1">我们已经向您%1$s的银行卡汇入一笔金额，请您确认具体的汇款金额</string>
+    <string name="remittance_text2">提示：金额在0.00元~0.99元之间</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="renren">人人网</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="repeat_password">重复密码</string>
+    <string name="reset_login">重新登录</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="risk">风险程度</string>
+    <string name="risk_control">风险控制</string>
+    <string name="risk_text1"><![CDATA[ <html><head></head><body style="text-align:justify;text-justify:distribute-all-lines;color:gray;background-color:black;"> 06.大家都知道，在android应用中UI线程5秒没响应的话就会抛出无响应异常，对于远程获取大的资源来说，这种异常还是很容易就会抛出来的，那么怎么避免这种问题的产生。在android中提供两种方法来做这件事情： 07.启动一个新的线程来获取资源，完成后通过Handler机制发送消息，并在UI线程中处理消息，从而达到在异步线程中获取图片，然后通过Handler Message来更新UI线程的过程。 </body> </html>]]></string>
+    <string name="risk_text2"/>
+    <string name="risk_text3"/>
+    <string name="rmb">元</string>
+    <string name="second_time_exit">再按一次退出赚啦</string>
+    <string name="send_redeem_ok">提交成功</string>
+    <string name="sended_identify_code">已将验证码发送至：%1$d</string>
+    <string name="service_data_error">:服务器数据异常</string>
+    <string name="service_net_error">:服务器繁忙</string>
+    <string name="set_ok">设置成功</string>
+    <string name="setting">设置</string>
+    <string name="setting_password">设置登录密码</string>
+    <string name="setting_transaction_password">设置交易密码</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="share_to_mingdao">分享到明道</string>
+    <string name="share_to_qq">分享到QQ</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_qzone_default">来自%s的分享</string>
+    <string name="shortmessage">信息</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="should_income">预期总收益</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="submit">提  交</string>
+    <string name="success_1">反馈成功</string>
+    <string name="supported_bank">支持银行</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="tencentweibo">腾讯微博</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="test1">银行预留手机号</string>
+    <string name="test10">验证银行卡</string>
+    <string name="test2">请输入</string>
+    <string name="test3">验证码</string>
+    <string name="test4">获取验证码</string>
+    <string name="test5">1.“银行预留手机号码”是在银行办理银行卡时登记的手机号码;</string>
+    <string name="test6">2.如有疑问，请咨询客服400-800-5818(09:00--21:00)</string>
+    <string name="test7">温馨提示</string>
+    <string name="test8">下一步</string>
+    <string name="test9">验证码已发送至银行预留手机</string>
+    <string name="think_kind">计算公式：</string>
+    <string name="thinking">计    算</string>
+    <string name="total_capital">总资产</string>
+    <string name="total_capital_rmb">总资产(元)</string>
+    <string name="total_income_rmb">累计收益(元)</string>
+    <string name="transaction_detail">交易详情</string>
+    <string name="transaction_order_id">交易订单号</string>
+    <string name="transaction_order_time">交易时间</string>
+    <string name="transaction_password">交易密码</string>
+    <string name="transaction_records">交易记录</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="tumblr">Tumblr</string>
+    <string name="twitter">Twitter</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="update">更  新</string>
+    <string name="upgrade_version">检测到最新版本，是否更新？</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="use_login_button">请改用“登录”按钮</string>
+    <string name="vkontakte">VK</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="wait_btn_bold"><b>即将开始</b></string>
+    <string name="waiting">等待收益</string>
+    <string name="warmly_play_text1">1.15:00前购买，当日15:00后开始计算收益；</string>
+    <string name="warmly_play_text2">2.15:00后购买，第二日15:00后开始计算收益；</string>
+    <string name="warmly_play_text3">3.取现当日不计收益。</string>
+    <string name="warmly_remind">温馨提醒</string>
+    <string name="warmly_remind_text1">1.工作日15:00前取现，当日处理，1-3个工作日到账；</string>
+    <string name="warmly_remind_text2">2.工作日15:00后取现，第二个工作日处理后，1-3个工作日到账；</string>
+    <string name="warmly_remind_text3">3.节假日取现,节假日后第一个工作日处理后,1-3个工作日到账；</string>
+    <string name="warmly_remind_text4">4.取现当日不计收益。</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="website">http://www.shareSDK.cn</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="welcome_back">欢迎回来！</string>
+    <string name="work_time">起息时间</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/pull_refresh_strings.xml -->
+    <eat-comment/>
+    <string name="xsearch_loading">正在加载中…</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="yesterday_income_rmb">昨日收益(元)</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="yixin">易信</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="youdao">有道云笔记</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="zhichan1">总资产（元）</string>
+    <string name="zhichan10">还款中（元）</string>
+    <string name="zhichan11">还款金额不计入总资产</string>
+    <string name="zhichan2">满标后计入总资产</string>
+    <string name="zhichan3">定期</string>
+    <string name="zhichan4">取现</string>
+    <string name="zhichan5">明细</string>
+    <string name="zhichan6">募集中（元）</string>
+    <string name="zhichan7">满标后计入总资产</string>
+    <string name="zhichan8">距离募集成功还有</string>
+    <string name="zhichan9">满标审核中</string>
+    <!-- From: file:/D:/work/Zhuanla_1.0.7/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="max">100</item>
+        <item name="progress">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <style name="PopupAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/ani_in</item>
+		<item name="android:windowExitAnimation">@anim/ani_out</item>
+	</style>
+    <style name="button_style_1">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/global_text_size19</item>
+      
+   </style>
+    <style name="calculator_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item> 
+        
+    </style>
+    <style name="custom_button" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    <style name="custom_button2" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    <style name="custom_button3" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button_blue</item>
+    </style>
+    <style name="custom_button4" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    <style name="custom_button5" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector_agreement</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="custom_textview" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/ziti7</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview0" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview1" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/ziti5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview10" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="custom_textview11" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/red2</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview12" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview2" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview22" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview3" parent="@android:style/Widget.TextView">
+
+        <!-- 白色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview4" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview44" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">#ff747474</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+       
+    </style>
+    <style name="custom_textview5" parent="@android:style/Widget.TextView">
+
+        <!-- 针对小字体的用户使用协议提示-->
+        <item name="android:textColor">@color/ziti3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="custom_textview6" parent="@android:style/Widget.TextView">
+
+        <!-- 输入手机号码等，放大了看-->
+        <item name="android:textColor">@color/red1</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview8" parent="@android:style/Widget.TextView">
+
+        <!-- 灰色16号字体-->
+        <item name="android:textColor">@color/ziti5</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview9" parent="@android:style/Widget.TextView">
+
+        <!-- 淡黑色字体-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:drawablePadding">1dip</item>
+    </style>
+    <style name="main_bottom_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="mxx_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        
+    </style>
+</resources>

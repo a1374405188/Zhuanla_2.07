@@ -1,0 +1,251 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+<!-- 标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:background="@drawable/btn_selector_back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:id="@+id/ll_ll1"
+            >
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ziti1"
+                android:textSize="18sp"
+                android:text="@string/jiaoyijilu1"
+                />
+            <ImageView
+                android:id="@+id/iv_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jiaoyijilu_unextends"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                />
+         </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <View
+          android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line2"
+        
+        
+        />
+<ListView
+    android:id="@+id/lv"
+      android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:divider="@color/line2"
+        android:dividerHeight="1px"
+        android:visibility="gone"
+    >
+    
+    
+ </ListView>
+    
+     <LinearLayout
+            android:id="@+id/ll_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>  
+    
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+           <include layout="@layout/activity_transaction3" />
+
+
+        </LinearLayout>
+<!--选择活期定期或者全部-->
+        <LinearLayout
+            android:id="@+id/ll_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <!--全部-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jiaoyijilu1"
+                android:id="@+id/rl1"
+                >
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="#ffffffff"
+                     android:gravity="bottom"
+                     >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/global_bg1"
+                        />
+                 </LinearLayout>
+                  <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    >
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="@dimen/jiaoyijilu3"
+                        android:layout_height="match_parent"
+                        android:background="@color/jiaoyijilu2"
+                        ></View>
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00ffffff"
+                        android:text="@string/jiaoyijilu2"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/jiaoyijilu2"
+                        android:textSize="@dimen/jiaoyijilu4"
+                        android:textColor="@color/jiaoyijilu2"
+
+                        />
+                </LinearLayout>
+             </RelativeLayout>
+
+            <!--活期-->
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jiaoyijilu1"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"
+                    android:gravity="bottom"
+                    >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/global_bg1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    >
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="@dimen/jiaoyijilu3"
+                        android:layout_height="match_parent"
+                        android:background="#00ffffff"
+                        ></View>
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00ffffff"
+                        android:text="@string/jiaoyijilu3"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/jiaoyijilu2"
+                        android:textSize="@dimen/jiaoyijilu4"
+                        android:textColor="@color/jiaoyijilu1"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <!--定期-->
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/jiaoyijilu1"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"
+                    android:gravity="bottom"
+                    >
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/global_bg1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    >
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="@dimen/jiaoyijilu3"
+                        android:layout_height="match_parent"
+                        android:background="#00ffffff"
+                        ></View>
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00ffffff"
+                        android:text="@string/jiaoyijilu4"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/jiaoyijilu2"
+                        android:textSize="@dimen/jiaoyijilu4"
+                        android:textColor="@color/jiaoyijilu1"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#30000000"
+                >
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

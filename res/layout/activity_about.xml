@@ -1,0 +1,332 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="1dp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/about_bk_text"
+                android:textColor="@color/ziti6"
+                android:textSize="15sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/gray"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_aboutbk_top"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/custom_textview11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年12月"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/custom_textview12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_1"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableRow>
+
+              
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_aboutbk_middle"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/custom_textview11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年11月" />
+
+                        <TextView
+                            style="@style/custom_textview12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_2" />
+                    </LinearLayout>
+                </TableRow>
+
+              
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_aboutbk_bottom"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/custom_textview11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年8月" />
+
+                        <TextView
+                            style="@style/custom_textview12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_3" />
+                    </LinearLayout>
+                </TableRow>
+         <!--  
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_aboutbk_middle"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/custom_textview11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年3月" />
+
+                        <TextView
+                            style="@style/custom_textview12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_7" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_aboutbk_bottom"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/custom_textview11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年2月" />
+
+                        <TextView
+                            style="@style/custom_textview12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_8" />
+                    </LinearLayout>
+                </TableRow>
+                -->    
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_telphone"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        style="@style/custom_textview2"
+                        android:id="@+id/textview_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/beike_telephone" />
+                </RelativeLayout>
+<!-- qq -->    
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/qq_img"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        style="@style/custom_textview2"
+                 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/beike_qq" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_email"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        style="@style/custom_textview2"
+                        android:id="@+id/textview_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/beike_email" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_item_height" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_brower"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        style="@style/custom_textview2"
+                        android:id="@+id/textview_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/beike_website" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

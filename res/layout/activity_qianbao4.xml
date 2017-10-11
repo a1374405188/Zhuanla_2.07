@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    <!-- 标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:background="@drawable/btn_selector_back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:id="@+id/ll_ll1"
+            >
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ziti1"
+                android:textSize="18sp"
+                android:text="收支明细"
+                />
+            <ImageView
+                android:id="@+id/iv_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jiaoyijilu_unextends"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <!--交易记录选择-->
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xiaoxi_tab_height2"
+            android:background="#ffffffff"
+            android:paddingBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_transa_list"
+                >
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="全部"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp"
+                    android:background="@drawable/bg_transa_list_left"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffdd2238"
+                    />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="购买"
+                    android:gravity="center"
+                    android:textColor="#ffdd2238"
+                    android:textSize="13sp"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffdd2238"
+                    />
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="赎回"
+                    android:gravity="center"
+                    android:textColor="#ffdd2238"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/line2"
+            android:dividerHeight="1px"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+        </ListView>
+        <LinearLayout
+            android:id="@+id/ll_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+        
+        
+        </LinearLayout>
+      
+    </LinearLayout>
+
+
+</LinearLayout>

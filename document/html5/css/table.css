@@ -1,0 +1,319 @@
+ html{ 
+margin:0px; 
+height:100%; 
+
+} 
+#d1
+{
+  
+  width:100%;
+  
+  background:#f9465b;
+  overflow-x:hidden;
+  
+}
+
+#d1_1{
+ 
+  
+  width:100%;
+ 
+  margin:0px;
+  display:inline-block;
+ 
+  padding-left:2%;
+  
+   background:#f9465b;
+
+}
+#d1_1_1{
+ 
+  color:ffffff;
+  
+  font-size:2em;
+  width:50%;
+  float:left;
+}
+#d1_1_2{
+  
+  color:ffffff;
+  
+  font-size:2em;
+  width:49%;
+  float:left;
+  
+}
+#d1_3_2{
+  
+  color:ffffff;
+ 
+  font-size:2em;
+ 
+  font-size:2em;
+  
+}
+#d1_3_1{
+ 
+  color:fbbcc3;
+  
+}
+
+#d1_2{
+  float:left;
+  
+  width:1px;
+  
+  
+  display:inline;
+  height:13%;
+ 
+  
+  color:ffffff;
+  background:fbbcc3;
+  margin-top:5px;
+  margin-bottom:5px;
+  
+  
+}
+#d1_3{
+  
+  background:#f9465b;
+  width:45%;
+  
+  margin:0px;
+  display:inline-block;
+
+  padding-left:2%;
+  
+}
+
+#d2
+{
+
+
+}
+.a{
+
+ width:100%;
+ color:#ffffff;
+ background:#dd2238;
+
+ padding-left:2%;
+ margin-top:20px;
+ clear:both;
+ overflow:hidden;
+}
+.b
+{
+   background:#e7e7e7;
+   width:100%;
+   overflow:hidden;
+  
+  
+}
+.c
+{
+   background:#ffffff;
+   width:100%;
+   overflow:hidden;
+  
+   
+}
+.b1
+{
+  float:left;
+  
+  color:#747474;
+  width:18%;
+  overflow:hidden;
+  padding-left:2%;
+}
+.c1{
+  float:left;
+  overflow:hidden;
+  color:#2d2d2d;
+  width:26%;
+ 
+  font-size:6px;
+}
+.b2
+{
+  float:left;
+  
+  color:#747474;
+  width:18%;
+  overflow:hidden;
+  padding-left:2%;
+}
+.c2{
+  float:left;
+  overflow:hidden;
+  color:#2d2d2d;
+  width:31%;
+ 
+  font-size:6px;
+}
+
+
+.c3{
+  float:left;
+  overflow:hidden;
+  color:#2d2d2d;
+  width:75%;
+ 
+  
+}
+
+.item
+{
+  height:100px;
+  overflow:hidden;
+  
+}
+.line
+{
+  overflow:hidden;
+  width:1px;
+  background:#b0b0b0;
+  color:#b0b0b0;
+  float:left;
+  margin-top:8px;
+  margin-bottom:8px;
+
+}
+.itemt
+{  
+   width:98%;
+   padding-right:2%;
+   padding-top:2%;
+   padding-bottom:2%;
+   
+
+}
+.outer {
+  display:table; width:100%; overflow:hidden; 
+  background: #dd2238; 
+}
+.middle {display:table-cell; vertical-align:middle; padding-right:2%;} 
+
+/**
+ * 滑动样式
+ */
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	font-family:helvetica;
+	overflow-x:hidden;
+	 
+}
+
+#pullDown, #pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+	
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block; float:left;
+	width:40px; height:40px;
+	background:url(../files/pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+/*------------- E 默认必须样式  -------------*/		
+		
+
+
+
+/*------------- S 以下css主要是仿IOS滚动条样式(可选样式)  -------------*/		
+/**
+ * Horizontal Scrollbar
+ */
+/*------------- S 以下css主要是仿IOS滚动条样式(可选样式)  -------------*/		
+/**
+ * Horizontal Scrollbar
+ */
+.myScrollbarH {
+	position:absolute;
+	z-index:100;
+	height:7px;
+	bottom:1px;
+	left:2px;
+	right:7px
+}
+
+.myScrollbarH > div {
+	height:100%;
+}
+
+/**
+ * Vertical Scrollbar
+ */
+.myScrollbarV {
+	position:absolute;
+	z-index:100;
+	width:7px;bottom:7px;top:2px;right:1px
+}
+
+.myScrollbarV > div {
+	width:100%;
+}
+
+/**
+ * Both Scrollbars
+ */
+.myScrollbarH > div,
+.myScrollbarV > div {
+	position:absolute;
+	z-index:100;
+
+	/* The following is probably what you want to customize */
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	border-width:3px;
+	-webkit-border-image:url(scrollbar.png) 6 6 6 6;
+	-moz-border-image:url(scrollbar.png) 6 6 6 6;
+	-o-border-image:url(scrollbar.png) 6 6 6 6;
+	border-image:url(scrollbar.png) 6 6 6 6;
+}
+/*------------- E 以上css主要是仿IOS滚动条样式  -------------*/

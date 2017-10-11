@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+
+    <ExpandableListView
+        android:id="@+id/listview_help_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/line3"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:indicatorLeft="-200dp"
+        />
+
+</LinearLayout>

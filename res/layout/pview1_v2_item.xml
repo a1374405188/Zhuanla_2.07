@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:gravity="center_vertical"
+        
+        >
+        <TextView
+               android:id="@+id/tv_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="编号"
+              android:textColor="#ff333333"
+              android:textSize="16sp"
+            
+            />
+            <TextView
+                  android:id="@+id/tv_id"
+               android:layout_marginLeft="16dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="标的编号"
+              android:textColor="#ff999999"
+              android:textSize="16sp"
+            
+            />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:gravity="center_vertical"
+        
+        >
+            
+              <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+         android:gravity="center_vertical"
+         android:orientation="vertical"
+        >
+        <TextView
+                 android:id="@+id/tv_money"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0元"
+              android:textColor="#ff333333"
+              android:textSize="16sp"
+            
+            />
+            <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="标的金额"
+              android:textColor="#ff999999"
+              android:textSize="16sp"
+            
+            />
+    </LinearLayout>
+          
+                  <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+       
+         android:orientation="vertical"
+         android:gravity="center"
+        >
+        <TextView
+                 android:id="@+id/tv_lilv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0%"
+              android:textColor="#ff333333"
+              android:textSize="16sp"
+            
+            />
+            <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="借款利率"
+              android:textColor="#ff999999"
+              android:textSize="16sp"
+            
+            />
+    </LinearLayout>
+          
+         
+                  <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+         android:gravity="center_vertical|right"
+         android:orientation="vertical"
+        >
+           
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="right"
+                >
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    
+                    android:src="@drawable/img_v2_fengxiandengji"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/img_v2_fengxiandengji"
+                    android:visibility="gone"
+                    />
+                  <ImageView
+                      android:id="@+id/iv3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/img_v2_fengxiandengji"
+                    android:visibility="gone"
+                    />
+                   <ImageView
+                       android:id="@+id/iv4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/img_v2_fengxiandengji"
+                    android:visibility="gone"
+                    />
+                    <ImageView
+                        android:id="@+id/iv5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/img_v2_fengxiandengji"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <TextView
+              android:layout_marginTop="3dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="风险等级"
+              android:textColor="#ff999999"
+              android:textSize="16sp"
+            
+            />
+    </LinearLayout>       
+              
+              
+              
+          
+      </LinearLayout>  
+    
+    
+    
+</LinearLayout>

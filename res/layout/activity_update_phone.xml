@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray"
+    >
+    <include layout="@layout/title_bar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        >
+          <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space_height"
+        />
+ <!-- 发送短信后提示 -->
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/test9"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="187****2741"
+            android:hint="@string/test2"
+            />
+    </LinearLayout>
+  <!-- 银行卡-->   
+     <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:background="#ffffffff"
+         >
+           <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="银行卡"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            style="@style/custom_textview1"
+            />
+          <TextView 
+            android:id="@+id/tv_bank"  
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textSize="17sp"
+            android:textColor="#ff323232"
+            />
+         </LinearLayout>
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space_height"
+        />
+ <!-- 手机号 -->    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:background="#ffffffff"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="手机号"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            style="@style/custom_textview1"
+            />
+          <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/ed_ed1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_textview_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入预留手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+    </LinearLayout>
+    
+
+     
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space_height"
+        />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:paddingLeft="@dimen/line_space_left"
+        android:background="#ffffffff"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/test3"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            style="@style/custom_textview1"
+            />
+              <com.beikbank.android.widget.ClearableEditText
+                android:id="@+id/ed_ed2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_textview_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/ziti6"
+                android:textColorHint="@color/ziti7"
+                android:textSize="17sp" />
+        <View 
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="@color/gray"
+            />
+        <TextView 
+            android:id="@+id/textview_get_identifying_code"
+            style="@style/custom_textview0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/test4"
+            android:gravity="center"
+
+            />
+           <LinearLayout
+                android:id="@+id/linear_reload_identify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_identifying_code_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/ziti5"
+                    android:textSize="15sp" />
+            </LinearLayout>
+    </LinearLayout>
+  <include layout="@layout/error_info"/>
+
+    
+
+</LinearLayout>
+</LinearLayout>

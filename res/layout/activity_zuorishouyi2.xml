@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg3"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/global_bg1"
+        
+        />
+  
+  
+  
+  
+  
+  
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffd7d7d7"
+       />
+   
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:background="#ffffffff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="累计收益(元)"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            />
+         <TextView
+             android:id="@+id/tv_leiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.00"
+            android:textColor="#fffb5a5c"
+            android:textSize="50sp"
+            />
+        
+    </LinearLayout
+        >
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_parent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+        >
+        
+        
+        
+    </LinearLayout>
+</LinearLayout>

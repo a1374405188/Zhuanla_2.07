@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white2"
+    android:orientation="vertical"
+    android:gravity="center"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_confirm_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手续费"
+            android:textColor="@color/ziti6"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="取现每笔手续费2元,每月首次取现免手续费"
+                android:textColor="@color/ziti5"
+                android:textSize="16sp" />
+            
+         
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line4" />
+
+    <LinearLayout
+        android:id="@+id/dialog_confirm_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mxx_view_bg_default3"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/redeem_popupwindow.xml -->

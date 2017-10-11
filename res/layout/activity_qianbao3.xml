@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_bg1"
+    >
+    <include layout="@layout/title_bar" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+       
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到账银行卡"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            style="@style/custom_textview1"
+            android:textColor="@color/ziti1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+
+            android:textSize="15sp"
+            android:background="#ffffffff"
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            style="@style/custom_textview1"
+            android:textColor="@color/ziti1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+       android:visibility="gone"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            
+
+            android:background="@color/line2" />
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/ll_ll1"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_item_height"
+            android:background="@drawable/bg_more_item"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+            <TextView
+                style="@style/custom_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手续费" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免手续费"
+                    style="@style/custom_textview2"
+                    />
+                <!--      <TextView
+                        android:id="@+id/tv_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="限当月首笔"
+                        />
+                -->
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redeem_dialog_gb"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+        android:layout_marginTop="20dp"
+       
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="提现金额"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            style="@style/custom_textview1"
+            android:textColor="@color/ziti1"
+            />
+        <com.beikbank.android.widget.ClearableEditText
+            android:id="@+id/et_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:textSize="15sp"
+            android:background="#ffffffff"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/ziti7"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="元"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            style="@style/custom_textview1"
+            android:textColor="@color/ziti1"
+            />
+    </LinearLayout>
+<!--  提示-->   
+<LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:orientation="vertical"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:gravity="center_vertical"
+      android:layout_marginTop="3dp"
+    >
+    
+    <LinearLayout 
+         
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        
+        >
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="投资回款余额:"
+             android:textColor="#ff747472"
+             android:textSize="13sp"
+            
+             />
+            <TextView
+                 android:id="@+id/tv3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0.00元"
+             android:textColor="#ff747472"
+             android:textSize="13sp"
+             />
+   
+       <View
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+            
+             />
+    <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:layout_gravity="right"
+        >
+        <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ziti5"
+        android:textSize="13sp"
+        android:text="剩余免费提现"
+       
+        />
+        <TextView
+        android:id="@+id/tv2"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@color/blue"
+        android:textSize="13sp"
+        android:text="0"
+       
+        />
+        <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ziti5"
+        android:textSize="13sp"
+        android:text="次"
+       
+        />
+    </LinearLayout>
+    </LinearLayout>
+      
+</LinearLayout> 
+   <LinearLayout 
+       android:id="@+id/ll4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+        
+        >
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="充值未投资余额:"
+             android:textColor="#ff747472"
+             android:textSize="13sp"
+            
+             />
+            <TextView
+             android:id="@+id/tv4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0.00元"
+             android:textColor="#ff747472"
+             android:textSize="13sp"
+             />
+       </LinearLayout>  
+<!--  提示 end-->    
+    <include layout="@layout/error_info"/>
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_selector_button"
+        android:layout_height="@dimen/global_button_height"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="下一步"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/global_text_size19"
+        android:enabled="false"
+        android:visibility="gone"
+        />
+     <!-- 温馨提示 -->
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_left_space"
+                android:layout_marginRight="@dimen/global_right_space"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_warmly_remind"
+                android:drawablePadding="@dimen/activity_small_margin"
+                android:gravity="bottom"
+                android:text="@string/warmly_remind"
+                android:textColor="@color/blue"
+                android:textSize="13sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_warm_line"
+                android:layout_marginTop="@dimen/activity_small_margin"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_left_space"
+                android:layout_marginRight="@dimen/global_right_space"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="1、工作日16时前提现，最快2小时内，最迟当日24时到账；16时后及非工作日提现，正常情况下将在下一个工作日中午前到账(具体到账时间根据各银行速度及跨行交易规则决定)"
+                android:textColor="@color/ziti5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_left_space"
+                android:layout_marginRight="@dimen/global_right_space"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="2、银行暂不支持非工作日对公业务，请用户合理安排提现时间"
+                android:textColor="@color/ziti5"
+                android:textSize="13sp" />
+
+          ，。。<LinearLayout 
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/global_left_space"
+                android:layout_marginRight="@dimen/global_right_space"
+              >
+            <TextView
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="3、每月3次免费提现优惠，免费次数外2元/笔"
+                android:textColor="@color/ziti5"
+                android:textSize="13sp" />
+           
+            </LinearLayout>
+            <LinearLayout 
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_left_space"
+                android:layout_marginRight="@dimen/global_right_space"
+                >
+             <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="4、充值未投资余额不享受免费次数，提现收取3‰手续费，最低2元/笔（所有费用均为第三方支付收取）。"
+                android:textColor="@color/ziti5"
+                android:textSize="13sp" />
+          
+             
+           </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+

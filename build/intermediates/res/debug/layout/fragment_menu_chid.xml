@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <LinearLayout
+           android:id="@+id/ll_head"
+           android:paddingTop="@dimen/left_space_1"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/left_3item_hight"
+            >
+         <include layout="@layout/left_unlogin"/>
+            
+        </LinearLayout>
+     <ScrollView 
+          android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"
+           android:scrollbars="none"
+           android:fadingEdge="none"
+           android:fastScrollEnabled="true"
+         >
+         
+    
+      <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           
+<!-- 活动 -->
+         <LinearLayout
+           android:id="@+id/ll_huodong"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/left_item_hight"
+           android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space" 
+           android:gravity="center"
+           android:visibility="gone"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_unaction"
+                />
+            <TextView 
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动"
+                android:textSize="@dimen/left_item_textsize"
+                android:textColor="#ff747474"
+                />
+             <View 
+                  android:layout_width="0px"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                 />
+              <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="即将开始"
+                android:textSize="@dimen/left_item_textsize"
+                android:textColor="#ff747474"
+                />
+        </LinearLayout>
+        
+        <!-- <RelativeLayout
+            android:id="@+id/relative_exec_center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_exec_center"
+                android:drawablePadding="@dimen/activity_textview_margin"
+                android:gravity="center_vertical"
+                android:text="活动"
+                android:textColor="@color/status3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_exec_remind" />
+        </RelativeLayout> -->
+<!-- bank -->
+          <RelativeLayout
+              android:id="@+id/relative_zhichan"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/left_item_hight"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/left_left_space"
+              android:paddingRight="@dimen/left_right_space"  >
+
+              <TextView
+                  android:id="@+id/textview_zhichan"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/text_height"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:drawableLeft="@drawable/left_zhichan"
+                  android:drawablePadding="@dimen/activity_textview_margin"
+                  android:gravity="center_vertical"
+                  android:text="资产"
+                  android:textColor="@color/status3"
+                  android:textSize="@dimen/left_item_textsize" />
+
+              <!--     <ImageView
+                     android:id="@+id/image_arrow_bank"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/ic_arrow_downs" />
+                     -->
+          </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_bank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_item_hight"
+            android:orientation="horizontal"
+             android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space"  >
+             
+            <TextView
+                android:id="@+id/textview_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_banks"
+                android:drawablePadding="@dimen/activity_textview_margin"
+                android:gravity="center_vertical"
+                android:text="银行卡"
+                android:textColor="@color/status3"
+               android:textSize="@dimen/left_item_textsize" />
+
+         <!--     <ImageView
+                android:id="@+id/image_arrow_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_downs" />
+                -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_bank_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_space_2"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textview_supportbank"
+                android:layout_width="match_parent"
+                 android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="支持银行"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+            <LinearLayout 
+                android:id="@+id/linear_bankmaster_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <include layout="@layout/layout_line2" />
+            
+              <TextView
+                android:id="@+id/tv_bindbank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="绑定银行卡"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+            
+            <TextView
+                android:id="@+id/textview_masterbank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="银行卡管理"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+             <include layout="@layout/layout_line2" />
+            </LinearLayout>
+        </LinearLayout>
+<!--密码-->
+        <LinearLayout
+            android:id="@+id/relative_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_item_hight"
+            android:orientation="horizontal"
+             android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space" 
+           android:gravity="center_vertical"
+            >
+             <ImageView 
+                  android:id="@+id/img_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_password_un"
+                /> 
+           <TextView
+                android:id="@+id/textview_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+                android:drawablePadding="@dimen/activity_textview_margin"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:textColor="@color/status3"
+                android:textSize="@dimen/left_item_textsize" />
+
+          <!--   <ImageView
+                android:id="@+id/image_arrow_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_downs" />
+                --> 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_password_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/left_space_2"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textview_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="修改登录密码"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+          <LinearLayout
+                android:id="@+id/linear_buy_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone"
+                >
+            <include layout="@layout/layout_line2" />
+             <TextView
+                android:id="@+id/tv_set_transacpassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:visibility="gone"
+                android:text="设置交易密码"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+            <TextView
+                android:id="@+id/textview_change_transacpassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:visibility="gone"
+                android:text="修改交易密码"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+             <include layout="@layout/layout_line2" />
+          </LinearLayout>
+           
+
+            <RelativeLayout
+                android:id="@+id/linear_gesture_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingRight="25dp" >
+
+                <TextView
+                    android:id="@+id/textview_switch_gesturepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="手势密码"
+                    android:textColor="@color/ziti3"
+                    android:textSize="@dimen/text_size2" />
+
+                <com.beikbank.android.widget.SwitchButton
+                    android:id="@+id/switch_gesture_unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+              <include layout="@layout/layout_line2" />
+            <LinearLayout
+                android:id="@+id/linear_gesture_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+               
+
+                <TextView
+                    android:id="@+id/textview_change_gesturepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_height2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="60dp"
+                    android:text="修改手势密码"
+                    android:textColor="@color/ziti3"
+                    android:textSize="@dimen/text_size2" />
+                <include layout="@layout/layout_line2" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!-- message -->
+        <LinearLayout
+           android:id="@+id/ll_xiaoxi"
+           android:layout_width="match_parent"
+          android:layout_height="@dimen/left_item_hight"
+            android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space" 
+           android:gravity="center"
+            >
+            <ImageView 
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_message"
+                />
+            <TextView 
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textColor="@color/status3"
+               android:textSize="@dimen/left_item_textsize"
+                />
+             <View 
+                  android:layout_width="0px"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                 />
+              <TextView 
+                android:id="@+id/tv_msgcount"
+                android:gravity="center"
+                android:layout_width="@dimen/left_xiaoxi_width"
+                android:layout_height="@dimen/left_xiaoxi_height"
+                
+                android:background="@drawable/left_yuan"
+                android:textSize="@dimen/left_msg_textsize"
+                android:textColor="#ffffffff"
+                android:visibility="invisible"
+                
+                />
+        </LinearLayout>
+
+<!-- 更多 -->
+        <RelativeLayout
+            android:id="@+id/relative_more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_item_hight"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space"  >
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_mores"
+                android:drawablePadding="@dimen/activity_textview_margin"
+                android:gravity="center_vertical"
+                android:text="更多"
+                android:textColor="@color/status3"
+              android:textSize="@dimen/left_item_textsize"  />
+
+           <!--   <ImageView
+                android:id="@+id/image_arrow_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_downs" />
+           -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_more_child"
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" 
+            android:layout_marginLeft="@dimen/left_space_2"
+            >
+
+            <TextView
+                android:id="@+id/textview_helpcenter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="帮助中心"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+
+            <include layout="@layout/layout_line2" />
+
+            <TextView
+                android:id="@+id/textview_feedback"
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="意见反馈"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+
+            <include layout="@layout/layout_line2" />
+
+            <TextView
+                android:id="@+id/textview_aboutbk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="关于我们"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+
+            <include layout="@layout/layout_line2" />
+
+            <TextView
+                android:id="@+id/textview_enourage"
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/text_height2"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="鼓励一下"
+                android:textColor="@color/ziti3"
+                android:textSize="@dimen/text_size2" />
+             <include layout="@layout/layout_line2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relative_version"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_item_hight"
+            android:orientation="horizontal"
+          android:paddingLeft="@dimen/left_left_space"
+           android:paddingRight="@dimen/left_right_space" 
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+ 
+                android:drawableLeft="@drawable/ic_version"
+                android:drawablePadding="@dimen/activity_textview_margin"
+                android:gravity="center_vertical"
+                android:text="版本"
+                android:textColor="@color/status3"
+                android:textSize="@dimen/left_item_textsize" />
+            <TextView 
+                 android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                />
+            <TextView
+                android:id="@+id/textview_versioncode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                
+                android:textColor="@color/status3"
+                android:textSize="@dimen/text_size" />
+            <ImageView 
+                android:id="@+id/imageview_versionnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_version_new"
+                 android:visibility="gone"
+               />
+
+        </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        
+        />
+    </LinearLayout>
+     </ScrollView>
+    <TextView
+        android:id="@+id/textview_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="@dimen/left_right_space"
+        android:layout_marginBottom="18dp"
+        android:gravity="bottom"
+        android:text="退出登录"
+        android:textColor="@color/status3"
+        android:textSize="@dimen/left_item_textsize"/>
+
+</LinearLayout>
+<!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/fragment_menu_chid.xml -->

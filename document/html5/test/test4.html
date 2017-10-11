@@ -1,0 +1,106 @@
+<html>  
+<head runat="server">  
+<title>拉动滚动条加载数据</title>  
+<script src="http://www.daimajiayuan.com/templets/skins/js/jquery-1.8.1.min.js" type="text/javascript"></script>  
+<script type="text/javascript">  
+$(function () {  
+var i = 4;$(window).bind("scroll", function (event)  
+{  
+//滚动条到网页头部的 高度，兼容ie,ff,chrome  
+var top = document.documentElement.scrollTop + document.body.scrollTop;  
+//网页的高度  
+var textheight = $(document).height();  
+// 网页高度-top-当前窗口高度  
+if (textheight - top - $(window).height() <= 100) { if (i >= 100) { return;  
+//控制最大只能加载到100  
+}  
+$('#div1').css("height", $(document).height() + 100);i++;  
+//可以根据实际情况，获取动态数据加载 到 div1中  
+$('<div>' + i + '</div>').appendTo($('#div1'));  
+}  
+});  
+})  
+</script>  
+<style>  
+#div1 div  
+{  
+font-size: 100px;  
+background: #ccc;  
+margin-top: 5px;  
+}  
+</style>  
+</head>  
+<body>  
+<form id="form1" runat="server">  
+<div style="height: 1000px;" id="div1">  
+<div>  
+</div>  
+<div>  
+</div>  
+<div>  
+</div>  
+<div>  
+</div>  
+</div>  
+</form>  
+
+
+
+
+
+ <!--名称-->
+	        <div id="d2_1" class="item a">
+	          浙江贝壳财富
+	        </div>
+			 <!--金额-->
+			 <div id="d2_2" class="item b">
+	            <div id="d2_2_1" class="item b1">
+	             债券金额
+	            </div>
+				<div id="d2_2_2" class="item c1">
+	             200000
+	            </div>
+				<div  class="line">
+	             p
+	            </div>
+				<div id="d2_2_4" class="item b1">
+	             资产提供
+	            </div>
+				<div id="d2_2_5" class="item c1">
+	             灰灰带
+	            </div>
+	    
+	        </div>
+			 <!--返款方式-->
+			 <div id="d2_3" class="item c">
+	      
+	            <div id="d2_3_1" class="item b1">
+	             返款方式
+	            </div>
+				<div id="d2_3_2" class="item c1">
+	             等额本息
+	            </div>
+				<div  class="line">
+	             p
+	            </div>
+				<div id="d2_3_4" class="item b1">
+	             债券类型
+	            </div>
+				<div id="d2_3_5" class="item c1">
+	             消费信贷
+	            </div>
+	        </div>
+			 <!--保证方式-->
+			  <div id="d2_4" class="item b">
+	            <div id="d2_4_1" class="item b1">
+	             保障方式:
+	            </div>
+				<div id="d2_4_2" class="item c1">
+	             资产方回购
+	            </div>
+				
+	    
+	        </div>
+
+</body>  
+</html> 

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@drawable/btn_selector_back2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/ziti1"
+        android:textSize="18sp" />
+
+     <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ff747474"
+        android:textSize="16sp"
+        android:text="支持银行卡"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+<LinearLayout
+     android:id="@+id/ll_add_bank"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_marginTop="60dp"
+    >
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/img_bank_add"
+        />
+    
+     <TextView
+         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff999999"
+        android:textSize="16sp"
+        android:text="添加银行卡"
+        android:layout_marginLeft="10dp"
+
+         />
+ </LinearLayout>
+
+</LinearLayout>

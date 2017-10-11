@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="global_bg1">#fff6f6f6</color>
+ <!--全局背景色2-->    
+    <color name="global_bg2">#fff4efef</color>
+ <!--全局背景色3-->    
+    <color name="global_bg3">#fff6f6f6</color>
+    
+ <!-- 白色-->
+    <color name="global_text1">#ffffffff</color>
+  <!--灰色-->
+    <color name="global_text2">#ff747474</color>
+  <!--黑色-->
+    <color name="global_text3">#ff2d2d2d</color>
+  <!--红色-->
+    <color name="global_text4">#ffdd2238</color>
+    <!--灰色2-->
+   <color name="global_text5">#ffb0b0b0</color>
+    <color name="global_red_bg1">#ffDD2139</color>
+    <color name="white">#ffffffff</color>
+    <color name="alpha_white">#f7ffffff</color>
+    <color name="black">#000000</color>
+    <color name="ziti1">#343439</color>
+    <color name="ziti2">#6A6C76</color>
+    <color name="ziti3">#9C9FAC</color>
+    <color name="ziti4">#D3D5E0</color>
+    <color name="lightgray">#FAFAFA</color>
+    <color name="line1">#9C9FAC</color>
+    <color name="line2">#D3D5E0</color>
+    <color name="line3">#E5E6EF</color>
+    <color name="line5">#fff4f4f4</color>
+    <color name="line6">#00E5E6EF</color>
+    <color name="red1">#9D1829</color>
+    <color name="red2">#DD2139</color>
+    <color name="red3">#F26D7E</color>
+    <color name="red4">#FFCAD1</color>
+    <color name="red5">#FFE5E8</color>
+    <color name="red6">#ffdd2238</color>
+    <color name="red7">#fff9465b</color>
+    
+    <color name="blue">#0976aa</color>
+    <color name="gray">#f6f6f9</color>
+    <color name="orange">#e15943</color>
+    <color name="pink">#ffcad1</color>
+    <color name="scroll_gray">#f6f6f9</color>
+    <color name="scroll_up">#d3d5e0</color>
+    <color name="mohu">#e12593F1</color>
+    <color name="white1">#FFE5E8</color>
+    <color name="line4">#ffededed</color>
+
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <drawable name="trans">@color/color_hei_8</drawable>
+    <color name="pop_bg">#e1000000</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="black1">#99000000</color>
+    
+    <color name="mxx_item_theme_color">#ff005092</color>
+    
+    <color name="fail1">#9C9FAC</color>
+    <color name="fail2">#6A6C76</color>
+    <color name="doing1">#2593F1</color>
+    <color name="doing2">#0B6CC0</color>    
+    
+    <color name="text_color">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+    
+    <color name="light_blue">#BDDEFB</color>
+    <color name="dark_blue">#2593F1</color>
+    
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+ <!-- 收益计算对话框-->
+    <color name="count_shouyi_1">#ff747474</color>
+    <color name="count_shouyi_2">#ffdd2238</color>
+    <color name="count_shouyi_3">#fff4f4f4</color>
+    <color name="count_shouyi_4">#ffe7e7e7</color>
+    <color name="count_shouyi_5">#ffb0b0b0</color>
+
+    <color name="ziti5">#ff747474</color>
+    <color name="ziti6">#2d2d2d</color>
+    <color name="ziti7">#B0B0B0</color>
+    
+    <color name="status2">#F4F4F4</color>
+    <color name="status3">#ffD6D6D6</color>
+    <color name="status4">#2D2D2D</color>
+ <!--交易记录-->
+    <color name="jiaoyijilu1">#ff747474</color>
+    <color name="jiaoyijilu2">#ffdd2238</color>
+    <color name="jiaoyijilu3">#ff747474</color>
+    <!-- dingdan-->
+    <color name="dingdan1">#ffffffff</color>
+    <color name="dingdan2">#ff747474</color>
+    <color name="dingdan3">#ff2d2d2d</color>
+<!-- dingqi-->
+    <color name="dingqi1">#ffffffff</color>
+    <color name="dingqi2">#ff747474</color>
+    <color name="dingqi3">#ff2d2d2d</color>
+    <!-- 投资项目 -->
+    <color name="project_text1">#ff2D2D2D</color>
+     <color name="project_text2">#ff747474</color>
+    <color name="project_bg1">#ffe7e7e7</color>
+    <color name="project_line">#ffb0b0b0</color>
+<!-- 对话框的颜色 -->
+    <color name="dialog_text1">#ff747474</color>
+    <color name="dialog_text2">#ff2d2d2d</color>
+    <color name="dialog_text3">#ffdd2238</color>
+    <color name="dialog_text4">#ffb0b0b0</color>
+    <color name="dialog_text5">#ff0976aa</color>
+    <color name="dialog_line">#ffb0b0b0</color>
+<!-- 购买详情 -->
+    <!-- error -->
+    <color name="buy_info1">#ff747474</color>
+    <color name="buy_info2">#ff747474</color>
+    <!-- doing -->
+    <color name="buy_info3">#ff00901f</color>
+     <!-- success -->
+    <color name="buy_info4">#ffDD2139</color>
+    
+    
+<!-- 2.0全局红色 -->    
+    
+     <color name="bg_hong">#fffb5a5c</color> 
+ <!-- 全局背景灰色1 -->    
+    
+      <color name="bg_bg1">#ffefeff4</color> 
+    
+    
+    
+</resources>

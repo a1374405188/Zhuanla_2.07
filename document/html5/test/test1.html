@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<HEAD>
+ <style>
+ .outer {
+  display:table; width:200px; overflow:hidden; 
+  background: #eee; height: 42px;
+}
+.middle {display:table-cell; vertical-align:middle; margin-left 10px;} 
+ </style>
+<SCRIPT type="text/javascript" src="../js/jquery-1.11.3.min.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+ 
+    // alert("aSSDF");
+    
+     $(
+	 function(){
+	 //  alert("aSSDF6");
+	 }
+	 );
+   $(document).ready(function(){
+  $("button").click(function(){
+      alert("aSSDF6");
+    $.get("http://172.16.100.188:8080/beikbankapp/appapi/product/getProductBondList.action/",function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+    });
+  });
+});
+</SCRIPT>
+</HEAD>
+<BODY>
+ <P>TETT1</P>
+ <button>button</button>
+ <div class="outer">
+  <div class="middle">
+    <div class="inner">
+      把你要居中的文本放在这里
+      这是第二行
+      ...
+    </div>
+  </div>
+</div>
+ 
+
+</BODY>
+</HTML>

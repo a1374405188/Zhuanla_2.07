@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+<View
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+    />
+    
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+             android:background="#ffffffff"
+            >
+          <TextView
+                        android:textSize="14sp"
+                        android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="转让金额(元)" />
+      
+            <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       android:paddingTop="15dp"
+                       android:paddingBottom="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="输入转让金额"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="30sp" />
+                <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:paddingLeft="16dp"
+            android:background="@color/line2" />
+       <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+           
+           android:background="#ffffffff"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           >
+            <TextView
+                        android:textSize="14sp"
+                        android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="零活赚余额:" /> 
+                <TextView
+                        android:id="@+id/tv_money"
+                        android:textSize="14sp"
+                        android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00元" />
+                <View  
+                    android:layout_weight="1"
+                       android:layout_width="0px"
+                       android:layout_height="1dp"
+                    
+                    /> 
+                   <LinearLayout 
+                        android:id="@+id/ll_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       
+                       >
+                  <ImageView
+                       android:id="@+id/iv"
+                       android:layout_width="15dp"
+                       android:layout_height="15dp"
+                       android:src="@drawable/img_futou_false"
+                      />      
+                    <TextView
+                       
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#fffb5a5c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部转让" /> 
+                        </LinearLayout>  
+         </LinearLayout> 
+         
+       
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="right"
+         android:layout_marginTop="10dp"
+         >
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预计明天零点到钱包" />     
+     </LinearLayout>  
+</LinearLayout>            
+
+ <include layout="@layout/error_info"/>
+
+    
+    
+
+     
+
+
+
+</LinearLayout>

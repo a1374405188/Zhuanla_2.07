@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical"
+
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page1_516"
+        android:orientation="vertical"
+        android:background="@drawable/bg_page"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        >
+<!--昨日收益-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="176"
+            android:orientation="vertical" >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:background="#fff9465b"
+                android:orientation="vertical"
+                android:layout_weight="176"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="5"
+                    android:background="#fff9465b"
+
+                    >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingTop="20dp"
+                    >
+                <TextView
+                    style="@style/custom_textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_income"
+                    android:drawablePadding="@dimen/activity_textview_margin"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/yesterday_income_rmb" 
+                    android:textColor="#fff5bcc3"
+                    android:textSize="@dimen/global_text_size14"
+                    />
+                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/page1_img1"
+                        android:layout_marginRight="24dp"
+                        android:paddingTop="16dp"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/magictextview_yesterdayincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="9"
+                    android:gravity="left"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_text_size1"
+
+                    android:layout_marginLeft="24dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+<!--累计收益，一周收益-->
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="0px"
+              android:background="@color/red6"
+              android:paddingTop="@dimen/page1_17"
+              android:paddingBottom="@dimen/page1_17"
+              android:layout_weight="80"
+              >
+              <LinearLayout 
+                   android:id="@+id/ll_all"
+                   android:layout_width="0px"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                  >
+                  <TextView
+                      android:text="@string/page1"
+                      android:layout_width="match_parent"
+                      android:layout_height="0px"
+                      android:layout_weight="1"
+                      android:textColor="#fff5bcc3"
+                      android:layout_marginLeft="24dp"
+                      android:gravity="left"
+                      android:textSize="@dimen/global_text_size14"
+                      />
+                  <TextView
+                      android:id="@+id/textview_interestT"
+                      android:layout_width="match_parent"
+                      android:layout_height="0px"
+                      android:layout_weight="1"
+                      android:textColor="#ffffffff"
+                      android:text="0.00"
+                      android:textSize="@dimen/page1_20sp"
+                      android:layout_marginLeft="24dp"
+                      android:gravity="left"
+
+                      />
+              </LinearLayout>
+              <View 
+                  android:layout_width="1px"
+                  android:layout_height="match_parent"
+                  android:background="#fff9465b"
+                  />
+               <LinearLayout 
+                   android:id="@+id/ll_week"
+                   android:layout_width="0px"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                    android:orientation="vertical"
+                  >
+                   <TextView
+                      android:text="定期累计收益（元）"
+                      android:layout_width="match_parent"
+                      android:layout_height="0px"
+                      android:layout_weight="1"
+                       android:textColor="#fff5bcc3"
+                       android:layout_marginLeft="24dp"
+                       android:gravity="left"
+                       android:textSize="@dimen/global_text_size14"
+                      />
+                  <TextView
+                      android:id="@+id/textview_interestW"
+                      android:layout_width="match_parent"
+                      android:layout_height="0px"
+                      android:layout_weight="1"
+                      android:textColor="#ffffffff"
+                      android:text="0.00"
+                      android:textSize="@dimen/page1_20sp"
+                      android:layout_marginLeft="24dp"
+                      android:gravity="left"
+                      />
+              </LinearLayout>
+          </LinearLayout>
+
+
+
+<!--总资产-->
+
+            <LinearLayout
+                android:id="@+id/linear_total_capital"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="172"
+                android:background="@drawable/login_page_item2"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0px"
+                   android:layout_weight="5"
+
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="24dp"
+                       android:gravity="left"
+                       android:layout_marginTop="20dp"
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:drawableLeft="@drawable/ic_moneybag"
+                           android:drawablePadding="@dimen/activity_textview_margin"
+                           android:text="@string/total_capital_rmb"
+                           android:textSize="@dimen/global_text_size14"
+                           android:textColor="#ff747474"
+                           android:gravity="left|center_vertical"
+                           />
+                 </LinearLayout>
+               </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/magictextview_totalcapital"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="9"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left"
+                    android:text="0.00"
+                    android:textColor="@color/ziti6"
+                    android:textSize="@dimen/login_text_size2" 
+                    android:layout_marginBottom="@dimen/login_space_height2"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="88"
+        android:gravity="bottom"
+        android:background="#00ffffff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/page2_24_2"
+            >
+        <Button
+            android:id="@+id/bu_bu1"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="@dimen/global_button_height"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/page3"
+            android:textColor="@drawable/button_color_select1"
+            android:background="@drawable/button_select1"
+            android:textSize="@dimen/global_button_text_height"
+
+            />
+        <Button
+            android:id="@+id/bu_bu2"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="@dimen/global_button_height"
+            android:layout_marginRight="24dp"
+            android:text="@string/page4"
+            android:background="@drawable/btn_selector_button"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/global_button_text_height"
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/page_wealth3.xml -->

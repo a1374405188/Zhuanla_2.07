@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffededed"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zhichan50"
+        android:paddingLeft="@dimen/global_left_space"
+       android:background="#ffededed"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            >
+            <LinearLayout 
+                 android:layout_width="0px"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:gravity="bottom"
+                >
+                
+                
+           
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/global_text3"
+                android:text="定期产品1"
+               android:textSize="14sp"
+                android:layout_alignParentLeft="true"
+               
+                />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textColor="@color/global_text3"
+                android:text="0.00元"
+                android:textSize="14sp"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="29dp"
+                />
+             </LinearLayout>
+              <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:background="@color/global_text4"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv4"
+                  android:paddingRight="@dimen/global_left_space"
+            android:paddingLeft="@dimen/global_left_space"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/global_text4"
+            android:textSize="@dimen/global_text_size16"
+             android:visibility="gone"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            
+           
+           android:gravity="top"
+
+            >
+            <ImageView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhichan_img4"
+            android:layout_marginRight="2dp"
+            android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="top"
+                android:textColor="#ffb0b0b0"
+                android:text="距离募集成功还有   0.00元"
+                android:textSize="14sp"
+
+                android:layout_marginRight="@dimen/activity_item1_space"
+                />
+         </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

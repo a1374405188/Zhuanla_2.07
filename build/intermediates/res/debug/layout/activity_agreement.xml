@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+    
+
+    <WebView
+        android:id="@+id/webview_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout/activity_agreement.xml -->

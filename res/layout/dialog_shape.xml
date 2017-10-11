@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_white2"
+    >
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_white2"
+    >
+    <LinearLayout 
+        
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        >
+        <ImageView 
+            
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/share1"
+            />
+   </LinearLayout>
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+         android:visibility="gone"
+        >
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#ffb0b0b0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+           >
+           
+      
+       <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已是赚啦老友"
+            android:textColor="#ff646464"
+            android:textSize="13sp"
+           />
+       <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享给新人来投吧"
+            android:textColor="#ff646464"
+            android:textSize="13sp"
+           />
+        </LinearLayout>
+           <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#ffb0b0b0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+   </LinearLayout>
+   <!--  -->
+   <ImageView 
+      android:id="@+id/iv0"
+       android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"
+       
+       />
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+           android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+       >
+       <LinearLayout 
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+         <ImageView 
+              
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:src="@drawable/share_weixin"
+             
+             />
+         <TextView 
+             android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信好友"
+            android:textColor="#ff646464"
+            android:textSize="13sp"
+             
+             
+             />
+      </LinearLayout>
+      <View 
+          
+           android:layout_width="0px"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+          />
+       
+       <LinearLayout 
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:gravity="center"
+       >
+         <ImageView 
+             
+               android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:src="@drawable/share_weixinfriend"
+             
+             />
+         <TextView 
+             android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友圈"
+            android:textColor="#ff646464"
+            android:textSize="13sp"
+             
+             
+             />
+      </LinearLayout>
+   </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

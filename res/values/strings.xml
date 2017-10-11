@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">赚啦理财</string>
+    <string name="account">账号</string>
+    <string name="realname_master">实名认证</string>
+    <string name="credit_card_master">银行卡管理</string>
+    <string name="login_password">登录密码</string>
+    <string name="change_login_password">修改登录密码</string>
+    <string name="transaction_password">交易密码</string>
+    <string name="gesture_password">手势密码</string>
+    <string name="gesture_password2">旧手势密码</string>
+    <string name="gesture_unlock">手势解锁</string>
+    <string name="password_error">密码错误</string>
+    <string name="change_gesture_password">修改手势密码</string>
+    <string name="mobile">手机号码</string>
+    <string name="bind_bank">绑定银行</string>
+    <string name="identify_code">验证码</string> 
+    <string name="input_mobile">请输入手机号码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_bank_mobile">请输入预留手机号码</string>
+    <string name="input_repeat_password">请再次输入密码</string>
+
+    <string name="input_transaction_repeat_password">请再次输入交易密码</string>
+    <string name="input_financial_money">输入理财金额</string>
+    <string name="input_financial_time">输入理财期限</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="change_account">更换账号</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="bind_cardinfo">绑定银行卡</string>
+    <string name="confirm_cardinfo">验证银行卡信息</string>
+    <string name="change_password">修改登录密码</string>
+    <string name="change_transaction_password">修改交易密码</string>
+    <string name="setting_password">设置登录密码</string>
+    <string name="setting_transaction_password">设置交易密码</string>
+    <string name="realname_confirm">实名认证</string>
+    <string name="input_register_app">欢迎来到赚啦！</string>
+    <string name="input_contact_way">请输入您的手机号码或qq</string>
+    <string name="input_realname">请输入真实姓名</string>
+    <string name="input_icnumber">请输入身份证号码</string>
+    <string name="input_old_password">请输入旧密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_identifying_code">请输入验证码</string>
+    <string name="input_setting_password">6&#8211;16个字符，区分大小写</string>
+    <string name="input_bind_bank">请确保以下信息与银行卡登记时一致</string>
+    <string name="input_realname_info">请确保以下信息与身份证信息一致</string>
+    <string name="input_setting_transaction_password">请设置交易密码，6&#8211;16个字符，区分大小写</string>
+    <string name="get_identifying_code">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="confirm">确认修改</string>
+    <string name="submit">提&#160;&#160;交</string>
+    <string name="sended_identify_code">已将验证码发送至：%1$d</string>
+    <string name="login">登录</string>
+    <string name="inputnumber">登录/注册</string>
+    <string name="register">注册</string>
+    <string name="setting">设置</string>
+    <string name="encourage_u">鼓励一下</string>
+    <string name="feedback">意见反馈</string>
+    <string name="help_center">帮助中心</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_bk">关于我们</string>
+    <string name="bank_master">银行卡管理</string>
+    <string name="contact_way">联系方式</string>
+    <string name="feedback_hint">感谢您的支持，请说几句吧&#8230;</string>
+    <string name="feedback_left">可输入%1$s字</string>
+    <string name="feedback_time">(09:00&#8211;21:00)</string>
+    <string name="agree_read">已阅读并同意</string>
+    <string name="bk_agreement">《用户注册协议》</string>
+    <string name="bk_agreement2">《债权转让咨询与服务协议》</string>
+    <string name="pay_agreement_text">《用户支付服务协议》</string>
+    <string name="pay_agreement_text2">《投资授权委托协议》</string>
+    <string name="pay_agreement_text3">《债券转让咨询与服务协议》</string>
+     <string name="pay_agreement_text5">《赚啦投资咨询管理服务协议》</string>
+     
+      <string name="pay_agreement_text11">《支付协议》</string>
+      <string name="pay_agreement_text12">《借款合同》</string>
+       <string name="pay_agreement_text13">《委托咨询服务协议》</string>
+      <string name="pay_agreement_text14">《债权转让协议》</string>
+          <string name="pay_agreement_text15">《用户授权协议》</string> 
+      
+    <string name="identify_code_reload">秒后重新获取</string>
+    <string name="identify_code_reloading">重新获取验证码</string>
+    <string name="password">密码</string>
+    <string name="remittance">汇款金额(元)</string>
+    <string name="repeat_password">重复密码</string>
+    <string name="realname">姓名</string>
+    <string name="icnumber">身份证</string>
+    <string name="cardnumber">卡号</string>
+    <string name="identify_code_sended">已将验证码发送至：</string>
+    
+    <string name="agreement11">支付协议</string>
+    <string name="agreement12">借款合同</string>
+    <string name="agreement13">委托咨询服务协议</string>
+     <string name="agreement14">用户注册协议</string>
+     <string name="agreement15">债权转让协议</string>
+      <string name="agreement16">用户授权协议</string>
+         <string name="agreement17">风险告知书</string>
+    <string name="agreement">用户使用协议</string>
+    <string name="agreement2">债权转让咨询与服务协议</string>
+    <string name="pay_agreement">用户支付服务协议</string>
+    <string name="pay_agreement2">投资授权委托协议</string>
+    <string name="pay_agreement3">债权转让咨询与服务协议</string>
+     <string name="pay_agreement5">赚啦投资咨询管理服务协议</string>
+    <string name="yesterday_income_rmb">昨日收益(元)</string>
+    <string name="total_income_rmb">累计收益(元)</string>
+    <string name="total_capital_rmb">总资产(元)</string>
+    <string name="total_capital">总资产</string>
+    <string name="transaction_records">交易记录</string>
+    <string name="project_list">分散债权</string>
+    <string name="logout">退出登录</string>
+    <string name="back_home">返回首页</string>
+    <string name="transaction_detail">交易详情</string>
+    <string name="purchase_detail">购买详情</string>
+    <string name="cost">购买金额</string>
+    <string name="pay_account">支付账户</string>
+    <string name="transaction_order_id">交易订单号</string>
+    <string name="transaction_order_time">交易时间</string>
+    <string name="expected_annual">预期年化</string>
+    <string name="should_income">预期总收益</string>
+    <string name="income">收益(元)</string>
+    <string name="annual_income2">今日年化收益率(%)</string>
+    <string name="product_detail">产品详情</string>
+    <string name="purchase">购买</string>
+    <string name="redeem">取现</string>
+    <string name="info_confirm">提交成功</string>
+    <string name="purchase_btn">购&#160;&#160;买</string>
+    <string name="purchase_btn_bold"><b>购&#160;&#160;&#160;&#160;买</b></string>
+    <string name="wait_btn_bold"><b>即将开始</b></string>
+    <string name="redeem_btn">赎&#160;&#160;回</string>
+    <string name="credit_card">到账银行卡</string>
+    <string name="accounting_date">预计到账时间</string>
+    <string name="pay_bank">支付银行</string>
+    <string name="income_date">预计收益时间</string>
+    
+    <string name="income_date2">预计到账时间</string>
+    <string name="redeem_money">取现金额</string>
+    <string name="all">全部</string>
+    <string name="input_money">请输入</string>
+    <string name="input_transaction_password">请输入</string>
+    <string name="input_remittance">请输入汇款金额</string>
+    <string name="confirm_redeem">确认赎回</string>
+    <string name="poundage">手续费</string>
+    <string name="redeem_confirm">取现</string>
+    <string name="redeem_confirm2">取现确认</string>
+    <string name="income_detail">收益详情</string>
+    <string name="warmly_remind">温馨提醒</string>
+    <string name="think_kind">计算公式：</string>
+    <string name="send_redeem_ok">提交成功</string>
+    <string name="waiting">等待收益</string>
+    <string name="receive_redeem">预计到账时间</string>
+    <string name="ok">确&#160;&#160;&#160;&#160;定</string>
+    <string name="ok2">确&#160;&#160;定</string>
+    <string name="risk">风险程度</string>
+    <string name="financial_period">理财期限</string>
+    <string name="purchase_startline">起购金额</string>
+    <string name="work_time">起息时间</string>
+    <string name="cash_account">取现到账</string>
+    <string name="multi_income">万份收益</string>
+    <string name="supported_bank">支持银行</string>
+    <string name="percent"><b>%</b></string>
+    <string name="risk_control">风险控制</string>
+    <string name="money_safe">资金安全</string>
+    <string name="about_bk_text">        					&#160;&#160;&#160;&#160;&#160;
+        &#160;&#160;&#160;“赚啦理财”是浙江贝壳财富投资有限公司旗下的一款理财APP产品，
+        专为有理财需求的投资人打造的“懒人理财神器”，目的是简化投资人的理财投标流程，提高投资人的资金使用效率，让投资者从复杂的投标流程中解放出来，收获轻松理财的快乐。</string>
+    <string name="beikbank"><b>光伏理财</b></string>
+    <string name="rmb">元</string>
+    <string name="day">天</string>
+    <string name="thinking">计&#160;&#160;&#160;&#160;算</string>
+    <string name="realname_remind">购买理财产品需提供实名信息以确保投资安全</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="input_cost">请输入购买金额</string>
+    <string name="purchase_confirm">确认购买</string>
+    <string name="warmly_remind_text1">1.工作日15:00前取现，当日处理，1-3个工作日到账；</string>
+    <string name="warmly_remind_text2">2.工作日15:00后取现，第二个工作日处理后，1-3个工作日到账；</string>
+    <string name="warmly_remind_text3">3.节假日取现,节假日后第一个工作日处理后,1-3个工作日到账；</string>
+    <string name="warmly_remind_text4">4.取现当日不计收益。</string>
+    
+    <string name="warmly_play_text1">1.15:00前购买，当日15:00后开始计算收益；</string>
+    <string name="warmly_play_text2">2.15:00后购买，第二日15:00后开始计算收益；</string>
+    <string name="warmly_play_text3">3.取现当日不计收益。</string>
+    
+    <string name="bank">银行</string>
+    <string name="input_cardnumber">请输入，仅支持储蓄卡</string>
+    <string name="bind_bank_text">绑定银行卡需要短信确认\n验证码已发送至手机：%1$s，请按提示操作</string>
+    <string name="confirm_info">验证信息</string>
+    <string name="remittance_text1">我们已经向您%1$s的银行卡汇入一笔金额，请您确认具体的汇款金额</string>
+    <string name="remittance_text2">提示：金额在0.00元~0.99元之间</string>
+    <string name="confirm_btn">确&#160;&#160;&#160;&#160;认</string>
+    <string name="partInvestAmount">起购金额(元)</string>
+    <string name="set_ok">设置成功</string>
+    <string name="load_again">点击屏幕，重新加载</string>
+    <string name="check_function">验证方式</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_recording_intro_header">"创建手势密码"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重新绘制"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请重复手势密码"</string>
+    <string name="lockpattern_pattern_confirmed_header">""</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重新绘制"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text1">您可以建立手势解锁：</string>
+    <string name="gesture_password_guide_text2">请连接圆点  并记住路径</string>
+    <string name="gesture_password_guide_creat_btn">创&#160;&#160;&#160;&#160;建</string>
+    <string name="second_time_exit">再按一次退出赚啦</string>
+    <string name="welcome_back">欢迎回来！</string>
+    <string name="password_error_times">密码错误，还可以再输入%1$d次</string>
+    <string name="cancel">取&#160;&#160;消</string>
+     <string name="exit">退&#160;&#160;出</string>
+    <string name="reset_login">重新登录</string>
+    <string name="update">更&#160;&#160;新</string>
+    <string name="okle">知道了</string>
+    <string name="dial">拨&#160;&#160;打</string>
+    <string name="change_account_text">确定用其他账号登录？</string>
+    <string name="logout_text">确定退出登录？</string>
+    <string name="forget_password_text">忘记手势密码，需要重新登录</string>
+    <string name="upgrade_version">检测到最新版本，是否更新？</string>
+    <string name="newest_version">当前已经是最新版本！</string>
+    <string name="input_old_gesture_password">请绘制旧的手势图案</string>
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开即可刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉可以刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="beike_telephone">400-800-5818(9:00--21:00)</string>
+      <string name="beike_telephone2">400-800-5818</string>
+    <string name="beike_qq">455905081</string>
+    <string name="beike_email">service@beikbank.com</string>
+    <string name="beike_website">www.zhuanlalicai.com</string>
+    <string name="beike_weixin_gongzhong">赚啦(微信号:ZLLC01)</string>
+     <string name="beike_xinlang">\@赚啦理财</string>
+    
+    <string name="loading">加载中</string>
+    <string name="money">金额</string>
+    <string name="about_1">"赚啦理财"正式上线运营 </string>
+    <string name="about_2">"赚啦理财"获得千万元天使融资</string>
+    <string name="about_3">“赚啦理财”项目正式启动</string>
+    <string name="about_4">贝壳财富获上海资信公司征信认证</string>
+    <string name="about_5">贝壳财富累计交易突破2亿元</string>
+    <string name="about_6">与多家小贷公司达成战略合作</string>
+    <string name="about_7">贝壳财富获得百万天使投资</string>
+    <string name="about_8">浙江贝壳财富投资管理有限公司成立</string>
+    <string name="load_error">下载错误</string>
+    <!--购买或者取现文字-->
+    <string name="maiorqv1">购买申请已提交</string>
+    <string name="maiorqv2">申请已提交</string>
+    <string name="maiorqv3">等到处理</string>
+    <string name="maiorqv4">请稍后在“交易记录中”中查询结果</string>
+    <string name="maiorqv5">活期累计收益（元）</string>
+    <string name="maiorqv6">活期累计收益（元）</string>
+    <string name="maiorqv7">活期累计收益（元）</string>
+    <string name="maiorqv8">支付排队中</string>
+    <string name="maiorqv9">请稍后在“交易记录”中查询</string>
+    <string name="maiorqv10">订单状态，获知订单处理结果</string>
+    <string name="maiorqv11">等到确认</string>
+    <string name="maiorqv12">确认后，次日回款至扣款银行卡；</string>
+    <string name="maiorqv13">（到账时间视银行而定；节假日顺延）</string>
+    <string name="maiorqv14">本次最多可购买：</string>
+    <!--page1-->
+    <string name="page1">活期累计收益（元）</string>
+    <string name="page2">定期累计收益（元）</string>
+    <string name="page3">交易记录</string>
+    <string name="page4">我的钱包</string>
+    <string name="page5">总资产（元）</string>
+    <string name="page6">收益说明</string> 
+    <string name="page7">昨日收益包含昨日活期收益和定期预估收益，其中定期收益根据你持有的本金与年化收益率估算出昨日的当日收益。</string>
+    <string name="page8">知道了</string>
+ <!--page_dingqi-->
+    <string name="page31">理财期限（天）</string>
+    <string name="page32">可购金额（元）</string>
+    <string name="page33">安全措施</string>
+    <string name="page34">产品特征</string>
+    <string name="page35">多重风控</string>
+    <string name="page36">小额分散</string>
+    <string name="page37">一个月</string>
+    <string name="page38">三个月</string>
+    <string name="page39">六个月</string>
+    <string name="page40">六个月</string>
+    <string name="page41">立即购买</string>
+    <string name="page42">售罄</string>
+    <string name="page43">支付排队中</string>
+    <string name="page44">请稍后在"交易记录"中查询</string>
+    <string name="page45">订单状态，获取订单处理结果</string>
+    <string name="page46">提交已申请</string>
+    <string name="page47">购买申请已提交</string>
+    
+    
+    
+    <string name="page48">购买成功</string>
+    <string name="page49">等待收益</string>
+    <string name="page50">预计收益时间:</string>
+    <!--page2-->
+    <string name="page21">一元起投</string>
+    <string name="page22">小额分散</string>
+    <string name="page23">当日起息</string>
+    <string name="page24">随时取现</string>
+    <string name="page25">累计投资（元）</string>
+    <string name="page26">累计收益（元）</string>
+    <string name="page27">已投人数（人）</string>
+    <string name="page28">分散债权（个）</string>
+    <string name="page29">取现</string>
+    <string name="page30">购买</string>
+    <!-- 用户资产-->
+    <string name="zhichan1">总资产（元）</string>
+    <string name="zhichan2">满标后计入赚啦定期</string>
+    <string name="zhichan3">定期</string>
+    <string name="zhichan4">取现</string>
+    <string name="zhichan5">明细</string>
+    <string name="zhichan6">募集中（元）</string>
+    <string name="zhichan7">满标后计入总资产</string>
+    <string name="zhichan8">距离募集成功还有</string>
+    <string name="zhichan9">满标审核中</string>
+    <string name="zhichan10">还款中（元）</string>
+    <string name="zhichan11">还款金额不计入总资产</string>
+ <!-- 交易记录 -->
+    <string name="jiaoyijilu1">交易记录</string>
+    <string name="jiaoyijilu2">全部</string>
+    <string name="jiaoyijilu3">活期</string>
+    <string name="jiaoyijilu4">定期</string>
+    <!-- 活期产品 -->
+    <string name="huoqi1">多重风控</string>
+    <string name="huoqi2">随买随取</string>
+    <string name="huoqi3">购买成功当日起息</string>
+    <string name="huoqi4">(每日结算时间15:00)</string>
+    <string name="huoqi5">随时赎回，当日24点到钱包</string>
+    <string name="huoqi6">(15:00前赎回次日9:00解冻,15:00后赎回第三日9:00解冻)</string>
+    <string name="huoqi7">定期产品名</string>
+    <string name="huoqi8">定期产品名</string>
+    <string name="huoqi9">取现</string>
+    <string name="huoqi10">(到账时间视银行而定;节假日顺延)</string>
+     <string name="huoqi11">赎回时间</string>
+ <!-- 定期资产明细 -->
+    <string name="dingqi_zhichan1">定期资产明细</string>
+    <string name="dingqi_zhichan2">预期收益</string>
+    <string name="dingqi_zhichan3">还款倒计时</string>
+    <string name="dingqi_zhichan4">起息时间</string>
+    <string name="dingqi_zhichan5">到期时间</string>
+ <!-- 定期产品 -->
+    <string name="dingqi1">定期产品名</string>
+    <string name="dingqi2">年化收益率</string>
+    <string name="dingqi3">加赠年化收益率</string>
+    <string name="dingqi4">安全措施</string>
+    <string name="dingqi5">多重风控</string>
+    <string name="dingqi6">理财期限</string>
+    <string name="dingqi7">起购金额</string>
+    <string name="dingqi8">起息时间</string>
+    <string name="dingqi9">募集成功次日</string>
+    <string name="dingqi10">还款时间</string>
+    <string name="dingqi11">到期当日回款至扣款银行卡</string>
+    <string name="dingqi12">到账时间视银行而定</string>
+    <string name="dingqi13">还款方式</string>
+    <string name="dingqi14">到期一次性还本付息</string>
+    <string name="dingqi15">产品特征</string>
+    <string name="dingqi16">收益计算器</string>
+    <string name="dingqi17">购买</string>
+    <string name="dingqi18">建议购买100元以上</string>
+      <string name="dingqi19">到期当日回款至钱包</string>
+       <string name="dingqi20">节假日顺延</string>
+ <!-- 订单信息-->
+    <string name="dingdan_huoqi1">购买成功</string>
+    <string name="dingdan_huoqi2">金额</string>
+    <string name="dingdan_huoqi3">交易银行卡</string>
+    <string name="dingdan_huoqi4">订单号</string>
+    <string name="dingdan_huoqi5">交易时间</string>
+    <string name="dingdan_huoqi6">购买处理中</string>
+    <string name="dingdan_huoqi7">购买失败</string>
+    <string name="dingdan_huoqi8">订单详情</string>
+    <string name="dingdan_huoqi9">取现申请已提交</string>
+    <string name="dingdan_huoqi10">取现金额</string>
+    <string name="dingdan_huoqi11">已还款</string>
+    <string name="dingdan_huoqi12">还款金额</string>
+    <string name="dingdan_huoqi13">本金</string>
+    <string name="dingdan_huoqi14">收益</string>
+    <string name="dingdan_huoqi15">期限</string>
+    <string name="dingdan_huoqi16">到期还款中</string>
+    <string name="dingdan_huoqi17">购买成功当天起息，每天24：00结算，结算后即可获得收益。</string>
+    <string name="dingdan_huoqi18">取现订单提交后，经确认后，次日回款至扣款银行卡；到账时间视银行而定</string>
+    <string name="dingdan_huoqi19">到期时间</string>
+    <string name="dingdan_huoqi20">起息时间</string>
+    <string name="dingdan_huoqi21">状态</string>
+    <string name="dingdan_huoqi22">取现订单提交后，经确认后，次日回款至扣款银行卡；到账时间视银行而定；节假日顺延。 </string>
+     <string name="dingdan_huoqi23">钱包当日下午3点前提现到银行卡默认工作日的下午3点后到账，最快2小时到账.下午3点后提现到银行卡默认第二个工作日的下午3点后到账。</string>
+
+
+
+
+
+
+
+
+
+
+ <!-- 计算收益对话框 -->
+    <string name="count_shouyi_1">预期收益(元)</string>
+    <string name="count_shouyi_2">理财期限(天)</string>
+    <string name="count_shouyi_3">请输入理财金额</string>
+    <string name="count_shouyi_4">元</string>
+    <string name="count_shouyi_5">计算</string>
+<!-- 消息 -->
+    <string name="message_text1">消息</string>
+    <string name="message_text2">已读</string>
+    
+<!--验证银行卡-->
+    <string name="test1">银行预留手机号</string>
+    <string name="test2">请输入</string>
+    <string name="test3">验证码</string>
+    <string name="test4">获取验证码</string>
+    <string name="test5">1."银行预留手机号码"是在银行办理银行卡时登记的手机号码;</string>
+    <string name="test6">2.如有疑问，请咨询客服400-800-5818(09:00--21:00)</string>
+    <string name="test7">温馨提示</string>
+    <string name="test8">下一步</string>
+    <string name="test9">验证码已发送至银行预留手机</string>
+    <string name="test10">验证银行卡</string>
+
+    <string name="test12">2."银行预留手机号码"是在银行办理银行卡时登记的手机号码;</string>
+    <string name="test13">3.如有疑问，请咨询客服400-800-5818(09:00--21:00)</string>
+    <string name="test11">1.因第三方支付升级，为了您的账户安全，请重新验证银行卡；</string>
+
+    <string name="reload">点击屏幕   重新加载</string>
+<!-- 异常 -->    
+    <string name="error_1">账号或者密码不能为空</string>
+    <string name="error_2">验证码不能为空</string>
+    <string name="error_3">账户余额不足</string>
+     <string name="error_4">反馈意见不能为空</string>
+      <string name="error_5">网络没有连接，请检查网络</string>
+      
+       <string name="error_6">手机格式不正确</string>
+      
+<!-- 成功-->    
+    <string name="success_1">反馈成功</string>   
+<!-- 安全保障 -->
+    <string name="risk_text1"><![CDATA[ <html><head></head><body style="text-align:justify;text-justify:distribute-all-lines;color:gray;background-color:black;"> 06.大家都知道，在android应用中UI线程5秒没响应的话就会抛出无响应异常，对于远程获取大的资源来说，这种异常还是很容易就会抛出来的，那么怎么避免这种问题的产生。在android中提供两种方法来做这件事情： 07.启动一个新的线程来获取资源，完成后通过Handler机制发送消息，并在UI线程中处理消息，从而达到在异步线程中获取图片，然后通过Handler Message来更新UI线程的过程。 </body> </html>]]></string>
+    <string name="risk_text2"></string>
+    <string name="risk_text3"></string>
+<!-- dialog -->
+     <string name="dialog_text1">取消</string>
+     <string name="dialog_text2">确定</string>
+     <string name="dialog_text3">好</string>
+     
+<!-- 首页面 -->
+     <string name="home_info_text1">赚啦收益</string>
+     <string name="home_info_text2">余    额    宝</string>
+     <string name="home_info_text3">活期存款</string>
+<!-- 取现页面 -->
+     <string name="redeem_dialog_text1">提现金额</string>
+     <string name="redeem_dialog_text2">手      续      费</string>
+     <string name="redeem_dialog_text3">到账金额</string>
+     <string name="redeem_dialog_text4">金额不足0.01元，无法交易</string>
+     <string name="redeem_test1">取现金额</string>
+     <string name="redeem_test2">取现</string>
+     <string name="redeem_test3">金额不足0.01元，无法交易</string>
+     
+<!-- 交易详情界面 -->
+     <string name="purchase_info_text1">2-3个工作日</string>
+     <string name="purchase_info_text2">预计收益时间:</string>
+     <string name="purchase_info_text3">建议购买100元以上</string>
+     <string name="purchase_info_text4">购买成功</string>
+<!-- global -->
+     <string name="not_nection_service">您的网络不能够连接到服务器</string>
+     <string name="error_number">异常编号:</string>
+     <string name="db_error">数据库错误:如果可能请完全卸载程序，再重新安装应用</string>
+     <string name="no_net">:网络没有连接</string>
+      <string name="no_error">未知错误:请联系客服</string>
+      <string name="service_net_error">:服务器繁忙</string>
+    <string name="service_data_error">:服务器数据异常</string>
+    <string name="client_data_error">:客户端数据异常</string>
+     <string name="client_net_error">:客户端网络异常</string>
+    <string name="app_error">非常抱歉，程序运行期间产生了一个错误，程序重启了</string>
+</resources>

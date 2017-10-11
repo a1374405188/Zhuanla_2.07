@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu2"
+    android:orientation="vertical"
+     >
+      <include layout="@layout/fragment_menu_chid"/>  
+</LinearLayout><!-- From: file:/D:/work/Zhuanla_1.0.7/res/layout-xhdpi/fragment_menu.xml -->

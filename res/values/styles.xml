@@ -1,0 +1,276 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- Application theme. -->
+   <style name="button_style_1">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/global_text_size19</item>
+      
+   </style>
+    
+    
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+	<style name="custom_textview0" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/ziti7</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview1" parent="@android:style/Widget.TextView">
+
+        <!-- 淡灰色 -->
+        <item name="android:textColor">@color/ziti5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="custom_textview2" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    
+        <style name="custom_textview22" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview3" parent="@android:style/Widget.TextView">
+
+        <!-- 白色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="custom_textview4" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+     <style name="custom_textview44" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">#ff747474</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+       
+    </style>
+    <style name="custom_textview5" parent="@android:style/Widget.TextView">
+
+        <!-- 针对小字体的用户使用协议提示-->
+        <item name="android:textColor">@color/ziti3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="custom_textview6" parent="@android:style/Widget.TextView">
+
+        <!-- 输入手机号码等，放大了看-->
+        <item name="android:textColor">@color/red1</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="custom_textview8" parent="@android:style/Widget.TextView">
+
+        <!-- 灰色16号字体-->
+        <item name="android:textColor">@color/ziti5</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="custom_textview9" parent="@android:style/Widget.TextView">
+
+        <!-- 淡黑色字体-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="custom_textview10" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+     <style name="custom_textview11" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/red2</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="custom_textview12" parent="@android:style/Widget.TextView">
+
+        <!-- 偏黑灰色-->
+        <item name="android:textColor">@color/ziti6</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+
+    <style name="custom_button" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+
+    <style name="custom_button2" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    
+    <style name="custom_button3" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button_blue</item>
+    </style>
+    <style name="custom_button4" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+    
+    <style name="custom_button5" parent="@android:style/Widget.Button">
+
+        <!-- 字体颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <!-- 这里引用定义的按钮样式 -->
+        <item name="android:background">@drawable/btn_selector_button</item>
+    </style>
+
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector_agreement</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="max">100</item>
+        <item name="progress">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    
+    <style name="calculator_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item> 
+        
+    </style>
+    
+    <style name="PopupAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/ani_in</item>
+		<item name="android:windowExitAnimation">@anim/ani_out</item>
+	</style>
+	
+    <style name="mxx_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        
+    </style>
+    
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ziti2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:drawablePadding">1dip</item>
+    </style>
+    
+    <style name="main_bottom_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+      <style name="mypopwindow_anim_style">
+    <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+ <!-- 指定显示的动画xml -->
+
+    <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+ <!-- 指定消失的动画xml -->
+  </style>
+</resources>

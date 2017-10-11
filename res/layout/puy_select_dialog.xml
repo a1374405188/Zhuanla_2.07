@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/bg_white2"
+    android:orientation="vertical" 
+       android:gravity="center"
+    >
+
+<!--title --> 
+    <LinearLayout 
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+         android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/tv_tv1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择支付方式"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/dialog_text_size2"
+            android:layout_marginRight="@dimen/dialog_space_size"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_line_size"
+        android:background="@color/dialog_line"
+        />
+<!--content--> 
+    <LinearLayout 
+
+        android:layout_width="match_parent"
+         android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll1"
+        android:background="@drawable/bg_selector_puy"
+       android:clickable="true"
+          android:focusable="true"
+         
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginLeft="40dp"
+            >
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:focusable="false"
+           android:clickable="false"
+           android:visibility="gone"
+            />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="#ff747474"
+            android:textSize="@dimen/dialog_text_size2"
+
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+
+
+   <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_line_size"
+            android:background="@color/dialog_line"
+        />
+<!-- 底部 -->
+      <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:gravity="center"
+         android:id="@+id/ll2"
+          android:background="@drawable/bg_selector_puy2"
+         
+         
+         
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false">
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                android:visibility="gone"
+                />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/qianbao0"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+          <TextView 
+            android:id="@+id/tv_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钱包支付"
+
+              android:textColor="#ff747474"
+            android:textSize="@dimen/dialog_text_size2"
+            android:gravity="center"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_line_size"
+        android:background="@color/dialog_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/ll3"
+         android:background="@drawable/bg_selector_puy2"
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false">
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/huoqito"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活期转定期"
+
+                android:textColor="#ff747474"
+                android:textSize="@dimen/dialog_text_size2"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

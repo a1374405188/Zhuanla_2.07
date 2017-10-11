@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 轮播图圆点 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape= "oval"
+    android:useLevel= "false"
+     >
+     <solid android:color= "#ff69c5ff" />
+
+ <stroke
+
+        android:width= "0dp"
+
+        android:color= "#fff2a3da" />
+ 
+    <size 
+          android:width= "12dp"
+          android:height= "12dp"/>
+</shape>

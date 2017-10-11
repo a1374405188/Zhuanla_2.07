@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">   
+    <solid
+        android:color="#ffDCDCDC" />
+</shape><!-- From: file:/D:/work/Zhuanla_1.0.7/res/drawable/solid_divider_ccc.xml -->

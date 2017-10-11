@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg3"
+    android:orientation="vertical" >
+ <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white"
+    
+     > 
+    
+  <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+       android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+          
+           <LinearLayout 
+               android:id="@+id/linear_left"
+                 android:layout_width="50dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@null"
+                android:background="@drawable/btn_selector_back"/>
+           </LinearLayout>
+       
+          
+              <LinearLayout
+                   android:layout_width="0px"
+                   android:layout_weight="1"
+                   android:layout_height="44dp"
+                   android:gravity="center"
+                   android:layout_centerInParent="true"
+                  >
+              
+           <TextView 
+            android:id="@+id/tv_zuori_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:text="昨日收益"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#ffffffff"
+            android:background="@drawable/bg_sysnotice_left"
+            android:padding="4dp"
+            />
+          <TextView 
+            android:id="@+id/tv_leiji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:padding="4dp"
+            android:text="累计收益"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#ffdd2238"
+             android:background="@drawable/bg_sysnotice_right"
+            />
+              
+              </LinearLayout>
+          
+          
+ 
+  <LinearLayout 
+             
+                 android:layout_width="50dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:background="@drawable/btn_selector_back"
+                android:visibility="invisible"
+                />
+          </LinearLayout>
+   </LinearLayout>
+   
+  </LinearLayout> 
+  
+  
+  
+  
+  
+  
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffd7d7d7"
+       />
+ <ScrollView 
+     
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     
+     >
+ <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+      > 
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:background="#ffffffff"
+        >
+        <TextView
+            android:id="@+id/tv_shouyi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="昨日收益(元)"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            />
+         <TextView
+             android:id="@+id/tv_leiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.00"
+            android:textColor="#fffb5a5c"
+            android:textSize="40sp"
+            android:layout_marginBottom="20dp"
+            />
+        
+    </LinearLayout
+        >
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_parent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+        >
+        
+        
+        
+    </LinearLayout>
+    </LinearLayout> 
+    </ScrollView>  
+</LinearLayout>

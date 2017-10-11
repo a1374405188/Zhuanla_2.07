@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+<SCRIPT type="text/javascript" src="../js/jquery-1.11.3.min.js"></SCRIPT>
+     <STYLE>
+       .img{width:15%;height:15%;}
+    </STYLE>
+	
+	<script type="text/javascript">
+	//1 ios  2android
+	function ios_android()
+	{
+	  var u = navigator.userAgent, app = navigator.appVersion;
+      //var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+      if(isiOS)
+	  {
+	    location.href = "https://itunes.apple.com/cn/app/zhuan-la-li-cai/id939985150?mt=8";
+	  }
+	  else
+	  {
+	     location.href = "http://openbox.mobilem.360.cn/index/d/sid/2080148";
+	  }
+	
+	
+	}
+	function down()
+	{
+	
+	   ios_android();
+	
+	}
+    $(document).ready(function(){
+	   var s=$(document).height();
+       var a= $("#bu").height(s/15);
+	  
+	  
+    });
+</script>
+</HEAD> 
+<BODY style="background-image:url(../files/back.png)">
+     <div  style="width:100%;height:30%">
+      <p style="width:100%;text-align:center;margin-bottom:10%;margin-top:10%">
+	  <font color="#F39800" size="8em">
+	    注册成功
+		</font>
+	  </p>
+	  <p style="width:100%;text-align:center">
+	    您已获得赚啦新手标购买资格
+	  </p>
+	   <p style="width:100%;text-align:center;margin-top:-10px">
+	    请前往应用市场下载app
+	   </p>
+	 </div>
+	 
+	   <div  style="width:100%;text-align:center">
+	    <input type="button" id="bu" onclick="down()" style="height:40px;width:80%;background:#F39800;margin-top:15%;margin-bottom:15%;font-size:2em;color:#ffffff;-webkit-appearance: none;" value="我要投资"/>
+		</div>
+		<div style="width:100%;margin-bottom:15%;text-align:center">
+		<IMG  class="img"  src="../files/img1.png">
+		<IMG class="img"  src="../files/img2.png">
+		<IMG class="img"  src="../files/img3.png">
+		<IMG class="img"  src="../files/img4.png">
+		<IMG class="img"  src="../files/img5.png">
+		</div>
+		
+		
+		<div  style="width:100%;height:30%;text-align:bottom">
+		<div>
+		  <IMG style="width:100%" src="../files/banner.png">
+		</div>
+		</div>
+	   
+ </BODY>
+</HTML>

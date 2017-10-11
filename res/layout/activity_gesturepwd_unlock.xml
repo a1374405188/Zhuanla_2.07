@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launch" 
+    android:orientation="vertical"
+    >
+    <View 
+       android:layout_width="match_parent"
+       android:layout_height="0px"
+       android:layout_weight="1"  
+     />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="10"  
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp" 
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textview_welcomeback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                android:textColor="@color/white"
+                android:textSize="15sp" 
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp" >
+
+            <TextView
+                android:id="@+id/textview_change_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_change_account"
+                android:drawablePadding="@dimen/activity_small_margin"
+                android:text="@string/change_account"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textview_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_gesture_change_pwd"
+                android:drawablePadding="@dimen/activity_small_margin"
+                android:text="@string/forget_password"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <com.beikbank.android.widget.LockPatternView
+            android:id="@+id/gesturepwd_unlock_lockview"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="8"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+        <View 
+       android:layout_width="match_parent"
+       android:layout_height="0px"
+       android:layout_weight="1"  
+     />
+</LinearLayout>

@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffd7d7d7"
+       />
+ <ScrollView 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     >
+<!--资产-->
+<LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:background="#fffb5a5c"
+     android:orientation="vertical"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="持有资产(元)"
+        />
+    <TextView
+        android:id="@+id/tv_zhican"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#ffffffff"
+       
+        android:layout_marginBottom="30dp"
+        android:text="0.00"
+        />
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="#ffe6e6e6"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+        />
+    
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+        >
+           <LinearLayout
+         android:id="@+id/ll_zuori"
+         android:layout_width="0px"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+        >
+             <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#80ffffff"
+       
+        android:layout_marginBottom="10dp"
+        android:text="昨日收益(元)"
+        android:layout_marginTop="10dp"
+        />
+               <TextView
+        android:id="@+id/tv_zuori"            
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+       
+        android:layout_marginBottom="10dp"
+        android:text="0.00"
+        />
+        
+        </LinearLayout>
+        <View
+             android:layout_width="1px"
+             android:layout_height="match_parent"
+             android:background="#ffe6e6e6"
+            />
+    
+           <LinearLayout
+          android:id="@+id/ll_leiji"      
+         android:layout_width="0px"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+        >
+             <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#80ffffff"
+       
+        android:layout_marginBottom="10dp"
+        android:text="累计收益(元)"
+        android:layout_marginTop="10dp"
+        />
+               <TextView
+         android:id="@+id/tv_leiji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+       
+        android:layout_marginBottom="10dp"
+        android:text="0.00"
+        />
+        
+        </LinearLayout>
+           
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_parent"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity=""
+        >
+    </LinearLayout>
+ </LinearLayout>
+ </ScrollView> 
+ <ListView
+         android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/global_bg3"
+        android:dividerHeight="6dp"
+        android:visibility="gone"
+     >
+     </ListView>
+</LinearLayout>
