@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package comc.beikbank.android;
+package coma.beikbank.android;
 
 public final class R {
     public static final class anim {
@@ -1249,149 +1249,151 @@ mdpi
         public static final int img_lianxikefu_v2=0x7f020119;
         public static final int img_no_banner=0x7f02011a;
         public static final int img_no_message=0x7f02011b;
-        public static final int img_shouyi_shuomin=0x7f02011c;
-        public static final int img_start1=0x7f02011d;
-        public static final int img_start2=0x7f02011e;
-        public static final int img_start3=0x7f02011f;
-        public static final int img_start4=0x7f020120;
-        public static final int img_start5=0x7f020121;
-        public static final int img_v2_chanpinbianhao=0x7f020122;
-        public static final int img_v2_chanpinjieshao=0x7f020123;
-        public static final int img_v2_fankuan=0x7f020124;
-        public static final int img_v2_fene=0x7f020125;
-        public static final int img_v2_fengxiandengji=0x7f020126;
-        public static final int img_v2_fengxianfensan=0x7f020127;
-        public static final int img_v2_fengxiantishi=0x7f020128;
-        public static final int img_v2_goumaixiane=0x7f020129;
-        public static final int img_v2_qigou=0x7f02012a;
-        public static final int img_v2_qixi=0x7f02012b;
-        public static final int img_v2_zhuanrang=0x7f02012c;
-        public static final int img_v2_zhuanrangshuoming=0x7f02012d;
-        public static final int img_xiaoxi_hong=0x7f02012e;
-        public static final int img_xiaoxi_huang=0x7f02012f;
-        public static final int img_xinshou=0x7f020130;
-        public static final int img_yuan1=0x7f020131;
-        public static final int img_yuan2=0x7f020132;
-        public static final int img_zhican_beijin=0x7f020133;
-        public static final int img_zhican_chanpinsanbiao=0x7f020134;
-        public static final int img_zhican_ding=0x7f020135;
-        public static final int img_zhican_huo=0x7f020136;
-        public static final int img_zhican_jiao=0x7f020137;
-        public static final int img_zhican_qian=0x7f020138;
-        public static final int img_zhican_sanbiao=0x7f020139;
-        public static final int img_zhican_shouyi2_v2=0x7f02013a;
-        public static final int img_zhican_shouyi_v2=0x7f02013b;
-        public static final int img_zhican_zhinengtou=0x7f02013c;
-        public static final int img_zhuanrang_success_v2=0x7f02013d;
-        public static final int img_zhuanrang_v2=0x7f02013e;
-        public static final int jiaoyijilu_exteds=0x7f02013f;
-        public static final int jiaoyijilu_unextends=0x7f020140;
-        public static final int jisuanqi=0x7f020141;
-        public static final int left1=0x7f020142;
-        public static final int left1_no=0x7f020143;
-        public static final int left2=0x7f020144;
-        public static final int left_action=0x7f020145;
-        public static final int left_message=0x7f020146;
-        public static final int left_real=0x7f020147;
-        public static final int left_return_msg=0x7f020148;
-        public static final int left_unaction=0x7f020149;
-        public static final int left_yuan=0x7f02014a;
-        public static final int left_zhichan=0x7f02014b;
-        public static final int line_diviver=0x7f02014c;
-        public static final int load_net_img_def=0x7f02014d;
-        public static final int load_net_img_end=0x7f02014e;
-        public static final int login_page_item2=0x7f02014f;
-        public static final int login_page_item2_bg=0x7f020150;
-        public static final int login_user_img=0x7f020151;
-        public static final int logo=0x7f020152;
-        public static final int maiorqv1=0x7f020153;
-        public static final int maiorqv2=0x7f020154;
-        public static final int maiorqv3=0x7f020155;
-        public static final int message_del=0x7f020156;
-        public static final int message_has=0x7f020157;
-        public static final int message_un=0x7f020158;
-        public static final int msg_show=0x7f020159;
-        public static final int mxx_view_bg_default=0x7f02015a;
-        public static final int mxx_view_bg_default2=0x7f02015b;
-        public static final int mxx_view_bg_default3=0x7f02015c;
-        public static final int mxx_view_bg_default4=0x7f02015d;
-        public static final int no_net=0x7f02015e;
-        public static final int no_trad_record=0x7f02015f;
-        public static final int notice=0x7f020160;
-        public static final int page1_img1=0x7f020161;
-        public static final int page2_img2=0x7f020162;
-        public static final int page2_img3=0x7f020163;
-        public static final int page2_img4=0x7f020164;
-        public static final int page2_img5=0x7f020165;
-        public static final int page2_img6=0x7f020166;
-        public static final int page2_img7=0x7f020167;
-        public static final int page2_img8=0x7f020168;
-        public static final int page2_img9=0x7f020169;
-        public static final int page3_img1=0x7f02016a;
-        public static final int page3_img2=0x7f02016b;
-        public static final int page_bg2=0x7f02016c;
-        public static final int page_bg_4=0x7f02016d;
-        public static final int page_selected=0x7f02016e;
-        public static final int page_unselected=0x7f02016f;
-        public static final int pageview_img1=0x7f020170;
-        public static final int pageview_img2=0x7f020171;
-        public static final int pageview_img3=0x7f020172;
-        public static final int pageview_img4=0x7f020173;
-        public static final int progress_bar_states=0x7f020174;
-        public static final int progressbar_bg=0x7f020175;
-        public static final int progressbar_rate=0x7f020176;
-        public static final int purchase_submit_info_bg1=0x7f020177;
-        public static final int purchase_submit_info_bg2=0x7f020178;
-        public static final int qianbao=0x7f020179;
-        public static final int qianbao0=0x7f02017a;
-        public static final int qianbao1=0x7f02017b;
-        public static final int qianbao2=0x7f02017c;
-        public static final int qq_img=0x7f02017d;
-        public static final int redeem_dialog_gb=0x7f02017e;
-        public static final int riskcontrol_img1=0x7f02017f;
-        public static final int riskcontrol_img2=0x7f020180;
-        public static final int share1=0x7f020181;
-        public static final int share_message=0x7f020182;
-        public static final int share_qq=0x7f020183;
-        public static final int share_qqzone=0x7f020184;
-        public static final int share_weibo=0x7f020185;
-        public static final int share_weixin=0x7f020186;
-        public static final int share_weixinfriend=0x7f020187;
-        public static final int skin_color_button=0x7f020188;
-        public static final int solid_divider_ccc=0x7f020189;
-        public static final int solid_divider_fff=0x7f02018a;
-        public static final int souhu_360=0x7f02018b;
-        public static final int switch_bottom=0x7f02018c;
-        public static final int switch_frame=0x7f02018d;
-        public static final int switch_mask=0x7f02018e;
-        public static final int text_color_select1=0x7f02018f;
-        public static final int text_color_select2=0x7f020190;
-        public static final int toast_img1=0x7f020191;
-        public static final int toast_img2=0x7f020192;
-        public static final int trans=0x7f0201aa;
-        public static final int unlogin_user_img=0x7f020193;
-        public static final int view_pageview2_5=0x7f020194;
-        public static final int view_pageview2_img1=0x7f020195;
-        public static final int view_pageview2_img2=0x7f020196;
-        public static final int view_pageview2_img3=0x7f020197;
-        public static final int view_pageview2_img4=0x7f020198;
-        public static final int view_pageview2_img5=0x7f020199;
-        public static final int weixin_gz=0x7f02019a;
-        public static final int why=0x7f02019b;
-        public static final int win_msg_img=0x7f02019c;
-        public static final int xiaoxi_fuwu=0x7f02019d;
-        public static final int xiaoxi_gonggao=0x7f02019e;
-        public static final int xiaoxi_jiaoyi=0x7f02019f;
-        public static final int xinlang_weibo=0x7f0201a0;
-        public static final int yhq_none=0x7f0201a1;
-        public static final int zaiquan_img6=0x7f0201a2;
-        public static final int zhichan_img1=0x7f0201a3;
-        public static final int zhichan_img2=0x7f0201a4;
-        public static final int zhichan_img3=0x7f0201a5;
-        public static final int zhichan_img4=0x7f0201a6;
-        public static final int zhichan_img5=0x7f0201a7;
-        public static final int zhichan_img6=0x7f0201a8;
-        public static final int zhichan_img7=0x7f0201a9;
+        public static final int img_phonechange=0x7f02011c;
+        public static final int img_shouyi_shuomin=0x7f02011d;
+        public static final int img_start1=0x7f02011e;
+        public static final int img_start2=0x7f02011f;
+        public static final int img_start3=0x7f020120;
+        public static final int img_start4=0x7f020121;
+        public static final int img_start5=0x7f020122;
+        public static final int img_tixian=0x7f020123;
+        public static final int img_v2_chanpinbianhao=0x7f020124;
+        public static final int img_v2_chanpinjieshao=0x7f020125;
+        public static final int img_v2_fankuan=0x7f020126;
+        public static final int img_v2_fene=0x7f020127;
+        public static final int img_v2_fengxiandengji=0x7f020128;
+        public static final int img_v2_fengxianfensan=0x7f020129;
+        public static final int img_v2_fengxiantishi=0x7f02012a;
+        public static final int img_v2_goumaixiane=0x7f02012b;
+        public static final int img_v2_qigou=0x7f02012c;
+        public static final int img_v2_qixi=0x7f02012d;
+        public static final int img_v2_zhuanrang=0x7f02012e;
+        public static final int img_v2_zhuanrangshuoming=0x7f02012f;
+        public static final int img_xiaoxi_hong=0x7f020130;
+        public static final int img_xiaoxi_huang=0x7f020131;
+        public static final int img_xinshou=0x7f020132;
+        public static final int img_yuan1=0x7f020133;
+        public static final int img_yuan2=0x7f020134;
+        public static final int img_zhican_beijin=0x7f020135;
+        public static final int img_zhican_chanpinsanbiao=0x7f020136;
+        public static final int img_zhican_ding=0x7f020137;
+        public static final int img_zhican_huo=0x7f020138;
+        public static final int img_zhican_jiao=0x7f020139;
+        public static final int img_zhican_qian=0x7f02013a;
+        public static final int img_zhican_sanbiao=0x7f02013b;
+        public static final int img_zhican_shouyi2_v2=0x7f02013c;
+        public static final int img_zhican_shouyi_v2=0x7f02013d;
+        public static final int img_zhican_zhinengtou=0x7f02013e;
+        public static final int img_zhuanrang_success_v2=0x7f02013f;
+        public static final int img_zhuanrang_v2=0x7f020140;
+        public static final int jiaoyijilu_exteds=0x7f020141;
+        public static final int jiaoyijilu_unextends=0x7f020142;
+        public static final int jisuanqi=0x7f020143;
+        public static final int left1=0x7f020144;
+        public static final int left1_no=0x7f020145;
+        public static final int left2=0x7f020146;
+        public static final int left_action=0x7f020147;
+        public static final int left_message=0x7f020148;
+        public static final int left_real=0x7f020149;
+        public static final int left_return_msg=0x7f02014a;
+        public static final int left_unaction=0x7f02014b;
+        public static final int left_yuan=0x7f02014c;
+        public static final int left_zhichan=0x7f02014d;
+        public static final int line_diviver=0x7f02014e;
+        public static final int load_net_img_def=0x7f02014f;
+        public static final int load_net_img_end=0x7f020150;
+        public static final int login_page_item2=0x7f020151;
+        public static final int login_page_item2_bg=0x7f020152;
+        public static final int login_user_img=0x7f020153;
+        public static final int logo=0x7f020154;
+        public static final int maiorqv1=0x7f020155;
+        public static final int maiorqv2=0x7f020156;
+        public static final int maiorqv3=0x7f020157;
+        public static final int message_del=0x7f020158;
+        public static final int message_has=0x7f020159;
+        public static final int message_un=0x7f02015a;
+        public static final int msg_show=0x7f02015b;
+        public static final int mxx_view_bg_default=0x7f02015c;
+        public static final int mxx_view_bg_default2=0x7f02015d;
+        public static final int mxx_view_bg_default3=0x7f02015e;
+        public static final int mxx_view_bg_default4=0x7f02015f;
+        public static final int no_net=0x7f020160;
+        public static final int no_trad_record=0x7f020161;
+        public static final int notice=0x7f020162;
+        public static final int page1_img1=0x7f020163;
+        public static final int page2_img2=0x7f020164;
+        public static final int page2_img3=0x7f020165;
+        public static final int page2_img4=0x7f020166;
+        public static final int page2_img5=0x7f020167;
+        public static final int page2_img6=0x7f020168;
+        public static final int page2_img7=0x7f020169;
+        public static final int page2_img8=0x7f02016a;
+        public static final int page2_img9=0x7f02016b;
+        public static final int page3_img1=0x7f02016c;
+        public static final int page3_img2=0x7f02016d;
+        public static final int page_bg2=0x7f02016e;
+        public static final int page_bg_4=0x7f02016f;
+        public static final int page_selected=0x7f020170;
+        public static final int page_unselected=0x7f020171;
+        public static final int pageview_img1=0x7f020172;
+        public static final int pageview_img2=0x7f020173;
+        public static final int pageview_img3=0x7f020174;
+        public static final int pageview_img4=0x7f020175;
+        public static final int progress_bar_states=0x7f020176;
+        public static final int progressbar_bg=0x7f020177;
+        public static final int progressbar_rate=0x7f020178;
+        public static final int purchase_submit_info_bg1=0x7f020179;
+        public static final int purchase_submit_info_bg2=0x7f02017a;
+        public static final int qianbao=0x7f02017b;
+        public static final int qianbao0=0x7f02017c;
+        public static final int qianbao1=0x7f02017d;
+        public static final int qianbao2=0x7f02017e;
+        public static final int qq_img=0x7f02017f;
+        public static final int redeem_dialog_gb=0x7f020180;
+        public static final int riskcontrol_img1=0x7f020181;
+        public static final int riskcontrol_img2=0x7f020182;
+        public static final int share1=0x7f020183;
+        public static final int share_message=0x7f020184;
+        public static final int share_qq=0x7f020185;
+        public static final int share_qqzone=0x7f020186;
+        public static final int share_weibo=0x7f020187;
+        public static final int share_weixin=0x7f020188;
+        public static final int share_weixinfriend=0x7f020189;
+        public static final int skin_color_button=0x7f02018a;
+        public static final int solid_divider_ccc=0x7f02018b;
+        public static final int solid_divider_fff=0x7f02018c;
+        public static final int souhu_360=0x7f02018d;
+        public static final int switch_bottom=0x7f02018e;
+        public static final int switch_frame=0x7f02018f;
+        public static final int switch_mask=0x7f020190;
+        public static final int text_color_select1=0x7f020191;
+        public static final int text_color_select2=0x7f020192;
+        public static final int toast_img1=0x7f020193;
+        public static final int toast_img2=0x7f020194;
+        public static final int trans=0x7f0201ac;
+        public static final int unlogin_user_img=0x7f020195;
+        public static final int view_pageview2_5=0x7f020196;
+        public static final int view_pageview2_img1=0x7f020197;
+        public static final int view_pageview2_img2=0x7f020198;
+        public static final int view_pageview2_img3=0x7f020199;
+        public static final int view_pageview2_img4=0x7f02019a;
+        public static final int view_pageview2_img5=0x7f02019b;
+        public static final int weixin_gz=0x7f02019c;
+        public static final int why=0x7f02019d;
+        public static final int win_msg_img=0x7f02019e;
+        public static final int xiaoxi_fuwu=0x7f02019f;
+        public static final int xiaoxi_gonggao=0x7f0201a0;
+        public static final int xiaoxi_jiaoyi=0x7f0201a1;
+        public static final int xinlang_weibo=0x7f0201a2;
+        public static final int yhq_none=0x7f0201a3;
+        public static final int zaiquan_img6=0x7f0201a4;
+        public static final int zhichan_img1=0x7f0201a5;
+        public static final int zhichan_img2=0x7f0201a6;
+        public static final int zhichan_img3=0x7f0201a7;
+        public static final int zhichan_img4=0x7f0201a8;
+        public static final int zhichan_img5=0x7f0201a9;
+        public static final int zhichan_img6=0x7f0201aa;
+        public static final int zhichan_img7=0x7f0201ab;
     }
     public static final class id {
         public static final int all=0x7f080168;
@@ -2106,184 +2108,187 @@ mdpi
         public static final int activity_loginpwd_update=0x7f03003c;
         public static final int activity_no_net=0x7f03003d;
         public static final int activity_no_trad_record=0x7f03003e;
-        public static final int activity_project=0x7f03003f;
-        public static final int activity_project2=0x7f030040;
-        public static final int activity_purchase=0x7f030041;
-        public static final int activity_purchase_confirm=0x7f030042;
-        public static final int activity_purchase_success=0x7f030043;
-        public static final int activity_qianbao1=0x7f030044;
-        public static final int activity_qianbao2=0x7f030045;
-        public static final int activity_qianbao3=0x7f030046;
-        public static final int activity_qianbao4=0x7f030047;
-        public static final int activity_qianbao4_2=0x7f030048;
-        public static final int activity_qianbao4_2_item=0x7f030049;
-        public static final int activity_qianbao5=0x7f03004a;
-        public static final int activity_qianbao6=0x7f03004b;
-        public static final int activity_qianbao7=0x7f03004c;
-        public static final int activity_qianbao8=0x7f03004d;
-        public static final int activity_querenjiaoyi=0x7f03004e;
-        public static final int activity_realname=0x7f03004f;
-        public static final int activity_redeem=0x7f030050;
-        public static final int activity_redeem_confirm=0x7f030051;
-        public static final int activity_redeem_finish=0x7f030052;
-        public static final int activity_redeem_status=0x7f030053;
-        public static final int activity_redeem_status2=0x7f030054;
-        public static final int activity_register_code=0x7f030055;
-        public static final int activity_registerpwd_set=0x7f030056;
-        public static final int activity_riskcontrol=0x7f030057;
-        public static final int activity_riskcontrol2=0x7f030058;
-        public static final int activity_riskcontrol_item=0x7f030059;
-        public static final int activity_scroller_delete=0x7f03005a;
-        public static final int activity_select_hongbao=0x7f03005b;
-        public static final int activity_select_hongbao_item=0x7f03005c;
-        public static final int activity_shouzhiminxi=0x7f03005d;
-        public static final int activity_shouzhiminxi2=0x7f03005e;
-        public static final int activity_support_banks=0x7f03005f;
-        public static final int activity_test=0x7f030060;
-        public static final int activity_transaction=0x7f030061;
-        public static final int activity_transaction2=0x7f030062;
-        public static final int activity_transaction3=0x7f030063;
-        public static final int activity_transactionpwd_set=0x7f030064;
-        public static final int activity_transactionpwd_update=0x7f030065;
-        public static final int activity_update_phone=0x7f030066;
-        public static final int activity_userrecord=0x7f030067;
-        public static final int activity_userrecord_v2=0x7f030068;
-        public static final int activity_welcome=0x7f030069;
-        public static final int activity_xiaoxi=0x7f03006a;
-        public static final int activity_xitong_gg=0x7f03006b;
-        public static final int activity_yigourenshu=0x7f03006c;
-        public static final int activity_yingdao=0x7f03006d;
-        public static final int activity_youhuiquan=0x7f03006e;
-        public static final int activity_zhicanfenbu=0x7f03006f;
-        public static final int activity_zhicanfenbu_item=0x7f030070;
-        public static final int activity_zhichan=0x7f030071;
-        public static final int activity_zhichan1=0x7f030072;
-        public static final int activity_zhichan2=0x7f030073;
-        public static final int activity_zhichan3=0x7f030074;
-        public static final int activity_zhichan4=0x7f030075;
-        public static final int activity_zhichan_2=0x7f030076;
-        public static final int activity_zhichan_3=0x7f030077;
-        public static final int activity_zhichan_4=0x7f030078;
-        public static final int activity_zuorishouyi=0x7f030079;
-        public static final int activity_zuorishouyi2=0x7f03007a;
-        public static final int activity_zuorishouyi_item=0x7f03007b;
-        public static final int center_frame=0x7f03007c;
-        public static final int check_jiaoyimima=0x7f03007d;
-        public static final int count_shouyi=0x7f03007e;
-        public static final int count_shouyi2=0x7f03007f;
-        public static final int dialog_confirm_layout=0x7f030080;
-        public static final int dialog_empty=0x7f030081;
-        public static final int dialog_financial_detail=0x7f030082;
-        public static final int dialog_invite_friend=0x7f030083;
-        public static final int dialog_list_item=0x7f030084;
-        public static final int dialog_listview=0x7f030085;
-        public static final int dialog_progress_layout=0x7f030086;
-        public static final int dialog_remind_layout=0x7f030087;
-        public static final int dialog_shape=0x7f030088;
-        public static final int dialog_simple_layout=0x7f030089;
-        public static final int dialog_update_layout=0x7f03008a;
-        public static final int error_info=0x7f03008b;
-        public static final int first_enter_jinxuan=0x7f03008c;
-        public static final int first_enter_msg=0x7f03008d;
-        public static final int first_login_msg=0x7f03008e;
-        public static final int first_win_msg=0x7f03008f;
-        public static final int fragment_menu=0x7f030090;
-        public static final int fragment_menu_chid=0x7f030091;
-        public static final int fragment_right_menu=0x7f030092;
-        public static final int frame_content=0x7f030093;
-        public static final int frame_left_menu=0x7f030094;
-        public static final int global_error_page=0x7f030095;
-        public static final int head_pullrefresh=0x7f030096;
-        public static final int item_delete=0x7f030097;
-        public static final int item_delete2=0x7f030098;
-        public static final int item_delete3=0x7f030099;
-        public static final int item_delete4=0x7f03009a;
-        public static final int item_help_center=0x7f03009b;
-        public static final int item_help_center2=0x7f03009c;
-        public static final int item_help_center_1=0x7f03009d;
-        public static final int item_project=0x7f03009e;
-        public static final int item_project2=0x7f03009f;
-        public static final int item_support_bank=0x7f0300a0;
-        public static final int item_transaction_records=0x7f0300a1;
-        public static final int layout_line=0x7f0300a2;
-        public static final int layout_line2=0x7f0300a3;
-        public static final int layout_slideshow=0x7f0300a4;
-        public static final int left_frame=0x7f0300a5;
-        public static final int left_login_real=0x7f0300a6;
-        public static final int left_login_unreal=0x7f0300a7;
-        public static final int left_unlogin=0x7f0300a8;
-        public static final int line=0x7f0300a9;
-        public static final int line_layout=0x7f0300aa;
-        public static final int linear_no_message=0x7f0300ab;
-        public static final int ll_loading_img=0x7f0300ac;
-        public static final int message_activity=0x7f0300ad;
-        public static final int message_detail_activity=0x7f0300ae;
-        public static final int none_data=0x7f0300af;
-        public static final int notice=0x7f0300b0;
-        public static final int page_dingqi=0x7f0300b1;
-        public static final int page_dingqi1=0x7f0300b2;
-        public static final int page_dingqi2=0x7f0300b3;
-        public static final int page_dingqi3=0x7f0300b4;
-        public static final int page_dingqi4=0x7f0300b5;
-        public static final int page_product=0x7f0300b6;
-        public static final int page_product1=0x7f0300b7;
-        public static final int page_product2=0x7f0300b8;
-        public static final int page_product3=0x7f0300b9;
-        public static final int page_wealth=0x7f0300ba;
-        public static final int page_wealth1=0x7f0300bb;
-        public static final int page_wealth11=0x7f0300bc;
-        public static final int page_wealth2=0x7f0300bd;
-        public static final int page_wealth3=0x7f0300be;
-        public static final int popwindow=0x7f0300bf;
-        public static final int popwindowlayout=0x7f0300c0;
-        public static final int progressbar_item=0x7f0300c1;
-        public static final int progressbar_item2=0x7f0300c2;
-        public static final int pull_to_load_footer=0x7f0300c3;
-        public static final int pull_to_refresh_head=0x7f0300c4;
-        public static final int pull_to_refresh_load_more=0x7f0300c5;
-        public static final int puy_select_dialog=0x7f0300c6;
-        public static final int pview1=0x7f0300c7;
-        public static final int pview1_v2=0x7f0300c8;
-        public static final int pview1_v2_item=0x7f0300c9;
-        public static final int pview2=0x7f0300ca;
-        public static final int pview2_v2=0x7f0300cb;
-        public static final int pview3=0x7f0300cc;
-        public static final int pview3_v2=0x7f0300cd;
-        public static final int pview3_yigou=0x7f0300ce;
-        public static final int redeem_dialog1=0x7f0300cf;
-        public static final int redeem_dialog2=0x7f0300d0;
-        public static final int redeem_dialog3=0x7f0300d1;
-        public static final int redeem_dialog4=0x7f0300d2;
-        public static final int redeem_dialog5=0x7f0300d3;
-        public static final int redeem_dialog6=0x7f0300d4;
-        public static final int redeem_popupwindow=0x7f0300d5;
-        public static final int scroll_listview_delete=0x7f0300d6;
-        public static final int slidingmenumain=0x7f0300d7;
-        public static final int title_bar=0x7f0300d8;
-        public static final int title_bar_with_arrow=0x7f0300d9;
-        public static final int toast_message=0x7f0300da;
-        public static final int userrecoed_chid=0x7f0300db;
-        public static final int userrecord_item=0x7f0300dc;
-        public static final int userrecord_list=0x7f0300dd;
-        public static final int view_pager=0x7f0300de;
-        public static final int view_pager2=0x7f0300df;
-        public static final int view_pageview1=0x7f0300e0;
-        public static final int view_pageview1_1=0x7f0300e1;
-        public static final int view_pageview1_2=0x7f0300e2;
-        public static final int view_pageview1_3=0x7f0300e3;
-        public static final int view_pageview2=0x7f0300e4;
-        public static final int view_pageview2_1=0x7f0300e5;
-        public static final int view_pageview2_2=0x7f0300e6;
-        public static final int view_pageview2_3=0x7f0300e7;
-        public static final int view_pageview2_3_1_v2=0x7f0300e8;
-        public static final int view_pageview3=0x7f0300e9;
-        public static final int view_rull_util=0x7f0300ea;
-        public static final int view_toast=0x7f0300eb;
-        public static final int view_toast2=0x7f0300ec;
-        public static final int xitong_gonggao_item=0x7f0300ed;
-        public static final int yigourenshu_item=0x7f0300ee;
-        public static final int yuan=0x7f0300ef;
-        public static final int zhuangrang_quereng=0x7f0300f0;
+        public static final int activity_phone_change=0x7f03003f;
+        public static final int activity_project=0x7f030040;
+        public static final int activity_project2=0x7f030041;
+        public static final int activity_purchase=0x7f030042;
+        public static final int activity_purchase_confirm=0x7f030043;
+        public static final int activity_purchase_success=0x7f030044;
+        public static final int activity_qianbao1=0x7f030045;
+        public static final int activity_qianbao2=0x7f030046;
+        public static final int activity_qianbao3=0x7f030047;
+        public static final int activity_qianbao4=0x7f030048;
+        public static final int activity_qianbao4_2=0x7f030049;
+        public static final int activity_qianbao4_2_item=0x7f03004a;
+        public static final int activity_qianbao5=0x7f03004b;
+        public static final int activity_qianbao6=0x7f03004c;
+        public static final int activity_qianbao7=0x7f03004d;
+        public static final int activity_qianbao8=0x7f03004e;
+        public static final int activity_querenjiaoyi=0x7f03004f;
+        public static final int activity_realname=0x7f030050;
+        public static final int activity_redeem=0x7f030051;
+        public static final int activity_redeem_confirm=0x7f030052;
+        public static final int activity_redeem_finish=0x7f030053;
+        public static final int activity_redeem_status=0x7f030054;
+        public static final int activity_redeem_status2=0x7f030055;
+        public static final int activity_register_code=0x7f030056;
+        public static final int activity_registerpwd_set=0x7f030057;
+        public static final int activity_riskcontrol=0x7f030058;
+        public static final int activity_riskcontrol2=0x7f030059;
+        public static final int activity_riskcontrol_item=0x7f03005a;
+        public static final int activity_scroller_delete=0x7f03005b;
+        public static final int activity_select_hongbao=0x7f03005c;
+        public static final int activity_select_hongbao_item=0x7f03005d;
+        public static final int activity_shouzhiminxi=0x7f03005e;
+        public static final int activity_shouzhiminxi2=0x7f03005f;
+        public static final int activity_support_banks=0x7f030060;
+        public static final int activity_test=0x7f030061;
+        public static final int activity_tixian=0x7f030062;
+        public static final int activity_transaction=0x7f030063;
+        public static final int activity_transaction2=0x7f030064;
+        public static final int activity_transaction3=0x7f030065;
+        public static final int activity_transactionpwd_set=0x7f030066;
+        public static final int activity_transactionpwd_update=0x7f030067;
+        public static final int activity_update_phone=0x7f030068;
+        public static final int activity_userrecord=0x7f030069;
+        public static final int activity_userrecord_v2=0x7f03006a;
+        public static final int activity_welcome=0x7f03006b;
+        public static final int activity_xiaoxi=0x7f03006c;
+        public static final int activity_xitong_gg=0x7f03006d;
+        public static final int activity_yanzhen_shengfen=0x7f03006e;
+        public static final int activity_yigourenshu=0x7f03006f;
+        public static final int activity_yingdao=0x7f030070;
+        public static final int activity_youhuiquan=0x7f030071;
+        public static final int activity_zhicanfenbu=0x7f030072;
+        public static final int activity_zhicanfenbu_item=0x7f030073;
+        public static final int activity_zhichan=0x7f030074;
+        public static final int activity_zhichan1=0x7f030075;
+        public static final int activity_zhichan2=0x7f030076;
+        public static final int activity_zhichan3=0x7f030077;
+        public static final int activity_zhichan4=0x7f030078;
+        public static final int activity_zhichan_2=0x7f030079;
+        public static final int activity_zhichan_3=0x7f03007a;
+        public static final int activity_zhichan_4=0x7f03007b;
+        public static final int activity_zuorishouyi=0x7f03007c;
+        public static final int activity_zuorishouyi2=0x7f03007d;
+        public static final int activity_zuorishouyi_item=0x7f03007e;
+        public static final int center_frame=0x7f03007f;
+        public static final int check_jiaoyimima=0x7f030080;
+        public static final int count_shouyi=0x7f030081;
+        public static final int count_shouyi2=0x7f030082;
+        public static final int dialog_confirm_layout=0x7f030083;
+        public static final int dialog_empty=0x7f030084;
+        public static final int dialog_financial_detail=0x7f030085;
+        public static final int dialog_invite_friend=0x7f030086;
+        public static final int dialog_list_item=0x7f030087;
+        public static final int dialog_listview=0x7f030088;
+        public static final int dialog_progress_layout=0x7f030089;
+        public static final int dialog_remind_layout=0x7f03008a;
+        public static final int dialog_shape=0x7f03008b;
+        public static final int dialog_simple_layout=0x7f03008c;
+        public static final int dialog_update_layout=0x7f03008d;
+        public static final int error_info=0x7f03008e;
+        public static final int first_enter_jinxuan=0x7f03008f;
+        public static final int first_enter_msg=0x7f030090;
+        public static final int first_login_msg=0x7f030091;
+        public static final int first_win_msg=0x7f030092;
+        public static final int fragment_menu=0x7f030093;
+        public static final int fragment_menu_chid=0x7f030094;
+        public static final int fragment_right_menu=0x7f030095;
+        public static final int frame_content=0x7f030096;
+        public static final int frame_left_menu=0x7f030097;
+        public static final int global_error_page=0x7f030098;
+        public static final int head_pullrefresh=0x7f030099;
+        public static final int item_delete=0x7f03009a;
+        public static final int item_delete2=0x7f03009b;
+        public static final int item_delete3=0x7f03009c;
+        public static final int item_delete4=0x7f03009d;
+        public static final int item_help_center=0x7f03009e;
+        public static final int item_help_center2=0x7f03009f;
+        public static final int item_help_center_1=0x7f0300a0;
+        public static final int item_project=0x7f0300a1;
+        public static final int item_project2=0x7f0300a2;
+        public static final int item_support_bank=0x7f0300a3;
+        public static final int item_transaction_records=0x7f0300a4;
+        public static final int layout_line=0x7f0300a5;
+        public static final int layout_line2=0x7f0300a6;
+        public static final int layout_slideshow=0x7f0300a7;
+        public static final int left_frame=0x7f0300a8;
+        public static final int left_login_real=0x7f0300a9;
+        public static final int left_login_unreal=0x7f0300aa;
+        public static final int left_unlogin=0x7f0300ab;
+        public static final int line=0x7f0300ac;
+        public static final int line_layout=0x7f0300ad;
+        public static final int linear_no_message=0x7f0300ae;
+        public static final int ll_loading_img=0x7f0300af;
+        public static final int message_activity=0x7f0300b0;
+        public static final int message_detail_activity=0x7f0300b1;
+        public static final int none_data=0x7f0300b2;
+        public static final int notice=0x7f0300b3;
+        public static final int page_dingqi=0x7f0300b4;
+        public static final int page_dingqi1=0x7f0300b5;
+        public static final int page_dingqi2=0x7f0300b6;
+        public static final int page_dingqi3=0x7f0300b7;
+        public static final int page_dingqi4=0x7f0300b8;
+        public static final int page_product=0x7f0300b9;
+        public static final int page_product1=0x7f0300ba;
+        public static final int page_product2=0x7f0300bb;
+        public static final int page_product3=0x7f0300bc;
+        public static final int page_wealth=0x7f0300bd;
+        public static final int page_wealth1=0x7f0300be;
+        public static final int page_wealth11=0x7f0300bf;
+        public static final int page_wealth2=0x7f0300c0;
+        public static final int page_wealth3=0x7f0300c1;
+        public static final int popwindow=0x7f0300c2;
+        public static final int popwindowlayout=0x7f0300c3;
+        public static final int progressbar_item=0x7f0300c4;
+        public static final int progressbar_item2=0x7f0300c5;
+        public static final int pull_to_load_footer=0x7f0300c6;
+        public static final int pull_to_refresh_head=0x7f0300c7;
+        public static final int pull_to_refresh_load_more=0x7f0300c8;
+        public static final int puy_select_dialog=0x7f0300c9;
+        public static final int pview1=0x7f0300ca;
+        public static final int pview1_v2=0x7f0300cb;
+        public static final int pview1_v2_item=0x7f0300cc;
+        public static final int pview2=0x7f0300cd;
+        public static final int pview2_v2=0x7f0300ce;
+        public static final int pview3=0x7f0300cf;
+        public static final int pview3_v2=0x7f0300d0;
+        public static final int pview3_yigou=0x7f0300d1;
+        public static final int redeem_dialog1=0x7f0300d2;
+        public static final int redeem_dialog2=0x7f0300d3;
+        public static final int redeem_dialog3=0x7f0300d4;
+        public static final int redeem_dialog4=0x7f0300d5;
+        public static final int redeem_dialog5=0x7f0300d6;
+        public static final int redeem_dialog6=0x7f0300d7;
+        public static final int redeem_popupwindow=0x7f0300d8;
+        public static final int scroll_listview_delete=0x7f0300d9;
+        public static final int slidingmenumain=0x7f0300da;
+        public static final int title_bar=0x7f0300db;
+        public static final int title_bar_with_arrow=0x7f0300dc;
+        public static final int toast_message=0x7f0300dd;
+        public static final int userrecoed_chid=0x7f0300de;
+        public static final int userrecord_item=0x7f0300df;
+        public static final int userrecord_list=0x7f0300e0;
+        public static final int view_pager=0x7f0300e1;
+        public static final int view_pager2=0x7f0300e2;
+        public static final int view_pageview1=0x7f0300e3;
+        public static final int view_pageview1_1=0x7f0300e4;
+        public static final int view_pageview1_2=0x7f0300e5;
+        public static final int view_pageview1_3=0x7f0300e6;
+        public static final int view_pageview2=0x7f0300e7;
+        public static final int view_pageview2_1=0x7f0300e8;
+        public static final int view_pageview2_2=0x7f0300e9;
+        public static final int view_pageview2_3=0x7f0300ea;
+        public static final int view_pageview2_3_1_v2=0x7f0300eb;
+        public static final int view_pageview3=0x7f0300ec;
+        public static final int view_rull_util=0x7f0300ed;
+        public static final int view_toast=0x7f0300ee;
+        public static final int view_toast2=0x7f0300ef;
+        public static final int xitong_gonggao_item=0x7f0300f0;
+        public static final int yigourenshu_item=0x7f0300f1;
+        public static final int yuan=0x7f0300f2;
+        public static final int zhuangrang_quereng=0x7f0300f3;
     }
     public static final class raw {
         public static final int bankcard=0x7f050000;
@@ -2884,11 +2889,11 @@ mdpi
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #JazzyListView_effect comc.beikbank.android:effect}</code></td><td></td></tr>
-           <tr><td><code>{@link #JazzyListView_max_velocity comc.beikbank.android:max_velocity}</code></td><td></td></tr>
-           <tr><td><code>{@link #JazzyListView_only_animate_fling comc.beikbank.android:only_animate_fling}</code></td><td></td></tr>
-           <tr><td><code>{@link #JazzyListView_only_animate_new_items comc.beikbank.android:only_animate_new_items}</code></td><td></td></tr>
-           <tr><td><code>{@link #JazzyListView_simulate_grid_with_list comc.beikbank.android:simulate_grid_with_list}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_effect coma.beikbank.android:effect}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_max_velocity coma.beikbank.android:max_velocity}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_only_animate_fling coma.beikbank.android:only_animate_fling}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_only_animate_new_items coma.beikbank.android:only_animate_new_items}</code></td><td></td></tr>
+           <tr><td><code>{@link #JazzyListView_simulate_grid_with_list coma.beikbank.android:simulate_grid_with_list}</code></td><td></td></tr>
            </table>
            @see #JazzyListView_effect
            @see #JazzyListView_max_velocity
@@ -2901,7 +2906,7 @@ mdpi
             0x7f01000d
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#effect}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#effect}
           attribute's value can be found in the {@link #JazzyListView} array.
 
 
@@ -2927,11 +2932,11 @@ mdpi
 <tr><td><code>twirl</code></td><td>13</td><td></td></tr>
 <tr><td><code>slide_in</code></td><td>14</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:effect
+          @attr name coma.beikbank.android:effect
         */
         public static final int JazzyListView_effect = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#max_velocity}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#max_velocity}
           attribute's value can be found in the {@link #JazzyListView} array.
 
 
@@ -2941,11 +2946,11 @@ mdpi
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:max_velocity
+          @attr name coma.beikbank.android:max_velocity
         */
         public static final int JazzyListView_max_velocity = 4;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#only_animate_fling}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#only_animate_fling}
           attribute's value can be found in the {@link #JazzyListView} array.
 
 
@@ -2955,11 +2960,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:only_animate_fling
+          @attr name coma.beikbank.android:only_animate_fling
         */
         public static final int JazzyListView_only_animate_fling = 2;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#only_animate_new_items}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#only_animate_new_items}
           attribute's value can be found in the {@link #JazzyListView} array.
 
 
@@ -2969,11 +2974,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:only_animate_new_items
+          @attr name coma.beikbank.android:only_animate_new_items
         */
         public static final int JazzyListView_only_animate_new_items = 1;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#simulate_grid_with_list}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#simulate_grid_with_list}
           attribute's value can be found in the {@link #JazzyListView} array.
 
 
@@ -2983,7 +2988,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:simulate_grid_with_list
+          @attr name coma.beikbank.android:simulate_grid_with_list
         */
         public static final int JazzyListView_simulate_grid_with_list = 3;
         /**  LockPatternView class attributes 
@@ -2992,16 +2997,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LockPatternView_arrowGreenUp comc.beikbank.android:arrowGreenUp}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_arrowRedUp comc.beikbank.android:arrowRedUp}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_aspect comc.beikbank.android:aspect}</code></td><td>
+           <tr><td><code>{@link #LockPatternView_arrowGreenUp coma.beikbank.android:arrowGreenUp}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_arrowRedUp coma.beikbank.android:arrowRedUp}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_aspect coma.beikbank.android:aspect}</code></td><td>
              Aspect to use when drawing LockPatternView.</td></tr>
-           <tr><td><code>{@link #LockPatternView_btnNormal comc.beikbank.android:btnNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_btnTouched comc.beikbank.android:btnTouched}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_circleGreen comc.beikbank.android:circleGreen}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_circleNormal comc.beikbank.android:circleNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_circleRed comc.beikbank.android:circleRed}</code></td><td></td></tr>
-           <tr><td><code>{@link #LockPatternView_line comc.beikbank.android:line}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_btnNormal coma.beikbank.android:btnNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_btnTouched coma.beikbank.android:btnTouched}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_circleGreen coma.beikbank.android:circleGreen}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_circleNormal coma.beikbank.android:circleNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_circleRed coma.beikbank.android:circleRed}</code></td><td></td></tr>
+           <tr><td><code>{@link #LockPatternView_line coma.beikbank.android:line}</code></td><td></td></tr>
            </table>
            @see #LockPatternView_arrowGreenUp
            @see #LockPatternView_arrowRedUp
@@ -3019,23 +3024,23 @@ containing a value of this type.
             0x7f010008
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#arrowGreenUp}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#arrowGreenUp}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:arrowGreenUp
+          @attr name coma.beikbank.android:arrowGreenUp
         */
         public static final int LockPatternView_arrowGreenUp = 7;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#arrowRedUp}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#arrowRedUp}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:arrowRedUp
+          @attr name coma.beikbank.android:arrowRedUp
         */
         public static final int LockPatternView_arrowRedUp = 8;
         /**
@@ -3058,61 +3063,61 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>lockHeight</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name comc.beikbank.android:aspect
+          @attr name coma.beikbank.android:aspect
         */
         public static final int LockPatternView_aspect = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#btnNormal}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#btnNormal}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:btnNormal
+          @attr name coma.beikbank.android:btnNormal
         */
         public static final int LockPatternView_btnNormal = 2;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#btnTouched}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#btnTouched}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:btnTouched
+          @attr name coma.beikbank.android:btnTouched
         */
         public static final int LockPatternView_btnTouched = 3;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#circleGreen}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#circleGreen}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:circleGreen
+          @attr name coma.beikbank.android:circleGreen
         */
         public static final int LockPatternView_circleGreen = 5;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#circleNormal}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#circleNormal}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:circleNormal
+          @attr name coma.beikbank.android:circleNormal
         */
         public static final int LockPatternView_circleNormal = 4;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#circleRed}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#circleRed}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:circleRed
+          @attr name coma.beikbank.android:circleRed
         */
         public static final int LockPatternView_circleRed = 6;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#line}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#line}
           attribute's value can be found in the {@link #LockPatternView} array.
 
 
@@ -3123,7 +3128,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:line
+          @attr name coma.beikbank.android:line
         */
         public static final int LockPatternView_line = 1;
         /** Attributes that can be used with a MyTextView2.
@@ -3132,12 +3137,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MyTextView2_marginLeft comc.beikbank.android:marginLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyTextView2_marginRight comc.beikbank.android:marginRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyTextView2_paddingLeft comc.beikbank.android:paddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyTextView2_paddingRight comc.beikbank.android:paddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyTextView2_textColor comc.beikbank.android:textColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyTextView2_textSize comc.beikbank.android:textSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_marginLeft coma.beikbank.android:marginLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_marginRight coma.beikbank.android:marginRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_paddingLeft coma.beikbank.android:paddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_paddingRight coma.beikbank.android:paddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_textColor coma.beikbank.android:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTextView2_textSize coma.beikbank.android:textSize}</code></td><td></td></tr>
            </table>
            @see #MyTextView2_marginLeft
            @see #MyTextView2_marginRight
@@ -3151,7 +3156,7 @@ containing a value of this type.
             0x7f010032, 0x7f010033
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#marginLeft}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#marginLeft}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3163,11 +3168,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:marginLeft
+          @attr name coma.beikbank.android:marginLeft
         */
         public static final int MyTextView2_marginLeft = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#marginRight}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#marginRight}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3179,11 +3184,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:marginRight
+          @attr name coma.beikbank.android:marginRight
         */
         public static final int MyTextView2_marginRight = 1;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#paddingLeft}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#paddingLeft}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3195,11 +3200,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:paddingLeft
+          @attr name coma.beikbank.android:paddingLeft
         */
         public static final int MyTextView2_paddingLeft = 2;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#paddingRight}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#paddingRight}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3211,11 +3216,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:paddingRight
+          @attr name coma.beikbank.android:paddingRight
         */
         public static final int MyTextView2_paddingRight = 3;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#textColor}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#textColor}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3226,11 +3231,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:textColor
+          @attr name coma.beikbank.android:textColor
         */
         public static final int MyTextView2_textColor = 5;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#textSize}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#textSize}
           attribute's value can be found in the {@link #MyTextView2} array.
 
 
@@ -3242,7 +3247,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:textSize
+          @attr name coma.beikbank.android:textSize
         */
         public static final int MyTextView2_textSize = 4;
         /** Attributes that can be used with a NumberProgressBar.
@@ -3251,16 +3256,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #NumberProgressBar_max comc.beikbank.android:max}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress comc.beikbank.android:progress}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_reached_bar_height comc.beikbank.android:progress_reached_bar_height}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_reached_color comc.beikbank.android:progress_reached_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_text_color comc.beikbank.android:progress_text_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_text_offset comc.beikbank.android:progress_text_offset}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_text_size comc.beikbank.android:progress_text_size}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_text_visibility comc.beikbank.android:progress_text_visibility}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_unreached_bar_height comc.beikbank.android:progress_unreached_bar_height}</code></td><td></td></tr>
-           <tr><td><code>{@link #NumberProgressBar_progress_unreached_color comc.beikbank.android:progress_unreached_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_max coma.beikbank.android:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress coma.beikbank.android:progress}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_reached_bar_height coma.beikbank.android:progress_reached_bar_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_reached_color coma.beikbank.android:progress_reached_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_color coma.beikbank.android:progress_text_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_offset coma.beikbank.android:progress_text_offset}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_size coma.beikbank.android:progress_text_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_visibility coma.beikbank.android:progress_text_visibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_unreached_bar_height coma.beikbank.android:progress_unreached_bar_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_unreached_color coma.beikbank.android:progress_unreached_color}</code></td><td></td></tr>
            </table>
            @see #NumberProgressBar_max
            @see #NumberProgressBar_progress
@@ -3279,7 +3284,7 @@ containing a value of this type.
             0x7f010017, 0x7f010018
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#max}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#max}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3289,11 +3294,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:max
+          @attr name coma.beikbank.android:max
         */
         public static final int NumberProgressBar_max = 1;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3303,11 +3308,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress
+          @attr name coma.beikbank.android:progress
         */
         public static final int NumberProgressBar_progress = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_reached_bar_height}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_reached_bar_height}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3319,11 +3324,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_reached_bar_height
+          @attr name coma.beikbank.android:progress_reached_bar_height
         */
         public static final int NumberProgressBar_progress_reached_bar_height = 4;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_reached_color}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_reached_color}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3334,11 +3339,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_reached_color
+          @attr name coma.beikbank.android:progress_reached_color
         */
         public static final int NumberProgressBar_progress_reached_color = 3;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_text_color}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_text_color}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3349,11 +3354,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_text_color
+          @attr name coma.beikbank.android:progress_text_color
         */
         public static final int NumberProgressBar_progress_text_color = 7;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_text_offset}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_text_offset}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3365,11 +3370,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_text_offset
+          @attr name coma.beikbank.android:progress_text_offset
         */
         public static final int NumberProgressBar_progress_text_offset = 8;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_text_size}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_text_size}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3381,11 +3386,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_text_size
+          @attr name coma.beikbank.android:progress_text_size
         */
         public static final int NumberProgressBar_progress_text_size = 6;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_text_visibility}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_text_visibility}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3398,11 +3403,11 @@ containing a value of this type.
 <tr><td><code>visible</code></td><td>0</td><td></td></tr>
 <tr><td><code>invisible</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:progress_text_visibility
+          @attr name coma.beikbank.android:progress_text_visibility
         */
         public static final int NumberProgressBar_progress_text_visibility = 9;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_unreached_bar_height}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_unreached_bar_height}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3414,11 +3419,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_unreached_bar_height
+          @attr name coma.beikbank.android:progress_unreached_bar_height
         */
         public static final int NumberProgressBar_progress_unreached_bar_height = 5;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#progress_unreached_color}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#progress_unreached_color}
           attribute's value can be found in the {@link #NumberProgressBar} array.
 
 
@@ -3429,7 +3434,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:progress_unreached_color
+          @attr name coma.beikbank.android:progress_unreached_color
         */
         public static final int NumberProgressBar_progress_unreached_color = 2;
         /** Attributes that can be used with a PullToRefresh.
@@ -3438,10 +3443,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PullToRefresh_adapterViewBackground comc.beikbank.android:adapterViewBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_headerBackground comc.beikbank.android:headerBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_headerTextColor comc.beikbank.android:headerTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_mode1 comc.beikbank.android:mode1}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_adapterViewBackground coma.beikbank.android:adapterViewBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_headerBackground coma.beikbank.android:headerBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_headerTextColor coma.beikbank.android:headerTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_mode1 coma.beikbank.android:mode1}</code></td><td></td></tr>
            </table>
            @see #PullToRefresh_adapterViewBackground
            @see #PullToRefresh_headerBackground
@@ -3452,7 +3457,7 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#adapterViewBackground}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#adapterViewBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -3460,11 +3465,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name comc.beikbank.android:adapterViewBackground
+          @attr name coma.beikbank.android:adapterViewBackground
         */
         public static final int PullToRefresh_adapterViewBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#headerBackground}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#headerBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -3472,11 +3477,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name comc.beikbank.android:headerBackground
+          @attr name coma.beikbank.android:headerBackground
         */
         public static final int PullToRefresh_headerBackground = 1;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#headerTextColor}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#headerTextColor}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -3487,11 +3492,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:headerTextColor
+          @attr name coma.beikbank.android:headerTextColor
         */
         public static final int PullToRefresh_headerTextColor = 2;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#mode1}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#mode1}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
@@ -3505,7 +3510,7 @@ containing a value of this type.
 <tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
 <tr><td><code>both</code></td><td>0x3</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:mode1
+          @attr name coma.beikbank.android:mode1
         */
         public static final int PullToRefresh_mode1 = 3;
         /** Attributes that can be used with a SlidingMenu.
@@ -3514,20 +3519,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SlidingMenu_behindOffset comc.beikbank.android:behindOffset}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_behindScrollScale comc.beikbank.android:behindScrollScale}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_behindWidth comc.beikbank.android:behindWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_fadeDegree comc.beikbank.android:fadeDegree}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_fadeEnabled comc.beikbank.android:fadeEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_mode comc.beikbank.android:mode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_selectorDrawable comc.beikbank.android:selectorDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_selectorEnabled comc.beikbank.android:selectorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_shadowDrawable comc.beikbank.android:shadowDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_shadowWidth comc.beikbank.android:shadowWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_touchModeAbove comc.beikbank.android:touchModeAbove}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_touchModeBehind comc.beikbank.android:touchModeBehind}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_viewAbove comc.beikbank.android:viewAbove}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_viewBehind comc.beikbank.android:viewBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindOffset coma.beikbank.android:behindOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindScrollScale coma.beikbank.android:behindScrollScale}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindWidth coma.beikbank.android:behindWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeDegree coma.beikbank.android:fadeDegree}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeEnabled coma.beikbank.android:fadeEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_mode coma.beikbank.android:mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorDrawable coma.beikbank.android:selectorDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorEnabled coma.beikbank.android:selectorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowDrawable coma.beikbank.android:shadowDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowWidth coma.beikbank.android:shadowWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeAbove coma.beikbank.android:touchModeAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeBehind coma.beikbank.android:touchModeBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewAbove coma.beikbank.android:viewAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewBehind coma.beikbank.android:viewBehind}</code></td><td></td></tr>
            </table>
            @see #SlidingMenu_behindOffset
            @see #SlidingMenu_behindScrollScale
@@ -3551,7 +3556,7 @@ containing a value of this type.
             0x7f01002c, 0x7f01002d
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#behindOffset}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#behindOffset}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3563,11 +3568,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:behindOffset
+          @attr name coma.beikbank.android:behindOffset
         */
         public static final int SlidingMenu_behindOffset = 3;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#behindScrollScale}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#behindScrollScale}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3577,11 +3582,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:behindScrollScale
+          @attr name coma.beikbank.android:behindScrollScale
         */
         public static final int SlidingMenu_behindScrollScale = 5;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#behindWidth}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#behindWidth}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3593,11 +3598,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:behindWidth
+          @attr name coma.beikbank.android:behindWidth
         */
         public static final int SlidingMenu_behindWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#fadeDegree}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#fadeDegree}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3607,11 +3612,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:fadeDegree
+          @attr name coma.beikbank.android:fadeDegree
         */
         public static final int SlidingMenu_fadeDegree = 11;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#fadeEnabled}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#fadeEnabled}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3621,11 +3626,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:fadeEnabled
+          @attr name coma.beikbank.android:fadeEnabled
         */
         public static final int SlidingMenu_fadeEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#mode}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#mode}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3638,21 +3643,21 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>0</td><td></td></tr>
 <tr><td><code>right</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:mode
+          @attr name coma.beikbank.android:mode
         */
         public static final int SlidingMenu_mode = 0;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#selectorDrawable}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#selectorDrawable}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:selectorDrawable
+          @attr name coma.beikbank.android:selectorDrawable
         */
         public static final int SlidingMenu_selectorDrawable = 13;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#selectorEnabled}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#selectorEnabled}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3662,21 +3667,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:selectorEnabled
+          @attr name coma.beikbank.android:selectorEnabled
         */
         public static final int SlidingMenu_selectorEnabled = 12;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#shadowDrawable}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#shadowDrawable}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:shadowDrawable
+          @attr name coma.beikbank.android:shadowDrawable
         */
         public static final int SlidingMenu_shadowDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#shadowWidth}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#shadowWidth}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3688,11 +3693,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:shadowWidth
+          @attr name coma.beikbank.android:shadowWidth
         */
         public static final int SlidingMenu_shadowWidth = 9;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#touchModeAbove}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#touchModeAbove}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3705,11 +3710,11 @@ containing a value of this type.
 <tr><td><code>margin</code></td><td>0</td><td></td></tr>
 <tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:touchModeAbove
+          @attr name coma.beikbank.android:touchModeAbove
         */
         public static final int SlidingMenu_touchModeAbove = 6;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#touchModeBehind}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#touchModeBehind}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
@@ -3722,27 +3727,27 @@ containing a value of this type.
 <tr><td><code>margin</code></td><td>0</td><td></td></tr>
 <tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:touchModeBehind
+          @attr name coma.beikbank.android:touchModeBehind
         */
         public static final int SlidingMenu_touchModeBehind = 7;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#viewAbove}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#viewAbove}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:viewAbove
+          @attr name coma.beikbank.android:viewAbove
         */
         public static final int SlidingMenu_viewAbove = 1;
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#viewBehind}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#viewBehind}
           attribute's value can be found in the {@link #SlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:viewBehind
+          @attr name coma.beikbank.android:viewBehind
         */
         public static final int SlidingMenu_viewBehind = 2;
         /** Attributes that can be used with a SlidingMenu2.
@@ -3751,7 +3756,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SlidingMenu2_rightPadding comc.beikbank.android:rightPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu2_rightPadding coma.beikbank.android:rightPadding}</code></td><td></td></tr>
            </table>
            @see #SlidingMenu2_rightPadding
          */
@@ -3759,7 +3764,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#rightPadding}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#rightPadding}
           attribute's value can be found in the {@link #SlidingMenu2} array.
 
 
@@ -3771,7 +3776,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:rightPadding
+          @attr name coma.beikbank.android:rightPadding
         */
         public static final int SlidingMenu2_rightPadding = 0;
         /** Attributes that can be used with a Themes.
@@ -3780,7 +3785,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Themes_numberProgressBarStyle comc.beikbank.android:numberProgressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Themes_numberProgressBarStyle coma.beikbank.android:numberProgressBarStyle}</code></td><td></td></tr>
            </table>
            @see #Themes_numberProgressBarStyle
          */
@@ -3788,13 +3793,13 @@ containing a value of this type.
             0x7f010019
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#numberProgressBarStyle}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#numberProgressBarStyle}
           attribute's value can be found in the {@link #Themes} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name comc.beikbank.android:numberProgressBarStyle
+          @attr name coma.beikbank.android:numberProgressBarStyle
         */
         public static final int Themes_numberProgressBarStyle = 0;
         /** Attributes that can be used with a ViewPager.
@@ -3803,7 +3808,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ViewPager_orientation comc.beikbank.android:orientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewPager_orientation coma.beikbank.android:orientation}</code></td><td></td></tr>
            </table>
            @see #ViewPager_orientation
          */
@@ -3811,7 +3816,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#orientation}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#orientation}
           attribute's value can be found in the {@link #ViewPager} array.
 
 
@@ -3824,7 +3829,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
 <tr><td><code>vertical</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name comc.beikbank.android:orientation
+          @attr name coma.beikbank.android:orientation
         */
         public static final int ViewPager_orientation = 0;
         /** Attributes that can be used with a swipelistviewstyle.
@@ -3833,7 +3838,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #swipelistviewstyle_right_width comc.beikbank.android:right_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #swipelistviewstyle_right_width coma.beikbank.android:right_width}</code></td><td></td></tr>
            </table>
            @see #swipelistviewstyle_right_width
          */
@@ -3841,7 +3846,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e
         };
         /**
-          <p>This symbol is the offset where the {@link comc.beikbank.android.R.attr#right_width}
+          <p>This symbol is the offset where the {@link coma.beikbank.android.R.attr#right_width}
           attribute's value can be found in the {@link #swipelistviewstyle} array.
 
 
@@ -3853,7 +3858,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name comc.beikbank.android:right_width
+          @attr name coma.beikbank.android:right_width
         */
         public static final int swipelistviewstyle_right_width = 0;
     };

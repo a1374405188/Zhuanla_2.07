@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="comc.beikbank.android"
+    package="coma.beikbank.android"
     android:versionCode="2000"
     android:versionName="2.0.0" 
     android:installLocation="auto"
@@ -86,7 +86,7 @@
         android:hardwareAccelerated="false"
         android:name="com.beikbank.android.fragment.BeikBankApplication"
         android:allowBackup="true"
-        android:icon="@drawable/app_logo3"
+        android:icon="@drawable/app_logo1"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
@@ -792,6 +792,17 @@ android:configChanges="orientation|keyboardHidden|screenSize"
            </activity> 
               <activity
             android:name="com.beikbank.android.activity.ShouZhiMinXiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+           
+                  <activity
+            android:name="com.beikbank.android.activity.YanZhenShengFenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+                  <activity
+            android:name="com.beikbank.android.activity.PhoneChangeActivity"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor" >
            </activity> 
