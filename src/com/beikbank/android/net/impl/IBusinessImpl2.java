@@ -128,6 +128,8 @@ import com.beikbank.android.data2.getYanZhenMa_data;
 import com.beikbank.android.data2.getYiGou_data;
 import com.beikbank.android.data2.getZhiChan_data;
 import com.beikbank.android.data2.getZuoRiShouYi_data;
+import com.beikbank.android.data2.phoneChangeChenck_data;
+import com.beikbank.android.data2.phoneChange_data;
 import com.beikbank.android.data2.setJiaoyiPasswd_data;
 import com.beikbank.android.data2.setLoginPasswd_data;
 import com.beikbank.android.dataparam.BiaoshiParam;
@@ -225,6 +227,8 @@ import com.beikbank.android.dataparam2.getYiGouParam;
 import com.beikbank.android.dataparam2.getZaiQuanParam;
 import com.beikbank.android.dataparam2.getZhiChanParam;
 import com.beikbank.android.dataparam2.getZuoRiShouYiParam;
+import com.beikbank.android.dataparam2.phoneChangeCheckParam;
+import com.beikbank.android.dataparam2.phoneChangeParam;
 import com.beikbank.android.dataparam2.setJiaoyiPasswdParam;
 import com.beikbank.android.dataparam2.setLoginPasswdParam;
 import com.beikbank.android.exception.LogHandler;
@@ -829,6 +833,23 @@ public class IBusinessImpl2 {
       	     hp.request_seq=TimeUtil.getTime2();
       	     String url=base_service+url1;
         	 obj=getTongYong(getShouZhiMinXi_data.class, url, paramClass, hp);
+         }
+         
+         else if(paramClass instanceof phoneChangeCheckParam)
+         {
+        	 hp=new HeadParam2();
+      	     hp.tra_code="070130";
+      	     hp.request_seq=TimeUtil.getTime2();
+      	     String url=base_service+url1;
+        	 obj=getTongYong(phoneChangeChenck_data.class, url, paramClass, hp);
+         }
+         else if(paramClass instanceof phoneChangeParam)
+         {
+        	 hp=new HeadParam2();
+      	     hp.tra_code="070057";
+      	     hp.request_seq=TimeUtil.getTime2();
+      	     String url=base_service+url1;
+        	 obj=getTongYong(phoneChange_data.class, url, paramClass, hp);
          }
          return obj;
     }

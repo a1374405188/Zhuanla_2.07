@@ -210,6 +210,49 @@ public class ZuoriShouyiActivity extends BaseActivity1 implements OnClickListene
 			    	img.setImageResource(R.drawable.bg_yuan_huang);
 			    }
 			    
+			    if(i==0)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_chen);
+	    	     }
+	    	     else if(i==1)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_hong);
+	    	    	 
+	    	     }
+	    	     else if(i==2)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_huang);
+	    	    	 
+	    	     }
+	    	     else if(i==3)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_lan);
+	    	     }
+	    	     else if(i==4)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_zhi);
+	    	     }
+	    	     else if(i==5)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_yuan5);
+	    	     }
+	    	     else if(i==6)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_yuan6);
+	    	     }
+	    	     else if(i==7)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_yuan7);
+	    	     }
+	    	     else if(i==8)
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_yuan8);
+	    	     }
+	    	     else
+	    	     {
+	    	    	 img.setImageResource(R.drawable.bg_yuan_yuan9);
+	    	     }
+			    
 			    ll_parent.addView(view);
 		   }
 		
@@ -298,6 +341,8 @@ public class ZuoriShouyiActivity extends BaseActivity1 implements OnClickListene
 			    tv_leiji_text.setTextColor(0xffdd2238);  
 			    
 			    tv_shouyi_title.setText("昨日收益(元)");
+			    if(gzr!=null)
+			    {
 	        	String s1=NumberManager.getString(gzr.body.yesterdayIntrest.yesterdayIntrest,"1",2);
 	        	tv_leiji.setText(NumberManager.getGeshiHua(s1, 2));
 	        	addChanPin(gzr.body.prodYesterdayIntrest);
@@ -305,6 +350,7 @@ public class ZuoriShouyiActivity extends BaseActivity1 implements OnClickListene
 				{
 					NoneData.setView(act, ll_parent,10);
 				}
+			    }
 				break;	 
       
 	
@@ -314,9 +360,12 @@ public class ZuoriShouyiActivity extends BaseActivity1 implements OnClickListene
 		    tv_leiji_text.setTextColor(0xffffffff);   
 		    tv_zuori_text.setTextColor(0xffdd2238);
 		    tv_shouyi_title.setText("累计收益(元)");
+		    if(glj!=null)
+		    {
         	   String s2=NumberManager.getGeshiHua(glj.body.totalIntrest.totalIntrest,2);
         	    tv_leiji.setText(s2);
         	    addChanPin2(glj.body.prodTotalIntrest);
+		    }
 			break;	
 		
 			

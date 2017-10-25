@@ -223,6 +223,10 @@ public class Pview1 extends LinearLayout implements OnClickListener{
 		      String s1="每个用户限购"+gcp.cumulative_purchase_amount+"元";
 		      
 		      tv_goumaixiane.setText(s1);
+		      if(NumberManager.isDaYu("0",gcp.cumulative_purchase_amount)>=0)
+		      {
+		    	  tv_goumaixiane.setText("不限制购买总额");
+		      }
 		      
 		   }
 		   else

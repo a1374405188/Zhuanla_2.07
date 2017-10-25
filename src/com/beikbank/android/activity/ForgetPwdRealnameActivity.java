@@ -327,6 +327,7 @@ public class ForgetPwdRealnameActivity extends BaseActivity1 implements OnClickL
 				intent.putExtra(BeikBankConstant.IS_FORGETLOGINPWD, true);
 				intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
 				startActivity(intent);
+				finish();
 			}
 			
 		}

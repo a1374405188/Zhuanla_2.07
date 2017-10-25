@@ -90,7 +90,7 @@ public class JiaoYiXiangQingActivity extends BaseActivity1 implements
 							{
 								if("3".equals(gcp.product_type_pid))
 								{
-									ll_xiugai.setVisibility(View.VISIBLE);
+									//ll_xiugai.setVisibility(View.VISIBLE);
 								}
 							}
 						}

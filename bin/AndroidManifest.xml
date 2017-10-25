@@ -795,6 +795,22 @@ android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor" >
            </activity> 
+           
+                  <activity
+            android:name="com.beikbank.android.activity.YanZhenShengFenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+                  <activity
+            android:name="com.beikbank.android.activity.PhoneChangeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
+                  <activity
+            android:name="com.beikbank.android.activity.TiXianActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+           </activity> 
   <!--  start-->
    <!--
     <receiver

@@ -113,7 +113,11 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 String s0=getIntent().getStringExtra("product_type_pid");
 		 if("4".equals(s0))
 		 {
-			 ll0.setVisibility(View.GONE);
+			 //ll0.setVisibility(View.GONE);
+			 RelativeLayout rl=(RelativeLayout) findViewById(R.id.rl_qixian);
+			 View view=findViewById(R.id.v_qixian);
+			 rl.setVisibility(View.GONE);
+			 view.setVisibility(View.GONE);
 		 }
 		 
 		 if("5".equals(gdd.order_type))

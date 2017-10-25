@@ -238,12 +238,14 @@ public class BeikBankApplication extends Application{
         return do_success;
     }
 	public static String getUserid()
-	{   
-		if(userId==null)
-		{
-			initData();
-		}
-		return userId;
+	{  
+		user_code=getSharePref(BeikBankConstant.user_code);
+//		if(userId==null)
+//		{
+//			initData();
+//		}
+//		return userId;
+		return user_code;
 	}
 	/**
 	 * 得到账号id
@@ -270,6 +272,11 @@ public class BeikBankApplication extends Application{
     	 phonenumber=BeikBankApplication.mSharedPref.getSharePrefString(BeikBankConstant.LOGIN_ACCOUNT);
 
     	return phonenumber;
+    }
+    public static void setPhoneNumber(String phone)
+    {
+    	BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,phone);
+    	phonenumber=phone;
     }
     public static UserInfo getUserInfo()
     {

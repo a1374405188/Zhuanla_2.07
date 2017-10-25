@@ -102,7 +102,7 @@ public class SystemConfig {
 	/**
 	 * db
 	 */
-	public static String DATA_PATH="/data/data/com.beikbank.android";
+	public static String DATA_PATH="/data/data/";
 	public static String DATA_file="/beike2.db";
 	static
 	{
@@ -127,4 +127,7 @@ public class SystemConfig {
 	 * gongxiang shuju
 	 */
 	public static final String PREF_NAME = "beik";
+	
+	
+	
 }

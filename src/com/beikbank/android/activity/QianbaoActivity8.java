@@ -113,8 +113,8 @@ public class QianbaoActivity8 extends BaseActivity2 implements View.OnClickListe
 				if(obj!=null)
 				{
 					getTiXianQianZhi_data gd=(getTiXianQianZhi_data) obj;
-					String s2=NumberManager.getGeshiHua(gd.body.repay_amt,2);
-					String s3=NumberManager.getGeshiHua(gd.body.recharge_amt,2);
+					String s2=NumberManager.getGeshiHua(gd.body.repay_amt_have,2);
+					String s3=NumberManager.getGeshiHua(gd.body.recharge_amt_have,2);
 					tv2.setText(s2);
 					tv3.setText(s3);
 					

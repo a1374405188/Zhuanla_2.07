@@ -118,6 +118,44 @@
                       android:textColor="#ffb0b0b0"
                       />
                   
+                 <View
+                     
+                      android:layout_width="1px"
+                      android:layout_height="15dp"
+                     android:background="#ffb0b0b0"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="3dp"
+                     />
+                 
+                 <LinearLayout 
+                     android:id="@+id/ll_genghuan"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:visibility="gone"
+                     >
+                     
+                 
+                  <TextView
+                     
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:textColor="#ff0097e2"
+                      android:text="更换"
+                      android:layout_marginLeft="5dp"
+                      />
+                  
+                  
+                           <ImageView
+                     
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/home2_right_img"
+           android:layout_marginLeft="6dp"
+           
+           />
+                           </LinearLayout>
               </LinearLayout>
            
         <LinearLayout

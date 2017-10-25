@@ -1,0 +1,168 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" 
+    android:orientation="vertical">
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dip" 
+        
+        android:orientation="vertical">
+
+      
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+   
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                         android:textSize="16sp"
+                       android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/realname" />
+
+                      <TextView
+                          android:id="@+id/name"
+                         android:textSize="16sp"
+                       android:textColor="#ff333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="" />
+                </TableRow>
+              <LinearLayout 
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="#ffffffff"
+                  >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_divide_height"
+                    android:layout_marginLeft="16dp"
+                    android:background="@color/line2" />
+            </LinearLayout>
+                <TableRow
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                         android:textSize="16sp"
+                       android:textColor="#ff333333"
+                        android:layout_width="70dp"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/icnumber" />
+
+                    <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/et1"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_icnumber"
+                        android:digits="1234567890Xx"
+                        android:maxLength="18"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp" />
+                </TableRow>
+            </TableLayout>
+
+           
+        </LinearLayout>
+        
+        
+        
+        
+        
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:background="@color/white"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" 
+                    android:layout_marginTop="16dp"
+            >
+             <TextView
+                       android:textSize="16sp"
+                       android:textColor="#ff333333"
+                        android:layout_width="70dp"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_marginRight="@dimen/activity_textview_margin"
+                        android:gravity="center_vertical|left"
+                        android:text="登录密码" />
+            
+              <com.beikbank.android.widget.ClearableEditText
+                        android:id="@+id/et2"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/activity_item_height"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="输入登录密码(6-16位)"
+                      
+                        android:maxLength="18"
+                        android:textColor="@color/ziti6"
+                        android:textColorHint="@color/ziti7"
+                        android:textSize="17sp"
+                        android:inputType="textPassword"
+                         />
+            
+        </LinearLayout>
+          <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          
+            android:orientation="vertical" >
+
+         
+           
+
+                <include layout="@layout/error_info"/>
+            
+
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+
+
+</LinearLayout>

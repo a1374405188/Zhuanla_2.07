@@ -213,6 +213,18 @@ public class Utils {
 		dialog.setOnCancelListener(cancelListener);
 		return dialog;
 	}
+	public static Dialog createTiShiDialog(Context context,OnCancelListener cancelListener) {
+		Dialog dialog = null;
+		dialog = new Dialog(context, R.style.mxx_theme_dialog);
+		View view = LayoutInflater.from(context).inflate(
+				R.layout.dialog_tishi_layout, null);
+		dialog.setContentView(view);
+
+		dialog.setCanceledOnTouchOutside(false);
+		dialog.setCancelable(true);
+		dialog.setOnCancelListener(cancelListener);
+		return dialog;
+	}
 	public static Dialog createPorgressDialogNoCancel(Context context,OnCancelListener cancelListener) {
 		Dialog dialog = null;
 		dialog = new Dialog(context, R.style.mxx_theme_dialog);

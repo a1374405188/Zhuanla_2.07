@@ -1,6 +1,8 @@
 package com.beikbank.android.data2;
 
-public class Register 
+import java.io.Serializable;
+
+public class Register implements Serializable
 {
 	/**
 	 * 活动ID

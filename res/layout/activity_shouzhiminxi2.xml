@@ -211,7 +211,7 @@
         
             <!-- 购买金额-->
     <RelativeLayout
-       
+       android:id="@+id/rl_qixian"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="@dimen/global_left_space"
@@ -247,6 +247,7 @@
         android:background="#ffffffff"
         >
    <View
+        android:id="@+id/v_qixian"
        android:layout_width="match_parent"
        android:layout_height="0.5px"
        android:background="@color/line2"
@@ -321,7 +322,7 @@
         android:paddingRight="@dimen/global_right_space"
         android:background="#ffffffff"
         android:gravity="center_vertical"
-       
+       android:visibility="gone"
         >
         <TextView
          
@@ -348,12 +349,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#ffffffff"
+         android:visibility="gone"
         >
    <View
        android:layout_width="match_parent"
        android:layout_height="0.5px"
        android:background="@color/line2"
        android:layout_marginLeft="16dp"
+       
        />
     </LinearLayout>   
         
@@ -434,17 +437,20 @@
              android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            
+            android:visibility="gone"
             />
         <TextView
             android:id="@+id/dingdan"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="0.00"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="000"
             android:textSize="@dimen/dingdan32"
              android:textColor="#ff666666"
            android:layout_marginLeft="20dp"
-            android:gravity="center"
+            android:gravity="right"
+            
+          
+            android:layout_weight="1"
             />
     </LinearLayout>
         <LinearLayout 

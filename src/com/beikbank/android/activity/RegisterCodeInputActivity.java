@@ -1,9 +1,20 @@
 package com.beikbank.android.activity;
 
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.Enumeration;
+
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -24,11 +35,15 @@ import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.data.RegisterCode;
 import com.beikbank.android.data.SendCode;
 import com.beikbank.android.data.SendCode_data;
+import com.beikbank.android.data2.Register;
+import com.beikbank.android.data2.Register_data;
 import com.beikbank.android.data2.checkYanZhenMa_data;
 import com.beikbank.android.dataparam2.HeadParam2;
+import com.beikbank.android.dataparam2.RegisterParam;
 import com.beikbank.android.dataparam2.checkYanZhenMaParam;
 import com.beikbank.android.dataparam2.getYanZhenMaParam;
 import com.beikbank.android.exception.LogHandler;
+import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.http.Response;
 import com.beikbank.android.net.HandlerBase;
 import com.beikbank.android.net.ICallBack;
@@ -165,7 +180,85 @@ ICallBack icb_gyz=new ICallBack() {
 		}
 
 	}
-	
+	public static String getIPAddress(Context context) {
+        NetworkInfo info = ((ConnectivityManager) context
+                .getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+        if (info != null && info.isConnected()) {
+            if (info.getType() == ConnectivityManager.TYPE_MOBILE) {//当前使用2G/3G/4G网络
+                try {
+                    //Enumeration<NetworkInterface> en=NetworkInterface.getNetworkInterfaces();
+                    for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements(); ) {
+                        NetworkInterface intf = en.nextElement();
+                        for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements(); ) {
+                        	
+                        	InetAddress inetAddress = enumIpAddr.nextElement();
+                            if (!inetAddress.isLoopbackAddress() && inetAddress instanceof Inet4Address) {
+                                return inetAddress.getHostAddress();
+                            }
+                        }
+                    }
+                } catch (SocketException e) {
+                    e.printStackTrace();
+                }
+
+            } else if (info.getType() == ConnectivityManager.TYPE_WIFI) {//当前使用无线网络
+                WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+                WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+                String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());//得到IPV4地址
+                return ipAddress;
+            }
+        } else {
+            //当前无网络连接,请在设置中打开网络
+        }
+        return null;
+    }
+
+    /**
+     * 将得到的int类型的IP转换为String类型
+     *
+     * @param ip
+     * @return
+     */
+    public static String intIP2StringIP(int ip) {
+        return (ip & 0xFF) + "." +
+                ((ip >> 8) & 0xFF) + "." +
+                ((ip >> 16) & 0xFF) + "." +
+                (ip >> 24 & 0xFF);
+    }
+	private void reg()
+	{
+		
+ICallBack icb=new ICallBack() {
+			
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+					Register_data rd=(Register_data)obj;
+					Register	reg=rd.body;
+					
+					 BeikBankApplication.setSharePref(BeikBankConstant.user_code,reg.user_code);
+					  BeikBankApplication.setSharePref(BeikBankConstant.user_type,reg.user_type);
+					  Intent intent=new Intent(RegisterCodeInputActivity.this,RegisterPwdSetActivity.class);
+						intent.putExtra(BeikBankConstant.IS_FORGETLOGINPWD, false);
+						intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
+						intent.putExtra("reg",reg);
+						startActivity(intent);
+				}
+				
+			}
+		};
+		
+		RegisterParam pp=new RegisterParam();
+		pp.download=SystemConfig.SOURCES_CODE;
+		pp.ip=getIPAddress(act);
+		pp.phone_id="";
+		pp.phone_number=phonenumber;
+		//pp.register_time=new Date().toString();
+		
+		TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
+		tym2.start();
+	}
    boolean isOnclick=false;
 	@Override
 	public void onClick(View v) {
@@ -192,12 +285,12 @@ ICallBack icb_gyz=new ICallBack() {
 							checkYanZhenMa_data cd=(checkYanZhenMa_data) obj;
 							if("0000".equals(cd.header.re_code))
 							{
-								
+								reg();
 							
-							Intent intent=new Intent(RegisterCodeInputActivity.this,RegisterPwdSetActivity.class);
-							intent.putExtra(BeikBankConstant.IS_FORGETLOGINPWD, false);
-							intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
-							startActivity(intent);
+//							Intent intent=new Intent(RegisterCodeInputActivity.this,RegisterPwdSetActivity.class);
+//							intent.putExtra(BeikBankConstant.IS_FORGETLOGINPWD, false);
+//							intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
+//							startActivity(intent);
 							
 							}
 						}

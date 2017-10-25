@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_bg1"
+    >
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@drawable/btn_selector_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/ziti1"
+        android:textSize="18sp" />
+     <ImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_tixian"
+         android:gravity="center_vertical"
+         android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>
+   <LinearLayout
+       
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+       android:layout_marginTop="16dp"
+       android:paddingTop="8dp"
+        android:background="#ffffffff"
+       >
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提金额"
+            android:textSize="14sp"
+            android:textColor="#ff333333"
+           />
+       
+        <TextView
+            android:id="@+id/tv_keti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00元"
+             android:textSize="14sp"
+            android:textColor="#fffb5a5c"
+           />
+   </LinearLayout>
+     <LinearLayout
+       
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+      
+      android:paddingTop="8dp"
+       android:paddingLeft="16dp"
+       android:paddingRight="16dp"
+       android:paddingBottom="8dp"
+       android:background="#ffffffff"
+       >
+       <TextView
+            android:id="@+id/tv_touzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值未投资0.00元，投资回款0.00元"
+            android:textSize="14sp"
+            android:textColor="#ff999999"
+           />
+       
+        
+   </LinearLayout>
+   
+   
+     <LinearLayout
+            android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+           android:paddingLeft="16dp"
+       android:paddingRight="16dp"
+           android:background="#ffffffff"
+             android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:layout_marginTop="16dp"
+         >
+         
+          <TextView
+             android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现至xx银行"
+            android:textSize="14sp"
+            android:textColor="#ff999999"
+           />
+         <LinearLayout
+            android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+         
+         
+         >
+           <com.beikbank.android.widget.ClearableEditText
+            android:id="@+id/et_et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+          
+            android:hint="输入提现金额(元)"
+            android:textSize="24sp"
+            android:background="#ffffffff"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/ziti7"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            />
+           <TextView
+            android:id="@+id/tv_quanbu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="全部提现"
+            android:textSize="14sp"
+            android:textColor="#ff0097e2"
+            android:gravity="bottom"
+            android:paddingBottom="12dp"
+           />
+         </LinearLayout>
+         
+              <LinearLayout
+            android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       
+
+         >
+           
+                  <View
+                      android:layout_width="wrap_content"
+                      android:layout_height="1px"
+                      android:background="@color/line2"
+                    
+                      />
+           
+                  </LinearLayout>
+            <TextView
+            android:id="@+id/tv_chishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余免费次数:0次"
+            android:textSize="14sp"
+            android:textColor="#ff999999"
+            android:layout_marginTop="5dp"
+           />  
+     </LinearLayout>
+     
+     
+         <include layout="@layout/error_info"/>
+</LinearLayout>
+

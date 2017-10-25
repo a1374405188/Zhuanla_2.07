@@ -519,6 +519,7 @@
         android:paddingRight="@dimen/global_right_space"
         android:gravity="center_vertical"
         android:background="#ffffffff"
+        android:layout_marginRight="16dp"
         >
         <TextView
 
@@ -538,6 +539,7 @@
             android:textColor="@color/dingdan3"
             android:layout_alignParentRight="true"
             android:gravity="center"
+            android:paddingRight="3dp"
             />
     </RelativeLayout>
     <LinearLayout

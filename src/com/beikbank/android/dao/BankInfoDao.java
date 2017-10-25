@@ -19,7 +19,7 @@ public class BankInfoDao {
 	public TableDao td;
 	public BankInfoDao(Context context){
 		//mHelper = BeikBankDataBaseHelper.getInstance(context);
-		td=DbManagerFactory.getTableDao();
+		td=DbManagerFactory.getTableDao(context);
 		SQLiteDatabase db =td.opean();
 		db.execSQL(BankTableMetaData.CREATE_TABLE_SQL);
 		td.close();

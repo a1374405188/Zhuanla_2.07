@@ -636,5 +636,5 @@ public class WelcomeActivity extends BaseActivity1{
 		return super.onKeyDown(keyCode, event);
 	}
 //------------------------------------------------------------------------
-	
+
 }

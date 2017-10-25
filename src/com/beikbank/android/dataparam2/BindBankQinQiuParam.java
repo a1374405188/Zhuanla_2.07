@@ -24,7 +24,7 @@ public class BindBankQinQiuParam
    
    
    public String acc_title;
-   
+   public String id_number;
    
    public String acc_tra_password;
    public String acc_type="1";

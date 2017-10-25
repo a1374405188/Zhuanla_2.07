@@ -82,8 +82,15 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 		}
 		else
 		{
-			LinearLayout ll_add=(LinearLayout) findViewById(R.id.ll_add_bank);
-			ll_add.setVisibility(View.GONE);
+//			LinearLayout ll_add=(LinearLayout) findViewById(R.id.ll_add_bank);
+//			ll_add.setVisibility(View.VISIBLE);
+			
+			
+			 LinearLayout ll=(LinearLayout) findViewById(R.id.ll_add_bank);
+				RelativeLayout rl=(RelativeLayout) findViewById(R.id.relative_bankmaster);
+
+			    ll.setVisibility(View.VISIBLE);
+			    rl.setVisibility(View.GONE);
 		}
 	
 		
@@ -342,15 +349,20 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onResume();
 		//reCheckBink();
-		initData();
-		initView();
-		init2();
+		
 	}
 	@Override
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();
+		if("1".equals(is_bank))
+		{
+			
 		
+		initData();
+		initView();
+		init2();
+		}
 	}
 	@Override
 	public void onClick(View v) {

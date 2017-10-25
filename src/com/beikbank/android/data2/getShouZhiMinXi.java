@@ -20,6 +20,7 @@ public class getShouZhiMinXi
    public String order_seq;
    /**
     * 充值（1：充值，11网银充值），提现（5：提现），还款（13还款（赎回）成功，15转让成功并还款），购买（2：银行卡购买，3：钱包购买，12网银购买）
+    * 16未匹配还钱包,17未匹配还钱包成功,18未匹配还钱包失败
     */
    public String order_type;
    /**

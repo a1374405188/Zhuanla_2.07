@@ -146,6 +146,9 @@ public class ZhiCanView extends View{
 	     
 	     list=new ArrayList<ZhiCanView.MyPaint>();
 	     MyPaint mp=null;
+	     //最后一个有数据的
+	     MyPaint mp2=null;
+	    
 	     int start=0;
 	     for(int i=0;i<list0.size();i++)
 	     {
@@ -170,7 +173,7 @@ public class ZhiCanView extends View{
 	    	 }
 	    	 else if(i==3)
 	    	 {
-	    		 p.setColor(0xfff2a3da);
+	    		 p.setColor(0xff69c5ff);
 	    	 }
 	    	 else if(i==4)
 	    	 {
@@ -205,10 +208,14 @@ public class ZhiCanView extends View{
 	    	 {
 	    		 mp.size=1;
 	    	 }
+	    	 if(mp.size>0)
+	    	 {
+	    		 mp2=mp;
+	    	 }
 	    	 start+=mp.size;
 	    	 list.add(mp);
 	     }
-	     
+	     mp2.size+=360-start;
 	     
 	     
 	     invalidate();

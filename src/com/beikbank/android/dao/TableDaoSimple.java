@@ -29,7 +29,7 @@ public class TableDaoSimple {
    static
    {   
 	   synchronized (ThreadManagerSet.syn_obj) {
-		   td=DbManagerFactory.getTableDao();
+		   td=DbManagerFactory.getTableDao(null);
 		   td.opean();
 		   td.createTable(UserInfo.class);
 		   td.createTable(CardInfo.class);

@@ -375,7 +375,7 @@ public class BankBindActivity2 extends BaseActivity1 implements OnClickListener,
 				pp.acc_number=card;
 				pp.reserve_phone_number=phone;
 				pp.user_code=BeikBankApplication.getUserCode();
-				
+				pp.id_number=BeikBankApplication.getSharePref(BeikBankConstant.id_number);
 				TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
 		    	tym2.start();
 		    	

@@ -541,6 +541,7 @@ public class PurchaseActivity extends BaseActivity1 implements OnClickListener{
 							mIntent.putExtra("cdd",cddd.body);
 							mIntent.setClass(act,PurchaseConfirmActivity.class);
 							startActivity(mIntent);
+							finish();
 				    	   return ;
 				    	   
 				       }
@@ -550,6 +551,8 @@ public class PurchaseActivity extends BaseActivity1 implements OnClickListener{
 						mIntent.putExtra("cdd",cddd.body);
 						mIntent.setClass(act,QueRenJiaoYiActivity.class);
 						startActivity(mIntent);
+						
+						finish();
 				}
 				
 			}

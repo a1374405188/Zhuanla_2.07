@@ -335,6 +335,7 @@ public class QueRenJiaoYiActivity extends BaseActivity1 implements
 					intent.setClass(act,JiaoYiXiangQingActivity.class);
 					intent.putExtra("order_id",cdd.order_id);
 					startActivity(intent);
+					finish();
 				}
 				
 			}

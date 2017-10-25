@@ -88,7 +88,7 @@ public class HuoqiAdapter2 extends MBaseAdapter{
 		holder.name.setText(gzc.product_name);
 		if(gzc.repayment_time!=null)
 		{
-			holder.state.setText("预计"+gzc.repayment_time.subSequence(6,10)+"转让成功");
+			holder.state.setText("预计"+gzc.repayment_time.subSequence(5,10)+"转让成功");
 		}
 		
 		holder.money.setText(NumberManager.getGeshiHua(gzc.currCapValue,2)+"元");

@@ -694,6 +694,10 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 	 */
 	public void setTuiJian(GetChanPin gcp)
 	{   
+		if(gcp==null)
+		{
+			return;
+		}
 		this.gcp=gcp;
 		TextView tv_name=(TextView) view.findViewById(R.id.tv_name);
 		TextView tv_nianhua=(TextView) view.findViewById(R.id.tv_nianhua);
@@ -735,7 +739,10 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 			tv_qigou.setText(gcp.purchase_amount+"元");
 			tv_shengyu.setText("剩余可购"+NumberManager.getGeshiHua(gcp.pro_share, 2)+"元");
 			
-		
+			if("4".equals(gcp.product_type_pid))
+			{
+				tv_tianshu.setText("灵活存取");
+			}
 	}
 	
 	/**

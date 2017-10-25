@@ -9,6 +9,7 @@ import com.beikbank.android.activity.PurchaseActivity;
 import com.beikbank.android.activity.QianbaoActivity2;
 import com.beikbank.android.activity.QianbaoActivity3;
 import com.beikbank.android.activity.RealnameActivity;
+import com.beikbank.android.activity.TiXianActivity;
 import com.beikbank.android.activity.TransactionPwdSetActivity;
 import com.beikbank.android.data.UserInfo;
 import com.beikbank.android.data2.GetChanPin;
@@ -106,7 +107,7 @@ public class LiuChenSelect {
 			
 			if(index==0)
 			{
-				intent.setClass(act,QianbaoActivity3.class);
+				intent.setClass(act,TiXianActivity.class);
 				act.startActivity(intent);
 			}
 			else if(index==1)

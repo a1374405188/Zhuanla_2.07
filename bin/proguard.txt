@@ -2,25 +2,25 @@
 # view res/layout/view_pager2.xml #generated:107
 -keep class android.support.v4.view.ViewPager { <init>(...); }
 
-# view AndroidManifest.xml #generated:1014
+# view AndroidManifest.xml #generated:1030
 -keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:980
+# view AndroidManifest.xml #generated:996
 -keep class cn.jpush.android.service.DaemonService { <init>(...); }
 
-# view AndroidManifest.xml #generated:959
+# view AndroidManifest.xml #generated:975
 -keep class cn.jpush.android.service.DownloadService { <init>(...); }
 
-# view AndroidManifest.xml #generated:992
+# view AndroidManifest.xml #generated:1008
 -keep class cn.jpush.android.service.PushReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:967
+# view AndroidManifest.xml #generated:983
 -keep class cn.jpush.android.service.PushService { <init>(...); }
 
-# view AndroidManifest.xml #generated:940
+# view AndroidManifest.xml #generated:956
 -keep class cn.jpush.android.ui.PopWinActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:947
+# view AndroidManifest.xml #generated:963
 -keep class cn.jpush.android.ui.PushActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:131
@@ -233,8 +233,11 @@
 # view AndroidManifest.xml #generated:391
 -keep class com.beikbank.android.activity.MessageDetail { <init>(...); }
 
-# view AndroidManifest.xml #generated:1105
+# view AndroidManifest.xml #generated:1121
 -keep class com.beikbank.android.activity.NoNetErrorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:804
+-keep class com.beikbank.android.activity.PhoneChangeActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:346
 -keep class com.beikbank.android.activity.ProjectListActivity { <init>(...); }
@@ -317,6 +320,9 @@
 # view AndroidManifest.xml #generated:491
 -keep class com.beikbank.android.activity.TestActivity { <init>(...); }
 
+# view AndroidManifest.xml #generated:809
+-keep class com.beikbank.android.activity.TiXianActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:451
 -keep class com.beikbank.android.activity.TransactionDQDetailActivity { <init>(...); }
 
@@ -359,6 +365,9 @@
 # view AndroidManifest.xml #generated:661
 -keep class com.beikbank.android.activity.XiaoXiActivity { <init>(...); }
 
+# view AndroidManifest.xml #generated:799
+-keep class com.beikbank.android.activity.YanZhenShengFenActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:548
 -keep class com.beikbank.android.activity.YigouActivity { <init>(...); }
 
@@ -392,7 +401,7 @@
 # view AndroidManifest.xml #generated:757
 -keep class com.beikbank.android.activity.ZuoriShouyiActivity2 { <init>(...); }
 
-# view AndroidManifest.xml #generated:1110
+# view AndroidManifest.xml #generated:1126
 -keep class com.beikbank.android.exception.GlobalErrorActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:85
@@ -425,10 +434,10 @@
 # view res/layout/scroll_listview_delete.xml #generated:6
 -keep class com.beikbank.android.scroller.ScrollListviewDelete { <init>(...); }
 
-# view AndroidManifest.xml #generated:1018
+# view AndroidManifest.xml #generated:1034
 -keep class com.beikbank.android.utils2.MyReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:1038
+# view AndroidManifest.xml #generated:1054
 -keep class com.beikbank.android.utils2.TestActivity { <init>(...); }
 
 # view res/layout/activity_bank_bind.xml #generated:138
@@ -455,6 +464,8 @@
 # view res/layout/activity_loginpwd_update.xml #generated:116
 # view res/layout/activity_loginpwd_update.xml #generated:155
 # view res/layout/activity_loginpwd_update.xml #generated:43
+# view res/layout/activity_phone_change.xml #generated:107
+# view res/layout/activity_phone_change.xml #generated:56
 # view res/layout/activity_purchase.xml #generated:301
 # view res/layout/activity_purchase_confirm.xml #generated:138
 # view res/layout/activity_qianbao2.xml #generated:69
@@ -468,6 +479,7 @@
 # view res/layout/activity_register_code.xml #generated:55
 # view res/layout/activity_registerpwd_set.xml #generated:49
 # view res/layout/activity_registerpwd_set.xml #generated:82
+# view res/layout/activity_tixian.xml #generated:126
 # view res/layout/activity_transactionpwd_set.xml #generated:49
 # view res/layout/activity_transactionpwd_set.xml #generated:83
 # view res/layout/activity_transactionpwd_update.xml #generated:116
@@ -475,6 +487,8 @@
 # view res/layout/activity_transactionpwd_update.xml #generated:43
 # view res/layout/activity_update_phone.xml #generated:123
 # view res/layout/activity_update_phone.xml #generated:85
+# view res/layout/activity_yanzhen_shengfen.xml #generated:130
+# view res/layout/activity_yanzhen_shengfen.xml #generated:89
 # view res/layout/check_jiaoyimima.xml #generated:37
 # view res/layout/dialog_financial_detail.xml #generated:113
 # view res/layout/dialog_financial_detail.xml #generated:154
@@ -527,7 +541,7 @@
 -keep class com.beikbank.android.widget.SlidingMenu { <init>(...); }
 
 # view res/layout/activity_dingqi.xml #generated:463
-# view res/layout/activity_gerenzhongxin.xml #generated:380
+# view res/layout/activity_gerenzhongxin.xml #generated:418
 # view res/layout/fragment_menu_chid.xml #generated:321
 -keep class com.beikbank.android.widget.SwitchButton { <init>(...); }
 

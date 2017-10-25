@@ -222,7 +222,10 @@ public class BeikBankConstant {
 	 * 用户真实姓名
 	 */
 	public static final String real_name="real_name";
-	
+	/**
+	 *  身份证号
+	 */
+	public static final String id_number="id_number";
 	/**
 	 *银行卡号
 	 */

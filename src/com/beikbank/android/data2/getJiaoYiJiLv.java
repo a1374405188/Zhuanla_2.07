@@ -9,7 +9,10 @@ public class getJiaoYiJiLv implements Serializable{
   public String record_id ;
  
   /**
-	 * 1：充值 2：银行卡购买 3：账户购买 4：赎回 5：提现 6:转让
+	 *
+	 * 
+	 * 1.充值2.银行卡购买3.钱包购买5.提现6.转让 11.网银充值12.网银购买（app查询购买和充值时记得把网银充值和购买选上），啥不传显示全部
+     * 13 还款 15还款  16未匹配还钱包,17未匹配还钱包成功,18未匹配还钱包失败
 	 */
 public String trade_type ;
 /**

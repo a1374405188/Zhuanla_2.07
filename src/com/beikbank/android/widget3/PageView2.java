@@ -308,7 +308,7 @@ public class PageView2 extends LinearLayout implements OnClickListener {
 					}
 				}
 				Collections.sort(list3);
-				
+				gcp=null;
 				if(list1.size()==0)
 				{
 					if(list3.size()>0)
@@ -316,8 +316,11 @@ public class PageView2 extends LinearLayout implements OnClickListener {
 						gcp=list3.get(list3.size()-1);
 					}
 					else
-					{
-						gcp=list2.get(0);
+					{  
+						if(list2.size()>0)
+						{
+						  gcp=list2.get(0);
+						}
 					}
 				}
 				else
@@ -327,8 +330,11 @@ public class PageView2 extends LinearLayout implements OnClickListener {
 					   gcp=list1.get(0);
 				   }
 				   else
-				   {
-					   gcp=list3.get(list3.size()-1);
+				   {   
+					   if(list3.size()>0)
+					   {
+					      gcp=list3.get(list3.size()-1);
+					   }
 				   }
 				}
 				return gcp;

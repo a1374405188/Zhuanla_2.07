@@ -294,7 +294,7 @@ public class LoginManager extends ThreadManager{
 				 if(ui!=null)
 				 {  
 					 
-					 TableDao td=DbManagerFactory.getTableDao();
+					 TableDao td=DbManagerFactory.getTableDao(null);
 					 SQLiteDatabase sdb= td.opean();
 					 sdb.beginTransaction();
 					 td.deleteTable(UserInfo.class);

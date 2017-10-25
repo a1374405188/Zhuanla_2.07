@@ -101,7 +101,7 @@ public class ShouZhiMinXiAdapter2 extends MBaseAdapter
 			holder.shuomin.setVisibility(View.VISIBLE);
 			holder.shuomin.setText("钱包支付");
 		}
-		else if("13".equals(gjy.trade_type)||"15".equals(gjy.trade_type))
+		else if("13".equals(gjy.trade_type)||"15".equals(gjy.trade_type)||"16".equals(gjy.trade_type)||"17".equals(gjy.trade_type)||"18".equals(gjy.trade_type))
 		{
 			holder.name.setText("回款");
 			

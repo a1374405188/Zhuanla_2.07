@@ -161,6 +161,7 @@ public class RealnameActivity extends BaseActivity1 implements OnClickListener,O
 				NameRengzhen_data nd=(NameRengzhen_data) obj;
 				String s1=nd.body.user_code;
 				BeikBankApplication.setSharePref(BeikBankConstant.user_code,s1);
+				
 				if(!is_nextpage)
 				{  
 				   finish();
@@ -217,7 +218,7 @@ public class RealnameActivity extends BaseActivity1 implements OnClickListener,O
 					pp.phone_number=BeikBankApplication.getPhoneNumber();
 			    	TongYongManager2 tym2=new TongYongManager2(act, icb3,pp);
 			    	tym2.start();
-				  
+			    	BeikBankApplication.setSharePref(BeikBankConstant.id_number,idNumber);
 				  
 				  
 			}

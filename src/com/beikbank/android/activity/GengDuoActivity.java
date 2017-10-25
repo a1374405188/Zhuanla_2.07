@@ -139,6 +139,12 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 		tym2.start();
 	}
 	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		initView();
+	}
+	@Override
 	public void onClick(View v) {
 		boolean islogin=BeikBankApplication.mSharedPref.getSharePrefBoolean(BeikBankConstant.DO_SUCCESS,false);
 		Intent intent=null;

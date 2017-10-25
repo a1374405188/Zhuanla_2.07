@@ -284,6 +284,7 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 						mIntent.putExtra("cdd",cddd.body);
 						mIntent.setClass(act,DingqiGouMaiConfirmActivity.class);
 						startActivity(mIntent);
+						finish();
 			    	   return ;
 			    	   
 			       }
@@ -293,7 +294,7 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 					mIntent.putExtra("cdd",cddd.body);
 					mIntent.setClass(act,QueRenJiaoYiActivity.class);
 					startActivity(mIntent);
-					
+					finish();
 				}
 				
 			}

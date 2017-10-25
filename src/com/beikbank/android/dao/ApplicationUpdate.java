@@ -24,6 +24,7 @@ import android.database.sqlite.SQLiteDatabase;
  */
 public class ApplicationUpdate {
 	static String tag="ApplicationUpdate";
+	static Context con;
 	/**
 	 * 监测是否更新过应用，并进行相应的处理
 	 */
@@ -31,7 +32,8 @@ public class ApplicationUpdate {
    {  
 	  try
 	  {
-	   TableDao td=DbManagerFactory.getTableDao();
+		  con=context;
+	   TableDao td=DbManagerFactory.getTableDao(con);
    	   SQLiteDatabase sdb=td.opean();
    	   int version=sdb.getVersion();
    	   td.close();
@@ -42,20 +44,35 @@ public class ApplicationUpdate {
    	   }
 	  }
 	  catch(Exception e)
-	  {
-		  e.printStackTrace();
+	  {  
+		  if(SystemConfig.isDebug())
+		  {
+		    e.printStackTrace();
+		  }
 		  LogHandler.writeLogFromException(tag, e);
 	  }
    }
    public static void deleteDb()
    {       
-	    
-	       File file=new File(SystemConfig.DATA_PATH+SystemConfig.DATA_file);
+	       String s1=SystemConfig.DATA_PATH+getAppInfo(con)	+SystemConfig.DATA_file;
+	       File file=new File(s1);
 		   if(file!=null&&file.exists())
 		   {
 			   file.delete();
 		   }
    }
+	public static String getAppInfo(Context con) {
+ 		try {
+ 			String pkName = con.getPackageName();
+ 			String versionName = con.getPackageManager().getPackageInfo(
+ 					pkName, 0).versionName;
+ 			int versionCode = con.getPackageManager()
+ 					.getPackageInfo(pkName, 0).versionCode;
+ 			return pkName;
+ 		} catch (Exception e) {
+ 		}
+ 		return null;
+ 	}
    public static void deletePer(Context context)
    {   
 //	   SharedPreferences mSharedPreferences = context.getSharedPreferences(SystemConfig.PREF_NAME, Context.MODE_PRIVATE);

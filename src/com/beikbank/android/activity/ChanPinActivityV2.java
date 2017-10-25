@@ -469,7 +469,8 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			@Override
 			public void back(Object obj) {
 				Intent intent;
-				if("0".equals(gcp.term))
+				
+				if("4".equals(gcp.product_type_pid))
 				{
 					 intent=new Intent(act,PurchaseActivity.class);
 					 intent.putExtra("gcp",gcp);
@@ -503,7 +504,20 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			ls.startNext(this,2,gcp);
 			break;
 		case R.id.iv_jisuanqi:
-			showCountDialog();
+			if(gcp==null)
+			{
+				return;
+			}
+			if("4".equals(gcp.product_type_pid))
+		
+			{
+				showCountDialog2();
+			}
+			else
+			{
+				showCountDialog();
+			}
+			
 			break;	
 			
 		}
@@ -519,13 +533,15 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 	 */
 	Button bu_but3;
     /**
-     * 显示收益计算器
+     * 显示收益计算器 定期
      */
    private void showCountDialog()
    {
 	    LinearLayout ll=new LinearLayout(this);
-	    View v=LayoutInflater.from(this).inflate(
+	    View v=null;
+	    v=LayoutInflater.from(this).inflate(
   			   R.layout.count_shouyi,ll,false);
+	   
 	    tv_tv9=(TextView) v.findViewById(R.id.tv_tv1);
 	    tv_tv10=(TextView) v.findViewById(R.id.tv_tv2);
 	    tv_tv10.setText(gcp.term);
@@ -565,7 +581,60 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
    }
 	
 	
-	
+   /**
+    * 显示收益计算器 活期
+    */
+  private void showCountDialog2()
+  {
+	    LinearLayout ll=new LinearLayout(this);
+	    View v=null;
+	    v=LayoutInflater.from(this).inflate(
+ 			   R.layout.count_shouyi2,ll,false);
+	   
+	    tv_tv9=(TextView) v.findViewById(R.id.tv_tv1);
+	   // tv_tv10=(TextView) v.findViewById(R.id.tv_tv2);
+	   // tv_tv10.setText(gcp.term);
+//	    if(SystemConfig.isDebug())
+//	    {
+//	    	 tv_tv10.setText("30");
+//	    }
+	    final EditText et_et2=(EditText)v.findViewById(R.id.et_et2);
+	    
+	    et_et1=(EditText)v.findViewById(R.id.et_et1);
+	    et_et1.setFilters(new InputFilter[]{new InputFilter.LengthFilter(7)}); 
+	    
+	    bu_but3=(Button) v.findViewById(R.id.bu_bu1);
+	    bu_but3.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			  String s=et_et1.getText().toString();
+			  String s1=et_et2.getText().toString();
+			  if(s1==null||"".equals(s1)||!NumberManager.isNumeric(s1))
+			  {
+				  s1="0";
+			  }
+			  tv_tv9.setText(ZhiChanAdapter.getShouyi(s,s1,gcp.benchmark_return_rate,gcp.increase_interest_return_rate));
+			}
+		});
+	    
+       dialog4=DialogManager.getDiaolg1(this, v);
+       dialog4.setCanceledOnTouchOutside(true);
+   	dialog4.show();
+   	et_et2.setFocusable(true);
+  	    et_et2.setFocusableInTouchMode(true);
+  	    et_et2.requestFocus();
+   	Runnable run=new Runnable() {
+			
+			@Override
+			public void run() {	
+				InputMethodManager inputManager = (InputMethodManager)et_et2.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+				inputManager.showSoftInput(et_et2, 0);
+			}
+		};
+       Handler handler=new Handler();
+       handler.postDelayed(run, 500);
+  }
 	
 	
 	

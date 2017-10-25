@@ -21,10 +21,15 @@ import android.database.sqlite.SQLiteDatabase;
  **/
 public class TableDaoImpl implements TableDao{
    public static SQLiteDatabase sdb;
+   Context con;
+   public TableDaoImpl(Context con)
+   {
+	   this.con=con;
+   }
 	@Override
 	public SQLiteDatabase opean() {
-		
-		return opean(SystemConfig.DATA_PATH+SystemConfig.DATA_file);
+		 String s1=SystemConfig.DATA_PATH+ApplicationUpdate.getAppInfo(con)+SystemConfig.DATA_file;
+		return opean(s1);
 	}
 
 	@Override

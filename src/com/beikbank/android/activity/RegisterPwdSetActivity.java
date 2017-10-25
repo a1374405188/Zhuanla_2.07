@@ -115,35 +115,36 @@ public class RegisterPwdSetActivity extends BaseActivity1 implements OnClickList
 	Register reg;
 	private void initData()
 	{    
+		reg=(Register) getIntent().getSerializableExtra("reg");
 		if(isForgetLoginPassword)
 		{
 			return;
 		}
-		ICallBack icb=new ICallBack() {
-			
-			@Override
-			public void back(Object obj) {
-				if(obj!=null)
-				{
-					Register_data rd=(Register_data)obj;
-					reg=rd.body;
-					
-					 BeikBankApplication.setSharePref(BeikBankConstant.user_code,reg.user_code);
-					  BeikBankApplication.setSharePref(BeikBankConstant.user_type,reg.user_type);
-				}
-				
-			}
-		};
-		
-		RegisterParam pp=new RegisterParam();
-		pp.download=SystemConfig.SOURCES_CODE;
-		pp.ip=getIPAddress(act);
-		pp.phone_id="";
-		pp.phone_number=phonenumber;
-		//pp.register_time=new Date().toString();
-		
-		TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
-		tym2.start();
+//		ICallBack icb=new ICallBack() {
+//			
+//			@Override
+//			public void back(Object obj) {
+//				if(obj!=null)
+//				{
+//					Register_data rd=(Register_data)obj;
+//					reg=rd.body;
+//					
+//					 BeikBankApplication.setSharePref(BeikBankConstant.user_code,reg.user_code);
+//					  BeikBankApplication.setSharePref(BeikBankConstant.user_type,reg.user_type);
+//				}
+//				
+//			}
+//		};
+//		
+//		RegisterParam pp=new RegisterParam();
+//		pp.download=SystemConfig.SOURCES_CODE;
+//		pp.ip=getIPAddress(act);
+//		pp.phone_id="";
+//		pp.phone_number=phonenumber;
+//		//pp.register_time=new Date().toString();
+//		
+//		TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
+//		tym2.start();
 		
 	}
 	public static String getIPAddress(Context context) {

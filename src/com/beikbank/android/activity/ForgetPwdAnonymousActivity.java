@@ -144,7 +144,7 @@ public class ForgetPwdAnonymousActivity extends BaseActivity1 implements OnClick
 			intent.putExtra(BeikBankConstant.IS_FORGETLOGINPWD, true);
 			intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
 			startActivity(intent);
-			
+			finish();
 		}
 	};
 	//发送验证码

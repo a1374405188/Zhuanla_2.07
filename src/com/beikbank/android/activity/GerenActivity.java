@@ -79,6 +79,10 @@ public class GerenActivity extends BaseActivity implements OnClickListener
     * 弹出的修改密码布局
     */
    private LinearLayout ll_mima;
+   /**
+    * 更换手机号
+    */
+   private LinearLayout ll_gegnhuan;
    TextView tv_xiugai_denglu;
 	 TextView tv_xiugai_jiaoyi;
 	 TextView tv_qvxiao;
@@ -104,6 +108,20 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 		
 		Intent intent=new Intent();
 		switch (v.getId()) {
+		case R.id.ll_genghuan:
+			 intent=new Intent(act,YanZhenShengFenActivity.class);
+			 Object obj=tv_name.getTag();
+			 if(obj!=null)
+			 {
+				    String tag=tv_name.getTag().toString();
+				   
+					intent.putExtra("tag",tag);
+					intent.putExtra("name",gu.real_name);
+			        act.startActivity(intent);
+				
+			 }
+			
+			break;
 		case R.id.tv_qvxiao:
 			ll_mima.setVisibility(View.GONE);
 			break;
@@ -270,6 +288,7 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 			break;
 		}
 	}
+	getUserOrXiuGai gu;
 	private void getNameInfo()
 	{
 		  ICallBack icb_gu=new ICallBack() {
@@ -279,12 +298,12 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 					if(obj!=null)
 					{
 						 getUserOrXiuGai_data gd=(getUserOrXiuGai_data) obj;
-						 getUserOrXiuGai gu=gd.body.get(0);
+						 gu=gd.body.get(0);
 						 if(gu!=null&&!"".equals(gu.real_name))
 						 {
 							
 								 iv_name.setVisibility(View.GONE);
-								 String s1="**";
+								 String s1=gu.real_name;
 								 if(s1.length()==2)
 								 {   
 									 s1=gu.real_name.substring(0,1);
@@ -301,9 +320,12 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 									 s1=s1+"**";
 								 }
 								 String s2=Utils.getEncryptedIcNumber(gu.id_number);
-								 
+								 BeikBankApplication.setSharePref(BeikBankConstant.id_number,gu.id_number);
 								 String s=s1+"  "+s2;
 								 tv_name.setText(s);
+								 tv_name.setTag(s1);
+								
+								 ll_gegnhuan.setVisibility(View.VISIBLE);
 							 }
 						 
 					}
@@ -341,9 +363,9 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 		};
 		
 		UserCheckParam2 uc2=new UserCheckParam2();
-    	uc2.check_type="1";
-    	uc2.phone_number=BeikBankApplication.getPhoneNumber();
-    	
+    	uc2.check_type="0";
+    	//uc2.phone_number=BeikBankApplication.getPhoneNumber();
+    	uc2.user_code=BeikBankApplication.getUserCode();
      	TongYongManager2 tym2=new TongYongManager2(act, icb,uc2);
     	tym2.start();
 	}
@@ -425,6 +447,8 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 		 ll_zhaohui.setOnClickListener(this);
 		 ll_shimin.setOnClickListener(this);
 		 tv_jiaoui=(TextView) findViewById(R.id.tv_jiaoyi);
+		 ll_gegnhuan=(LinearLayout) findViewById(R.id.ll_genghuan);
+		 ll_gegnhuan.setOnClickListener(this);
 		 //UserInfo userInfo=BeikBankApplication.getUserInfo();
 //		 if(userInfo!=null)
 //		 {
@@ -493,7 +517,7 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 		initView();
 		initShouShi();
 		
-		
+		getNameInfo();
 		 getUserInfo();
 	}
 	boolean flag=false;

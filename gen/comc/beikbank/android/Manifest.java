@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package coma.beikbank.android;
+package comc.beikbank.android;
 
 public final class Manifest {
     public static final class permission {
