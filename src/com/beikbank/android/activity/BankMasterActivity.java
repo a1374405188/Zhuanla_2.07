@@ -85,7 +85,7 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 //			LinearLayout ll_add=(LinearLayout) findViewById(R.id.ll_add_bank);
 //			ll_add.setVisibility(View.VISIBLE);
 			
-			
+			//test
 			 LinearLayout ll=(LinearLayout) findViewById(R.id.ll_add_bank);
 				RelativeLayout rl=(RelativeLayout) findViewById(R.id.relative_bankmaster);
 
