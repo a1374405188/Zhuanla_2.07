@@ -185,8 +185,7 @@ public class LiuChenSelect {
     	
 //      
     	String bank=BeikBankApplication.getSharePref(BeikBankConstant.bank);
-    	if(bank==null||"".equals(bank))
-    	{
+    	
     	ICallBack icb_qianbao=new ICallBack() {
 			
 			@Override
@@ -216,7 +215,7 @@ public class LiuChenSelect {
 	    gqp.user_code=BeikBankApplication.getUserCode();
 		TongYongManager2 tym3=new TongYongManager2(act, icb_qianbao, gqp);
 		tym3.start();
-    	}
+    	
 		
 //得到密码或者短信支付
 		ICallBack icb_mm=new ICallBack() {

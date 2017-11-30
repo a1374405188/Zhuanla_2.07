@@ -37,8 +37,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //实名认证
 public class RealnameActivity extends BaseActivity1 implements OnClickListener,OnFocusChangeListener{
@@ -161,7 +162,14 @@ public class RealnameActivity extends BaseActivity1 implements OnClickListener,O
 				NameRengzhen_data nd=(NameRengzhen_data) obj;
 				String s1=nd.body.user_code;
 				BeikBankApplication.setSharePref(BeikBankConstant.user_code,s1);
-				
+				 String s2=BeikBankApplication.getSharePref(BeikBankConstant.is_bindbank);
+				 if("1".equals(s2))
+				 {
+					    Intent intent=new Intent(act,BankBindActivity2.class);
+						act.startActivity(intent);
+						finish();
+						return;
+				 }
 				if(!is_nextpage)
 				{  
 				   finish();

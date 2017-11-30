@@ -46,8 +46,9 @@ import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //收益详情
 public class ZuoriShouyiActivity2 extends BaseActivity1 implements OnClickListener{

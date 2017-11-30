@@ -1,6 +1,6 @@
 package com.beikbank.android.activity.help;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -81,7 +81,7 @@ public class NoneData {
 	  else if(index==11)
 	  {
 		  iv.setImageResource(R.drawable.empty_hongbao);
-		  tv.setText("暂无可用红包");
+		  tv.setText("暂无可用优惠券");
 	  }
 	  else if(index==12)
 	  {

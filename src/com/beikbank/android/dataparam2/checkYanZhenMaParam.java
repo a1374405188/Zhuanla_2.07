@@ -16,5 +16,8 @@ public class checkYanZhenMaParam
 	 */
   public String   verification_code;
 
-  
+  /**
+ 	 * 
+ 	 */
+   public String   phone_number;
 }

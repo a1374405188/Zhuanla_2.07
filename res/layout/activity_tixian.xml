@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:text="提现至xx银行"
             android:textSize="14sp"
-            android:textColor="#ff999999"
+            android:textColor="#ff333333"
            />
          <LinearLayout
             android:layout_width="match_parent"

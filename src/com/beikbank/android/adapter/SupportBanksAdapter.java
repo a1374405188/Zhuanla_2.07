@@ -17,8 +17,9 @@ import com.beikbank.android.data2.getAllBank;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class SupportBanksAdapter extends BaseAdapter{
 

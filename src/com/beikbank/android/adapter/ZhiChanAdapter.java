@@ -4,8 +4,9 @@ import java.util.List;
 
 import com.beikbank.android.data.UserCapitalInfo2;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.view.LayoutInflater;

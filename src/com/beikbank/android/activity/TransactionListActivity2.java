@@ -50,8 +50,9 @@ import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //交易列表
 public class TransactionListActivity2 extends BaseActivity1 implements OnClickListener{
@@ -123,7 +124,7 @@ public class TransactionListActivity2 extends BaseActivity1 implements OnClickLi
     String type2;
     /**
      * 1.充值2.银行卡购买3.钱包购买5.提现6.转让 11.网银充值12.网银购买（app查询购买和充值时记得把网银充值和购买选上），啥不传显示全部
-     * 13 还款 15还款  16未匹配还钱包,17未匹配还钱包成功,18未匹配还钱包失败
+     * 19 还款 
 
      */
     ArrayList<String>     type=new ArrayList<String>();
@@ -811,8 +812,8 @@ private ICallBack icb=new ICallBack() {
 		 }else if(index==R.id.bu_huikuan)
 		 {   
 			 type=new ArrayList<String>();
-			 type.add("13");
-			 type.add("15");
+			 type.add("19");
+			// type.add("15");
 			 bu_huikuan.setBackgroundResource(R.drawable.btn_selector_button3);
 			 bu_huikuan.setTextColor(0xffffffff);
 			 titleTv.setText("回款");

@@ -108,6 +108,8 @@ import com.beikbank.android.data2.XiaoxiLieBiao;
 import com.beikbank.android.data2.Xiaoxi_data;
 import com.beikbank.android.data2.checkYanZhenMa_data;
 import com.beikbank.android.data2.getAllBank_data;
+import com.beikbank.android.data2.getAllYouHuiQuan;
+import com.beikbank.android.data2.getAllYouHuiQuan_data;
 import com.beikbank.android.data2.getChanPinXiangQin_data;
 import com.beikbank.android.data2.getDingDanXiangQin_data;
 import com.beikbank.android.data2.getDingQiXiangQin_data;
@@ -126,6 +128,7 @@ import com.beikbank.android.data2.getUserOrXiuGai_data;
 import com.beikbank.android.data2.getXiangMuXinXi_data;
 import com.beikbank.android.data2.getYanZhenMa_data;
 import com.beikbank.android.data2.getYiGou_data;
+import com.beikbank.android.data2.getYouHuiQuan_data;
 import com.beikbank.android.data2.getZhiChan_data;
 import com.beikbank.android.data2.getZuoRiShouYi_data;
 import com.beikbank.android.data2.phoneChangeChenck_data;
@@ -203,6 +206,7 @@ import com.beikbank.android.dataparam2.XiaoxiLieBiaoParam;
 import com.beikbank.android.dataparam2.XiaoxiParam;
 import com.beikbank.android.dataparam2.checkYanZhenMaParam;
 import com.beikbank.android.dataparam2.getAllBankParam;
+import com.beikbank.android.dataparam2.getAllYouhuiQuanParam;
 import com.beikbank.android.dataparam2.getChanPinXiangQinParam;
 import com.beikbank.android.dataparam2.getDingDanXiangQinParam;
 import com.beikbank.android.dataparam2.getDingQiXiangQinParam;
@@ -224,6 +228,7 @@ import com.beikbank.android.dataparam2.getUserZhiChanParam2;
 import com.beikbank.android.dataparam2.getXiangMuXinXiParam;
 import com.beikbank.android.dataparam2.getYanZhenMaParam;
 import com.beikbank.android.dataparam2.getYiGouParam;
+import com.beikbank.android.dataparam2.getYouhuiQuanParam;
 import com.beikbank.android.dataparam2.getZaiQuanParam;
 import com.beikbank.android.dataparam2.getZhiChanParam;
 import com.beikbank.android.dataparam2.getZuoRiShouYiParam;
@@ -266,6 +271,10 @@ public class IBusinessImpl2 {
     private static String url6=":10022/beikbank-pay-api/payApi.do?report=";
     private static String url7=":10026/managerment/manager/managerApi.do?report=";
     private static String url8=":10026/beikbank-message-api/msg.do?report=";
+    /**
+     * 红包系统
+     */
+    private static String url9=":10044/beikbank-bonus-api/bonusApi.do?report=";
     static 
     {
     	  if(SystemConfig.index==1)
@@ -292,14 +301,28 @@ public class IBusinessImpl2 {
     	   }
     	   else if(SystemConfig.index==3)
     	   {
-    		    url1=":13028/user/userApi?report=";
-    		    url2=":13039/beikbank-settlement/settlementApi.do";
-    		    url3=":13025/productAPI/product/productAPI.do";
-    		    url4=":13023/beikbank-order-api/orderApi.do";
-    		    url5=":13024/beikbank-trade-api/tradeApi.do?report=";
-    		    url6=":13043/recharge/recharge.do?report=";
-    		    url7=":13026/managerment/manager/managerApi.do?report=";
-    		    url8=":13040/beikbank-message-api/msg.do?report=";
+//    		    url1=":13028/user/userApi?report=";
+//    		    url2=":13039/beikbank-settlement/settlementApi.do";
+//    		    url3=":13025/productAPI/product/productAPI.do";
+//    		    url4=":13023/beikbank-order-api/orderApi.do";
+//    		    url5=":13024/beikbank-trade-api/tradeApi.do?report=";
+//    		    url6=":13043/recharge/recharge.do?report=";
+//    		    url7=":13026/managerment/manager/managerApi.do?report=";
+//    		    url8=":13040/beikbank-message-api/msg.do?report=";
+    		    
+    		    
+    		    
+    		    url1=":13128/user/userApi?report=";
+    		    url2=":13139/beikbank-settlement/settlementApi.do";
+    		    url3=":13125/productAPI/product/productAPI.do";
+    		    url4=":13123/beikbank-order-api/orderApi.do";
+    		    url5=":13124/beikbank-trade-api/tradeApi.do?report=";
+    		    url6=":13143/recharge/recharge.do?report=";
+    		    url7=":13126/managerment/manager/managerApi.do?report=";
+    		    url8=":13140/beikbank-message-api/msg.do?report=";
+    		    
+    		    
+    		    
     	   }
     	
     }
@@ -453,8 +476,30 @@ public class IBusinessImpl2 {
       	     hp.tra_code="010010";
       	     hp.request_seq=TimeUtil.getTime2();
       	     String url=base_service+url4+"?report=";
+      	   JSONObject json1=new JSONObject(); 
+      	   JSONObject json2=new JSONObject();  
+      	   JSONArray body=new JSONArray();
+      	  CreateDingDanParam cd= (CreateDingDanParam) paramClass;
+  	       for(int i=0;i<cd.red_packet_list.size();i++)
+  	      {   
+  	    	 //JSONObject json=new JSONObject();
+  	    	 //json.put("trade_type",h2.trade_type.get(i));
+  	    	 json2=new JSONObject();  
+  	    	 json2.put("coupon_no",cd.red_packet_list.get(i));
+  	    	 body.put(json2);
+  	      }
+  	     json1.put("acc_id", cd.acc_id);
+  	     json1.put("acc_number",cd.acc_number);
+  	     json1.put("amount", cd.amount);
+  	     json1.put("assets_id",cd.assets_id);
+  	     json1.put("order_source",cd.order_source);    
+  	     json1.put("order_type",cd.order_type);    
+  	     json1.put("pro_id",cd.pro_id);   
+  	     json1.put("pro_type",cd.pro_type);     
+  	     json1.put("red_packet_list", body);      
+  	    json1.put("user_code",cd.user_code);      
       	     
-        	 obj=getTongYong(CreateDingDan_data.class, url, paramClass, hp);
+        	 obj=getTongYong(CreateDingDan_data.class, url, json1, hp);
          }
          else if(paramClass instanceof getQianBaoParam)
          {
@@ -851,6 +896,23 @@ public class IBusinessImpl2 {
       	     String url=base_service+url1;
         	 obj=getTongYong(phoneChange_data.class, url, paramClass, hp);
          }
+         else if(paramClass instanceof getAllYouhuiQuanParam)
+         {
+        	 hp=new HeadParam2();
+      	     hp.tra_code="180010";
+      	     hp.request_seq=TimeUtil.getTime2();
+      	     String url=base_service+url9;
+        	 obj=getTongYong(getAllYouHuiQuan_data.class, url, paramClass, hp);
+         }
+        
+         else if(paramClass instanceof getYouhuiQuanParam)
+         {
+        	 hp=new HeadParam2();
+      	     hp.tra_code="180011";
+      	     hp.request_seq=TimeUtil.getTime2();
+      	     String url=base_service+url9;
+        	 obj=getTongYong(getAllYouHuiQuan_data.class, url, paramClass, hp);
+         }
          return obj;
     }
     HeadParam2 hp;
@@ -900,7 +962,7 @@ public class IBusinessImpl2 {
 	     String ss=  hu.getRequest(url);
 	     if(SystemConfig.isDebug())
 	     {
-	         Log.d("json"+"-"+paramClass.getClass().getName(), ss);
+	         Log.e("json"+"-"+paramClass.getClass().getName(), ss);
 	     }
 	 	 ResponseParamManager rpm=new ResponseParamManager();
 	 	 obj=rpm.getObjectFromJson(returnClass,ss);
@@ -923,14 +985,14 @@ public class IBusinessImpl2 {
    	    String json=Jiami.getValue(hp,paramClass);
    	 if(SystemConfig.isDebug())
      {
-         Log.d("json_qinqiu",json);
+         Log.e("json_qinqiu",json);
      }
    	     TreeMap<String,String> map=new TreeMap<String, String>();
    	     map.put("report",json);
     	 String ss=hu.postRequest(url, map);
  	     if(SystemConfig.isDebug())
  	     {
- 	    	 Log.d("json"+"-"+paramClass.getClass().getName(), ss);
+ 	    	 Log.e("json"+"-"+paramClass.getClass().getName(), ss);
  	     }
  	 	 ResponseParamManager rpm=new ResponseParamManager();
  	 	 obj=rpm.getObjectFromJson(returnClass,ss);

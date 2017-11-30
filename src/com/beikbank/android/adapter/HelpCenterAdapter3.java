@@ -18,8 +18,9 @@ import android.widget.TextView;
 
 import com.beikbank.android.adapter.HelpCenterAdapter.Holder;
 import com.beikbank.android.data.HelpInfo;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 
  * @author Administrator

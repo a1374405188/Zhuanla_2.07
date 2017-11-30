@@ -16,8 +16,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.beikbank.android.data.HelpInfo;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class HelpCenterAdapter extends BaseAdapter{
 

@@ -12,8 +12,9 @@ import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.MessagedelManager;
 import com.beikbank.android.widget2.PageView2.MyAdapter;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;

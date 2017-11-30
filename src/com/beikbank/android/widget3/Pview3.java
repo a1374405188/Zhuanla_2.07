@@ -39,8 +39,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.widget.MagicTextView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -57,6 +58,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.LinearLayout.LayoutParams;
 
 /**
  * 
@@ -120,6 +122,9 @@ public class Pview3 extends LinearLayout implements OnClickListener{
 	//	View view0 =LayoutInflater.from(context).inflate(R.layout.page_wealth11,ll,false);
 		
 		View view= LayoutInflater.from(context).inflate(R.layout.pview3_v2,ll,false);
+		LayoutParams lp=new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT);
+		view.setLayoutParams(lp);
+		
 		//YuanView yv=(YuanView) view.findViewById(R.id.yv);
 		//yv.init2(act,0,240);
 		//yv.setDraw(true);
@@ -164,8 +169,11 @@ public class Pview3 extends LinearLayout implements OnClickListener{
 //		sv.addView(view);
 //		
 //		addView(view0);
+		ll_pull=(LinearLayout) view.findViewById(R.id.ll_pull);
 		addView(view);
 		
+//		NoneData nd=new NoneData();
+//		nd.setView(act,ll_pull,8);
 		//prs.doPullRefreshing(false,0);
 	}
 	String id;

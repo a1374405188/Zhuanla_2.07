@@ -1,8 +1,9 @@
 package com.beikbank.android.utils;
 
 import com.beikbank.android.conmon.DisplayManger;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;

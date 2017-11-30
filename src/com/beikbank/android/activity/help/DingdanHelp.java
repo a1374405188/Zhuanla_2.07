@@ -72,11 +72,11 @@ public class DingdanHelp {
 	};
 
 	private void addData() {
-		String id = BeikBankApplication.getUserid();
+		//String id = BeikBankApplication.getUserid();
 		TranListParam tl = new TranListParam();
 		tl.startLine = "0";
 		tl.endLine = "0";
-		tl.memberID = id;
+		tl.memberID = "";
 		tl.tradeType = "10";
 		tl.productType = "2";
 		tl.transactionStatus = "";
@@ -86,11 +86,11 @@ public class DingdanHelp {
 	}
 
 	private void addData2() {
-		String id = BeikBankApplication.getUserid();
+		//String id = BeikBankApplication.getUserid();
 		TranListParam tl = new TranListParam();
 		tl.startLine = "0";
 		tl.endLine = "0";
-		tl.memberID = id;
+		tl.memberID = "";
 		tl.tradeType = "10";
 		tl.productType = "2";
 		tl.transactionStatus = "";

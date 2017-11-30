@@ -1,8 +1,9 @@
 package com.beikbank.android.webwiew;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.umeng.message.proguard.ac;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.net.http.SslError;

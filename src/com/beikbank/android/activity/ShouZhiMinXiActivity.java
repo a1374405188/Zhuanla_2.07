@@ -20,8 +20,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -47,6 +48,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
      * return
      */
     LinearLayout ll;
+    RelativeLayout rl_shouxu;
     TextView leixin;
     TextView money;
     TextView time;
@@ -123,6 +125,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 if("5".equals(gdd.order_type))
 		 {
 			 leixin.setText("提现");
+			 rl_shouxu.setVisibility(View.VISIBLE);
 		 }
 		 else if("1".equals(gdd.order_type)||"11".equals(gdd.order_type))
 		 {
@@ -140,7 +143,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 {
 			 leixin.setText("转让");
 		 }
-		 else if("13".equals(gdd.order_type)||"15".equals(gdd.order_type))
+		 else if("19".equals(gdd.order_type))
 		 {
 			 leixin.setText("回款");
 		 }
@@ -161,6 +164,15 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 {
 			 state.setText("处理中");
 		 }
+//		 if("13".equals(gdd.order_type)||"15".equals(gdd.order_type)||"17".equals(gdd.order_type)||"16".equals(gdd.order_type))
+//		 {
+//			 state.setText("成功");
+//		 }
+//		 if("18".equals(gdd.order_type))
+//		 {
+//			 state.setText("失败");
+//		 }
+		 
 		 
 		 dingdan.setText(gdd.order_id);
 		 //shouxu.setText(NumberManager.getGeshiHua(gdd.service_amt,2)+"元");
@@ -197,7 +209,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 String s2=NumberManager.getAddString(gdd.increase_interest_return_rate,gdd.benchmark_return_rate, 8);
 		 s2=NumberManager.getString(s2,"100",2);
 		 nianhua.setText(s2+"%");
-		 zhifu.setText(NumberManager.getGeshiHua(gdd.amount,2)+"元");
+		// zhifu.setText(NumberManager.getGeshiHua(gdd.amount,2)+"元");
 		 qixian.setText(gdd.term+"天");
 		 if("1".equals(gdd.order_status))
 		 {
@@ -206,12 +218,35 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 			 rl.setVisibility(View.VISIBLE);
 			 ll.setVisibility(View.VISIBLE);
 		 }
+		 
+		 
+		 //红包相关
+		 int a=NumberManager.isDaYu(gdd.coupon_amount,"0");
+		 if(a==1)
+		 {
+		 RelativeLayout rl_zhifu=(RelativeLayout) findViewById(R.id.rl_zhifu);
+		 LinearLayout ll_zhifu=(LinearLayout) findViewById(R.id.ll_zhifu);
+		 TextView tv_zhifu=(TextView) findViewById(R.id.tv_zhifu);
+		 
+		 RelativeLayout rl_hongbao=(RelativeLayout) findViewById(R.id.rl_hongbao);
+		 LinearLayout ll_hongbao=(LinearLayout) findViewById(R.id.ll_hongbao);
+		 TextView tv_hongbao=(TextView) findViewById(R.id.tv_hongbao);
+		 
+		 rl_zhifu.setVisibility(View.VISIBLE);
+		 rl_hongbao.setVisibility(View.VISIBLE);
+		 ll_zhifu.setVisibility(View.VISIBLE);
+		 ll_hongbao.setVisibility(View.VISIBLE);
+		 tv_zhifu.setText(NumberManager.getGeshiHua(gdd.real_amount,2)+"元");
+		 tv_hongbao.setText(NumberManager.getGeshiHua(gdd.coupon_amount,2)+"元");
+		 }
+		 
 	}
 	private void setData(getDingDanXiangQin gdd)
 	{
 		 if("5".equals(gdd.order_type))
 		 {
 			 leixin.setText("提现");
+			 rl_shouxu.setVisibility(View.VISIBLE);
 		 }
 		 else if("1".equals(gdd.order_type)||"11".equals(gdd.order_type))
 		 {
@@ -229,7 +264,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 {
 			 leixin.setText("转让");
 		 }
-		 else if("13".equals(gdd.order_type)||"15".equals(gdd.order_type))
+		 else if("19".equals(gdd.order_type))
 		 {
 			 leixin.setText("回款");
 		 }
@@ -250,6 +285,15 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 		 {
 			 state.setText("处理中");
 		 }
+//		 
+//		 if("13".equals(gdd.order_type)||"15".equals(gdd.order_type)||"17".equals(gdd.order_type)||"16".equals(gdd.order_type))
+//		 {
+//			 state.setText("成功");
+//		 }
+//		 if("18".equals(gdd.order_type))
+//		 {
+//			 state.setText("失败");
+//		 }
 		 
 		 dingdan.setText(gdd.order_id);
 		 shouxu.setText(NumberManager.getGeshiHua(gdd.service_amt,2)+"元");
@@ -264,6 +308,20 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 				
 				zhanghu.setText(bank_name
 							+"(尾号"+bank.substring(bank.length()-4,bank.length())+")");
+		 }
+		 
+		 
+		 String s2=getIntent().getStringExtra("yue");
+		 if(s2==null||"".equals(s2))
+		 {
+			 RelativeLayout rl=(RelativeLayout) findViewById(R.id.rl_yue);
+			 LinearLayout ll=(LinearLayout) findViewById(R.id.ll_yue);
+			 rl.setVisibility(View.GONE);
+			 ll.setVisibility(View.GONE);
+		 }
+		 else
+		 {
+			 yue.setText(NumberManager.getGeshiHua(s2,2)+"元");
 		 }
 	}
     private  void initView()
@@ -282,10 +340,10 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
          zhanghu=(TextView)findViewById(R.id.zhanghu);
          dingdan=(TextView)findViewById(R.id.dingdan);
          yue=(TextView)findViewById(R.id.yue);
-         
+         rl_shouxu=(RelativeLayout) findViewById(R.id.rl_shouxu2);
          
          beizu=(TextView)findViewById(R.id.beizu);
-         zhifu=(TextView)findViewById(R.id.zhifu);
+         
          name=(TextView)findViewById(R.id.name);
          nianhua=(TextView)findViewById(R.id.nianhua);
          qixian=(TextView)findViewById(R.id.qixian);

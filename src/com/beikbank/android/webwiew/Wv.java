@@ -30,8 +30,9 @@ import com.beikbank.android.share.ShareMUtil;
 import com.beikbank.android.share.ShareParam;
 import com.beikbank.android.share.ShateUtil;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class Wv {
 	Handler handler=new Handler()

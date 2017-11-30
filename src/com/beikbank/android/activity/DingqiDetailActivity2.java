@@ -70,8 +70,9 @@ import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.SwitchButton;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 已到期定期
  * Created by Administrator on 2015/3/16.

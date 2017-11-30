@@ -15,8 +15,9 @@ import com.beikbank.android.data.ProjectInfo;
 import com.beikbank.android.data2.getShouZhiMinXi;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.widget2.PageView2.MyAdapter;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 
  * @author Administrator
@@ -93,7 +94,7 @@ public class ShouZhiMinXiAdapter extends MBaseAdapter
 			//holder.shuomin.setVisibility(View.VISIBLE);
 			//holder.shuomin.setText("钱包支付支付");
 		}
-		else if("13".equals(gsz.order_type)||"15".equals(gsz.order_type)||"16".equals(gsz.order_type)||"17".equals(gsz.order_type)||"18".equals(gsz.order_type))
+		else if("19".equals(gsz.order_type))
 		{
 			holder.name.setText("回款");
 			holder.money.setText("+"+NumberManager.getGeshiHua(gsz.amount,2));

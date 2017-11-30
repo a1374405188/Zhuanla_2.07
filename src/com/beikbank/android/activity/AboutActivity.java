@@ -22,8 +22,9 @@ import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //关于我们2代替旧版本
 public class AboutActivity extends BaseActivity1 implements OnClickListener{

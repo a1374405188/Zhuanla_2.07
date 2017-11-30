@@ -15,7 +15,7 @@ public class RegisterParam
    /**
     * 请求的时间
     */
-   public String ip;
+   public String register_ip;
    /**
     * 请求的时间
     */
@@ -28,5 +28,21 @@ public class RegisterParam
     * 请求的时间
     */
    public String register_time;
-    
+   /**
+    * 1IOS;2android
+    */
+   public String ras_type="2";
+   
+   /**
+    * 
+    */
+   public String os_version;
+   /**
+    * 手机版本
+    */
+   public String  ras_model;
+   /**
+    * 软件版本
+    */
+   public String soft_version;
 }

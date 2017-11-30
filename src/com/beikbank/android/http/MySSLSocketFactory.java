@@ -12,7 +12,9 @@ import javax.net.ssl.TrustManagerFactory;
 
 import org.apache.http.conn.ssl.SSLSocketFactory;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
+
+
 
 
 

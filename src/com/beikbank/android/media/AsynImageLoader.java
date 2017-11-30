@@ -15,8 +15,9 @@ import java.util.List;
 import java.util.Map;    
 
 import com.beikbank.android.net.ICallBack;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.graphics.Bitmap;  

@@ -49,8 +49,9 @@ import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //活期详情
 public class LinHuoBaoActivity extends BaseActivity1 implements OnClickListener{
@@ -178,7 +179,8 @@ public class LinHuoBaoActivity extends BaseActivity1 implements OnClickListener{
    }
   
    private void addView(ArrayList<getHuoQiXiangQin2_1> list)
-   {
+   {   
+	   ll_parent.removeAllViews();
 	   getHuoQiXiangQin2_1 gqx=null;
 	   LinearLayout ll=new LinearLayout(this);
 	   for(int i=0;i<list.size();i++)
@@ -286,6 +288,14 @@ public class LinHuoBaoActivity extends BaseActivity1 implements OnClickListener{
 
 	
 	
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		initView();
+		initData();
+	}
+
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub

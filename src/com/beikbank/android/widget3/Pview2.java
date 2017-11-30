@@ -1,63 +1,53 @@
 package com.beikbank.android.widget3;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.beikbank.android.activity.ChanPinActivityV2;
-import com.beikbank.android.activity.HomeActivity3;
+
 import com.beikbank.android.activity.HuodongActivity2;
-import com.beikbank.android.activity.HuoqiDetailActivity;
-import com.beikbank.android.activity.HuoqiReturnIActivity;
-import com.beikbank.android.activity.LoginRegActivity;
-import com.beikbank.android.activity.PurchaseActivity;
-import com.beikbank.android.activity.help.GoumaiManager;
-import com.beikbank.android.activity.help.LiuChenManager;
 import com.beikbank.android.activity.help.NoneData;
-import com.beikbank.android.adapter.TransactionRecordsAdapter;
 import com.beikbank.android.adapter.XiangMuXinXiAdapter;
-import com.beikbank.android.data.Biaoshi;
-import com.beikbank.android.data.Biaoshi_data;
-import com.beikbank.android.data.FundInfo;
-import com.beikbank.android.data2.getJiaoYiJiLv_data;
-import com.beikbank.android.data2.getXiangMuXinXi;
+
+import com.beikbank.android.conmon.SystemConfig;
+import com.beikbank.android.data2.GetChanPin;
 import com.beikbank.android.data2.getXiangMuXinXi_data;
-import com.beikbank.android.dataparam.BiaoshiParam;
-import com.beikbank.android.dataparam2.XiaoxiParam;
-import com.beikbank.android.dataparam2.getJiaoYiJiLvParam;
 import com.beikbank.android.dataparam2.getXiangMuXinXiParam;
+
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
-import com.beikbank.android.net.ImageUrl;
-import com.beikbank.android.net.ManagerParam;
-import com.beikbank.android.net.impl.FundInfoManager;
-import com.beikbank.android.net.impl.TongYongManager;
 import com.beikbank.android.net.impl.TongYongManager2;
+
 import com.beikbank.android.pullrefresh.PullToRefreshBase;
 import com.beikbank.android.pullrefresh.PullToRefreshScrollView;
 import com.beikbank.android.pullrefresh.PullToRefreshBase.OnRefreshListener;
 import com.beikbank.android.utils.BeikBankConstant;
-import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewRullUtil;
+
+import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.widget.MagicTextView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
 
-import android.app.Activity;
+
+
+
 import android.content.Context;
 import android.content.Intent;
+
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+
 import android.view.View.OnClickListener;
+
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
 
 /**
  * 
@@ -114,14 +104,17 @@ public class Pview2 extends LinearLayout implements OnClickListener{
 		super(context, attrs);
 		init(context);
 	}
-	public void init(Context context)
+	private void init(Context context)
 	{   
 		act=(ChanPinActivityV2) context;
 		LinearLayout ll=new LinearLayout(context);
-		View view0 =LayoutInflater.from(context).inflate(R.layout.page_wealth11,ll,false);
+		//View view0 =LayoutInflater.from(context).inflate(R.layout.page_wealth11,ll,false);
 		
 		View view= LayoutInflater.from(context).inflate(R.layout.pview2_v2,ll,false);
-		addView(view);
+		LayoutParams lp=new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT);
+		view.setLayoutParams(lp);
+		
+		
 		//YuanView yv=(YuanView) view.findViewById(R.id.yv);
 		//yv.init2(act,0,240);
 		//yv.setDraw(true);
@@ -137,7 +130,7 @@ public class Pview2 extends LinearLayout implements OnClickListener{
 		nd.setView(act,ll_pull,7);
 		
 		
-		
+		addView(view);
 		
 		
 		//ll_shouyi.setPadding(0,top,0,0);
@@ -285,7 +278,7 @@ ICallBack down=new ICallBack() {
 			gxx.page=vpu.size+"";
 			gxx.size=vpu.start+"";
 			
-			TongYongManager2 tym2=new TongYongManager2(act, icb_jy_down,gxx);
+			TongYongManager2 tym2=new TongYongManager2(act, icb_jy_up,gxx);
 			tym2.start();
 		}
 	};

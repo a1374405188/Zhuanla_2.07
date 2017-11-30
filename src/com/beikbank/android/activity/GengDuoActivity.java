@@ -40,8 +40,9 @@ import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.LoginManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //更多
 public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
@@ -93,7 +94,7 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 		ll_yijian.setOnClickListener(this);
 		
 		TextView tv_banben=(TextView) findViewById(R.id.tv_banben);
-		tv_banben.setText("V"+Utils.getVersion(act));
+		tv_banben.setText(BeikBankApplication.getVersion(this));
 		
 		LinearLayout ll_denglu_or_zhuce=(LinearLayout) findViewById(R.id.ll_denglu_or_zhuce);
 		ll_denglu_or_zhuce.setOnClickListener(this);

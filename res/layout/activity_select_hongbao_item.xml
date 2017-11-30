@@ -4,97 +4,117 @@
     android:layout_height="100dp"
     android:background="@color/global_bg1"
     android:id="@+id/ll0"
+   
     >
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         
+        android:layout_marginBottom="5dp"
+        >
    <LinearLayout 
         android:id="@+id/ll"
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:background="@drawable/hongbao2"
+        android:layout_weight="3"
+        android:background="@drawable/img_coupons_left"
         android:gravity="center"
         android:layout_marginLeft="16dp"
+        android:orientation="vertical"
        >
        <TextView 
             android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffffff"
-            android:textSize="35sp"
-            android:text="0"
+            android:textColor="#ff0097e2"
+            android:textSize="26sp"
+            android:text="￥0"
            />
        <TextView 
-        
+            android:id="@+id/tv_dikojin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffffff"
+            android:textColor="#ff0097e2"
             android:textSize="18sp"
-            android:text="元"
+            android:text="抵扣金"
            />
    </LinearLayout>
-    <RelativeLayout
-        android:id="@+id/rl"
+    <LinearLayout
+        android:id="@+id/ll2"
         android:layout_width="0px"
         android:layout_height="match_parent"
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:layout_marginRight="16dp"
-      
-       android:background="@drawable/hongbao5"
+       android:orientation="horizontal"
+       android:background="@drawable/img_coupons_right"
+       android:gravity="center_vertical"
        >
        <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0px"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="16dp"
             android:paddingTop="13dp"
             >
             <TextView 
                 android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ff2d2d2d"
-            android:textSize="18sp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
             android:text=""
+          
            />
              <TextView 
                  android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ff747474"
-            android:textSize="14sp"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
             android:text=""
+              android:visibility="gone"
            />
                  <TextView 
                   android:id="@+id/tv5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ff747474"
-            android:textSize="14sp"
+            android:textColor="#ff666666"
+            android:textSize="12sp"
             android:text=""
+            android:layout_marginTop="3dp"
            />
               <TextView 
                   android:id="@+id/tv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ff747474"
-            android:textSize="14sp"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
             android:text=""
+             android:layout_marginTop="3dp"
            />
              
        </LinearLayout>
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+          
+           >
        <ImageView 
           android:id="@+id/img"
           android:layout_width="16dp"
           android:layout_height="16dp"
-          android:src="@drawable/hongbao6"
-          android:layout_alignParentRight="true"
+          
+          android:background="@drawable/img_coupons_uncheck"
           android:layout_marginTop="16dp"
           android:layout_marginRight="16dp"
+          android:visibility="invisible"
            />
        <TextView 
             android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-             android:layout_alignParentRight="true"
+            
           android:layout_marginTop="16dp"
           android:layout_marginRight="16dp"
             android:textColor="#ffdd2238"
@@ -102,6 +122,7 @@
             android:visibility="gone"
            
            />
-   </RelativeLayout>
-   
+       </LinearLayout>
+   </LinearLayout>
+   </LinearLayout>
 </LinearLayout>

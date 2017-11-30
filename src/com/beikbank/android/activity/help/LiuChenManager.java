@@ -41,8 +41,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

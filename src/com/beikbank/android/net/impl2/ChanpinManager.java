@@ -40,21 +40,21 @@ public class ChanpinManager {
    }
    public void start()
    {
-	   new FundInfoManager(act, icb).start();
-	   
-	    UserParam up=new UserParam();
-		String id=BeikBankApplication.getUserid();
-		if(id==null)
-		{
-			id="";
-		}
-		up.memberID=id;
-		
-		ManagerParam mp=new ManagerParam();
-		mp.isShowDialog=false;
-		
-		TongYongManager tym=new TongYongManager(act, icb2,up,mp);
-		tym.start();
+//	   new FundInfoManager(act, icb).start();
+//	   
+//	    UserParam up=new UserParam();
+//		String id=BeikBankApplication.getUserid();
+//		if(id==null)
+//		{
+//			id="";
+//		}
+//		up.memberID=id;
+//		
+//		ManagerParam mp=new ManagerParam();
+//		mp.isShowDialog=false;
+//		
+//		TongYongManager tym=new TongYongManager(act, icb2,up,mp);
+//		tym.start();
    }
    private ICallBack icb=new ICallBack() {
 	

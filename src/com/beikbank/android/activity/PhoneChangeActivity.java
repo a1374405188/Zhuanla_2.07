@@ -44,8 +44,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //更换手机号
 public class PhoneChangeActivity extends BaseActivity1 implements OnClickListener{
@@ -59,7 +60,7 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
     ClearableEditText et1;
     ClearableEditText et2;
     private final int TOTALTIME=60*1000;
-	private final int COUNTDOWNINTERVAL=1000;//间隔1秒
+    	private final int COUNTDOWNINTERVAL=1000;//间隔1秒
     Button bu;
     Button bu_yanzhenma;
     private MyCount timer;
@@ -70,20 +71,24 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 		setContentView(R.layout.activity_phone_change);
 		StateBarColor.init(this,0xffffffff);
 		initView();
+		
+		
         
 	}
 
 
 	  
 	  private void initView()
-	    {
+	    {   
+		    ll_error=(LinearLayout) findViewById(R.id.ll_error);
+			tv_error=(TextView) findViewById(R.id.tv_error);
 	        ll1=(LinearLayout)findViewById(R.id.linear_left);
 	        ll1.setOnClickListener(this);
 	        title=(TextView)findViewById(R.id.titleTv);
 	        title.setText("绑定新号");
 	        et1=(ClearableEditText) findViewById(R.id.et1);
 	        et2=(ClearableEditText) findViewById(R.id.et2);
-	        et1.addTextChangedListener(new TextWatcherListener());
+	        et1.addTextChangedListener(new TextWatcherListener2());
 	        et2.addTextChangedListener(new TextWatcherListener());
 	        bu=(Button) findViewById(R.id.button_next);
 	        bu.setOnClickListener(this);
@@ -91,6 +96,33 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 	        bu_yanzhenma.setOnClickListener(this);
 	        
 	    }
+	  class TextWatcherListener2 implements TextWatcher {
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count,
+					int after) {
+
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before,
+					int count) {
+				String s1=et1.getText().toString();
+				
+				
+			
+				if (s1.length()==11) {
+					bu_yanzhenma.setEnabled(true);
+				} else {
+					bu.setEnabled(false);
+				}
+			}
+
+		}
 	  class TextWatcherListener implements TextWatcher {
 			@Override
 			public void afterTextChanged(Editable s) {
@@ -109,14 +141,7 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 				String s1=et1.getText().toString();
 				String s2=et2.getText().toString();
 				
-				if(s1.length()==11)
-				{
-					bu_yanzhenma.setEnabled(true);
-				}
-				else
-				{
-					bu_yanzhenma.setEnabled(false);
-				}
+			
 				if (s1.length()==11&&s2.length()>0) {
 					bu.setEnabled(true);
 				} else {
@@ -185,7 +210,12 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 			
 		}
 		private void check()
-		{
+		{   
+			if(hp==null)
+			{
+				showToast("请先发送验证码");
+				return;
+			}
 			String vertifycode=et2.getText().toString();
 
 			ICallBack icb_gyz=new ICallBack() {
@@ -211,6 +241,7 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 			};
 			checkYanZhenMaParam cyzm=new checkYanZhenMaParam();
 			cyzm.generate_seq=hp.request_seq;
+			cyzm.phone_number=et1.getText().toString();
 			cyzm.verification_code=vertifycode;
 			TongYongManager2 tym2=new TongYongManager2(this, icb_gyz,cyzm);
 			tym2.start();

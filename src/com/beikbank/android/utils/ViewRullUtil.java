@@ -14,8 +14,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.pullrefresh.PullToRefreshBase;
 import com.beikbank.android.pullrefresh.PullToRefreshBase.OnRefreshListener;
 import com.beikbank.android.pullrefresh.PullToRefreshListView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

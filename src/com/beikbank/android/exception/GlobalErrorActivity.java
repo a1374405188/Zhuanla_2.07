@@ -5,8 +5,9 @@ import java.util.TimerTask;
 
 import com.beikbank.android.activity.WelcomeActivity;
 import com.beikbank.android.utils.DialogManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.ActivityManager;

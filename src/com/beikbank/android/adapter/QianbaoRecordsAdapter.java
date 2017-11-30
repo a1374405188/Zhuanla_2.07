@@ -15,8 +15,9 @@ import com.beikbank.android.conmon.FinalIndex;
 import com.beikbank.android.data.Qianbao3;
 import com.beikbank.android.data.QianbaoRecord;
 import com.beikbank.android.data.TransactionInfo;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 钱包交易记录适配器
  * @author Administrator

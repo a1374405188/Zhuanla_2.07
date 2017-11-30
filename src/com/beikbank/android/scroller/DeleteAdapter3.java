@@ -8,8 +8,9 @@ import com.beikbank.android.dataparam.MessageReadParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.MessagedelManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -135,7 +136,7 @@ public class DeleteAdapter3 extends BaseAdapter {
 			public void onClick(View v) {
 				 MessageReadParam mrp=new MessageReadParam();
 		    	 mrp.id=list.get(position).id;
-		  		 mrp.userId=BeikBankApplication.getUserid();
+		  		// mrp.userId=BeikBankApplication.getUserid();
 				 MessagedelManager mdm=new MessagedelManager(context,new ICallBack() {
 					
 					@Override

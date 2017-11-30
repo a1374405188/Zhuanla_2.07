@@ -18,8 +18,9 @@ import com.beikbank.android.utils.BKDes;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
  
 import android.app.Activity;
 import android.app.ActivityManager;

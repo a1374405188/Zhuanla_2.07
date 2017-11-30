@@ -22,8 +22,9 @@ import com.beikbank.android.data.Hongbao;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
 import com.google.gson.JsonObject;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 已过期红包显示适配器
  * @author Administrator

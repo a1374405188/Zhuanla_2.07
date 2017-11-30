@@ -16,8 +16,9 @@ import com.beikbank.android.data2.getJiaoYiJiLv;
 import com.beikbank.android.data2.getShouZhiMinXi;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.widget2.PageView2.MyAdapter;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 
  * @author Administrator
@@ -101,7 +102,7 @@ public class ShouZhiMinXiAdapter2 extends MBaseAdapter
 			holder.shuomin.setVisibility(View.VISIBLE);
 			holder.shuomin.setText("钱包支付");
 		}
-		else if("13".equals(gjy.trade_type)||"15".equals(gjy.trade_type)||"16".equals(gjy.trade_type)||"17".equals(gjy.trade_type)||"18".equals(gjy.trade_type))
+		else if("19".equals(gjy.trade_type))
 		{
 			holder.name.setText("回款");
 			
@@ -124,7 +125,16 @@ public class ShouZhiMinXiAdapter2 extends MBaseAdapter
 			holder.yue.setText("处理中");
 		}
 		
-		
+//		if("13".equals(gjy.trade_type)||"15".equals(gjy.trade_type)||"17".equals(gjy.trade_type)||"16".equals(gjy.trade_type))
+//		{
+//			holder.yue.setTextColor(0xff999999);
+//			holder.yue.setText("成功");
+//		}
+//		if("18".equals(gjy.trade_type))
+//		{
+//			holder.yue.setText("失败");
+//			holder.yue.setTextColor(0xfff0594e);
+//		}
 		return convertView;
 	}
 	

@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 import com.beikbank.android.net.ICallBack;
 import com.tencent.mm.sdk.ConstantsUI.Contact;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * 

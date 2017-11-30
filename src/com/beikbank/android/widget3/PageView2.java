@@ -53,8 +53,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.hongbao.LicaiUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget2.SlideShowView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -199,8 +200,9 @@ public class PageView2 extends LinearLayout implements OnClickListener {
 		};
 		
 		GetChanPinParam pp=new GetChanPinParam();
-		
-    	TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
+		 ManagerParam mp=new ManagerParam();
+		 mp.isShowDialog=false;
+    	TongYongManager2 tym2=new TongYongManager2(act, icb,pp,mp);
     	tym2.start();
 		
 	}

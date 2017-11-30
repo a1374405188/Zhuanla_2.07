@@ -6,8 +6,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**活期订单详情
  * Created by Administrator on 2015/3/16.

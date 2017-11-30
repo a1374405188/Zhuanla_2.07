@@ -9,8 +9,9 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 public class SlidingActivityHelper {
 
 	private Activity mActivity;

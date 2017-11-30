@@ -1,8 +1,9 @@
 package com.beikbank.android.activity;
 
 import com.beikbank.android.utils.DialogManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Dialog;
 import android.content.Context;

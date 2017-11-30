@@ -57,12 +57,14 @@ import com.beikbank.android.dataparam2.getChanPinXiangQinParam;
 import com.beikbank.android.dataparam2.getXiangMuXinXiParam;
 import com.beikbank.android.dataparam2.getYiGouParam;
 import com.beikbank.android.exception.LogHandler;
+import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.HandlerBase;
 import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.ManagerParam;
 import com.beikbank.android.net.impl.CheckUpdateManager;
 import com.beikbank.android.net.impl.ConfigManager;
 import com.beikbank.android.net.impl.TongYongManager2;
+import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.DialogManager;
@@ -74,9 +76,11 @@ import com.beikbank.android.widget.MyViewPager;
 import com.beikbank.android.widget2.PageView2.MyAdapter;
 import com.beikbank.android.widget3.Pview1;
 import com.beikbank.android.widget3.Pview2;
+import com.beikbank.android.widget3.Pview2;
 import com.beikbank.android.widget3.Pview3;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 // 2.0产品详情
@@ -107,6 +111,7 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 		gcp=(GetChanPin) getIntent().getSerializableExtra("index1");
 		initView();
 		initData();
+		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
 	}
 	
 	public void initView(){
@@ -150,9 +155,9 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 		{
 			
 			TextView tv_tian=(TextView) findViewById(R.id.tv_tian);
+			tv_qixian.setVisibility(View.INVISIBLE);
+			tv_tian.setText("灵活存取");
 			
-			tv_qixian.setText("灵活存取");
-			tv_tian.setVisibility(View.GONE);
 		}
 		else
 		{
@@ -176,13 +181,17 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 		}
 		
 		
-		
+		android.widget.AbsListView.LayoutParams lp=new android.widget.AbsListView.LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT);
 		
 		mPager = (MyViewPager)findViewById(R.id.pager);
 		
 	    Pview1 p1=new Pview1(act);
+	   
+	   
 		p2=new Pview2(act);
 		p3=new Pview3(act);
+//		p2.setLayoutParams(lp);
+//		p3.setLayoutParams(lp);
 		p1.addData(gcp);
 		
     	pagerItemList.add(p1);
@@ -356,7 +365,7 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			@Override
 			public void onClick(View v) {
 			 setTop2(0);
-			 mPager.setCurrentItem(0,true);
+			 mPager.setCurrentItem(0);
 			}
 		});
 		
@@ -365,7 +374,7 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			@Override
 			public void onClick(View v) {
 				setTop2(1);
-				mPager.setCurrentItem(1,true);
+				mPager.setCurrentItem(1);
 			}
 		});
           ll_yigou.setOnClickListener(new OnClickListener() {
@@ -374,7 +383,7 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			public void onClick(View v) {
 				
 				setTop2(2);
-				mPager.setCurrentItem(2,true);
+				mPager.setCurrentItem(2);
 			}
 		});
 		
@@ -419,12 +428,15 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 			@Override
 			public void destroyItem(ViewGroup container, int position, Object object) {
 				// TODO Auto-generated method stub
-				container.removeView((View)object);
+				container.removeView(pagerItemList.get(position));
 			}
 
 			@Override
 			public Object instantiateItem(ViewGroup container, int position) {
-				container.addView(pagerItemList.get(position));
+				 
+	               //viewpger 两个页面循环滑动会出现崩溃问题 下面是解决方案 
+	              
+				  container.addView(pagerItemList.get(position));
 				return pagerItemList.get(position);
 			}
 

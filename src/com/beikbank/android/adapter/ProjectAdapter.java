@@ -12,8 +12,9 @@ import android.widget.TextView;
 
 import com.beikbank.android.data.ProjectInfo;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class ProjectAdapter extends BaseAdapter{
 

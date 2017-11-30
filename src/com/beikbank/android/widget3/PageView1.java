@@ -61,8 +61,9 @@ import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget2.SlideShowView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -452,7 +453,8 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 			}
 		};
     	getQvKuaiParam gqp=new getQvKuaiParam();
-    	TongYongManager2 tym2=new TongYongManager2(act, icb_gqp,gqp);
+    	
+    	TongYongManager2 tym2=new TongYongManager2(act, icb_gqp,gqp,mp);
     	tym2.start();
     	
     	
@@ -488,7 +490,7 @@ public class PageView1 extends LinearLayout implements OnClickListener {
     	//加载消息
     	XiaoXiIsParam xp=new XiaoXiIsParam();
     	xp.phone_number=BeikBankApplication.getPhoneNumber();
-    	 TongYongManager2 tym3=new TongYongManager2(act, icb_xiaoxi,xp);
+    	 TongYongManager2 tym3=new TongYongManager2(act, icb_xiaoxi,xp,mp);
     	 tym3.start();
 		}
     }
@@ -694,11 +696,6 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 	 */
 	public void setTuiJian(GetChanPin gcp)
 	{   
-		if(gcp==null)
-		{
-			return;
-		}
-		this.gcp=gcp;
 		TextView tv_name=(TextView) view.findViewById(R.id.tv_name);
 		TextView tv_nianhua=(TextView) view.findViewById(R.id.tv_nianhua);
 		TextView tv_tianshu=(TextView) view.findViewById(R.id.tv_tianshu);
@@ -707,6 +704,18 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 	    TextView tv_jiaxi=(TextView) view.findViewById(R.id.tv_jiaxi);	
 	    
 	    Button bu_goumai=(Button) view.findViewById(R.id.bu_goumai);
+		if(gcp==null)
+		{   
+			bu_goumai.setEnabled(false);
+			tv_tianshu.setText("--天");
+			tv_qigou.setText("--元");
+			tv_shengyu.setText("剩余可购0元");
+			tv_nianhua.setText("--");
+			tv_jiaxi.setText("--%");
+			return;
+		}
+		this.gcp=gcp;
+	
 	    if(gcp!=null)
 	    {
 	    	bu_goumai.setEnabled(true);
@@ -897,6 +906,10 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 			ls.startNext(act, 2,gcp);
 			break;
 		case R.id.ll_tuijian:
+			if(gcp==null)
+			{
+				return;
+			}
 			 intent=new Intent(act,ChanPinActivityV2.class);
 			 intent.putExtra("index1",gcp);
 			 act.startActivity(intent);

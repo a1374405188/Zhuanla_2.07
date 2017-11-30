@@ -36,8 +36,9 @@ import com.beikbank.android.net.impl.HelpCenterManager;
 import com.beikbank.android.net.impl.TongYongManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //帮助中心v2
 public class HelpCenterActivity2 extends BaseActivity implements OnClickListener{

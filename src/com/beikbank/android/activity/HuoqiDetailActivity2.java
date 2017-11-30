@@ -52,8 +52,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 活期详情 转让中
  * Created by Administrator on 2015/3/16.

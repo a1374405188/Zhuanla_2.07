@@ -15,6 +15,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -52,14 +53,17 @@ import com.beikbank.android.net.impl.SendCodeManager;
 import com.beikbank.android.net.impl.TongYongManager2;
 import com.beikbank.android.utils.AdvancedCountdownTimer;
 import com.beikbank.android.utils.BeikBankConstant;
+import com.beikbank.android.utils.HuanjingInfo;
 import com.beikbank.android.utils.SmsContent;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import com.umeng.message.UmengRegistrar;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //注册验证码输入
 public class RegisterCodeInputActivity extends BaseActivity1 implements OnClickListener{
@@ -248,16 +252,45 @@ ICallBack icb=new ICallBack() {
 				
 			}
 		};
-		
+		 HuanjingInfo hj=getHJ(act);
 		RegisterParam pp=new RegisterParam();
 		pp.download=SystemConfig.SOURCES_CODE;
-		pp.ip=getIPAddress(act);
+		pp.register_ip=getIPAddress(act);
 		pp.phone_id="";
 		pp.phone_number=phonenumber;
+	    pp.os_version=hj.osVersion;
+	    pp.ras_model=hj.rasModel;
+	    pp.ras_type=hj.rasType;
 		//pp.register_time=new Date().toString();
 		
 		TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
 		tym2.start();
+	}
+	public static HuanjingInfo getHJ(Activity act)
+	{
+		HuanjingInfo hj=new HuanjingInfo();
+		hj.osVersion=Build.VERSION.RELEASE+":"+Build.VERSION.SDK;
+		hj.softVersion=Utils.getVersion(act);
+		String s=UmengRegistrar.getRegistrationId(act);
+		String device_model = Build.MODEL;
+		if(device_model!=null)
+		{
+			hj.rasModel=device_model;
+		}
+		if(s!=null)
+		{
+			hj.umDeviceToken=s;
+		}
+		else
+		{
+			LogHandler.writeLogFromString("token","token is null");
+		}
+		//检查参数
+		if(hj.osVersion==null||hj.rasModel==null||hj.rasType==null||hj.softVersion==null||hj.umDeviceToken==null)
+		{
+			hj=new HuanjingInfo();
+		}
+		return hj;
 	}
    boolean isOnclick=false;
 	@Override
@@ -299,6 +332,7 @@ ICallBack icb=new ICallBack() {
 				checkYanZhenMaParam cyzm=new checkYanZhenMaParam();
 				cyzm.generate_seq=hp.request_seq;
 				cyzm.verification_code=vertifycode;
+				cyzm.phone_number=phonenumber;
 				TongYongManager2 tym2=new TongYongManager2(act, icb_gyz,cyzm);
 				tym2.start();
 				

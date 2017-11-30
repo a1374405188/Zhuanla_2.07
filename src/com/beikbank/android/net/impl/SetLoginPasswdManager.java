@@ -16,8 +16,9 @@ import com.beikbank.android.net.ICallBackHnadler;
 import com.beikbank.android.net.ICallBackNet;
 import com.beikbank.android.net.NetServicesFactory;
 import com.beikbank.android.utils.MD5;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

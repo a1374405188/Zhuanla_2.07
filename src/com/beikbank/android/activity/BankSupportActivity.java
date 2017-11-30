@@ -21,8 +21,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.BankListManager;
 import com.beikbank.android.net.impl.TongYongManager2;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //支持银行
 public class BankSupportActivity extends BaseActivity implements OnClickListener{

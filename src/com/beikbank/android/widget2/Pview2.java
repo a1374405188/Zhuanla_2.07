@@ -32,8 +32,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.PageUtil;
 import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.widget.MagicTextView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;

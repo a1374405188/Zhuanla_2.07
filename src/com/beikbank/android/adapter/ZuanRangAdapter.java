@@ -56,8 +56,9 @@ import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 
  * @author Administrator
@@ -121,48 +122,58 @@ public class ZuanRangAdapter extends BaseAdapter{
 			
 			convertView.setTag(holder);
 			
-			LinearLayout ll=(LinearLayout) convertView.findViewById(R.id.ll);
-			
-			ll.setOnClickListener(new OnClickListener() {
-					
-					@Override
-					public void onClick(View v) {
-						
-//						Intent intent=new Intent(context,DingqiDetailActivity.class);
-//						//intent.putExtra(BeikBankConstant.IS_FORGETTRANSACTIONPWD,true);
-//						//intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER,BeikBankApplication.getPhoneNumber());
-//						intent.putExtra("name",gdq.product_name);
-//						intent.putExtra("assets_id",gdq.assets_id);
-//						intent.putExtra("prod_id",gdq.prod_Id);
-//						context.startActivity(intent);
-						boolean b=map.get(position);
-						ImageView iv= (ImageView)v.findViewById(R.id.iv);
-						if(b)
-						{
-							map.put(position,false);
-							iv.setImageResource(R.drawable.img_futou_false);
-						}
-						else
-						{
-							map.put(position,true);
-							iv.setImageResource(R.drawable.img_futou_true);
-						}
-						
-						String money="0";
-						for(Integer i:map.keySet())
-						{
-							boolean b1=map.get(i);
-							if(b1)
-							{
-								money=NumberManager.getAddString(money,list.get(i).calAmount,4);
-							}
-						}
-						context.setMoney(money);
-					}
-				});
+	
 		}else{
 			holder=(Holder) convertView.getTag();
-		}	
+		}
+		
+		
+	   LinearLayout ll=(LinearLayout) convertView.findViewById(R.id.ll);
+		
+		ll.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					
+//					Intent intent=new Intent(context,DingqiDetailActivity.class);
+//					//intent.putExtra(BeikBankConstant.IS_FORGETTRANSACTIONPWD,true);
+//					//intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER,BeikBankApplication.getPhoneNumber());
+//					intent.putExtra("name",gdq.product_name);
+//					intent.putExtra("assets_id",gdq.assets_id);
+//					intent.putExtra("prod_id",gdq.prod_Id);
+//					context.startActivity(intent);
+					
+					boolean b=map.get(position);
+					ImageView iv= (ImageView)v.findViewById(R.id.iv);
+					if(b)
+					{
+						map.put(position,false);
+						iv.setImageResource(R.drawable.img_futou_false);
+					}
+					else
+					{
+						map.put(position,true);
+						iv.setImageResource(R.drawable.img_futou_true);
+					}
+					
+					String money="0";
+					for(Integer i:map.keySet())
+					{
+						boolean b1=map.get(i);
+						if(b1)
+						{
+							money=NumberManager.getAddString(money,list.get(i).calAmount,4);
+						}
+					}
+					context.setMoney(money);
+				}
+			});
+		
+		
+		
+		
+		
+		
 		holder.tv_zuori.setText(NumberManager.getGeshiHua(ghq.intrestYesterday,2));
 	    holder.tv_state.setText(ghq.status);
 	    holder.tv_dangqian.setText(NumberManager.getGeshiHua(ghq.intrestTotal,2));

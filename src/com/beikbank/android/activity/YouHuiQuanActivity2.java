@@ -32,8 +32,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**红包使用说明
  *copyright yuguohe

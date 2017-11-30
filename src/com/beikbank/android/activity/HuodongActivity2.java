@@ -4,8 +4,9 @@ import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
 import com.beikbank.android.webwiew.Wv;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 import android.annotation.SuppressLint;

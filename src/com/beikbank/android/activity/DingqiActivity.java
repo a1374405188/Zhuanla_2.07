@@ -6,8 +6,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 定期产品
  * Created by Administrator on 2015/3/16.

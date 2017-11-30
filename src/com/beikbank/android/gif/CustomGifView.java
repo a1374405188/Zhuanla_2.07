@@ -1,6 +1,6 @@
 package com.beikbank.android.gif;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
 
 import android.annotation.TargetApi;
 import android.content.Context;

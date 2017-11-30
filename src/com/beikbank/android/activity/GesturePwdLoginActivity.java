@@ -44,8 +44,9 @@ import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //手势密码错误五次，跳到登录
 public class GesturePwdLoginActivity extends BaseActivity1 implements OnClickListener{

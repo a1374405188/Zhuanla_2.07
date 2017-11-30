@@ -8,8 +8,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.beikbank.android.widget.CustomProgressBar;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * 这个类封装了下拉刷新的布局

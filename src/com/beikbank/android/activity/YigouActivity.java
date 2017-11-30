@@ -14,8 +14,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.TongYongManager;
 import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.os.Bundle;
 import android.util.Log;

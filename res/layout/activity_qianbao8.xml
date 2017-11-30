@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff"
+    android:background="@color/global_bg1"
     android:orientation="vertical"
 
     >
@@ -23,183 +23,120 @@
          >
         
    
-   
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-       
-        
-        >
-<!--昨日收益-->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/qianbao_150"
-           
-            android:orientation="vertical" >
-
-            <LinearLayout
-                android:id="@+id/ll1"
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:background="#fff9465b"
-                android:orientation="vertical"
-                android:layout_weight="176"
-                >
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0px"
-                    android:layout_weight="5"
-
-
-                    >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:paddingTop="20dp"
-                    >
-                <TextView
-                    style="@style/custom_textview3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableLeft="@drawable/qianbao"
-                    android:drawablePadding="@dimen/activity_textview_margin"
-                    android:gravity="left|center_vertical"
-                    android:text="我的钱包(元)" 
-                    android:textColor="#fff5bcc3"
-                    android:textSize="@dimen/global_text_size14"
-                    />
-                </LinearLayout>
-                    <ImageView
-                        android:id="@+id/iv_iv1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                         android:src="@drawable/page1_img1"
-                        android:layout_marginRight="24dp"
-                        android:paddingTop="16dp"
-                        android:visibility="gone"
-                        />
-                </RelativeLayout>
-                <TextView
-                    android:id="@+id/tv1"
-                    android:layout_width="match_parent"
-                    android:layout_height="0px"
-                    android:layout_weight="9"
-                    android:gravity="left"
-                    android:text="0.00"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
-
-                    android:layout_marginLeft="24dp"
-                    />
-
-            </LinearLayout>
-        </LinearLayout>
-<!--累计收益，一周收益-->
-          <LinearLayout 
-              android:layout_width="match_parent"
-              android:layout_height="@dimen/qianbao_75"
-              android:background="@color/red6"
-              android:paddingTop="@dimen/page1_17"
-              android:paddingBottom="@dimen/page1_17"
-             
-              >
-              <LinearLayout 
-                   android:id="@+id/ll_all"
-                   android:layout_width="0px"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   android:orientation="vertical"
-                  >
-                  <TextView
-                      android:text="投资回款(元)"
-                      android:layout_width="match_parent"
-                      android:layout_height="0px"
-                      android:layout_weight="1"
-                      android:textColor="#fff5bcc3"
-                      android:layout_marginLeft="24dp"
-                      android:gravity="left"
-                        android:textSize="@dimen/global_text_size14"
-                      />
-                  <TextView
-                      android:id="@+id/tv2"
-                      android:layout_width="match_parent"
-                      android:layout_height="0px"
-                      android:layout_weight="1"
-                      android:textColor="#ffffffff"
-                      android:text="0.00"
-                      android:textSize="@dimen/page1_20sp"
-                      android:layout_marginLeft="24dp"
-                      android:gravity="left"
-
-                      />
-              </LinearLayout>
-              <View 
-                  android:layout_width="1px"
-                  android:layout_height="match_parent"
-                  android:background="#fff9465b"
-                  />
-               <LinearLayout 
-                   android:id="@+id/ll_week"
-                   android:layout_width="0px"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                    android:orientation="vertical"
-                  >
-                   <TextView
-                      android:text="充值未投资（元）"
-                      android:layout_width="match_parent"
-                      android:layout_height="0px"
-                      android:layout_weight="1"
-                       android:textColor="#fff5bcc3"
-                       android:layout_marginLeft="24dp"
-                       android:gravity="left"
-                       android:textSize="@dimen/global_text_size14"
-                      />
-                  <TextView
-                      android:id="@+id/tv3"
-                      android:layout_width="match_parent"
-                      android:layout_height="0px"
-                      android:layout_weight="1"
-                      android:textColor="#ffffffff"
-                      android:text="0.00"
-                      android:textSize="@dimen/page1_20sp"
-                      android:layout_marginLeft="24dp"
-                      android:gravity="left"
-                      />
-              </LinearLayout>
-          </LinearLayout>
-
-<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp"
+             android:background="#ffffffff"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_marginTop="8dp"
             >
-           
-           
-           
-            <Button
-                android:id="@+id/bu2"
-                android:layout_width="0px"
-                 android:layout_weight="1"
-                android:background="@drawable/btn_selector_button2"
-                android:layout_height="@dimen/global_button_height"
-                android:layout_marginRight="24dp"
-                android:layout_marginLeft="24dp"
-                android:text="提现"
-                android:textColor="#ffdd2238"
-                android:textSize="@dimen/global_text_size19"
+            
+              <ImageView
+                  
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_wallet_gold"
+                  />
+            <TextView
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="钱包余额(元)"
+                 android:textColor="#ff999999"
+                android:textSize="14sp"
+                 android:layout_marginTop="16dp"
                 />
+              <TextView
+                  android:id="@+id/tv1"
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="0.00"
+                 android:textColor="#fffb5a5c"
+                android:textSize="40sp"
+                 android:layout_marginTop="16dp"
+                />
+        </LinearLayout>
+    
+               <LinearLayout
+             android:background="#ffffffff"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+            android:orientation="horizontal"
+            
+            >
+                 <LinearLayout
+             android:background="#ffffffff"
+             android:layout_width="0px"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+            android:orientation="vertical"
+             android:layout_marginBottom="5dp"
+            >
+                <TextView
+                  
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="投资回款(元)"
+                 android:textColor="#ff999999"
+                android:textSize="14sp"
+                
+                />
+                     <TextView
+                  android:id="@+id/tv2" 
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="0.00"
+                 android:textColor="#ff333333"
+                android:textSize="20sp"
+                 android:layout_marginTop="5dp"
+                />
+           </LinearLayout>
+                   
+                       <LinearLayout
+                android:background="#ffffffff"
+                  android:layout_width="0px"
+                 android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+               android:orientation="vertical"
+               android:layout_marginBottom="5dp"
+            
+            >
+                   <TextView
+                  
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="投资回款(元)"
+                 android:textColor="#ff999999"
+                android:textSize="14sp"
+                
+                />
+                     <TextView
+                  android:id="@+id/tv3"
+                 android:layout_width="wrap_content"
+                 
+                android:layout_height="wrap_content"
+                 android:text="0.00"
+                 android:textColor="#ff333333"
+                android:textSize="20sp"
+                 android:layout_marginTop="5dp"
+                />
+                   
+            </LinearLayout>
+           
+           </LinearLayout>
             <Button
                 android:id="@+id/bu1"
-                android:layout_width="0px"
-                 android:layout_weight="1"
-                android:background="@drawable/btn_selector_button"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_selector_button3"
                 android:layout_height="@dimen/global_button_height"
                 android:layout_marginRight="24dp"
                 android:layout_marginLeft="24dp"
@@ -207,107 +144,25 @@
                 android:textColor="#ffffffff"
                 android:textSize="@dimen/global_text_size19"
                 />
-        </LinearLayout>
-
-  <!-- 温馨提示 -->
-        <LinearLayout
-            android:id="@+id/ll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/global_left_space"
-                android:layout_marginRight="@dimen/global_right_space"
-                android:layout_marginTop="24dp"
-                android:drawableLeft="@drawable/ic_warmly_remind"
-                android:drawablePadding="@dimen/activity_small_margin"
-                android:gravity="bottom"
-                android:text="@string/warmly_remind"
-                android:textColor="@color/blue"
-                android:textSize="13sp" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_warm_line"
-                android:layout_marginTop="@dimen/activity_small_margin"
-                android:contentDescription="@null"/>
-
            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/global_left_space"
-                android:layout_marginRight="@dimen/global_right_space"
-                android:layout_marginTop="6dp"
-                android:gravity="center_vertical"
-                android:text="1、投资回款：投资到期或赎回后返回钱包的本金及收益"
-                android:textColor="@color/ziti5"
-                android:textSize="13sp" />
+       
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/global_left_space"
-                android:layout_marginRight="@dimen/global_right_space"
-                android:layout_marginTop="6dp"
-                android:gravity="center_vertical"
-                android:text="2、充值未投资：充值到钱包但未投资的资金余额。"
-                android:textColor="@color/ziti5"
-                android:textSize="13sp" />
-
-
-            <TextView
-                android:id="@+id/tv6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/global_left_space"
-                android:layout_marginRight="@dimen/global_right_space"
-                android:layout_marginTop="6dp"
-                android:gravity="center_vertical"
-                android:text="3，每月3次免费提现优惠，免费次数外2元/笔"
-                android:textColor="@color/ziti5"
-                android:textSize="13sp"
-                android:visibility="gone"
-                 />
-             <TextView
-                android:id="@+id/tv7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/global_left_space"
-                android:layout_marginRight="@dimen/global_right_space"
-                android:layout_marginTop="6dp"
-                android:gravity="center_vertical"
-                android:text="4，充值到钱包未使用资金不享受免费次数，提现收取3‰手续费，最低2元/笔（所有费用均为第三方支付收取）。"
-                android:textColor="@color/ziti5"
-                android:textSize="13sp" 
-                android:visibility="gone"
+       <Button
+                android:id="@+id/bu2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_selector_button2"
+                android:layout_height="@dimen/global_button_height"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="提现"
+                android:textColor="#fffb5a5c"
+                android:textSize="@dimen/global_text_size19"
                 />
-        </LinearLayout>
-
-         
-      
 
 
-    </LinearLayout>
-    
+
  </LinearLayout>
     </ScrollView>
-    <LinearLayout 
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-    
-    >
-<ImageView 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    
-    android:layout_gravity="bottom"
-    android:src="@drawable/qianbao2"
-    android:visibility="gone"
-    />
 
-   </LinearLayout>
 </LinearLayout>

@@ -9,8 +9,9 @@ import android.widget.TextView;
 import com.beikbank.android.data.Message;
 import com.beikbank.android.data2.XiaoXiGet;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

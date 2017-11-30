@@ -2,7 +2,9 @@ package com.beikbank.android.adapter;
 
 import java.util.ArrayList;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
+
+
 
 import android.content.Context;
 import android.view.LayoutInflater;

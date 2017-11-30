@@ -36,8 +36,9 @@ import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //登录页面
 public class LoginRegActivity extends BaseActivity1 implements OnClickListener{

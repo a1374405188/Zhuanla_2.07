@@ -23,8 +23,9 @@ import com.beikbank.android.utils.GifHelper.GifFrame;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.widget.PlayGifTask;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //新手势密码引导  更新gif动画加载方式
 public class GesturePwdGuideActivity2 extends BaseActivity implements OnClickListener{

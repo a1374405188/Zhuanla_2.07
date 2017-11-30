@@ -27,8 +27,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.LockPatternView;
 import com.beikbank.android.widget.LockPatternView.Cell;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //手势解锁
 public class GesturePwdUnlockActivity extends BaseActivity implements OnClickListener{

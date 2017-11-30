@@ -13,8 +13,9 @@ import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.ActionListManager;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 import android.app.Activity;

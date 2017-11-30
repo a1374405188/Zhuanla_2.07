@@ -23,8 +23,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
 import com.beikbank.android.widget2.SlideShowView2;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //引导程序
 public class YingdaoActivity extends BaseActivity1 implements OnClickListener{

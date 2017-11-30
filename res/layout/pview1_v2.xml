@@ -4,20 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffffffff"
     android:orientation="vertical" >
-    <ScrollView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-        
-        >
-        <LinearLayout
-             android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-            
-             >
-            
-           
-     <View
+      <View
                  
                    android:layout_width="match_parent"
                     android:layout_height="1px"
@@ -33,19 +20,33 @@
     
              android:background="@color/global_bg3"
          /> 
+    <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        
+        >
+        <LinearLayout
+             android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+            
+             >
+            
+           
+
      
  <!--  -->   
     <LinearLayout
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="14dp"
+             android:layout_height="14dp"
              android:src="@drawable/img_v2_chanpinbianhao"
             />
         <TextView
@@ -80,16 +81,16 @@
      <!--  -->   
     <LinearLayout
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
-             android:src="@drawable/img_v2_qigou"
+             android:layout_width="17dp"
+             android:layout_height="17dp"
+             android:src="@drawable/img_v2_qigoujine"
             />
         <TextView
              android:layout_width="wrap_content"
@@ -122,33 +123,37 @@
     <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+     
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:minHeight="45dp"
+        android:minHeight="50dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_fene"
+                android:layout_marginTop="10dp"
             />
         <TextView
              android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:gravity="center"
+             android:layout_height="match_parent"
+          
              android:text="份额更新"
              android:layout_marginLeft="16dp"
              android:textColor="#ff333333"
+             android:layout_marginTop="10dp"
             />
         <TextView
              android:id="@+id/tv_gengxin"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:gravity="center_vertical|left"
+           
              android:text=""
              android:layout_marginLeft="16dp"
                android:textColor="#ff666666"
+                  android:layout_marginTop="10dp"
+                  android:paddingBottom="10dp"
                
             />
      </LinearLayout>  
@@ -164,15 +169,15 @@
       <!--  -->   
     <LinearLayout
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_qixi"
             />
         <TextView
@@ -213,13 +218,13 @@
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:minHeight="45dp"
+        android:minHeight="50dp"
          android:visibility="gone"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_goumaixiane"
             />
         <TextView
@@ -256,23 +261,25 @@
         android:id="@+id/ll_fankuan"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+       
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:minHeight="45dp"
-       
+        android:minHeight="50dp"
+       android:orientation="horizontal"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_goumaixiane"
+                android:layout_marginTop="10dp"
             />
         <TextView
              android:id="@+id/tv_fankuan"
              android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:gravity="center"
+             android:layout_height="match_parent"
+             
+             android:layout_marginTop="10dp"
              android:text="还款说明"
              android:layout_marginLeft="16dp"
              android:textColor="#ff333333"
@@ -281,12 +288,11 @@
             android:id="@+id/tv_fankuan_text"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
              android:text="到期后自动发起转让，转让成功当日本息一次性回款至钱包"
              android:layout_marginLeft="16dp"
                android:textColor="#ff333333"
-               android:paddingTop="10dp"
-               android:paddingBottom="10dp"
+              android:paddingBottom="10dp"
                
             />
      </LinearLayout>    
@@ -313,32 +319,34 @@
         android:id="@+id/ll_zhuanrangshuoming"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-        android:gravity="center_vertical"
+      
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:minHeight="45dp"
+        android:minHeight="50dp"
          android:visibility="gone"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_zhuanrang_v2"
+                android:layout_marginTop="10dp"
             />
         <TextView
            
              android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:gravity="center"
-             android:text="转让说明"
+             android:layout_height="match_parent"
+            android:text="转让说明"
+         
              android:layout_marginLeft="16dp"
              android:textColor="#ff333333"
+              android:layout_marginTop="10dp"
             />
         <TextView
-      
+          
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:gravity="center_vertical"
+           
              android:text="随时可转让，发起转让后进行债权撮合，撮合成功后次日回款至钱包，撮合期间正常计息；一般发起转让后2至3天到账。"
              android:layout_marginLeft="16dp"
                android:textColor="#ff333333"
@@ -362,7 +370,7 @@
 <!--  -->   
     <LinearLayout
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
@@ -370,8 +378,8 @@
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_fengxianfensan"
             />
         <TextView
@@ -406,15 +414,15 @@
     <LinearLayout
         android:id="@+id/ll_chanpinjiesao"
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_chanpinjieshao"
             />
         <TextView
@@ -453,15 +461,15 @@
     <LinearLayout
          android:id="@+id/ll_fenxiantishi"
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_fengxiantishi"
             />
         <TextView
@@ -508,15 +516,15 @@
     <LinearLayout
          android:id="@+id/ll_fenxianfensan"
          android:layout_width="match_parent"
-         android:layout_height="45dp"
+         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         >
         
         <ImageView
-             android:layout_width="20dp"
-             android:layout_height="20dp"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
              android:src="@drawable/img_v2_fengxianfensan"
             />
         <TextView

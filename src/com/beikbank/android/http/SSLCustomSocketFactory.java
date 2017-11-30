@@ -24,8 +24,9 @@ import org.apache.http.conn.ssl.SSLSocketFactory;
 
 import com.beikbank.android.activity.HomeActivity3;
 import com.beikbank.android.fragment.BeikBankApplication;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.content.Context;
 import android.util.Log;

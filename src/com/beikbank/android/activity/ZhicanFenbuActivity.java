@@ -40,8 +40,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget3.ZhiCanView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //资产分布
 public class ZhicanFenbuActivity extends BaseActivity1 implements OnClickListener{

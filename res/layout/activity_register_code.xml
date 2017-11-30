@@ -63,7 +63,7 @@
                 android:background="@null"
                 android:hint="@string/input_identifying_code"
                 android:inputType="number"
-                android:maxLength="6"
+                android:maxLength="8"
                 android:textColor="@color/ziti6"
                 android:textColorHint="@color/ziti7"
                 android:textSize="17sp" />

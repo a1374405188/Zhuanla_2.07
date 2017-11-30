@@ -29,8 +29,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import com.beikbank.android.activity.HomeActivity3;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.fragment.BeikBankApplication;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.content.Context;
 import android.util.Log;

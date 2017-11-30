@@ -61,6 +61,10 @@ public String     term ;
  */
 public String     status ;
 /**
+ * 是否是新手标
+ */
+public String     is_new_user_mark ;
+/**
  * 本金+当前收益
  */
 public String     total_payable ;

@@ -28,8 +28,9 @@ import com.beikbank.android.net.NetServicesFactory;
 import com.beikbank.android.net.impl.HelpCenterManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //帮助中心
 public class HelpCenterActivity extends BaseActivity implements OnClickListener{

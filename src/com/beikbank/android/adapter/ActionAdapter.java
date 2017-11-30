@@ -21,8 +21,9 @@ import com.beikbank.android.data.Actionlist;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.media.AsynImageLoader;
 import com.beikbank.android.utils.DensityUtil;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

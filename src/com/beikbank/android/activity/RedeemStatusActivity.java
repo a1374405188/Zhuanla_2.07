@@ -21,8 +21,9 @@ import com.beikbank.android.data.TransactionInfo;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //取现状态
 public class RedeemStatusActivity extends BaseActivity implements OnClickListener{

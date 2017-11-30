@@ -19,13 +19,13 @@
     <LinearLayout
          android:id="@+id/ll_top"
          android:layout_width="match_parent"
-         android:layout_height="300dp"
+         android:layout_height="240dp"
           android:orientation="vertical"
           android:background="@drawable/img_zhican_beijin"
         >
          <LinearLayout
          android:layout_width="match_parent"
-         android:layout_height="60dp"
+         android:layout_height="50dp"
          android:layout_marginLeft="16dp"
          android:layout_marginRight="16dp"
          android:gravity="center_vertical"
@@ -108,7 +108,8 @@
           <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffdddd"
+           android:textColor="#ffffffff"
+                 android:textSize="16sp"
             android:text="昨日收益(元)"
             android:gravity="center"
           
@@ -131,8 +132,9 @@
             android:text="0.00"
             android:gravity="center"
             android:textColor="#ffffffff"
-            android:textSize="50sp"
-            android:layout_marginBottom="20dp"
+            android:textSize="40sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
             /> 
              </LinearLayout>
           </RelativeLayout>
@@ -142,7 +144,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="15dp"
            >
            <TextView
                  android:layout_width="wrap_content"
@@ -159,6 +161,7 @@
                   android:textColor="#ffffffff"
                  android:textSize="20sp"
                  android:text="0.00"
+                 android:layout_marginTop="5dp"
                />
        </LinearLayout>
     </LinearLayout>
@@ -214,10 +217,10 @@
             android:text="提现"
             android:background="@drawable/bg_pageview2_1"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
            
             />
             <TextView
@@ -230,10 +233,10 @@
            
             android:text="充值"
             android:background="@drawable/bg_pageview2_2"
-             android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+             android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
             />
          </LinearLayout>  
     </LinearLayout>
@@ -259,7 +262,7 @@
           
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:textColor="@drawable/text_color_select2"
+           android:textColor="#ff666666"
             android:textSize="13sp"
            
             android:text="我的理财"
@@ -466,18 +469,19 @@
             android:text="我的红包"
             android:layout_marginLeft="10dp"
             />
-          
+        
             <TextView
                 android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+           android:layout_weight="1"
             android:gravity="center_vertical|right"
             android:textColor="#ffb0b0b0"
             android:textSize="13sp"
             android:text="0张可用"
             android:layout_marginLeft="10dp"
             />
+       
              <ImageView
           android:layout_width="15dp"
           android:layout_height="15dp"

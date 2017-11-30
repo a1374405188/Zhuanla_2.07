@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+import com.beikbank.android.activity.help.NoneData;
 import com.beikbank.android.adapter.TransactionRecordsAdapter;
 import com.beikbank.android.dao.TableDaoSimple;
 import com.beikbank.android.data.Message;
@@ -48,8 +49,9 @@ import com.beikbank.android.scroller.ScrollListviewDelete.ItemClickListener;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -143,7 +145,7 @@ public class MessageActivity  extends BaseActivity1 implements OnClickListener
     LinearLayout ll2;
     
     
-    
+    boolean is_message=false;
     
     /**
      * 上啦控件
@@ -162,7 +164,7 @@ public class MessageActivity  extends BaseActivity1 implements OnClickListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.message_activity);
 		StateBarColor.init(this,0xffffffff);
-		userid=BeikBankApplication.getUserid();
+		userid=BeikBankApplication.getUserCode();
 		initView();
 		//initData();
 		
@@ -425,6 +427,17 @@ public class MessageActivity  extends BaseActivity1 implements OnClickListener
 			 
 			
 		}
+		if(list==null||list.size()==0)
+		{   
+			if(is_message==false)
+			{
+			 NoneData.setView(act,ll_pull,12);
+			}
+		}
+		else
+		{
+			is_message=true;
+		}
 	}
 };
 ICallBack icb_down2=new ICallBack() {
@@ -441,6 +454,17 @@ ICallBack icb_down2=new ICallBack() {
 			 vpu2.doDownCompelete(list);
 			 
 			
+		}
+		if(list==null||list.size()==0)
+		{   
+			if(is_message==false)
+			{
+			 NoneData.setView(act,ll_pull,12);
+			}
+		}
+		else
+		{
+			is_message=true;
 		}
 	}
 };
@@ -491,13 +515,26 @@ ICallBack icb_down2=new ICallBack() {
 			
 			@Override
 			public void back(Object obj) {
+				if(obj!=null)
+				{
 				 XiaoXiGet_data xd=(XiaoXiGet_data) obj;
 				 List list1=xd.body.list;
 				
 				 list=list1;
 				 vpu.doUpCompelete(list);
 				 
-				
+				}
+				if(list==null||list.size()==0)
+				{   
+					if(is_message==false)
+					{
+					 NoneData.setView(act,ll_pull,12);
+					}
+				}
+				else
+				{
+					is_message=true;
+				}
 				
 			}
 		};
@@ -505,13 +542,26 @@ ICallBack icb_down2=new ICallBack() {
 				
 				@Override
 				public void back(Object obj) {
+					if(obj!=null)
+					{
 					 XiaoXiGet_data xd=(XiaoXiGet_data) obj;
 					 List list1=xd.body.list;
 					
 					 list=list1;
 					 vpu2.doUpCompelete(list);
 					 
-					
+					}
+					if(list==null||list.size()==0)
+					{   
+						if(is_message==false)
+						{
+						 NoneData.setView(act,ll_pull,12);
+						}
+					}
+					else
+					{
+						is_message=true;
+					}
 					
 				}
 			};

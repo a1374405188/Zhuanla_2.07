@@ -32,8 +32,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //验证身份信息
 public class YanZhenShengFenActivity extends BaseActivity1 implements OnClickListener{
@@ -63,7 +64,9 @@ public class YanZhenShengFenActivity extends BaseActivity1 implements OnClickLis
 
 	  
 	  private void initView()
-	    {
+	    {   
+		   ll_error=(LinearLayout) findViewById(R.id.ll_error);
+	    	tv_error=(TextView) findViewById(R.id.tv_error);
 	        ll1=(LinearLayout)findViewById(R.id.linear_left);
 	        ll1.setOnClickListener(this);
 	        title=(TextView)findViewById(R.id.titleTv);

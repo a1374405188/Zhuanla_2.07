@@ -32,8 +32,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils.ViewRullUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //系统公告
 public class XiTongGGActivity extends BaseActivity1 implements OnClickListener{

@@ -62,8 +62,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //定期理财
 
@@ -149,7 +150,7 @@ public class DingqiLicaiActivity extends BaseActivity1 implements OnClickListene
 					addView(ll_parent,gd.body.productOverviews);
 					
 				}
-				if(gd==null)
+				if(gd==null||gd.body.productOverviews.size()==0)
 				{
 					NoneData.setView(act,ll_parent,1);
 				}
@@ -253,7 +254,10 @@ public class DingqiLicaiActivity extends BaseActivity1 implements OnClickListene
     		});
     	    
     		  double d2=Double.parseDouble(gdq.remain_return_day);
-			   if(d2<=1)
+			
+    		  
+    		  
+    		  if(d2<=1)
 			   {   
 				   if(d2==0)
 				   {
@@ -285,6 +289,19 @@ public class DingqiLicaiActivity extends BaseActivity1 implements OnClickListene
 			   {
 				   tv_daojishi.setText(sb2);
 			   }
+    		  
+    		  if("0".equals(gdq.is_new_user_mark))
+			  {
+				  iv.setOnClickListener(new OnClickListener() {
+		    			
+		    			@Override
+		    			public void onClick(View v) {
+		    				Toast.makeText(act, "新手专享产品不支持到期复投", Toast.LENGTH_LONG).show();
+		    				
+		    			}
+		    		});
+				 
+			  }
     	    ll_parent.addView(convertView);
     		
 		}

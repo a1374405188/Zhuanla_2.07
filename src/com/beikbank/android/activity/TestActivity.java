@@ -7,8 +7,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.pullrefresh.PullToRefreshBase;
 import com.beikbank.android.pullrefresh.PullToRefreshScrollView;
 import com.beikbank.android.utils.DialogManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.graphics.Bitmap;

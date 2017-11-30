@@ -17,6 +17,7 @@ import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
 
 import com.beikbank.android.activity.BaseActivity;
+import com.beikbank.android.activity.WelcomeActivity;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.dao.TableDaoSimple;
 import com.beikbank.android.dao.UserInfoDao;
@@ -237,6 +238,10 @@ public class BeikBankApplication extends Application{
     	boolean do_success=BeikBankApplication.mSharedPref.getSharePrefBoolean(BeikBankConstant.DO_SUCCESS,false);
         return do_success;
     }
+    /**
+     * 1.0版本用户id现在不用了
+     * @return
+     */
 	public static String getUserid()
 	{  
 		user_code=getSharePref(BeikBankConstant.user_code);
@@ -346,6 +351,11 @@ public class BeikBankApplication extends Application{
     		staticHeight=DensityUtil.getStatusHeight(act);
     	}
     	return staticHeight;
+    }
+    public static String getVersion(Context con)
+    {   
+    	String version=Utils.getVersion(con);
+    	return "BETA_V"+version;
     }
     /**
      * 得到屏幕高度

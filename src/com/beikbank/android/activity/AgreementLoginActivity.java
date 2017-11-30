@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //用户使用协议
 public class AgreementLoginActivity extends BaseActivity implements OnClickListener{

@@ -15,8 +15,9 @@ import android.widget.TextView;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //购买协议
 public class AgreementPurchaseActivity extends BaseActivity implements OnClickListener{

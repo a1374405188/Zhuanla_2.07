@@ -43,8 +43,9 @@ import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.NetDataManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 //银行卡管理
@@ -355,14 +356,14 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();
-		if("1".equals(is_bank))
-		{
+//		if("1".equals(is_bank))
+//		{
 			
 		
 		initData();
 		initView();
 		init2();
-		}
+//		}
 	}
 	@Override
 	public void onClick(View v) {
