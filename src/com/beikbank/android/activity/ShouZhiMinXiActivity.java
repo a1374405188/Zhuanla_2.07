@@ -120,6 +120,11 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 			 View view=findViewById(R.id.v_qixian);
 			 rl.setVisibility(View.GONE);
 			 view.setVisibility(View.GONE);
+			 TextView beizhu=(TextView) findViewById(R.id.beizu);
+			 if(gdd.error_msg!=null)
+			 {
+			    beizhu.setText(gdd.error_msg);
+			 }
 		 }
 		 
 		 if("5".equals(gdd.order_type))
@@ -217,6 +222,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 			 LinearLayout ll=(LinearLayout) findViewById(R.id.ll_beizhu);
 			 rl.setVisibility(View.VISIBLE);
 			 ll.setVisibility(View.VISIBLE);
+			 
 		 }
 		 
 		 

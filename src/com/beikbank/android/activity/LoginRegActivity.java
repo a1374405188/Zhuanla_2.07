@@ -173,6 +173,7 @@ public class LoginRegActivity extends BaseActivity1 implements OnClickListener{
 		if(obj!=null)
 		{
 			UserCheck_data ud=(UserCheck_data) obj;
+			
 			if("9998".equals(ud.header.re_code))
 			{
 				Intent intent=new Intent(LoginRegActivity.this,LoginPwdInputActivity.class);

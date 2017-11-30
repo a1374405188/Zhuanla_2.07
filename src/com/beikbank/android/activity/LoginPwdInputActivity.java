@@ -166,7 +166,9 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 			   LoginQian_data ld=(LoginQian_data) obj;
 			   LoginQian2 lq2=ld.body;
 			   lq=lq2.data.get(0);
-			 
+			   BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,phonenumber);
+				  BeikBankApplication.setSharePref(BeikBankConstant.user_code,lq.user_code);
+				  BeikBankApplication.setSharePref(BeikBankConstant.user_type,lq.user_type);
 		   }
 		}
 	};
@@ -181,9 +183,7 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 				 if("0000".equals(ld.header.re_code))
 				 {
 				  BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.DO_SUCCESS,true);
-				  BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,phonenumber);
-				  BeikBankApplication.setSharePref(BeikBankConstant.user_code,lq.user_code);
-				  BeikBankApplication.setSharePref(BeikBankConstant.user_type,lq.user_type);
+				
 				  
 				  
 					int intflag=BeikBankApplication.mSharedPref.getSharePrefInteger(BeikBankConstant.HOME_TYPE);

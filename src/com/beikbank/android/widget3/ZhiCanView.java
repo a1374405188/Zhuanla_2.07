@@ -123,6 +123,10 @@ public class ZhiCanView extends View{
 	 public void init2(Activity act,ArrayList<Integer> list0)
 	 {   
 		
+		 if(list0==null||list0.size()==0)
+		 {
+			 return;
+		 }
 //		 
 //		 WindowManager wm = act.getWindowManager();
 //	     width = wm.getDefaultDisplay().getWidth();
@@ -147,7 +151,7 @@ public class ZhiCanView extends View{
 	     list=new ArrayList<ZhiCanView.MyPaint>();
 	     MyPaint mp=null;
 	     //最后一个有数据的
-	     MyPaint mp2=null;
+	     MyPaint mp2=new MyPaint();
 	    
 	     int start=0;
 	     for(int i=0;i<list0.size();i++)
@@ -160,7 +164,7 @@ public class ZhiCanView extends View{
 	    	 if(i==0)
 	    	 {
 	    		 
-	  	          p.setColor(0xfff9803e);
+	  	          p.setColor(0xff69c5ff);
 	  	        
 	    	 }
 	    	 else if(i==1)
@@ -173,7 +177,7 @@ public class ZhiCanView extends View{
 	    	 }
 	    	 else if(i==3)
 	    	 {
-	    		 p.setColor(0xff69c5ff);
+	    		 p.setColor(0xff5590fc);
 	    	 }
 	    	 else if(i==4)
 	    	 {
@@ -215,8 +219,20 @@ public class ZhiCanView extends View{
 	    	 start+=mp.size;
 	    	 list.add(mp);
 	     }
+	    
 	     mp2.size+=360-start;
-	     
+	     if(start==0)
+	     {  Paint p=new Paint();
+    	   p= new Paint(Paint.ANTI_ALIAS_FLAG);
+           p.setStyle(Paint.Style.STROKE);
+           p.setStrokeWidth(mBorderWidth);
+           p.setColor(0xff69c5ff);
+	    	 mp=new MyPaint();
+	    	 mp.paint=p;
+	    	 mp.start=start;
+	    	 mp.size=360;
+	    	 list.add(mp);
+	     }
 	     
 	     invalidate();
 	     

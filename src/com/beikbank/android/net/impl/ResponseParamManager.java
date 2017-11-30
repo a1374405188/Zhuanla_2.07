@@ -103,6 +103,10 @@ public class ResponseParamManager {
 			   }
 			   else
 			   {   
+				   if(mfield.isSynthetic())
+				   {
+					   continue;
+				   }
 				   Object data_json=jo.getString(mfield.getName());
 				   if(!data_json.equals("null")&&!"".equals(data_json))
 				   {
