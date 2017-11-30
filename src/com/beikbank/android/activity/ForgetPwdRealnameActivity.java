@@ -17,6 +17,7 @@ import android.view.View.OnFocusChangeListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import cn.sharesdk.framework.authorize.a;
 
@@ -195,6 +196,7 @@ public class ForgetPwdRealnameActivity extends BaseActivity1 implements OnClickL
 							intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, phonenumber);
 							startActivity(intent);
 						}
+						Toast.makeText(ForgetPwdRealnameActivity.this,"重置密码成功",Toast.LENGTH_LONG).show();
 						finish();
 						
 					}

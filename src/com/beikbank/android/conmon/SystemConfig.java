@@ -11,7 +11,7 @@ public class SystemConfig {
 	/**
 	 * 1公共云  测试2 金融云 内测3存管
 	 */
-    public static int index=1;
+    public static int index=3;
     public static String huodong_url;
     public static String base_url = "http://114.55.5.66";
     static

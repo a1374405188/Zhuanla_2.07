@@ -38,6 +38,10 @@ public class RequestParamManager {
 			mfield.setAccessible(true);
 			Object obj1=mfield.get(obj);
 			Class<?> cla=mfield.getType();
+			if(mfield.isSynthetic())
+			{
+				continue;
+			}
 			if(obj1==null)
 			{
 				 map.put(mfield.getName(),"");

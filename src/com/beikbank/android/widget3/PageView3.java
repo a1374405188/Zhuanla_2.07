@@ -877,7 +877,7 @@ public void onClick(View v) {
     	intent=new Intent(act,ZhicanFenbuActivity.class);
     	
     	
-    	if(gd!=null&&gqb!=null)
+    	if(gd!=null&&gqb!=null&&g2d!=null)
     	{    
     		 ArrayList<GetUserZhiChan2> list0=g2d.body;
     		 ArrayList<GetUserZhiChan2> list1=new ArrayList<GetUserZhiChan2>();
