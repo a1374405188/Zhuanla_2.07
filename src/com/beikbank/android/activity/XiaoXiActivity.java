@@ -140,7 +140,7 @@ package com.beikbank.android.activity;
 //			{
 //				list_fuwu.add(xi);
 //			}
-//		}
+//		} //test
 //	}
 //	/**
 //	 * 更新view
