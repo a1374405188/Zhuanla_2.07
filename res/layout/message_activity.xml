@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="@color/global_bg3"
+    >
    <RelativeLayout 
     android:layout_width="match_parent"
     android:layout_height="44dp"
@@ -93,7 +95,7 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent" 
        android:orientation="vertical"
-       android:background="#ffffffff"
+      android:gravity="center"
       >
      <!--     <com.beikbank.android.scroller.ScrollListviewDelete
         android:id="@android:id/list"

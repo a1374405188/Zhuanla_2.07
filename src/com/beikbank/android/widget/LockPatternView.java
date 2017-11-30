@@ -24,8 +24,9 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
 import com.beikbank.android.utils.LockPatternUtils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * Displays and detects the user's unlock attempt, which is a drag of a finger

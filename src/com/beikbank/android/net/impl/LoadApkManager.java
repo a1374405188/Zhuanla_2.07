@@ -23,8 +23,9 @@ import com.beikbank.android.net.ErrorCodeInfo;
 import com.beikbank.android.net.HandlerBase;
 import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

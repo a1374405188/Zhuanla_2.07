@@ -113,14 +113,14 @@
         
                 <!-- 购买金额-->
     <RelativeLayout
-       
+       android:id="@+id/rl_shouxu2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="@dimen/global_left_space"
         android:paddingRight="@dimen/global_right_space"
         android:background="#ffffffff"
         android:gravity="center_vertical"
-       
+       android:visibility="gone"
         >
         <TextView
          
@@ -205,6 +205,100 @@
        />
     </LinearLayout>  
     
+                    <!-- 购买金额-->
+    <RelativeLayout
+       android:id="@+id/rl_zhifu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/global_left_space"
+        android:paddingRight="@dimen/global_right_space"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="交易账户"
+            android:textSize="@dimen/dingdan32"
+            android:textColor="#ff333333"
+            android:gravity="center"
+            />
+        <TextView
+           android:id="@+id/tv_zhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0.00"
+            android:textSize="@dimen/dingdan32"
+             android:textColor="#ff666666"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+        <LinearLayout 
+         android:id="@+id/ll_zhifu"   
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:visibility="gone"
+        >
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5px"
+       android:background="@color/line2"
+       android:layout_marginLeft="16dp"
+       />
+    </LinearLayout>    
+        
+                        <!-- 购买金额-->
+    <RelativeLayout
+       android:id="@+id/rl_hongbao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/global_left_space"
+        android:paddingRight="@dimen/global_right_space"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="交易账户"
+            android:textSize="@dimen/dingdan32"
+            android:textColor="#ff333333"
+            android:gravity="center"
+            />
+        <TextView
+           android:id="@+id/tv_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0.00"
+            android:textSize="@dimen/dingdan32"
+             android:textColor="#ff666666"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+        <LinearLayout 
+         android:id="@+id/ll_hongbao"   
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:visibility="gone"
+        >
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5px"
+       android:background="@color/line2"
+       android:layout_marginLeft="16dp"
+       />
+    </LinearLayout>    
+        
         
         
         
@@ -318,7 +412,7 @@
         
                 <!-- 购买金额-->
     <RelativeLayout
-       
+        android:id="@+id/rl_yue"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="@dimen/global_left_space"
@@ -348,6 +442,7 @@
             />
     </RelativeLayout>
         <LinearLayout 
+              android:id="@+id/ll_yue"
          android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"

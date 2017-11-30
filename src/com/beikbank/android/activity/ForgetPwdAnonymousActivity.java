@@ -38,8 +38,9 @@ import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //没有实名认证的用户，忘记密码
 public class ForgetPwdAnonymousActivity extends BaseActivity1 implements OnClickListener{
@@ -190,6 +191,7 @@ public class ForgetPwdAnonymousActivity extends BaseActivity1 implements OnClick
 		checkYanZhenMaParam cyzm=new checkYanZhenMaParam();
 		cyzm.generate_seq=hp.request_seq;
 		cyzm.verification_code=vertifycode;
+		cyzm.phone_number=phonenumber;
 		TongYongManager2 tym2=new TongYongManager2(act, icb_gyz,cyzm);
 		tym2.start();
 	}

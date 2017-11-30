@@ -80,6 +80,10 @@ public class GetChanPin implements Serializable,Comparable
     */
    public String       purchase_amount;
    /**
+    * 份额更新时间
+    */
+   public String       next_update_time;
+   /**
     * 份额更新时间  长度为2的表示每天更新份额； 其它表示具体时间
     */
    public ArrayList<String>       share_update_time;

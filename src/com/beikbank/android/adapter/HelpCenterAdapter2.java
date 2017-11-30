@@ -15,8 +15,9 @@ import android.widget.TextView;
 
 import com.beikbank.android.data.HelpInfo;
 import com.beikbank.android.data.HelpInfo2;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 
  * @author Administrator

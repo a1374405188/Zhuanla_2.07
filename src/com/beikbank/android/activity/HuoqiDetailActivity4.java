@@ -53,8 +53,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 活期资产详情 
  * Created by Administrator on 2015/3/16.
@@ -181,7 +182,7 @@ public class HuoqiDetailActivity4 extends BaseActivity1 implements View.OnClickL
           break;
          case R.id.ll_fenxian:
         	 
-        	   String url=SystemConfig.huodong_url+"#!/fxfs/"+prod_id;
+        	   String url=SystemConfig.huodong_url+"#!/fxfs/"+assets_id;
         	   intent.setClass(act,HuodongActivity2.class);
         	    intent.putExtra("title","风险分散");
 				intent.putExtra("url",url);

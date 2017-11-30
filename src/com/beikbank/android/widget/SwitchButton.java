@@ -1,7 +1,7 @@
 
 package com.beikbank.android.widget;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
 
 import android.content.Context;
 import android.content.res.Resources;

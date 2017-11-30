@@ -28,8 +28,9 @@ import com.beikbank.android.widget.CustomToast;
 import com.beikbank.android.widget.LockPatternView;
 import com.beikbank.android.widget.LockPatternView.Cell;
 import com.beikbank.android.widget.LockPatternView.DisplayMode;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //创建手势密码
 public class GesturePwdCreateActivity extends BaseActivity implements OnClickListener{
@@ -340,7 +341,7 @@ public class GesturePwdCreateActivity extends BaseActivity implements OnClickLis
 				5);
 		//BeikBankApplication.getInstance().getLockPatternUtils().saveLockPattern(mChosenPattern);
 		String passwd=BeikBankApplication.getInstance().getLockPatternUtils().patternToString(mChosenPattern);
-		String id=BeikBankApplication.getUserid();
+		String id=BeikBankApplication.getUserCode();
 		BeikBankApplication.mSharedPref.putSharePrefString("passwd"+id,passwd);
 		
 		

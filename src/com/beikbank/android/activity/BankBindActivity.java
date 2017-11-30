@@ -56,8 +56,9 @@ import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //绑定银行卡
 public class BankBindActivity extends BaseActivity1 implements OnClickListener,OnFocusChangeListener{

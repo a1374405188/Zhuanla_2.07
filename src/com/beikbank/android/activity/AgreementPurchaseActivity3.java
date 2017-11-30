@@ -21,8 +21,9 @@ import com.beikbank.android.utils.NetDataManager2;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.joanzapata.pdfview.PDFView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //购买协议
 public class AgreementPurchaseActivity3 extends BaseActivity implements OnClickListener{

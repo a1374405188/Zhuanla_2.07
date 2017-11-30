@@ -27,7 +27,7 @@ public String  id_type;
 /**
  * 0身份证； 1驾驶证； 2军官证； 3士兵证； 4学生证； 5未知； 6组织机构代码证；
  */
-public String  verification_code="0";
+//public String  verification_code="0";
 /**
  * 0未婚； 1已婚； 2离异； 3丧偶； 4再婚； 5其它； 6未知
  */

@@ -10,7 +10,9 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
+
+
 
 import android.app.Activity;
 import android.content.Context;

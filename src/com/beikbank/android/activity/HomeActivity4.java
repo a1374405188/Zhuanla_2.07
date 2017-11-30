@@ -51,8 +51,9 @@ import com.beikbank.android.widget2.Pview2;
 import com.beikbank.android.widget3.PageView1;
 import com.beikbank.android.widget3.PageView2;
 import com.beikbank.android.widget3.PageView3;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 import android.annotation.SuppressLint;
@@ -210,7 +211,7 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 		    {
 			   Log.d("register_id", s);
 		    }
-		    String id=BeikBankApplication.getUserid();
+		    String id=BeikBankApplication.getUserCode();
 		    if(id==null)
 		    {
 		    	return;

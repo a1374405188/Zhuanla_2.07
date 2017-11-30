@@ -23,8 +23,9 @@ import com.beikbank.android.data.Remdom;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //取现完成界面
 public class RedeemFinishActivity extends BaseActivity implements OnClickListener{

@@ -44,8 +44,9 @@ import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * 
@@ -98,7 +99,7 @@ public class QueRenJiaoYiActivity2 extends BaseActivity1 implements
 		money = getIntent().getStringExtra(TypeUtil.jiaoyi_money);
 		cdd=(CreateDingDan) getIntent().getSerializableExtra("cdd");
 		initView();
-		// addData();
+		 addData();
 //		Qianbao2 q2 = (Qianbao2) getIntent().getSerializableExtra("index4");
 //		dingdan = q2.tradeNo;
 //		YanZhenMaHelp zh = new YanZhenMaHelp(act, tv_fasong, tv_time);

@@ -9,10 +9,12 @@ import com.beikbank.android.data2.getYiGou;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView.LayoutParams;
@@ -59,7 +61,7 @@ public class YigouAdapter extends MBaseAdapter{
 		if (convertView == null) 
 		{
 			LinearLayout l=new LinearLayout(act);
-			convertView=act.getLayoutInflater().inflate(R.layout.yigourenshu_item,l,false);
+			convertView=LayoutInflater.from(act).inflate(R.layout.yigourenshu_item,null);
 			holder = new Holder();
 			holder.name=(TextView) convertView.findViewById(R.id.name);
 			holder.money=(TextView) convertView.findViewById(R.id.money);

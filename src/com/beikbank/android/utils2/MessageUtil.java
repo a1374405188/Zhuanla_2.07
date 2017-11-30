@@ -36,7 +36,7 @@ public class MessageUtil
 	}
 	private void initData()
 	{   
-		String id=BeikBankApplication.getUserid();
+		String id=BeikBankApplication.getUserCode();
 		
 		TotalMoneyParam tlp=new TotalMoneyParam();
     	tlp.memberID=id;

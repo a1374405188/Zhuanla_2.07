@@ -78,7 +78,7 @@ public class GoumaiManager
 		 					 return;
 		 				 }
 					CheckBankParam cbp=new CheckBankParam();
-					cbp.memberID=BeikBankApplication.getUserid();
+					cbp.memberID=BeikBankApplication.getUserCode();
 					TongYongManager tym=new TongYongManager(act, icb3,cbp);
 					tym.start();
 					
@@ -222,7 +222,7 @@ public class GoumaiManager
  				 }
  				 
  				CheckBankParam cbp=new CheckBankParam();
-				cbp.memberID=BeikBankApplication.getUserid();
+				cbp.memberID=BeikBankApplication.getUserCode();
 				TongYongManager tym=new TongYongManager(act, icb7,cbp);
 				tym.start();
  			 }

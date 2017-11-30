@@ -22,8 +22,9 @@ import com.beikbank.android.utils.DataCheck;
 import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;

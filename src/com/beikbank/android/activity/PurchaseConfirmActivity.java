@@ -53,8 +53,9 @@ import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //购买确认
 public class PurchaseConfirmActivity extends BaseActivity1 implements

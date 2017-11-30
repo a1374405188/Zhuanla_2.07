@@ -8,8 +8,9 @@ import com.beikbank.android.data.UserRecord2;
 import com.beikbank.android.net.HandlerBase;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -33,7 +34,7 @@ public class UserRecordAdapteer extends MBaseAdapter
 	/**
 	 * 保留几位小数
 	 */
-	public int endCount=4;
+	public int endCount=2;
 	Activity act;
 	//List<UserRecord2> list;
 	/**

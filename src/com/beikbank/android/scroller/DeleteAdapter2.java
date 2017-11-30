@@ -3,8 +3,9 @@ package com.beikbank.android.scroller;
 import java.util.List;
 
 import com.beikbank.android.data.Message;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.content.Context;
 import android.media.Image;

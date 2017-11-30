@@ -25,8 +25,9 @@ import com.beikbank.android.net.NetServicesFactory;
 import com.beikbank.android.net.ThreadManager;
 import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * @author yuguohe

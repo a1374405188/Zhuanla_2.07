@@ -87,4 +87,8 @@ public interface Cancal {
     * 其他
     */
    String CODE_OTHER="999";
+   /**
+    * 其他2
+    */
+   String CODE_OTHER2="666";
 }

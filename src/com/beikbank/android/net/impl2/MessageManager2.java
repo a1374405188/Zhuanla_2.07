@@ -26,7 +26,7 @@ public class MessageManager2 {
    public void start()
    {    
 	   
-	   String id=BeikBankApplication.getUserid();
+	   String id=BeikBankApplication.getUserCode();
 	   if(id!=null)
    	{
    		MessageParam mp=new MessageParam();
@@ -76,7 +76,7 @@ public class MessageManager2 {
 		  
 		   
 		}
-		 String id=BeikBankApplication.getUserid();
+		 String id=BeikBankApplication.getUserCode();
 			if(isfinish==false&&id!=null)
 			{
 				isfinish=true;
@@ -120,7 +120,7 @@ public class MessageManager2 {
 		  
 		}
 		
-		 String id=BeikBankApplication.getUserid();
+		 String id=BeikBankApplication.getUserCode();
 		if(isfinish==false&&id!=null)
 		{
 			isfinish=true;

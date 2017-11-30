@@ -61,8 +61,9 @@ import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.SwitchButton;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 定期详细
  * Created by Administrator on 2015/3/16.
@@ -314,7 +315,18 @@ public class DingqiDetailActivity extends BaseActivity1 implements View.OnClickL
         	
         }
        
-		
+        if("0".equals(g.is_new_user_mark))
+		  {
+        	ll_futou.setOnClickListener(new OnClickListener() {
+	    			
+	    			@Override
+	    			public void onClick(View v) {
+	    				Toast.makeText(act, "新手专享产品不支持到期复投", Toast.LENGTH_LONG).show();
+	    				
+	    			}
+	    		});
+			 
+		  }
         
 	}
     private void init()
@@ -547,6 +559,7 @@ public class DingqiDetailActivity extends BaseActivity1 implements View.OnClickL
       {
       
       case R.id.ll_futou:
+    	
     	  Toast.makeText(act, "还款中及倒计时为1天时，不能改变复投状态", Toast.LENGTH_LONG).show();
        break;
          case R.id.linear_left:
@@ -555,7 +568,7 @@ public class DingqiDetailActivity extends BaseActivity1 implements View.OnClickL
        
          case R.id.rl_fenxian:
         	 
-      	   String url=SystemConfig.huodong_url+"#!/fxfs/"+prod_id;
+      	   String url=SystemConfig.huodong_url+"#!/fxfs/"+assets_id;
       	   intent.setClass(act,HuodongActivity2.class);
       	    intent.putExtra("title","风险分散");
 				intent.putExtra("url",url);

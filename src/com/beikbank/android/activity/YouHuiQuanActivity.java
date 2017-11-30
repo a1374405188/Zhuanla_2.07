@@ -28,17 +28,24 @@ import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.data.DingqiPI;
 import com.beikbank.android.data.Hongbao;
 import com.beikbank.android.data.Hongbao_data;
+import com.beikbank.android.data2.getAllYouHuiQuan;
+import com.beikbank.android.data2.getAllYouHuiQuan_data;
 import com.beikbank.android.dataparam.HongbaoParam;
+import com.beikbank.android.dataparam2.getAllYouhuiQuanParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.TongYongManager;
+import com.beikbank.android.net.impl.TongYongManager2;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
 import com.beikbank.android.utils.hongbao.HongbaoUtil2;
+import com.beikbank.android.utils.hongbao.HongbaoUtil2_v2;
+import com.beikbank.android.utils.hongbao.HongbaoUtil_v2;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.webwiew.WebWiewInface;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**红包明细
  *copyright yuguohe
@@ -71,11 +78,11 @@ public class YouHuiQuanActivity extends BaseActivity1 implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_youhuiquan);
+        setContentView(R.layout.activity_youhuiquan1);
         StateBarColor.init(this,0xffffffff);
         initView();
         act=this;
-        //initData();
+        initData();
     }
     private void initView()
     {
@@ -84,7 +91,7 @@ public class YouHuiQuanActivity extends BaseActivity1 implements View.OnClickLis
         left.setOnClickListener(this);
      //   lv=(ListView) findViewById(R.id.lv);
         titleTv = (TextView) findViewById(R.id.titleTv);
-        titleTv.setText("我的红包");
+        titleTv.setText("优惠券");
         tv1=(TextView) findViewById(R.id.tv1);
         tv2=(TextView) findViewById(R.id.tv2);
     	right=(TextView) findViewById(R.id.right);
@@ -100,17 +107,44 @@ public class YouHuiQuanActivity extends BaseActivity1 implements View.OnClickLis
         ll=(LinearLayout) findViewById(R.id.ll);
         ll_parent=(LinearLayout) findViewById(R.id.ll_parent);
         
-        sl.setVisibility(View.GONE);
-		rl.setVisibility(View.VISIBLE);
-		NoneData.setView(act, ll_parent,11);
+//        sl.setVisibility(View.GONE);
+//		rl.setVisibility(View.VISIBLE);
+		//NoneData.setView(act, ll_parent,11);
     }
 	private void initData()
 	{   
-		HongbaoParam hp=new HongbaoParam();
-		hp.userId=BeikBankApplication.getUserid();
-		//hp.userId="59";
-		TongYongManager tym=new TongYongManager(this, icb,hp);
+//		HongbaoParam hp=new HongbaoParam();
+//		hp.userId=BeikBankApplication.getUserid();
+//		//hp.userId="59";
+//		TongYongManager tym=new TongYongManager(this, icb,hp);
+//		tym.start();
+		
+		ICallBack icb=new ICallBack() {
+			
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+					getAllYouHuiQuan_data gd=(getAllYouHuiQuan_data) obj;
+					ArrayList<getAllYouHuiQuan> list=gd.body;
+					   if(list.size()>0)
+					   {
+					  HongbaoUtil2_v2 hu2=new HongbaoUtil2_v2(act);
+					  list=HongbaoUtil_v2.select1(list);
+					  Collections.sort(list);
+					  hu2.addView(ll, list);
+					   LinearLayout ll2=(LinearLayout) findViewById(R.id.ll2);
+					  ll2.setVisibility(View.VISIBLE);
+					   }
+				}
+				
+			}
+		};
+		getAllYouhuiQuanParam gp=new getAllYouhuiQuanParam();
+		gp.user_code=BeikBankApplication.getUserCode();
+		TongYongManager2 tym=new TongYongManager2(this, icb,gp);
 		tym.start();
+		
 	}
     ICallBack icb=new ICallBack() {
 		

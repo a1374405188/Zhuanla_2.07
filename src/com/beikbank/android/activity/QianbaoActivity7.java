@@ -22,8 +22,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.content.Intent;
 import android.graphics.Paint;

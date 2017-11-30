@@ -1,8 +1,10 @@
 package com.beikbank.android.utils.hongbao;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -12,6 +14,8 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -35,14 +39,16 @@ import com.beikbank.android.huatu.YuanView;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 理财工具
  * @author Administrator
  *
  */
 public class LicaiUtil {
+	public static ArrayList<MyTime> lists=new ArrayList<LicaiUtil.MyTime>();
 	Activity act;
 	public LicaiUtil(Context act)
 	{
@@ -55,6 +61,11 @@ public class LicaiUtil {
 	 */
 	public void addView(LinearLayout ll,List<GetChanPin> list)
 	{   
+		for(MyTime mt:lists)
+		{
+			mt.end=true;
+		}
+		lists.clear();
 		
 		Holder holder =null;
 		for(int i=0;i<list.size();i++)
@@ -69,6 +80,7 @@ public class LicaiUtil {
 			holder.tv_xinshou=(TextView) view.findViewById(R.id.tv_xinshou);
 			holder.tv_goumai=(TextView) view.findViewById(R.id.tv_goumai);
 			holder.tv_jiaxi=(TextView) view.findViewById(R.id.tv_jiaxi);
+			holder.tv_genxin=(TextView) view.findViewById(R.id.tv_genxin);
 			holder.yv=(YuanView) view.findViewById(R.id.yuan);
 			
 			final GetChanPin gcp=list.get(i);
@@ -79,6 +91,16 @@ public class LicaiUtil {
 				holder.yv.setPaintColor(holder.yv.color1);
 				holder.tv_goumai.setTextColor(0xff666666);
 				holder.tv_goumai.setText("售罄");
+				if(gcp.next_update_time!=null)
+				{
+					
+					
+					holder.tv_genxin.setVisibility(view.VISIBLE);
+				long l=getTime(gcp.next_update_time);
+				MyTime mt=new MyTime(l,holder.tv_genxin);
+				mt.start();
+				lists.add(mt);
+				}
 			}
 			
 			double d=Double.parseDouble(gcp.increase_interest_return_rate);
@@ -103,6 +125,7 @@ public class LicaiUtil {
 			if("4".equals(gcp.product_type_pid))
 			{
 				holder.tv_qixian.setText("灵活存取");
+				holder.tv_qixian.setTextColor(0xff333333);
 			}
 			else
 			{   
@@ -110,7 +133,7 @@ public class LicaiUtil {
 				 SpannableStringBuilder sb = new SpannableStringBuilder("期限"+gcp.term+"天"); // 包装字体内容  
 			        ForegroundColorSpan fcs = new ForegroundColorSpan(0xff333333); // 设置字体颜色  
 			       // StyleSpan bss = new StyleSpan(android.graphics.Typeface.BOLD); // 设置字体样式  
-			        AbsoluteSizeSpan ass = new AbsoluteSizeSpan(DensityUtil.sp2px(act, 17));  // 设置字体大小  
+			        AbsoluteSizeSpan ass = new AbsoluteSizeSpan(DensityUtil.sp2px(act,21));  // 设置字体大小  
 			        sb.setSpan(fcs, 2,gcp.term.length()+3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
 			        //sb.setSpan(bss, 0, 20, Spannable.SPAN_INCLUSIVE_INCLUSIVE);  
 			        sb.setSpan(ass,2,gcp.term.length()+3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
@@ -153,6 +176,85 @@ public class LicaiUtil {
 		}
 		
 	}
+	private long getTime(String time)
+	{   
+		 // 设置传入的时间格式  
+	      SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");  
+	      // 指定一个日期  
+	      Date date=null;
+		try {
+			date = dateFormat.parse(time);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		 int h=date.getHours();
+		 int m=date.getMinutes();
+		 int s=date.getSeconds();
+	     long l=h*3600+m*60+s;
+		return l;
+	}
+	class MyTime extends Thread
+	{   
+		public boolean end=false;
+		
+		public MyTime(long time,TextView tv)
+		{
+			this.time=time;
+			this.tv=tv;
+		}
+		public long time;
+		TextView tv;
+        public Handler handler=new Handler()
+        {
+
+			@Override
+			public void handleMessage(Message msg) {
+				if(msg.what==1)
+				{
+					tv.setText(msg.obj.toString());
+				}
+				if(msg.what==2)
+				{
+					tv.setVisibility(View.GONE);
+				}
+			}
+        	
+        };
+		@Override
+		public void run() 
+		{
+			time1();
+		}
+    private  void time1() 
+    {
+    	while (time > 0) {
+             time--;
+             try {
+            	 if(end)
+            	 {
+            		 break;
+            	 }
+                 Thread.sleep(1000);
+                 long hh = time / 60 / 60 % 60;
+                 long mm = time / 60 % 60;
+                 long ss = time % 60;
+                 Message msg=new Message();
+                 msg.what=1;
+                 String s1=hh+":"+mm+":"+ss;
+                 msg.obj="下次份额更新 "+s1;
+                 handler.sendMessage(msg);
+                //System.out.println("还剩" + hh + "小时" + mm + "分钟" + ss + "秒");
+            } catch (InterruptedException e) {
+                 e.printStackTrace();
+             }
+         }
+    	 Message msg=new Message();
+         msg.what=2;
+         handler.sendMessage(msg);
+     }
+		
+	}
 	class Holder{
 		TextView tv_name;
 		TextView tv_shouyi;
@@ -161,6 +263,7 @@ public class LicaiUtil {
 		TextView tv_xinshou;
 		TextView tv_goumai;
 		TextView tv_jiaxi;
+		TextView tv_genxin;
 		YuanView yv;
 	}
 }

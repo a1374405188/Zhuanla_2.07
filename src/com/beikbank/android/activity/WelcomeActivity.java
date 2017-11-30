@@ -5,6 +5,12 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -12,6 +18,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -90,8 +97,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.utils2.TimeUtil;
 import com.umeng.message.UmengRegistrar;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //欢迎页
 public class WelcomeActivity extends BaseActivity1{
@@ -118,9 +126,18 @@ public class WelcomeActivity extends BaseActivity1{
 		this.setContentView(R.layout.activity_welcome);
 		StateBarColor.init(this,0xffffffff);
 		
-	
+	if(1==2)
+	{
+		Intent intent=new Intent(this,YouHuiQuanActivity5.class);
+		startActivity(intent);
+		return;
+	}
 		if(1==2)
 		{   
+			
+			String ip=RegisterCodeInputActivity.getIPAddress(act);
+			Log.e("ip",ip);
+			
 			ICallBack icb=new ICallBack() {
 				
 				@Override
@@ -148,121 +165,19 @@ public class WelcomeActivity extends BaseActivity1{
 			};
 			
 		    
-			icb5=new ICallBack() {
-				
-				@Override
-				public void back(Object obj) {
-					
-				}
-			};
-			
-			Intent intent=new Intent(this,HuodongActivity2.class);
-			startActivity(intent);
+//			icb5=new ICallBack() {
+//				
+//				@Override
+//				public void back(Object obj) {
+//					
+//				}
+//			};
+//			
+//			Intent intent=new Intent(this,HuodongActivity2.class);
+//			startActivity(intent);
 			
 		
-//			GetCanPingLieBiaoParam pp=new GetCanPingLieBiaoParam();
-//			pp.page_index="1";
-//			pp.page_size="5";
-//			pp.user_id="10000011";
-			
-			
-//			LoginQianParam pp=new LoginQianParam();
-//			pp.phone_number="15158157606";
-//			
-//			BindBankQinQiuParam pp=new BindBankQinQiuParam();
-//			pp.acc_number="6217001540012557466";
-//			pp.reserve_phone_number="15158157606";
-//			pp.user_code="10000130";
-//			TongYongManager2 tym=new TongYongManager2(act, icb,pp);
-//	    	tym.start();
-	    	
-//	    	BindBankQueQengParam pp=new BindBankQueQengParam();
-//	    	pp.application_number="";
-//	    	pp.sms_verify="";
-//	    	pp.user_code="";
-	    	
-	    	
-	    	
-//			
-//			RegisterParam pp=new RegisterParam();
-//			pp.download="360";
-//			pp.ip="127.0.0.0";
-//			pp.phone_id="";
-//			pp.phone_number="15158157606";
-//			pp.register_time="";
-//			GetChanPinParam rp=new GetChanPinParam();
-//			rp.id=BeikBankApplication.getUserid();
-//			rp.type="1";
-			
-//			RegisterParam pp=new RegisterParam();
-//			pp.download="360";
-//			pp.ip="";
-//			pp.phone_id="";
-//			
-//			getUserZhiChanParam pp=new getUserZhiChanParam();
-//			pp.user_code="10000003";
-//			XiaoxiLieBiaoParam pp=new XiaoxiLieBiaoParam();
-//			pp.end_time="";
-//			pp.limit="10";
-//			pp.offset="0";
-//			pp.user_code="10000003";
-			
-//			getZaiQuanParam pp=new getZaiQuanParam();
-//			pp.page="1";
-//			pp.product_id="2134";
-//			pp.size="10";
-			
-//		JiaoYiJiLuParam pp=new JiaoYiJiLuParam();
-//		pp.limit="10";
-//		pp.offset="0";
-//		pp.trade_type="";
-//		pp.user_code="10000003";
-//		getYiGouParam pp=new getYiGouParam();
-//		pp.beginPage=0;
-//		pp.count=10;
-//		pp.pro_id="32145";
-			
-			
-//		
-//			setJiaoyiPasswdParam pp=new setJiaoyiPasswdParam();
-//			pp.new_password="123456";
-//			pp.ori_password="123455";
-//			pp.type="1";
-//			pp.user_code="10000088";
-//			
-//			setLoginPasswdParam pp=new setLoginPasswdParam();
-//			pp.fingerprint_password="";
-//			pp.gesture_password="";
-//			pp.login_type="0";
-//			pp.new_password="";
-//			pp.old_password="123456";
-//			pp.set_type="0";
-//			pp.user_code="10000127";
-//			pp.user_type="4";
-//            LoginParam pp=new LoginParam();
-//            pp.login_type="0";
-//            pp.user_type="4";
-//            pp.phone_number="15158157606";
-//            pp.login_password="123456";
-//            pp.user_code="10000127";
-			
-			
-//			NameRengzhenParam pp=new NameRengzhenParam();
-//			pp.birth_day="";
-//			pp.home_address="";
-//			pp.id_number="411526199008191032";
-//			pp.id_type="0";
-//			
-//			pp.marry_status="";
-//			pp.phone_id="";
-//			pp.real_name="喻国合";
-//			pp.sex="";
-//			pp.phone_number="15158157606";
-			
-//			GetChanPinParam pp=new GetChanPinParam();
-//			
-//	    	TongYongManager2 tym2=new TongYongManager2(act, icb,pp);
-//	    	tym2.start();
+
 //			
 //			
 //			
@@ -382,7 +297,7 @@ public class WelcomeActivity extends BaseActivity1{
 	public void initView(){
 		textview_version=(TextView)findViewById(R.id.textview_version);
 		String version=Utils.getVersion(WelcomeActivity.this);
-		textview_version.setText("v"+version);//版本号角标
+		textview_version.setText(BeikBankApplication.getVersion(this));//版本号角标
 		
 		
 //		new Handler().postDelayed(new Runnable() {  

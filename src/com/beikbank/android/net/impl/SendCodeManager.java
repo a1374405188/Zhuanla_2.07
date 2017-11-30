@@ -11,8 +11,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.ICallBackHnadler;
 import com.beikbank.android.net.ICallBackNet;
 import com.beikbank.android.net.NetServicesFactory;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.os.Handler;

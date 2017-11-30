@@ -20,8 +20,9 @@ import com.beikbank.android.data.PurchaseInfo;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //购买成功页面
 public class PurchaseSuccessActivity extends BaseActivity implements OnClickListener{

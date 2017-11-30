@@ -15,8 +15,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.impl.ConfigManager;
 import com.beikbank.android.utils.BeikBankDialogListener;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //关于我们
 public class AboutActivity_bak extends BaseActivity1 implements OnClickListener{

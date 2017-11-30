@@ -10,8 +10,9 @@ import com.beikbank.android.net.ManagerParam;
 import com.beikbank.android.net.impl.TongYongManager;
 import com.beikbank.android.share.ShareMUtil;
 import com.beikbank.android.share.ShateUtil;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -50,7 +51,8 @@ public class PageUtil {
 	   final LinearLayout ll2=(LinearLayout) view.findViewById(R.id.ll2);
 	   String id=BeikBankApplication.getUserCode();
 	   
-	   String shareM=ShareMUtil.toSerialCode(Long.parseLong(id));
+	  // String shareM=ShareMUtil.toSerialCode(Long.parseLong(id));
+	   String shareM=ShateUtil.countId(id);
 	   final String shareMs="?shareCode="+shareM;
 	   //
 	   ll1.setOnClickListener(new OnClickListener() {

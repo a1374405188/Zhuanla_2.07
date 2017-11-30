@@ -11,8 +11,9 @@ import android.widget.TextView;
 import com.beikbank.android.data.Notice;
 import com.beikbank.android.data.Notice_data;
 import com.beikbank.android.widget.FirstLoginWindows;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * 

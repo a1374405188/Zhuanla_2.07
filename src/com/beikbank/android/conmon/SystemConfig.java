@@ -9,9 +9,9 @@ import com.beikbank.android.utils.BeikBankConstant;
  **/
 public class SystemConfig {
 	/**
-	 * 1公共云  测试2 金融云 内测
+	 * 1公共云  测试2 金融云 内测3存管
 	 */
-    public static int index=3;
+    public static int index=1;
     public static String huodong_url;
     public static String base_url = "http://114.55.5.66";
     static
@@ -20,6 +20,7 @@ public class SystemConfig {
     	{
     		base_url = "http://114.55.5.66";
     		huodong_url="http://118.178.134.251:8088/";
+    		//base_url = "http://172.16.100.199";
     	}
     	else if(index==2)
     	{
@@ -28,9 +29,12 @@ public class SystemConfig {
     	}
     	else if(index==3)
     	{
-    		base_url = "http://101.37.3.83";
-    		huodong_url="http://101.37.3.83:13022/";
+//    		base_url = "http://101.37.3.83";
+//    		huodong_url="http://101.37.3.83:13022/";
+    		base_url = "http://app.beikbank.com";
+    		huodong_url="http://app.beikbank.com:13122/";
     	}
+    	
     	
     }
 	/**
@@ -60,8 +64,8 @@ public class SystemConfig {
 //    public static String kHOST_URL_BASE = "http://tmp.zhuanlalicai.com/";
 //	public static String kHOST_URL8443_BASE = "https://tmp.zhuanlalicai.com/";
 	//test
-//    public static String kHOST_URL_BASE = "https://218.108.7.222:10043/";
-//    public static String kHOST_URL8443_BASE = "https://218.108.7.222:10043/";
+//    public static String kHOST_URL_BASE = "http://218.108.7.222:10042/";
+//    public static String kHOST_URL8443_BASE = "http://218.108.7.222:10042/";
     
 //    public static String kHOST_URL_BASE = "http://172.16.100.139:8081";
 //    public static String kHOST_URL8443_BASE = "https://218.75.37.122:8809/";
@@ -97,7 +101,7 @@ public class SystemConfig {
 	/**
 	 * app source
 	 */
-	public static String SOURCES_CODE=Cancal.CODE_MUMAYI;
+	public static String SOURCES_CODE=Cancal.CODE_OTHER2;
 	
 	/**
 	 * db

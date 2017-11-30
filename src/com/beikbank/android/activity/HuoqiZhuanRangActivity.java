@@ -60,8 +60,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 活期转让
  * Created by Administrator on 2015/3/16.

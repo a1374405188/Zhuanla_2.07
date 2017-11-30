@@ -1,6 +1,6 @@
 package com.beikbank.android.media;
 
-import comc.beikbank.android.R;
+import coma.beikbank.android.R;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

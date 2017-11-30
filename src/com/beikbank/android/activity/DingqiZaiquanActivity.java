@@ -17,8 +17,9 @@ import android.widget.TextView;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.data.DingqiPI;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**定期债券明细
  *copyright yuguohe

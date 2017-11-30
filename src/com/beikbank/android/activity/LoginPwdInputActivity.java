@@ -65,8 +65,9 @@ import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //输入登录密码
 public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListener{

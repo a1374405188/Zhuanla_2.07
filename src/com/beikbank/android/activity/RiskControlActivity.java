@@ -30,8 +30,9 @@ import com.beikbank.android.net.ICallBack;
 import com.beikbank.android.net.NetServicesFactory;
 import com.beikbank.android.net.impl.HelpCenterManager;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //产品特征
 public class RiskControlActivity extends BaseActivity implements OnClickListener{

@@ -31,8 +31,9 @@ import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //修改交易密码
 public class TransactionPwdUpdateActivity extends BaseActivity1 implements OnClickListener{

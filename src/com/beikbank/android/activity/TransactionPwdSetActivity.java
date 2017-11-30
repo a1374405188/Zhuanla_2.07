@@ -36,8 +36,9 @@ import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 //设置交易密码
 public class TransactionPwdSetActivity extends BaseActivity1 implements OnClickListener{
 	
@@ -193,6 +194,7 @@ public class TransactionPwdSetActivity extends BaseActivity1 implements OnClickL
 //				    BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
 //					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //					startActivity(intent);
+				BeikBankApplication.setSharePref(BeikBankConstant.is_jiaoyi,"1");
 				CustomToast.makeText(TransactionPwdSetActivity.this, "设置成功", Toast.LENGTH_SHORT).show();  
 				
 				finish();

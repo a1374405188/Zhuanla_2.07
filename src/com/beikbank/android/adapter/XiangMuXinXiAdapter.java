@@ -19,8 +19,9 @@ import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.data.ProjectInfo;
 import com.beikbank.android.data2.getXiangMuXinXi;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class XiangMuXinXiAdapter extends MBaseAdapter{
 

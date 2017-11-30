@@ -40,8 +40,9 @@ import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.ViewDataUtil;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /** 活期产品详情
  * Created by Administrator on 2015/3/16.
@@ -348,7 +349,7 @@ ICallBack icb11=new ICallBack() {
 	  if(obj==null)
 	  { 
 		CheckBankParam cbp=new CheckBankParam();
-		cbp.memberID=BeikBankApplication.getUserid();
+		cbp.memberID=BeikBankApplication.getUserCode();
 		TongYongManager tym=new TongYongManager(act, icb3,cbp);
 		tym.start();
 		

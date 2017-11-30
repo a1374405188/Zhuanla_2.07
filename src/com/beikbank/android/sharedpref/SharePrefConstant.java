@@ -18,7 +18,7 @@ public class SharePrefConstant {
 	 */
     public static final String hongbao="hongbao";
     /**
-     * 选择的红包标签
+     * 选择的红包标签    1,2,3这种类型
      */
     public static final String hongbao2="hongbao2";
 }

@@ -74,7 +74,7 @@
              android:gravity="center"
              android:text="消息"
              
-             android:textColor="#ffffdddd"
+             android:textColor="#ffffffff"
              android:textSize="14sp"/>
     </RelativeLayout>
 

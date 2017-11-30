@@ -2,6 +2,7 @@ package com.beikbank.android.activity;
 
 import java.security.PublicKey;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.beikbank.android.activity.help.TypeUtil;
 import com.beikbank.android.dao.BankListDao;
@@ -23,12 +24,15 @@ import com.beikbank.android.data.ReqPayforP_Data;
 import com.beikbank.android.data.UserCapital2;
 import com.beikbank.android.data.UserCapital2_data;
 import com.beikbank.android.data.UserInfo;
+import com.beikbank.android.data2.CreateDingDan;
 import com.beikbank.android.data2.CreateDingDan_data;
 import com.beikbank.android.data2.GetChanPin;
 import com.beikbank.android.data2.HuoQiYiGou;
 import com.beikbank.android.data2.HuoQiYiGou_data;
 import com.beikbank.android.data2.MiMaOrDuanXin;
 import com.beikbank.android.data2.MiMaOrDuanXin_data;
+import com.beikbank.android.data2.getAllYouHuiQuan;
+import com.beikbank.android.data2.getAllYouHuiQuan_data;
 import com.beikbank.android.data2.getQianBao;
 import com.beikbank.android.data2.getQianBao_data;
 import com.beikbank.android.dataparam.HongbaoParam;
@@ -39,6 +43,7 @@ import com.beikbank.android.dataparam.TotalMoneyParam;
 import com.beikbank.android.dataparam2.CreateDingDanParam;
 import com.beikbank.android.dataparam2.HuoQiYiGouParam;
 import com.beikbank.android.dataparam2.MiMaOrDuanXinParam;
+import com.beikbank.android.dataparam2.getAllYouhuiQuanParam;
 import com.beikbank.android.dataparam2.getQianBaoParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
@@ -54,11 +59,14 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
+import com.beikbank.android.utils.hongbao.HongbaoUtil2_v2;
+import com.beikbank.android.utils.hongbao.HongbaoUtil_v2;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.R.mipmap;
 import android.app.Activity;
@@ -116,6 +124,7 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 	 */
 	double singleLimit;
 	 private  ReqPayforPParam2 rp;
+	ArrayList<getAllYouHuiQuan> list_yhq;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -202,6 +211,27 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 		TongYongManager2 tym3=new TongYongManager2(act, icb_hp,hp);
 		tym3.start();
 		
+		
+		
+		
+		//初始化红包
+      ICallBack icb_yhq=new ICallBack() {
+			
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+					getAllYouHuiQuan_data gd=(getAllYouHuiQuan_data) obj;
+					list_yhq=gd.body;
+					  
+				}
+				
+			}
+		};
+		getAllYouhuiQuanParam gp=new getAllYouhuiQuanParam();
+		gp.user_code=BeikBankApplication.getUserCode();
+		TongYongManager2 tym=new TongYongManager2(this, icb_yhq,gp);
+		tym.start();
 	}
 	private void getyzm()
 	{
@@ -255,6 +285,41 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 	    		tv_shouyi.setText(shouyi);
 	    	}
 	    }
+	private void next(CreateDingDan obj)
+	{
+		 String s1=BeikBankApplication.getSharePref(BeikBankConstant.mima_duanxin);
+	       String pay=BeikBankApplication.getSharePref(BeikBankConstant.pay_type);
+	    	Intent mIntent=getIntent();
+		 mIntent.putExtra(TypeUtil.jiaoyi_money, money);
+		 mIntent.putExtra("gqb",gq);
+		 if(obj!=null)
+		 {
+		   mIntent.putExtra("cdd",obj);
+		 }
+		 if(list_yhq.size()>0)
+		 {
+			    mIntent.setClass(act,DingdanConfimActivity2.class);
+				startActivity(mIntent);
+				finish();
+	    	   return ;
+		 }
+	       if("1".equals(s1)||"3".equals(pay))
+	       {
+	    	   
+	    	   
+				
+			
+				mIntent.setClass(act,DingqiGouMaiConfirmActivity.class);
+				startActivity(mIntent);
+				finish();
+	    	   return ;
+	    	   
+	       }
+	       
+			mIntent.setClass(act,QueRenJiaoYiActivity.class);
+			startActivity(mIntent);
+			finish();
+	}
 	private void createDingdan(getQianBao  gqb)
 	{
 		ICallBack icb=new ICallBack() {
@@ -270,31 +335,7 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 //					czp.user_code=BeikBankApplication.getUserCode();
 //					TongYongManager2 tym2=new TongYongManager2(act, icb0, czp);
 //					tym2.start();
-					
-			       String s1=BeikBankApplication.getSharePref(BeikBankConstant.mima_duanxin);
-			       String pay=BeikBankApplication.getSharePref(BeikBankConstant.pay_type);
-			       if("1".equals(s1)||"3".equals(pay))
-			       {
-			    	   
-			    	   
-						
-						Intent mIntent=getIntent();
-						mIntent.putExtra(TypeUtil.jiaoyi_money, money);
-						mIntent.putExtra("gqb",gq);
-						mIntent.putExtra("cdd",cddd.body);
-						mIntent.setClass(act,DingqiGouMaiConfirmActivity.class);
-						startActivity(mIntent);
-						finish();
-			    	   return ;
-			    	   
-			       }
-			        Intent mIntent=getIntent();
-					mIntent.putExtra(TypeUtil.jiaoyi_money, money);
-					mIntent.putExtra("gqb",gq);
-					mIntent.putExtra("cdd",cddd.body);
-					mIntent.setClass(act,QueRenJiaoYiActivity.class);
-					startActivity(mIntent);
-					finish();
+				  next(cddd.body);
 				}
 				
 			}
@@ -504,7 +545,14 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 //			mIntent.putExtra("gqb",gq);
 //			mIntent.setClass(act,DingqiGouMaiConfirmActivity.class);
 //			startActivity(mIntent);
-			createDingdan(gq);
+			if(list_yhq.size()>0)
+			{
+			    next(null);
+			}
+			else
+			{
+				 createDingdan(gq);
+			}
 			break;
 		}
 

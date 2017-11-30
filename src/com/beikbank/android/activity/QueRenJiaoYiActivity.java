@@ -43,8 +43,9 @@ import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 /**
  * 

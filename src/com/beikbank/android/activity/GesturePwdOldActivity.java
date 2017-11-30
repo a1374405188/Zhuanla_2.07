@@ -30,8 +30,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.LockPatternView;
 import com.beikbank.android.widget.LockPatternView.Cell;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //旧的手势密码
 public class GesturePwdOldActivity extends BaseActivity implements OnClickListener{

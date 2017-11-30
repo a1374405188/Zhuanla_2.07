@@ -7,8 +7,9 @@ import com.beikbank.android.conmon.MessageManger;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.impl.ErrorMessage;
 import com.beikbank.android.widget.CustomToast;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.os.Handler;

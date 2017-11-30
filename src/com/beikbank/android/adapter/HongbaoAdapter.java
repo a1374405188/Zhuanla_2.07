@@ -30,8 +30,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
 import com.google.gson.JsonObject;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 红包适配器
  * @author Administrator

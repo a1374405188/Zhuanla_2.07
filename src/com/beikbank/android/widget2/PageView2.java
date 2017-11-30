@@ -14,8 +14,9 @@ import com.beikbank.android.net.impl2.ChanpinManager;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.MyViewPager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 
 import android.app.Activity;

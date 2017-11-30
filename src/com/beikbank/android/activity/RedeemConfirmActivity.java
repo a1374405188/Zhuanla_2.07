@@ -52,8 +52,9 @@ import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast2;
 import com.google.gson.Gson;
 import com.nineoldandroids.animation.AnimatorSet;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //取现确认
 public class RedeemConfirmActivity extends BaseActivity1 implements OnClickListener{

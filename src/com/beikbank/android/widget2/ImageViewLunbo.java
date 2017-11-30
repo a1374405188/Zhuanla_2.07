@@ -5,8 +5,9 @@ import java.util.List;
 
 import com.beikbank.android.data2.LunBo;
 import com.beikbank.android.net.ImageUrl;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;

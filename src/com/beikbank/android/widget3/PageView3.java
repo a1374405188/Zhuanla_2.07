@@ -1,6 +1,8 @@
 package com.beikbank.android.widget3;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.beikbank.android.activity.BandTestActivity;
 import com.beikbank.android.activity.DingqiLicaiActivity;
@@ -40,16 +42,22 @@ import com.beikbank.android.data.type.ZhiChan;
 import com.beikbank.android.data2.GetUserZhiChan2;
 import com.beikbank.android.data2.GetUserZhiChan2_data;
 import com.beikbank.android.data2.GetUserZhiChan_data;
+import com.beikbank.android.data2.getAllYouHuiQuan;
+import com.beikbank.android.data2.getAllYouHuiQuan_data;
 import com.beikbank.android.data2.getQianBao;
 import com.beikbank.android.data2.getQianBao_data;
+import com.beikbank.android.data2.getYouHuiQuan;
+import com.beikbank.android.data2.getYouHuiQuan_data;
 import com.beikbank.android.data2.getZuoRiShouYi_data;
 import com.beikbank.android.dataparam.CheckBankParam;
 import com.beikbank.android.dataparam.HongbaoParam;
 import com.beikbank.android.dataparam.TotalMoneyParam;
 import com.beikbank.android.dataparam.YuerParam;
+import com.beikbank.android.dataparam2.getAllYouhuiQuanParam;
 import com.beikbank.android.dataparam2.getQianBaoParam;
 import com.beikbank.android.dataparam2.getUserZhiChanParam;
 import com.beikbank.android.dataparam2.getUserZhiChanParam2;
+import com.beikbank.android.dataparam2.getYouhuiQuanParam;
 import com.beikbank.android.dataparam2.getZuoRiShouYiParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
@@ -69,9 +77,12 @@ import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
+import com.beikbank.android.utils.hongbao.HongbaoUtil2_2_v2;
+import com.beikbank.android.utils.hongbao.HongbaoUtil_v2;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -357,9 +368,24 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 				prs.onPullDownRefreshComplete();
 				if(obj!=null)
 				{  
+					// getQianBao_data gd=(getQianBao_data) obj;
+					
+					
+					
 					
 					gb=(getQianBao_data) obj;
 					
+//					
+					 getQianBao gb1=gb.body.card;
+					 BeikBankApplication.setSharePref(BeikBankConstant.qianbao,gb1.acc_amount);
+					 BeikBankApplication.setSharePref(BeikBankConstant.bank,gb1.acc_number);
+					 BeikBankApplication.setSharePref(BeikBankConstant.bank_name,gb1.bank_name);
+					 BeikBankApplication.setSharePref(BeikBankConstant.bank_max_amount,gb1.max_amount);
+					 BeikBankApplication.setSharePref(BeikBankConstant.bank_min_amount,gb1.min_amount);
+					 BeikBankApplication.setSharePref(BeikBankConstant.zhanghao,gb1.acc_id);
+					 BeikBankApplication.setSharePref(BeikBankConstant.icon_url,gb1.icon_url);
+					 BeikBankApplication.setSharePref(BeikBankConstant.logo_url,gb1.logo_url);
+//					
 					if("0000".equals(gb.header.re_code))
 					{
 						 gqb=gb.body.card;
@@ -381,7 +407,10 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 		getQianBaoParam gqp=new getQianBaoParam();
 		gqp.acc_type_id="1";
 	    gqp.user_code=BeikBankApplication.getUserCode();
-		TongYongManager2 tym2=new TongYongManager2(act, icb, gqp);
+	    ManagerParam mp=new ManagerParam();
+	    mp.isShowDialog=false;
+	    
+		TongYongManager2 tym2=new TongYongManager2(act, icb, gqp,mp);
 		tym2.start();
 		
 		
@@ -411,7 +440,7 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 		
 		getUserZhiChanParam gp=new getUserZhiChanParam();
 		gp.user_code=BeikBankApplication.getUserCode();
-		TongYongManager2 tym3=new TongYongManager2(act, icb3, gp);
+		TongYongManager2 tym3=new TongYongManager2(act, icb3, gp,mp);
 		tym3.start();
 //得到产品小类金额
 		  
@@ -432,13 +461,13 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 		};
 		getUserZhiChanParam2 guc=new getUserZhiChanParam2();
 		guc.user_id=BeikBankApplication.getUserCode();
-		
+		 
 //		
 //		  getZuoRiShouYiParam gzr=new getZuoRiShouYiParam();
 //		  gzr.page_index="1";
 //		  gzr.page_size="10";
 //		  gzr.user_id=BeikBankApplication.getUserCode();
-		  TongYongManager2 tym4=new TongYongManager2(act,icb_guc,guc);
+		  TongYongManager2 tym4=new TongYongManager2(act,icb_guc,guc,mp);
 		  tym4.start();
 		
 //		if(isaddData)
@@ -492,6 +521,31 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 //		TongYongManager tym=new TongYongManager(act, icb9,hp,mp);
 //		tym.start();
 //		}
+		    
+		    
+	  //得到红包个数
+		    ICallBack icb_ghb=new ICallBack() {
+				
+				@Override
+				public void back(Object obj) {
+					if(obj!=null)
+					{
+						getAllYouHuiQuan_data gd=(getAllYouHuiQuan_data) obj;
+						ArrayList<getAllYouHuiQuan> list=gd.body;
+						  
+						    SpannableStringBuilder builder = new SpannableStringBuilder(list.size()+"张可用");
+							  String size=list.size()+"";
+							ForegroundColorSpan f2 = new ForegroundColorSpan(0xffe4393c);
+							builder.setSpan(f2, 0,size.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+							tv6.setText(builder);
+					}
+					
+				}
+			};
+			getYouhuiQuanParam gap=new getYouhuiQuanParam();
+			gap.user_code=BeikBankApplication.getUserCode();
+			TongYongManager2 tym=new TongYongManager2(act, icb_ghb,gap);
+			tym.start();
 	}
 	ArrayList<View> listView;
 	/**
@@ -540,7 +594,7 @@ public class PageView3 extends LinearLayout implements OnClickListener {
 						}
 					}
 				});
-			    
+			 
 			    img=(ImageView) view.findViewById(R.id.img);
 			    tv_name=(TextView) view.findViewById(R.id.tv_name);
 			    tv_money=(TextView) view.findViewById(R.id.tv_money2);
@@ -956,7 +1010,7 @@ private void yingcang()
 		}
 		else
 		{
-			tv_zuori.setText(NumberManager.getGeshiHua(gd.body.intrestYesterday,4));
+			tv_zuori.setText(NumberManager.getGeshiHua(gd.body.intrestYesterday,2));
 			tv_zhichan.setText(NumberManager.getGeshiHua(gd.body.assetsCurrentTotal,2));
 			tv4.setText(NumberManager.getGeshiHua(gb.body.card.acc_amount,2));
 		}

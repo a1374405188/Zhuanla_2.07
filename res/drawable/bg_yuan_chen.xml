@@ -4,13 +4,13 @@
     android:shape= "oval"
     android:useLevel= "false"
      >
-     <solid android:color= "#f9803e" />
+     <solid android:color= "#ff69c5ff" />
 
  <stroke
 
         android:width= "0dp"
 
-        android:color= "#f9803e" />
+        android:color= "#ff69c5ff" />
  
     <size 
           android:width= "12dp"

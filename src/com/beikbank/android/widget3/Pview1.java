@@ -1,63 +1,41 @@
 package com.beikbank.android.widget3;
 
-import java.math.BigDecimal;
 
-import com.beikbank.android.activity.BaseActivity;
 import com.beikbank.android.activity.ChanPinActivityV2;
-import com.beikbank.android.activity.HomeActivity3;
+
 import com.beikbank.android.activity.HuodongActivity2;
-import com.beikbank.android.activity.HuoqiDetailActivity;
-import com.beikbank.android.activity.HuoqiReturnIActivity;
-import com.beikbank.android.activity.LoginRegActivity;
-import com.beikbank.android.activity.PurchaseActivity;
-import com.beikbank.android.activity.help.GoumaiManager;
-import com.beikbank.android.activity.help.LiuChenManager;
+
 import com.beikbank.android.conmon.SystemConfig;
-import com.beikbank.android.data.Biaoshi;
-import com.beikbank.android.data.Biaoshi_data;
-import com.beikbank.android.data.FundInfo;
 import com.beikbank.android.data2.GetChanPin;
-import com.beikbank.android.data2.getChanPinXiangQin;
-import com.beikbank.android.data2.getChanPinXiangQin_data;
-import com.beikbank.android.dataparam.BiaoshiParam;
-import com.beikbank.android.dataparam2.XiaoxiParam;
-import com.beikbank.android.dataparam2.getChanPinXiangQinParam;
+
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
-import com.beikbank.android.net.ImageUrl;
-import com.beikbank.android.net.ManagerParam;
-import com.beikbank.android.net.impl.FundInfoManager;
-import com.beikbank.android.net.impl.TongYongManager;
-import com.beikbank.android.net.impl.TongYongManager2;
+
 import com.beikbank.android.pullrefresh.PullToRefreshBase;
 import com.beikbank.android.pullrefresh.PullToRefreshScrollView;
 import com.beikbank.android.pullrefresh.PullToRefreshBase.OnRefreshListener;
 import com.beikbank.android.utils.BeikBankConstant;
-import com.beikbank.android.utils.DensityUtil;
+
 import com.beikbank.android.utils.NumberManager;
-import com.beikbank.android.widget.MagicTextView;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
 
-import android.app.Activity;
+
+
+
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
-import android.os.Handler;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
-import android.text.style.AbsoluteSizeSpan;
+
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
+
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
+
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.LinearLayout.LayoutParams;
+
 
 /**
  * 
@@ -92,7 +70,7 @@ public class Pview1 extends LinearLayout implements OnClickListener{
 		super(context, attrs);
 		init(context);
 	}
-	public void init(Context context)
+	private void init(Context context)
 	{   
 		act=(ChanPinActivityV2) context;
 		LinearLayout ll=new LinearLayout(context);

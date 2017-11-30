@@ -21,8 +21,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.R.string;
 import android.app.Activity;

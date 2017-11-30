@@ -13,8 +13,9 @@ import com.beikbank.android.data2.getYiGou;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Intent;

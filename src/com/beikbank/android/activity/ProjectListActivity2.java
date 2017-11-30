@@ -33,8 +33,9 @@ import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 //定期投资项目列表
 public class ProjectListActivity2 extends BaseActivity implements OnClickListener{

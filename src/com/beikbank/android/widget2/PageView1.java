@@ -44,8 +44,9 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.content.Context;
@@ -368,7 +369,7 @@ JinXuan jx=list.get(2);
 		};
     	LunBoParam lbp=new LunBoParam();
     	lbp.req_time="1";
-    	lbp.userid=BeikBankApplication.getUserid();
+    	lbp.userid=BeikBankApplication.getUserCode();
     	ManagerParam mp=new ManagerParam();
     	mp.isShowDialog=false;
     	TongYongManager2 tym=new TongYongManager2(act, icb4,lbp,mp);

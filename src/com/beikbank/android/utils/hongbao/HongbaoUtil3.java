@@ -26,8 +26,9 @@ import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 /**
  * 红包工具3
  * @author Administrator

@@ -167,6 +167,8 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"      
          android:orientation="vertical"
+         android:paddingTop="5dp"
+         android:paddingBottom="5dp"
        >
              <TextView
               android:id="@+id/tv_canpin"
@@ -201,7 +203,8 @@
          android:layout_height="wrap_content"      
          android:orientation="vertical"
          android:gravity="center"
-           
+            android:paddingTop="5dp"
+         android:paddingBottom="5dp"
            >
              <TextView
               android:id="@+id/tv_xiangmu"   
@@ -227,6 +230,8 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"      
          android:orientation="vertical"
+          android:paddingTop="5dp"
+         android:paddingBottom="5dp"
        >
              <TextView
               android:id="@+id/tv_yigou"   
@@ -262,7 +267,7 @@
         android:layout_height="match_parent"
         android:fadingEdge="none"
         android:fadeScrollbars="false"
-        android:requiresFadingEdge="horizontal"
+      
         android:scrollbars="none"
         android:fadingEdgeLength="0px"
         android:scrollbarAlwaysDrawHorizontalTrack="false"

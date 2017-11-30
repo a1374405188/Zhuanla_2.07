@@ -29,6 +29,10 @@ public String  intrest_total ;
  */
 public String is_reinvest ;
 /**
+ * 0新手标，1不是新手标
+ */
+public String is_new_user_mark ;
+/**
  * 到期日期
  */
 public String maturity_date ;

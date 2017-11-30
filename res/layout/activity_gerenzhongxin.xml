@@ -66,13 +66,20 @@
                      
                      
                      />
-                 
+                  <LinearLayout 
+             android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:gravity="center"
+              android:background="@drawable/bg_yuan6"
+           
+           >  
                  <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                          android:src="@drawable/img_jinxuan_touxiang"
                      
                      />
+                      </LinearLayout>
              </LinearLayout>
             
             
@@ -115,7 +122,7 @@
                       android:layout_width="wrap_content"
                       android:layout_height="match_parent"
                       android:gravity="center"
-                      android:textColor="#ffb0b0b0"
+                       android:textColor="#ff666666"
                       />
                   
                  <View
@@ -199,8 +206,8 @@
                       android:layout_width="wrap_content"
                       android:layout_height="match_parent"
                       android:gravity="center"
-                      android:textColor="#ffb0b0b0"
-                      android:text="(未认证)"
+                      android:textColor="#ff666666"
+                      android:text="未认证"
                       />
                     <ImageView
                         android:id="@+id/iv_name"
@@ -254,8 +261,8 @@
                       android:layout_width="wrap_content"
                       android:layout_height="match_parent"
                       android:gravity="center"
-                      android:textColor="#ffb0b0b0"
-                      android:text="(未绑定 )"
+                      android:textColor="#ff666666"
+                      android:text="未绑定 "
                       />
                     <ImageView
                         android:id="@+id/iv_bank"

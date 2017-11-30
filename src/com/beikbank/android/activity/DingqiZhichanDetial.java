@@ -7,8 +7,9 @@ import com.beikbank.android.adapter.ZhiChanAdapter;
 import com.beikbank.android.data.UserCapital2;
 import com.beikbank.android.data.UserCapitalInfo2;
 import com.beikbank.android.utils2.StateBarColor;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.os.Bundle;
 import android.os.Parcelable;

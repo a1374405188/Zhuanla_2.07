@@ -46,8 +46,9 @@ import com.beikbank.android.widget.NumberProgressBar;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.animation.ValueAnimator;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class Utils {
 

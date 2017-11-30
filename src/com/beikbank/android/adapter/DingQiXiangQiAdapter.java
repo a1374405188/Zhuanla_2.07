@@ -49,8 +49,9 @@ import com.beikbank.android.utils.DialogManager;
 import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class DingQiXiangQiAdapter extends BaseAdapter{
 

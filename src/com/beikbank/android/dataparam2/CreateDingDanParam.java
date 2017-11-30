@@ -1,4 +1,7 @@
 package com.beikbank.android.dataparam2;
+
+import java.util.ArrayList;
+
 /**
  * 
  * @author Administrator
@@ -46,7 +49,7 @@ public class CreateDingDanParam
    /**
     * 红包组
     */
-   //public Object []red_packet_list={1};
+   public ArrayList<String> red_packet_list=new ArrayList<String>();
    /**
     * 用户id
     */

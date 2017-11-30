@@ -14,8 +14,9 @@ import android.widget.TextView;
 import com.beikbank.android.conmon.FinalIndex;
 import com.beikbank.android.data.TransactionInfo;
 import com.beikbank.android.utils.NumberManager;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 public class TransactionRecordsAdapter extends MBaseAdapter {
     /**

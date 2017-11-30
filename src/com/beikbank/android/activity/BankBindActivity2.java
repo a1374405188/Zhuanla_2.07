@@ -35,8 +35,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -449,6 +450,16 @@ public class BankBindActivity2 extends BaseActivity1 implements OnClickListener,
 //            ci.sid="1";
 //            ci.type=type;
 //            CardInfoDao.setCardInfo(ci);
+		    String s1=BeikBankApplication.getSharePref(BeikBankConstant.is_jiaoyi);
+		    if(!"1".equals(s1))
+		    {
+		    	   intent.setClass(act,TransactionPwdSetActivity.class);
+					//Intent intent=new Intent(BankBindActivity.this,TransactionPwdSetActivity.class);
+					intent.putExtra(BeikBankConstant.IS_FORGETTRANSACTIONPWD, false);
+					act.startActivity(intent);
+					finish();
+					return;
+		    }
 		    boolean is_nextpage=intent.getBooleanExtra("is_nextpage",false);
 			if(!is_nextpage)
 			{  
@@ -536,6 +547,7 @@ private void yanzhen()
 //		CheckBankAndPhoneRManager cm=new CheckBankAndPhoneRManager(act, icb1, cr);
 //		cm.start();
 //	}
+	button_next.setEnabled(false);
 	BindBankQueQengParam bq=new BindBankQueQengParam();
 	bq.application_number=b.application_number;
 	bq.sms_verify=ed_ed2.getText().toString();
@@ -549,6 +561,7 @@ ICallBack icb1=new ICallBack() {
 	
 	@Override
 	public void back(Object obj) {
+		button_next.setEnabled(true);
 		if(obj!=null)
 		{   
 			BindBankQueReng_data bqr=(BindBankQueReng_data) obj;

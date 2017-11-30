@@ -35,8 +35,9 @@ import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -449,8 +450,15 @@ public class TiXianActivity extends BaseActivity1 implements View.OnClickListene
             et1.setText(s2);
 			break;
 		case R.id.button_next:
+			
 		    money=et1.getText().toString();
-
+            int a=NumberManager.isDaYu(s2,money);
+            double b=NumberManager.StoD(s2);
+            if(a<0||b==0)
+            {
+            	showToast("可提金额不足");
+            	return ;
+            }
 			ICallBack icb_cdd=new ICallBack() {
 				
 				@Override

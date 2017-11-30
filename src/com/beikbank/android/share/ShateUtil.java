@@ -31,8 +31,10 @@ import com.beikbank.android.net.impl.TongYongManager;
 import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.DensityUtil;
 import com.beikbank.android.utils.NetDataManager;
+import com.beikbank.android.utils.SecretUtils;
+import coma.beikbank.android.R;
 
-import comc.beikbank.android.R;
+
 
 import android.animation.Animator.AnimatorListener;
 import android.animation.Animator;
@@ -98,6 +100,14 @@ public class ShateUtil implements OnClickListener{
 	   initParam();
 	  
    }
+   public static String countId(String id)
+   {
+	   byte[] b=id.getBytes();
+	   byte[] ids=SecretUtils.encryptMode(b);
+	   String id2=SecretUtils.byte2hex(ids);
+      String shareM=id2;
+      return shareM;
+   }
    public void share2(Activity act,String title,String content,String url,String icon)
    {
 	   this.act=(BaseActivity1) act;
@@ -108,8 +118,8 @@ public class ShateUtil implements OnClickListener{
 		   shareMs="";
 	   }
 	   else
-	   {
-	      String shareM=ShareMUtil.toSerialCode(Long.parseLong(id));
+	   {  
+		   String shareM= countId(id);
 	      shareMs="?shareCode="+shareM;
 	   }
 	   wxs=new WeiXinShare(act);
