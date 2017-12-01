@@ -43,7 +43,7 @@ package com.beikbank.android.activity;
 //		setContentView(R.layout.activity_bank_check);
 //		initView();
 //
-//	}
+//	}   、、
 //	public void initView(){
 //		toastAnimSet = new AnimatorSet();
 //		titleTv = (TextView) findViewById(R.id.titleTv);
