@@ -68,7 +68,7 @@ package com.beikbank.android.activity;
 //		textview_check=(TextView)findViewById(R.id.textview_check);
 //
 //
-//
+//     、、、
 //	}
 //
 //
