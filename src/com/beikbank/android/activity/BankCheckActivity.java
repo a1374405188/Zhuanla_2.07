@@ -85,7 +85,7 @@ package com.beikbank.android.activity;
 //		public void afterTextChanged(Editable s) {
 //			// TODO Auto-generated method stub
 //
-//		}
+//		}、、
 //
 //		@Override
 //		public void beforeTextChanged(CharSequence s, int start, int count,
