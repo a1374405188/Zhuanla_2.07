@@ -122,7 +122,7 @@ package com.beikbank.android.activity;
 //				button_next.setEnabled(false);
 //			}
 //		}
-//
+//    、、
 //	}
 //
 //	@Override
