@@ -12,6 +12,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -401,7 +402,10 @@ public class HongbaoUtil2_2_v2 {
 		 DingdanConfimActivity2.gyh=hb;
 		 BeikBankApplication.mSharedPref.putSharePrefString(SharePrefConstant.hongbao2,tag);
 		 BeikBankApplication.mSharedPref.putSharePrefString(SharePrefConstant.hongbao,money);
-		tv.setText("¥"+NumberManager.getString("1",money,0));
+		String s1="¥"+NumberManager.getString("1",money,0);
+		tv.invalidate();
+		tv.setText(s1);
+
 	}
 	
 	

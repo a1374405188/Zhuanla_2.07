@@ -139,6 +139,17 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 		TongYongManager2 tym2=new TongYongManager2(act, icb,gsp);
 		tym2.start();
 	}
+
+	/**
+	 * 退出登录
+	 */
+	public static void tuichu()
+	{
+		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.DO_SUCCESS,false);
+		BeikBankApplication.setSharePref(BeikBankConstant.money_is_yincang,"0");
+		BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,"");
+		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
+	}
 	@Override
 	protected void onRestart() {
 		// TODO Auto-generated method stub
@@ -169,10 +180,7 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 					public void onRightBtnClick() {
 						//intent = new Intent(this, HomeActivity4.class); 
 					    //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-						BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.DO_SUCCESS,false);
-						BeikBankApplication.setSharePref(BeikBankConstant.money_is_yincang,"0");
-						BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,"");
-						BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
+					    tuichu();
 						//startActivity(intent);
 						initView();
 						

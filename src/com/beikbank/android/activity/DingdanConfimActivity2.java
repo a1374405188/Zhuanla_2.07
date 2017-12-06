@@ -238,7 +238,7 @@ public class DingdanConfimActivity2 extends BaseActivity1 implements OnClickList
 		}
 		
 		tv6.setText(NumberManager.getString("1",hongbao,0)+"元抵扣金");
-		if(NumberManager.StoD(hongbao)==0)
+		if(list0.size()==0)
 		{
 			tv6.setText("无可用优惠券");
 		}

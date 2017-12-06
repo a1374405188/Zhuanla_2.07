@@ -20,6 +20,10 @@ public class getDingDanXiangQin implements Serializable{
    */
   public String  order_id;
   /**
+   *订单id（前端显示截取的）
+   */
+  public String  order_id_show;
+  /**
    * 0：成功 1：失败 4：处理中 5：失效 2：订单生成状态
    */
   public String   order_status;

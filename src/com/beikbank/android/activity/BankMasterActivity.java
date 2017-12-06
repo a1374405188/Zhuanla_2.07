@@ -92,6 +92,7 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 
 			    ll.setVisibility(View.VISIBLE);
 			    rl.setVisibility(View.GONE);
+			   ll_xiugai.setVisibility(View.GONE);
 		}
 	
 		
@@ -110,9 +111,18 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 				if(obj!=null)
 				{
 					getQianBao_data gd=(getQianBao_data) obj;
+					getQianBao gb=gd.body.card;
 					gqb=gd.body.card;
 					init2();
 					setbank();
+					BeikBankApplication.setSharePref(BeikBankConstant.qianbao,gb.acc_amount);
+					BeikBankApplication.setSharePref(BeikBankConstant.bank,gb.acc_number);
+					BeikBankApplication.setSharePref(BeikBankConstant.bank_name,gb.bank_name);
+					BeikBankApplication.setSharePref(BeikBankConstant.bank_max_amount,gb.max_amount);
+					BeikBankApplication.setSharePref(BeikBankConstant.bank_min_amount,gb.min_amount);
+					BeikBankApplication.setSharePref(BeikBankConstant.zhanghao,gb.acc_id);
+					BeikBankApplication.setSharePref(BeikBankConstant.icon_url,gb.icon_url);
+					BeikBankApplication.setSharePref(BeikBankConstant.logo_url,gb.logo_url);
 				}
 				
 			}
@@ -293,7 +303,7 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 		linear_left.setVisibility(View.VISIBLE);
 		linear_left.setOnClickListener(this);
 		ll_xiugai=(LinearLayout) findViewById(R.id.ll_xiugai);
-		
+		ll_xiugai.setOnClickListener(this);
 		
 		
 		relative_bankmaster=(RelativeLayout)findViewById(R.id.relative_bankmaster);
@@ -389,6 +399,10 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 			intent=new Intent(act,BankBindActivity2.class);
 			act.startActivity(intent);
 			break;
+			case R.id.ll_xiugai:
+				intent=new Intent(act,PhoneChangeActivity2.class);
+				act.startActivity(intent);
+				break;
 		}
 	}
 

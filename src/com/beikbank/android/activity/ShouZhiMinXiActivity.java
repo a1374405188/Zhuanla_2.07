@@ -179,7 +179,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 //		 }
 		 
 		 
-		 dingdan.setText(gdd.order_id);
+		 dingdan.setText(gdd.order_id_show);
 		 //shouxu.setText(NumberManager.getGeshiHua(gdd.service_amt,2)+"元");
 		 
 		 String s1=getIntent().getStringExtra("yue");
@@ -301,7 +301,7 @@ public class ShouZhiMinXiActivity extends BaseActivity1 implements View.OnClickL
 //			 state.setText("失败");
 //		 }
 		 
-		 dingdan.setText(gdd.order_id);
+		 dingdan.setText(gdd.order_id_show);
 		 shouxu.setText(NumberManager.getGeshiHua(gdd.service_amt,2)+"元");
 		 String s1=getIntent().getStringExtra("yue");
 		 yue.setText(NumberManager.getGeshiHua(s1,2)+"元");
