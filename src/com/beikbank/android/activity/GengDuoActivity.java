@@ -147,7 +147,7 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 	{
 		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.DO_SUCCESS,false);
 		BeikBankApplication.setSharePref(BeikBankConstant.money_is_yincang,"0");
-		BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,"");
+		//BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,"");
 		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
 	}
 	@Override

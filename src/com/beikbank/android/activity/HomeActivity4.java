@@ -158,6 +158,7 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 				//new MessageManager2(act, icb_message).start();
 			}
 		},5000);
+
 	}
     ICallBack icb_message=new ICallBack() {
 		
@@ -376,35 +377,9 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
     	
     	}
     	pv2.initData();
-		addShuJuQianYi();
+
     }
-	private void addShuJuQianYi()
-	{
-		ICallBack icb=new ICallBack() {
-			@Override
-			public void back(Object obj) {
-                 if(obj!=null)
-				 {
-					 ShuJuQianYi1_data sd=(ShuJuQianYi1_data)obj;
-					 if("1".equals(sd.body.is_success))
-					 {
-						   Intent intent=new Intent(act,ShuJuQianYiActivity1.class);
-						   intent.putExtra("list",sd.body.list);
-						   intent.putExtra("size",sd.body.list.size());
-						   startActivity(intent);
 
-
-
-					 }
-				 }
-			}
-		};
-
-		ShuJuQianYi1Param sp=new ShuJuQianYi1Param();
-		sp.user_code=BeikBankApplication.getUserCode();
-		TongYongManager2 tym=new TongYongManager2(this,icb,sp);
-		tym.start();
-	}
 //    UserCheck2_data uc2d;
 //    /**
 //     * 得到用户实名等信息回调

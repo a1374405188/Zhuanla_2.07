@@ -303,7 +303,7 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 						h.sendMessage(msg);
 					}
 				};
-				h.postDelayed(run,2);
+				h.postDelayed(run,2000);
 				
 		}
 	   public void onClick(View view)

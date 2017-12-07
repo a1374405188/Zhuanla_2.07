@@ -1011,7 +1011,8 @@ private void yingcang()
 		else
 		{
 			tv_zuori.setText(NumberManager.getGeshiHua(gd.body.intrestYesterday,2));
-			tv_zhichan.setText(NumberManager.getGeshiHua(gd.body.assetsCurrentTotal,2));
+			String s2=NumberManager.getString(gd.body.assetsCurrentTotal,"1",2);
+			tv_zhichan.setText(s2);
 			tv4.setText(NumberManager.getGeshiHua(gb.body.card.acc_amount,2));
 		}
 		shouyi.setImageResource(R.drawable.img_zhican_shouyi_v2);

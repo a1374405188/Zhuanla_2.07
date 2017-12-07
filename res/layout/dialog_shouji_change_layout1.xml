@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_shouji_change2"
+    >
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_popup_phonenumber_bg"
+        android:layout_marginTop="-2dp"
+        />
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:textColor="#ff666666"
+        android:textSize="13sp"
+        android:text="1. 银行预留手机号是办理银行卡时在银行登记的手机号，若在银行变更过该手机号，需要在赚啦理财平台同步进行修改才能正常交易。"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#ff666666"
+        android:textSize="13sp"
+        android:text="2. 银行预留手机号区别于注册手机号，修改预留手机号不会对注册手机号造成影响。"
+        />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#ff333333"
+        android:textSize="15sp"
+        android:text="我知道了"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_shouji_change1"
+        />
+</LinearLayout>
