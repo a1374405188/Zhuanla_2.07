@@ -19,11 +19,21 @@ public class ActivityManager {
 	public void popActivity(Activity activity) { 
 		if (activity != null) { 
 			//在从自定义集合中取出当前Activity时，也进行了Activity的关闭操作 
-			activity.finish(); 
-			activityStack.remove(activity); 
+			activity.finish();
 			activity = null; 
 		} 
-	} 
+	}
+
+
+	public void rmActivity(Activity activity){
+		if(activity!=null){
+			activityStack.remove(activity);
+		}
+	}
+
+
+
+
 	//获得当前栈顶Activity 
 	public Activity currentActivity() { 
 		Activity activity = null; 

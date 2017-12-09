@@ -1292,6 +1292,7 @@ ICallBack icb_down2=new ICallBack() {
 			//setNoMessage(index);
 			 ll_pull.removeAllViews();
 			 ll_pull.addView(ll2);
+
 			break;
 		case R.id.message:
 			notice.setTextColor(0xffdd2238);
