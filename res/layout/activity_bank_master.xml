@@ -55,46 +55,45 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
 
-        android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-       >
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
 
-      <LinearLayout 
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="20dp"
-          >
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:text=""
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-            <TextView
-            android:id="@+id/textview_icnumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-          
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-       </LinearLayout>
-        
-        
-              <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-          
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-             android:layout_alignParentBottom="true"
-             android:layout_alignParentRight="true"
-            >
+            android:orientation="vertical">
 
-             <TextView
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textview_icnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="当日限额:"
@@ -105,20 +104,20 @@
                 android:id="@+id/textview_daypay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-               
+
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linear_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            >
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
 
-                   <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="单笔限额:"
@@ -129,25 +128,25 @@
                 android:id="@+id/textview_singlepay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-             
+
                 android:textColor="@color/white"
                 android:textSize="15sp" />
-            
-            
-         
+
+
         </LinearLayout>
 
-  
+
     </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/ll_xiugai"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ffffffff"
         android:gravity="center"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="-3dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="-6dp"
         >
 
         <TextView

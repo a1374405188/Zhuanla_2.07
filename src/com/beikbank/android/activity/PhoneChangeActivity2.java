@@ -20,14 +20,18 @@ import android.widget.TextView;
 
 import com.beikbank.android.data2.CheckJiaoYiMiMa_data;
 import com.beikbank.android.data2.checkYanZhenMa_data;
+import com.beikbank.android.data2.getYuLiuPhone_data;
 import com.beikbank.android.dataparam2.CheckJiaoYiMiMaParam;
 import com.beikbank.android.dataparam2.HeadParam2;
 import com.beikbank.android.dataparam2.HuTouOpenOrCloseParam;
 import com.beikbank.android.dataparam2.checkYanZhenMaParam;
 import com.beikbank.android.dataparam2.getYanZhenMaParam;
+import com.beikbank.android.dataparam2.getYuLiuPhoneParam;
 import com.beikbank.android.dataparam2.phoneChangeParam;
+import com.beikbank.android.dataparam2.unBindParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
+import com.beikbank.android.net.ManagerParam;
 import com.beikbank.android.net.impl.TongYongManager2;
 import com.beikbank.android.utils.AdvancedCountdownTimer;
 import com.beikbank.android.utils.BeikBankConstant;
@@ -68,7 +72,7 @@ public class PhoneChangeActivity2 extends BaseActivity1 implements OnClickListen
 		initView();
 		
 		
-        
+        ininData();
 	}
 
 
@@ -107,6 +111,26 @@ public class PhoneChangeActivity2 extends BaseActivity1 implements OnClickListen
 
 
 	    }
+	    private void ininData()
+		{
+			ICallBack icb=new ICallBack() {
+				@Override
+				public void back(Object obj) {
+                     if(obj!=null)
+					 {
+						 getYuLiuPhone_data gd=(getYuLiuPhone_data)obj;
+						 TextView tv_phone=(TextView) findViewById(R.id.tv_phone);
+						 tv_phone.setText(Utils.getEncryptedPhonenumber(gd.body.pre_phone));
+					 }
+				}
+			};
+
+			getYuLiuPhoneParam gyl=new getYuLiuPhoneParam();
+			gyl.user_code=BeikBankApplication.getUserCode();
+			TongYongManager2 tym2=new TongYongManager2(this,icb,gyl);
+			tym2.start();
+
+		}
 	  class TextWatcherListener2 implements TextWatcher {
 			@Override
 			public void afterTextChanged(Editable s) {
@@ -313,9 +337,7 @@ public class PhoneChangeActivity2 extends BaseActivity1 implements OnClickListen
 						CheckJiaoYiMiMa_data cd=(CheckJiaoYiMiMa_data) obj;
 						if("0000".equals(cd.header.re_code))
 						{
-							Intent intent=new Intent(PhoneChangeActivity2.this,PhoneChangeActivity3.class);
-							startActivity(intent);
-                            finish();
+							unBind();
 						}
 						else
 						{
@@ -332,7 +354,31 @@ public class PhoneChangeActivity2 extends BaseActivity1 implements OnClickListen
 		CheckJiaoYiMiMaParam cp=new CheckJiaoYiMiMaParam();
 		cp.tra_password= MD5.md5s32(passwd);
 		cp.user_code=BeikBankApplication.getUserCode();
-		TongYongManager2  tym2=new TongYongManager2(this, icb,cp);
+		ManagerParam mp=new ManagerParam();
+		mp.isShowDialog=false;
+		TongYongManager2  tym2=new TongYongManager2(this, icb,cp,mp);
+		tym2.start();
+	}
+	private void unBind()
+	{
+		ICallBack icb=new ICallBack() {
+
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+
+					Intent intent=new Intent(PhoneChangeActivity2.this,PhoneChangeActivity3.class);
+					startActivity(intent);
+					finish();
+
+				}
+
+			}
+		};
+		unBindParam ub=new unBindParam();
+		ub.user_code=BeikBankApplication.getUserCode();
+		TongYongManager2  tym2=new TongYongManager2(this, icb,ub);
 		tym2.start();
 	}
 		 private void showTiShi()

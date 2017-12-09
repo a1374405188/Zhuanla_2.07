@@ -5,6 +5,7 @@ import com.beikbank.android.activity.BankBindActivity2;
 import com.beikbank.android.activity.DingqiDetailActivity;
 import com.beikbank.android.activity.DingqiGoumaiActivity;
 import com.beikbank.android.activity.LoginRegActivity;
+import com.beikbank.android.activity.PhoneChangeActivity3;
 import com.beikbank.android.activity.PurchaseActivity;
 import com.beikbank.android.activity.QianbaoActivity2;
 import com.beikbank.android.activity.QianbaoActivity3;
@@ -89,12 +90,20 @@ public class LiuChenSelect {
 			//intent.putExtra(BeikBankConstant.INTENT_AMOUNT, money);
 			act.startActivity(intent);
 	   }
-	   else if("0".equals(uc2d.body.is_bind_card))
+	   else if("3".equals(uc2d.body.card_bind_status))
+	   {
+		   intent.setClass(act, PhoneChangeActivity3.class);
+		   //intent.putExtra(BeikBankConstant.INTENT_AMOUNT, money);
+		   act.startActivity(intent);
+	   }
+	   else if("0".equals(uc2d.body.is_bind_card)&&!"3".equals(uc2d.body.card_bind_status))
 	   {
 		    intent.setClass(act,BankBindActivity2.class);
 			//intent.putExtra(BeikBankConstant.INTENT_AMOUNT, money);
 			act.startActivity(intent);
 	   }
+
+
 	   else if("0".equals(uc2d.body.is_tra_password))
 	   {
 		    intent.setClass(act,TransactionPwdSetActivity.class);

@@ -127,9 +127,10 @@ public class YouHuiQuanActivity5 extends BaseActivity1 implements View.OnClickLi
 		 money=getIntent().getStringExtra("money");
 		 tianshu=getIntent().getStringExtra("tianshu");
 		 gyh=(getAllYouHuiQuan) getIntent().getSerializableExtra("gyh");
-		
+		boolean is_has=getIntent().getBooleanExtra("is_has",false);
 		ArrayList<getAllYouHuiQuan> list=(ArrayList<getAllYouHuiQuan>) getIntent().getSerializableExtra("list");
-		 if(list.size()==0)
+
+		 if(is_has==false)
 		 {
 			  HongbaoUtil2_2_v2 hu2=new HongbaoUtil2_2_v2(act,tv_money,count);
 			  Collections.sort(list);

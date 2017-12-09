@@ -69,15 +69,17 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
      * 0未绑卡1绑卡
      */
     String is_bank="0";
+	String state="0";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bank_master);
 		StateBarColor.init(this,0xffffffff);
 		is_bank=getIntent().getStringExtra("is_bank");
+		state=getIntent().getStringExtra("state");
 		initView();
 		
-		if("1".equals(is_bank))
+		if("1".equals(is_bank)||"3".equals(state))
 		{
 			initData();
 		}
@@ -400,8 +402,15 @@ public class BankMasterActivity extends BaseActivity implements OnClickListener{
 			act.startActivity(intent);
 			break;
 			case R.id.ll_xiugai:
-				intent=new Intent(act,PhoneChangeActivity2.class);
-				act.startActivity(intent);
+				if("3".equals(state)) {
+					intent = new Intent(act, PhoneChangeActivity3.class);
+					act.startActivity(intent);
+				}
+				else
+				{
+					intent = new Intent(act, PhoneChangeActivity2.class);
+					act.startActivity(intent);
+				}
 				break;
 		}
 	}

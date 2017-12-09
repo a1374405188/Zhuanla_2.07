@@ -80,6 +80,10 @@ public class DingdanConfimActivity2 extends BaseActivity1 implements OnClickList
      String money;
      TextView tv_zhifu;
     public static getAllYouHuiQuan gyh;
+	/**
+	 * 是否有可用红包
+	 */
+	boolean is_has;
 	 @Override
 	 protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
@@ -112,8 +116,10 @@ public class DingdanConfimActivity2 extends BaseActivity1 implements OnClickList
 						{   list0=list;
 							money2=money;
 							tv_zhifu.setText(NumberManager.getString("1",money,2)+"元");
+							is_has=false;
 							return;
 						}
+						is_has=true;
 						 BeikBankApplication.mSharedPref.putSharePrefString(SharePrefConstant.hongbao2,gyh.coupon_no);
 						 BeikBankApplication.mSharedPref.putSharePrefString(SharePrefConstant.hongbao,gyh.coupon_value);
 						
@@ -238,7 +244,7 @@ public class DingdanConfimActivity2 extends BaseActivity1 implements OnClickList
 		}
 		
 		tv6.setText(NumberManager.getString("1",hongbao,0)+"元抵扣金");
-		if(list0.size()==0)
+		if(list0.size()==0||is_has==false)
 		{
 			tv6.setText("无可用优惠券");
 		}
@@ -269,6 +275,7 @@ public class DingdanConfimActivity2 extends BaseActivity1 implements OnClickList
 	         intent.putExtra("money",money);
 	         intent.putExtra("tianshu",gcp.term);
 	         intent.putExtra("list",list0);
+				 intent.putExtra("is_has",is_has);
 	         startActivity(intent);
 	         break;
 	         case R.id.button_next:
