@@ -1,6 +1,7 @@
 package com.beikbank.android.utils;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -240,6 +241,7 @@ public class NumberManager {
 	   try{
 		String s=NumberManager.getString(str,"1", scale);
 		NumberFormat usFormat0 = NumberFormat.getIntegerInstance(Locale.US);
+		   usFormat0.setRoundingMode(RoundingMode.DOWN);
 		usFormat0.setMinimumFractionDigits(scale);
 		s0=usFormat0.format(Double.parseDouble(s));
    }  

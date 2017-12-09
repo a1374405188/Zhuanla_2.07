@@ -41,6 +41,7 @@ import com.beikbank.android.data2.getHuoQiXiangQin2_1;
 import com.beikbank.android.dataparam.CheckBankParam;
 import com.beikbank.android.dataparam.DingqiPIParam;
 import com.beikbank.android.dataparam2.HuoQiShuHuiParam2;
+import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
 import com.beikbank.android.dataparam2.getDingQiXiangQingParam;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ICallBack;
@@ -126,8 +127,9 @@ public class HuoqiDetailActivity4 extends BaseActivity1 implements View.OnClickL
 		TongYongManager2 tym2=new TongYongManager2(act, icb,gp);
 		tym2.start();
     	
-    	
+
     }
+
     String name;
     private void init()
     {   

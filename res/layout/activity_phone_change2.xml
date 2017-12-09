@@ -1,0 +1,231 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" 
+    android:orientation="vertical">
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="44dp"
+           android:background="@color/white" >
+
+           <LinearLayout
+               android:id="@+id/linear_left"
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:layout_alignParentLeft="true"
+               android:gravity="center">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:contentDescription="@null"
+                   android:background="@drawable/btn_selector_back"/>
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/titleTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:textColor="@color/ziti1"
+               android:textSize="18sp"
+               android:ellipsize="end"
+               />
+           <LinearLayout
+               android:id="@+id/ll_tishi"
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:layout_alignParentRight="true"
+               android:gravity="center">
+           <ImageView
+
+               android:layout_marginRight="16dp"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:contentDescription="@null"
+               android:background="@drawable/img_tixian"/>
+           </LinearLayout>
+       </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_divide_height"
+            android:background="@color/line2" />
+   </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+       android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffffff"
+        >
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#ff333333"
+              android:textSize="16sp"
+              android:text="原预留手机号"
+
+
+              />
+          <View
+              android:layout_width="0px"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+
+              />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            android:text="13000000000"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+
+        >
+         <View
+             android:layout_marginLeft="16dp"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:background="@color/line2"
+             />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffffff"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff333333"
+            android:textSize="16sp"
+            android:text="银行卡"
+
+
+            />
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            android:text=""
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height"
+        android:background="@drawable/bg_more_item"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/transaction_password"
+            android:textColor="#ff333333"
+            android:textSize="16sp"
+            />
+
+        <com.beikbank.android.widget.ClearableEditText
+            android:id="@+id/et1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_textview_margin"
+            android:layout_marginRight="@dimen/activity_textview_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/input_transaction_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="@color/ziti6"
+            android:textColorHint="@color/ziti7"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_line"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_wangji"
+            android:textColor="#ff0097e2"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password" />
+    </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          
+            android:orientation="vertical" >
+
+         
+           
+
+                <include layout="@layout/error_info"/>
+            
+
+        </LinearLayout>
+
+
+   
+
+
+
+</LinearLayout>

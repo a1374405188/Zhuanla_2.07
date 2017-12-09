@@ -65,16 +65,19 @@ public class GlobalExceptionHandler implements UncaughtExceptionHandler{
 		Exception e=new Exception(ex);
 		e.printStackTrace();
 		LogHandler.writeLogFromException(TAG,e);
+
 		
-		
-		PrintWriter pw=null;
-		StringWriter sw=new StringWriter();
-		pw = new PrintWriter(sw);
-		e.printStackTrace(pw);
-		StringBuffer sb=sw.getBuffer();
-		text=getAppInfo(context)+sb.toString();
+//		PrintWriter pw=null;
+//		StringWriter sw=new StringWriter();
+//		pw = new PrintWriter(sw);
+//		e.printStackTrace(pw);
+//		StringBuffer sb=sw.getBuffer();
+//		text=getAppInfo(context)+sb.toString();
 	    //Log.d("mail",text);
 		//restartApplication();
+		                             Activity act=(Activity) context;
+									 act.finish();
+									 System.exit(0);
 		
 	}
 	

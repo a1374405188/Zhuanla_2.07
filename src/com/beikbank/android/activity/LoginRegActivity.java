@@ -186,6 +186,7 @@ public class LoginRegActivity extends BaseActivity1 implements OnClickListener{
 				intent.putExtra(BeikBankConstant.INTENT_PHONENUMBER, clearedittext_phonenumber.getText().toString());
 				startActivity(intent);
 			}
+			finish();
 		}
 		
 		

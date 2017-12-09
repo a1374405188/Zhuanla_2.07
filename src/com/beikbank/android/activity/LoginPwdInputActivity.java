@@ -37,11 +37,13 @@ import com.beikbank.android.data2.LoginQian;
 import com.beikbank.android.data2.LoginQian2;
 import com.beikbank.android.data2.LoginQian_data;
 import com.beikbank.android.data2.Login_data;
+import com.beikbank.android.data2.ShuJuQianYi1_data;
 import com.beikbank.android.data2.UserCheck2;
 import com.beikbank.android.data2.UserCheck2_data;
 import com.beikbank.android.dataparam.LoginParam;
 import com.beikbank.android.dataparam.LoginParam2;
 import com.beikbank.android.dataparam2.LoginQianParam;
+import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
 import com.beikbank.android.dataparam2.UserCheckParam;
 import com.beikbank.android.dataparam2.UserCheckParam2;
 import com.beikbank.android.exception.LogHandler;
@@ -88,7 +90,7 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 		StateBarColor.init(this,0xffffffff);
 		initView();
 		initdata();
-
+        addShuJuQianYi();
 	}
 	public void initView(){
 		ll_error=(LinearLayout) findViewById(R.id.ll_error);
@@ -116,7 +118,26 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 
 		phonenumber=getIntent().getStringExtra(BeikBankConstant.INTENT_PHONENUMBER);
 	}
+	ShuJuQianYi1_data sd;
+	private void addShuJuQianYi()
+	{
+		ICallBack icb=new ICallBack() {
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+					ShuJuQianYi1_data sd1=(ShuJuQianYi1_data)obj;
+					sd=sd1;
 
+				}
+			}
+		};
+
+		ShuJuQianYi1Param sp=new ShuJuQianYi1Param();
+		sp.user_code=BeikBankApplication.getUserCode();
+		TongYongManager2 tym=new TongYongManager2(this,icb,sp);
+		tym.start();
+	}
 	@Override
 	protected void onNewIntent(Intent intent) {
 		// TODO Auto-generated method stub
@@ -182,6 +203,22 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 				//Login l=ld.body;
 				 if("0000".equals(ld.header.re_code))
 				 {
+                    while (sd!=null)
+					{
+						if ("1".equals(sd.body.is_success)) {
+							Intent intent = new Intent(act, ShuJuQianYiActivity1.class);
+							intent.putExtra("list", sd.body.list);
+							intent.putExtra("size", sd.body.list.size());
+							startActivity(intent);
+
+							finish();
+							return;
+						}
+						else
+						{
+							break;
+						}
+					}
 				  BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.DO_SUCCESS,true);
 				
 				  

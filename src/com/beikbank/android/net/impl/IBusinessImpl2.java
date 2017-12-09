@@ -95,6 +95,9 @@ import com.beikbank.android.data2.LunBo_data;
 import com.beikbank.android.data2.MiMaOrDuanXin_data;
 import com.beikbank.android.data2.NameRengzhen_data;
 import com.beikbank.android.data2.Register_data;
+import com.beikbank.android.data2.ShuJuQianYi1_data;
+import com.beikbank.android.data2.ShuJuQianYi2;
+import com.beikbank.android.data2.ShuJuQianYi2_data;
 import com.beikbank.android.data2.TanChuan_data;
 import com.beikbank.android.data2.TiXianQingQiu_data;
 import com.beikbank.android.data2.TiXianQueReng_data;
@@ -135,6 +138,7 @@ import com.beikbank.android.data2.phoneChangeChenck_data;
 import com.beikbank.android.data2.phoneChange_data;
 import com.beikbank.android.data2.setJiaoyiPasswd_data;
 import com.beikbank.android.data2.setLoginPasswd_data;
+import com.beikbank.android.data2.getYuLiuPhone_data;
 import com.beikbank.android.dataparam.BiaoshiParam;
 import com.beikbank.android.dataparam.CheckBankParam;
 import com.beikbank.android.dataparam.HeadParam;
@@ -194,6 +198,8 @@ import com.beikbank.android.dataparam2.LunBoParam;
 import com.beikbank.android.dataparam2.MiMaOrDuanXinParam;
 import com.beikbank.android.dataparam2.NameRengzhenParam;
 import com.beikbank.android.dataparam2.RegisterParam;
+import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
+import com.beikbank.android.dataparam2.ShuJuQianYi2Param;
 import com.beikbank.android.dataparam2.TiXianQingQiuParam;
 import com.beikbank.android.dataparam2.TiXianQueRengParam;
 import com.beikbank.android.dataparam2.UserCheckParam;
@@ -236,6 +242,7 @@ import com.beikbank.android.dataparam2.phoneChangeCheckParam;
 import com.beikbank.android.dataparam2.phoneChangeParam;
 import com.beikbank.android.dataparam2.setJiaoyiPasswdParam;
 import com.beikbank.android.dataparam2.setLoginPasswdParam;
+import com.beikbank.android.dataparam2.getYuLiuPhoneParam;
 import com.beikbank.android.exception.LogHandler;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.ErrorCodeInfo;
@@ -247,6 +254,8 @@ import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils2.TimeUtil;
+import com.beikbank.android.dataparam2.*;
+import com.beikbank.android.data2.*;
 import com.google.gson.JsonObject;
  /**
  *copyright 喻国合 
@@ -913,6 +922,38 @@ public class IBusinessImpl2 {
       	     String url=base_service+url9;
         	 obj=getTongYong(getAllYouHuiQuan_data.class, url, paramClass, hp);
          }
+		 else if(paramClass instanceof ShuJuQianYi1Param)
+		 {
+			 hp=new HeadParam2();
+			 hp.tra_code="070133";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url1;
+			 obj=getTongYong(ShuJuQianYi1_data.class, url, paramClass, hp);
+		 }
+		 else if(paramClass instanceof ShuJuQianYi2Param)
+		 {
+			 hp=new HeadParam2();
+			 hp.tra_code="070134";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url1;
+			 obj=getTongYong(ShuJuQianYi2_data.class, url, paramClass, hp);
+		 }
+		 else if(paramClass instanceof getYuLiuPhoneParam)
+		 {
+			 hp=new HeadParam2();
+			 hp.tra_code="020028";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url6;
+			 obj=getTongYong(getYuLiuPhone_data.class, url, paramClass, hp);
+		 }
+		 else if(paramClass instanceof unBindParam)
+		 {
+			 hp=new HeadParam2();
+			 hp.tra_code="070125";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url1;
+			 obj=getTongYong(unBind_data.class, url, paramClass, hp);
+		 }
          return obj;
     }
     HeadParam2 hp;
@@ -955,7 +996,7 @@ public class IBusinessImpl2 {
   	     String json=Jiami.getValue(hp,paramClass);
   	     if(SystemConfig.isDebug())
 	     {
-	         Log.d("json_qinqiu",json);
+			 Log.e("json_qinqiu"+"_"+paramClass.getClass().getName(),json);
 	     }
  	     url=url+URLEncoder.encode(json);
 	     HttpUtil hu=new HttpUtil(context);
@@ -985,7 +1026,7 @@ public class IBusinessImpl2 {
    	    String json=Jiami.getValue(hp,paramClass);
    	 if(SystemConfig.isDebug())
      {
-         Log.e("json_qinqiu",json);
+         Log.e("json_qinqiu"+"_"+paramClass.getClass().getName(),json);
      }
    	     TreeMap<String,String> map=new TreeMap<String, String>();
    	     map.put("report",json);

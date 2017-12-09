@@ -6,6 +6,11 @@ package com.beikbank.android.data2;
  */
 public class UserCheck2 
 {
+
+    /**
+     *0未绑卡（默认），1绑卡，3手机号处理解绑（只用3）
+     */
+    public String  card_bind_status;
 	/**
 	 *0未绑卡；1已绑卡
 	 */

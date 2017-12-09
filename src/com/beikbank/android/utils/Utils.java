@@ -127,7 +127,7 @@ public class Utils {
 		if(cardnumber.length()==16){
 			return "**** **** **** "+cardnumber.substring(12,cardnumber.length()); 
 		}else{
-			return "**** **** **** **"+cardnumber.substring(14,cardnumber.length());
+			return "**** **** **** ***"+cardnumber.substring(15,cardnumber.length());
 		}
 	}
 

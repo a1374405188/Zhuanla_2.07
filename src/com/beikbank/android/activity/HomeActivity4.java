@@ -18,6 +18,7 @@ import com.beikbank.android.data.Notice;
 import com.beikbank.android.data.Notice_data;
 import com.beikbank.android.data.Win;
 import com.beikbank.android.data.Win_data;
+import com.beikbank.android.data2.ShuJuQianYi1_data;
 import com.beikbank.android.data2.TanChuan;
 import com.beikbank.android.data2.TanChuan_data;
 import com.beikbank.android.data2.UserCheck2;
@@ -25,6 +26,7 @@ import com.beikbank.android.data2.UserCheck2_data;
 import com.beikbank.android.dataparam.ShoushiIsSetParam;
 import com.beikbank.android.dataparam.WinParam;
 import com.beikbank.android.dataparam2.LoginQianParam;
+import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
 import com.beikbank.android.dataparam2.UserCheckParam2;
 import com.beikbank.android.dataparam2.getTanChuanParam;
 import com.beikbank.android.dataparam2.getUserOrXiuGaiParam;
@@ -156,6 +158,7 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 				//new MessageManager2(act, icb_message).start();
 			}
 		},5000);
+
 	}
     ICallBack icb_message=new ICallBack() {
 		
@@ -374,8 +377,9 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
     	
     	}
     	pv2.initData();
+
     }
-    
+
 //    UserCheck2_data uc2d;
 //    /**
 //     * 得到用户实名等信息回调

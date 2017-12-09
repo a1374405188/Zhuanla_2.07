@@ -1,0 +1,134 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" 
+    android:orientation="vertical">
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+       android:background="#ffffffff"
+       >
+
+       <LinearLayout
+           android:id="@+id/linear_left"
+           android:layout_width="50dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentLeft="true"
+           android:gravity="center">
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:contentDescription="@null"
+               android:background="@drawable/img_icon_close"/>
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/titleTv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textColor="@color/ziti1"
+           android:textSize="18sp"
+           android:ellipsize="end"
+           />
+       <TextView
+           android:id="@+id/right"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"
+           style="@style/custom_textview1"
+           android:visibility="gone"
+           android:gravity="center_vertical"
+           android:layout_marginRight="16dp"
+           />
+
+   </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_divide_height"
+        android:background="@color/line2" />
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+           <LinearLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#ffffffff"
+               android:layout_marginTop="16dp"
+
+               android:padding="16dp"
+               android:orientation="vertical"
+               >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="赚啦理财已上线银行存管，鉴于存管和用户资产安全的需要，今后每一位用户（以身份证为判断标准）将只能保留一个交易账户。对于历史有多个账号的用户需要按以下步骤做如下处理："
+                android:textColor="#ff333333"
+                android:textSize="18sp"
+
+                />
+
+               <TextView
+                  android:id="@+id/tv1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:textColor="#ff333333"
+                   android:textSize="16sp"
+                   android:layout_marginTop="20dp"
+                   />
+               <TextView
+                   android:id="@+id/tv2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:textColor="#ff333333"
+                   android:textSize="16sp"
+                   android:layout_marginTop="20dp"
+                   />
+               <TextView
+                   android:id="@+id/tv3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:textColor="#ff333333"
+                   android:textSize="16sp"
+                   android:layout_marginTop="20dp"
+                   />
+           </LinearLayout>
+
+
+
+          <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          
+            android:orientation="vertical" >
+
+         
+           
+
+                <include layout="@layout/error_info"/>
+            
+
+        </LinearLayout>
+
+
+
+
+ </LinearLayout>
+     </ScrollView>
+</LinearLayout>

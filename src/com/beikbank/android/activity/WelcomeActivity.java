@@ -65,6 +65,7 @@ import com.beikbank.android.dataparam2.LoginQianParam;
 import com.beikbank.android.dataparam2.LunBoParam;
 import com.beikbank.android.dataparam2.NameRengzhenParam;
 import com.beikbank.android.dataparam2.RegisterParam;
+import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
 import com.beikbank.android.dataparam2.UserCheckParam;
 import com.beikbank.android.dataparam2.UserCheckParam2;
 import com.beikbank.android.dataparam2.XiaoxiLieBiaoParam;
@@ -128,15 +129,28 @@ public class WelcomeActivity extends BaseActivity1{
 		
 	if(1==2)
 	{
-		Intent intent=new Intent(this,YouHuiQuanActivity5.class);
+       ICallBack icb=new ICallBack() {
+		   @Override
+		   public void back(Object obj) {
+
+		   }
+	   };
+
+		ShuJuQianYi1Param sp=new ShuJuQianYi1Param();
+		sp.user_code=BeikBankApplication.getUserCode();
+		TongYongManager2 tym=new TongYongManager2(this,icb,sp);
+		tym.start();
+		Intent intent=new Intent(this,ShuJuQianYiActivity3.class);
 		startActivity(intent);
 		return;
 	}
 		if(1==2)
 		{   
-			
-			String ip=RegisterCodeInputActivity.getIPAddress(act);
-			Log.e("ip",ip);
+
+
+
+//			String ip=RegisterCodeInputActivity.getIPAddress(act);
+//			Log.e("ip",ip);
 			
 			ICallBack icb=new ICallBack() {
 				

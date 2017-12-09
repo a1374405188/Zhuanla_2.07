@@ -225,21 +225,13 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 				
 				return;
 			}
-			
-		         if("1".equals(uc2.is_bind_card))
-				    {
-				    	//intent=new Intent(act,BankMasterActivity.class);
-						//act.startActivity(intent);
-		        	   intent=new Intent(act,BankMasterActivity.class);
-				    	intent.putExtra("is_bank","1");
-						act.startActivity(intent);
-				    }
-				    else
-				    {
-				    	intent=new Intent(act,BankMasterActivity.class);
-				    	intent.putExtra("is_bank","0");
-						act.startActivity(intent);
-				    }
+
+
+			intent=new Intent(act,BankMasterActivity.class);
+			intent.putExtra("is_bank",uc2.is_bind_card);
+			intent.putExtra("state",uc2.card_bind_status);
+			act.startActivity(intent);
+
 				
 				
 			
@@ -351,8 +343,12 @@ public class GerenActivity extends BaseActivity implements OnClickListener
 				if(obj!=null)
 				{
 				 UserCheck2_data uc2d=(UserCheck2_data) obj;
-				 uc2=uc2d.body;
-				 if("1".equals(uc2.is_bind_card))
+					uc2=uc2d.body;
+					BeikBankApplication.setSharePref(BeikBankConstant.is_bindbank,uc2.is_bind_card);
+					BeikBankApplication.setSharePref(BeikBankConstant.is_shimin,uc2.is_real_name);
+					BeikBankApplication.setSharePref(BeikBankConstant.is_olduser,uc2.is_new_user);
+					BeikBankApplication.setSharePref(BeikBankConstant.is_jiaoyi,uc2.is_tra_password);
+				 if("1".equals(uc2.is_bind_card)||"3".equals(uc2.card_bind_status))
 				 {
 					 tv_bank.setText("已绑定");
 				 }

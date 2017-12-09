@@ -49,7 +49,7 @@ public class BaseActivity1 extends BaseActivity{
 	public PopupWindow window;
 	protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
-        //Thread.setDefaultUncaughtExceptionHandler(new GlobalExceptionHandler(this));
+        Thread.setDefaultUncaughtExceptionHandler(new GlobalExceptionHandler(this));
       
         
         //友盟统计

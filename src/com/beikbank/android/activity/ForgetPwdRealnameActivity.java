@@ -263,6 +263,7 @@ public class ForgetPwdRealnameActivity extends BaseActivity1 implements OnClickL
     	uc3.id_number=id;
     	uc3.real_name=name;
     	uc3.phone_number=phone;
+		uc3.user_code=BeikBankApplication.getUserCode();
     	TongYongManager2 tym2=new TongYongManager2(act, icb,uc3);
     	tym2.start();
     	
