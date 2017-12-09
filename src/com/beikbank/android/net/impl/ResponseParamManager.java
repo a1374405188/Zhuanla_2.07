@@ -107,6 +107,9 @@ public class ResponseParamManager {
 				   {
 					   continue;
 				   }
+				   if (mfield.getName().equals("serialVersionUID")) {
+					   continue;
+				   }
 				   Object data_json=jo.getString(mfield.getName());
 				   if(!data_json.equals("null")&&!"".equals(data_json))
 				   {

@@ -42,6 +42,10 @@ public class RequestParamManager {
 			{
 				continue;
 			}
+			/**忽略serialVersionUID**/
+			if (mfield.getName().equals("serialVersionUID")) {
+				continue;
+			}
 			if(obj1==null)
 			{
 				 map.put(mfield.getName(),"");
