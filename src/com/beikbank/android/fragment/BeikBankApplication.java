@@ -36,6 +36,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration.Builder;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.squareup.leakcanary.LeakCanary;
 
 public class BeikBankApplication extends Application{
     private static String userId;
@@ -57,7 +58,7 @@ public class BeikBankApplication extends Application{
 	public static BeikBankApplication instance;
 	private ActivityManager activityManager = null; 
 	public static ArrayList<SupportBank> list;
-	
+	public static  BeikBankApplication  beikBankApplicatio=null;
 	/**
 	 * 有消息提示时为true,否则为false
 	 */
@@ -72,9 +73,9 @@ public class BeikBankApplication extends Application{
 	 *网络提示文本
 	 */
 	public static TextView tv_msg_show;
-	
-	
-	
+
+
+
 	public static BeikBankApplication getInstance(){
 		if(instance==null){
 			instance=new BeikBankApplication();
@@ -86,20 +87,26 @@ public class BeikBankApplication extends Application{
     } 
     public void setActivityManager(ActivityManager activityManager) { 
         this.activityManager = activityManager; 
-    } 
+    }
+
+
+
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		activityManager = ActivityManager.getScreenManager(); 
+		instance=this;
+		activityManager = ActivityManager.getScreenManager();
 		initImageLoader(getApplicationContext());
 		list=Utils.getSupportBankList(getApplicationContext());
 		mSharedPref = SharedPref.getInstance(SystemConfig.PREF_NAME, this);
 		mLockPatternUtils = new LockPatternUtils(this);
 		fontFace = Typeface.createFromAsset(getAssets(),"Helvetica.ttf");
 		BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.VERSION, "1.0.0");
+
+
 		
-		
-		
+
+
 		//JPushInterface.setDebugMode(true);
         //JPushInterface.init(this);
         
@@ -374,4 +381,8 @@ public class BeikBankApplication extends Application{
     	width=act.getWindowManager().getDefaultDisplay().getWidth();
     	height=act.getWindowManager().getDefaultDisplay().getHeight();
     }
+
+
+
+
 }

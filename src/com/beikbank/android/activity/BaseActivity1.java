@@ -171,7 +171,7 @@ public class BaseActivity1 extends BaseActivity{
         {
 		  unregisterReceiver(mMessageReceiver);
         }
-		
+		BeikBankApplication.getInstance().getActivityManager().rmActivity(this);
 	}
 		// 初始化 JPush。如果已经初始化，但没有登录成功，则执行重新登录。
 		public void jginit() {
