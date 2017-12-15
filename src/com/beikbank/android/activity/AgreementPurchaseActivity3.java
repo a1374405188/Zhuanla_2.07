@@ -34,14 +34,14 @@ public class AgreementPurchaseActivity3 extends BaseActivity implements OnClickL
 	private LinearLayout linear_left;
 	private String assetPath;
 	//private String path1="file:///android_asset/beikbank_pay.html";
-	private String path1=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_pay.pdf";
+	private String path1=SystemConfig.huodong_url+"protocol/beikbank_pay.pdf";
 	//private String path3="file:///android_asset/beikbank_service.html";
-	private String path3=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_service.pdf";
+	private String path3=SystemConfig.huodong_url+"protocol/invest_service.pdf";
 	private String path2=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_entrust.pdf";
-	private String path4=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_license.pdf";
+	private String path4=SystemConfig.huodong_url+"protocol/beikbank_register.pdf";
 	private String path5=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_zhuanrang.pdf";
 	private String path6=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/beikbank_souquan.pdf";
-	private String path7=SystemConfig.kHOST_URL_BASE+"beikbankapp/product/xieyi/risk_notification.pdf";
+	private String path7=SystemConfig.huodong_url+"protocol/risk_notification.pdf";
 	private int title;
     private int title1=R.string.agreement11;
     private int title2=R.string.agreement12;
