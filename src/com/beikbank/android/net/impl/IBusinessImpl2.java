@@ -304,9 +304,11 @@ public class IBusinessImpl2 {
     		    url3=":5053/productAPI/product/productAPI.do";
     		    url4=":5051/beikbank-order-api/orderApi.do";
     		    url5=":5052/beikbank-trade-api/tradeApi.do?report=";
-    		    url6=":5050/beikbank-pay-api/payApi.do?report=";
+    		    url6=":5062/recharge/recharge.do?report=";
     		    url7=":5054/managerment/manager/managerApi.do?report=";
     		    url8=":5059/beikbank-message-api/msg.do?report=";
+
+			   url9=":5068/beikbank-bonus-api/bonusApi.do?report=";
     	   }
     	   else if(SystemConfig.index==3)
     	   {
@@ -321,16 +323,16 @@ public class IBusinessImpl2 {
     		    
     		    
     		    
-    		    url1=":13128/user/userApi?report=";
-    		    url2=":13139/beikbank-settlement/settlementApi.do";
-    		    url3=":13125/productAPI/product/productAPI.do";
-    		    url4=":13123/beikbank-order-api/orderApi.do";
-    		    url5=":13124/beikbank-trade-api/tradeApi.do?report=";
-    		    url6=":13143/recharge/recharge.do?report=";
-    		    url7=":13126/managerment/manager/managerApi.do?report=";
-    		    url8=":13140/beikbank-message-api/msg.do?report=";
-    		    
-    		    
+    		    url1=":6028/user/userApi?report=";
+    		    url2=":6039/beikbank-settlement/settlementApi.do";
+    		    url3=":6025/productAPI/product/productAPI.do";
+    		    url4=":6023/beikbank-order-api/orderApi.do";
+    		    url5=":6024/beikbank-trade-api/tradeApi.do?report=";
+    		    url6=":6043/recharge/recharge.do?report=";
+    		    url7=":6026/managerment/manager/managerApi.do?report=";
+    		    url8=":6040/beikbank-message-api/msg.do?report=";
+
+			   url9=":6044/beikbank-bonus-api/bonusApi.do?report=";
     		    
     	   }
     	
@@ -378,7 +380,12 @@ public class IBusinessImpl2 {
          }
          else if(paramClass instanceof LunBoParam)
          {
-        	 obj=getLunBo(LunBo_data.class,null, paramClass);
+        	 //obj=getLunBo(LunBo_data.class,null, paramClass);
+			 HeadParam2 hp=new HeadParam2();
+			 hp.tra_code="050011";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url7;
+			 obj=getTongYong(LunBo_data.class, url, paramClass, hp);
          }
          else if(paramClass instanceof LoginQianParam)
          {   
@@ -953,6 +960,14 @@ public class IBusinessImpl2 {
 			 hp.request_seq=TimeUtil.getTime2();
 			 String url=base_service+url1;
 			 obj=getTongYong(unBind_data.class, url, paramClass, hp);
+		 }
+		 else if(paramClass instanceof CheckUpdateParam)
+		 {
+			 hp=new HeadParam2();
+			 hp.tra_code="050051";
+			 hp.request_seq=TimeUtil.getTime2();
+			 String url=base_service+url7;
+			 obj=getTongYong(CheckUpdate_data.class, url, paramClass, hp);
 		 }
          return obj;
     }
