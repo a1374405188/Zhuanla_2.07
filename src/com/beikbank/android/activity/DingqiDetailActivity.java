@@ -272,7 +272,7 @@ public class DingqiDetailActivity extends BaseActivity1 implements View.OnClickL
         tv_name.setText(name);
         tv_money.setText(NumberManager.getGeshiHua(g.total_payable,2));
         tv_benjin.setText(NumberManager.getGeshiHua(g.current_principal_balance,2)+"元");
-        tv_jixi_money.setText(NumberManager.getGeshiHua(g.current_principal_balance,2)+"元");
+        tv_jixi_money.setText(NumberManager.getGeshiHua(g.current_calculate_amount,2)+"元");
         tv_dangqian_shouyi.setText(NumberManager.getGeshiHua(g.intrest_total,2)+"元");
         tv_all_shouyi.setText(NumberManager.getGeshiHua(g.intrest_total_estimate,2)+"元");
        String s1=NumberManager.getString(g.intrest_year,"100",2);
@@ -325,7 +325,7 @@ public class DingqiDetailActivity extends BaseActivity1 implements View.OnClickL
 	    				
 	    			}
 	    		});
-			 
+			  sb.setEnabled(false);
 		  }
         
 	}

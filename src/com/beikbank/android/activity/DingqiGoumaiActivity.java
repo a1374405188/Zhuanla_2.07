@@ -296,7 +296,8 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 		 {
 		   mIntent.putExtra("cdd",obj);
 		 }
-		 if(list_yhq.size()>0)
+		ArrayList<getAllYouHuiQuan> list2= HongbaoUtil_v2.select1(list_yhq);
+		if(list2.size()>0)
 		 {
 			    mIntent.setClass(act,DingdanConfimActivity2.class);
 				startActivity(mIntent);
@@ -531,9 +532,10 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 					return;
 				}
 			}
-			
-			
-			
+
+
+
+
 			int b1=NumberManager.isDaYu(money,gcp.purchase_amount);
 			if(b1<0)
 			{
@@ -545,7 +547,8 @@ public class DingqiGoumaiActivity extends BaseActivity1 implements OnClickListen
 //			mIntent.putExtra("gqb",gq);
 //			mIntent.setClass(act,DingqiGouMaiConfirmActivity.class);
 //			startActivity(mIntent);
-			if(list_yhq.size()>0)
+			ArrayList<getAllYouHuiQuan> list2= HongbaoUtil_v2.select1(list_yhq);
+			if(list2.size()>0)
 			{
 			    next(null);
 			}
