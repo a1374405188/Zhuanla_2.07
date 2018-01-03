@@ -25,12 +25,15 @@ import android.widget.Toast;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.data.Config_data;
 import com.beikbank.android.data.Confing;
+import com.beikbank.android.data2.CheckUpdate_data;
 import com.beikbank.android.data2.getShare_data;
+import com.beikbank.android.dataparam2.CheckUpdateParam;
 import com.beikbank.android.dataparam2.getShareParam;
 import com.beikbank.android.exception.LogHandler;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.HandlerBase;
 import com.beikbank.android.net.ICallBack;
+import com.beikbank.android.net.ManagerParam;
 import com.beikbank.android.net.impl.CheckUpdateManager;
 import com.beikbank.android.net.impl.ConfigManager;
 import com.beikbank.android.net.impl.TongYongManager2;
@@ -149,6 +152,7 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 		BeikBankApplication.setSharePref(BeikBankConstant.money_is_yincang,"0");
 		//BeikBankApplication.mSharedPref.putSharePrefString(BeikBankConstant.LOGIN_ACCOUNT,"");
 		BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.re_home,true);
+		BeikBankApplication.setSharePref(BeikBankConstant.user_code,"");
 	}
 	@Override
 	protected void onRestart() {
@@ -235,17 +239,17 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 
 				}
 
-				@Override
+				@Override{
+					// TODO Auto-generated method stub
+					dialog1.dismiss();
+				}
 				public void onListItemClick(int position, String string) {
 					// TODO Auto-generated method stub
 
 				}
 
 				@Override
-				public void onLeftBtnClick() {
-					// TODO Auto-generated method stub
-					dialog1.dismiss();
-				}
+				public void onLeftBtnClick()
 
 				@Override
 				public void onCancel() {
@@ -265,8 +269,9 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
         	shareToMarket();
 			break;
         case R.id.ll_banben:
-        	String version=Utils.getVersion(act);
-        	new CheckUpdateManager(act, icb).start();
+        	//String version=Utils.getVersion(act);
+        	//new CheckUpdateManager(act, icb).start();
+			checkUpdate();
 			break;
 		case R.id.ll_bangzhu:
 			//startAimActivity(HelpCenterActivity2.class);
@@ -294,13 +299,49 @@ public class GengDuoActivity extends BaseActivity1 implements OnClickListener{
 			
 		}
 	}
+
+	private void checkUpdate()
+	{
+		ICallBack icb=new ICallBack() {
+			@Override
+			public void back(Object obj) {
+				if(obj!=null)
+				{
+
+					CheckUpdate_data cd=(CheckUpdate_data)obj;
+					String version=Utils.getVersion(act);
+					if(!version.equals(cd.body.android))
+					{   if("1".equals(cd.body.android_update)) {
+						GengDuoActivity.showUpdataDialog(act,cd.body.android_url,true);
+					}
+					else
+					{
+						GengDuoActivity.showUpdataDialog(act,cd.body.android_url,false);
+					}
+					}
+                    else
+					{
+						showNewDialog();
+					}
+				}
+			}
+		};
+		CheckUpdateParam cp=new CheckUpdateParam();
+
+		ManagerParam mp=new ManagerParam();
+		mp.isShowDialog=false;
+		mp.isShowMsg=true;
+		TongYongManager2 tym=new TongYongManager2(this,icb,cp,mp);
+		tym.start();
+
+	}
 private ICallBack icb=new ICallBack() {
 		
 		@Override
 		public void back(Object obj) {
 			if(obj!=null){
  
-				showUpdataDialog(act,(String)obj);
+				//showUpdataDialog(act,(String)obj);
 			}
 			else
 			{
@@ -334,7 +375,7 @@ private ICallBack icb=new ICallBack() {
 		act.startActivity(_Intent);
 	}
 	private static Dialog upgrade_version_dialog,newest_version_dialog;
-   public static void showUpdataDialog(Activity act1,final String downloadUrl){
+   public static void showUpdataDialog(Activity act1,final String downloadUrl,boolean isQiangZhi){
 		act=act1;
 		if(upgrade_version_dialog!=null&&upgrade_version_dialog.isShowing())
 		{
@@ -373,6 +414,43 @@ private ICallBack icb=new ICallBack() {
 
 			}
 		});
+	   if(isQiangZhi)
+	   {
+
+		   upgrade_version_dialog=Utils.createSimpleDialog2(act,
+				   act.getString(R.string.upgrade_version),act.getString(R.string.update),new BeikBankDialogListener() {
+
+					   @Override
+					   public void onRightBtnClick() {
+
+						   downloadApk(downloadUrl);
+					   }
+
+					   @Override
+					   public void onListItemLongClick(int position, String string) {
+						   // TODO Auto-generated method stub
+
+					   }
+
+					   @Override
+					   public void onListItemClick(int position, String string) {
+						   // TODO Auto-generated method stub
+
+					   }
+
+					   @Override
+					   public void onLeftBtnClick() {
+						   // TODO Auto-generated method stub
+						   upgrade_version_dialog.dismiss();
+					   }
+
+					   @Override
+					   public void onCancel() {
+						   // TODO Auto-generated method stub
+
+					   }
+				   });
+	    }
 		upgrade_version_dialog.show();
 	}
 	
@@ -410,6 +488,7 @@ private ICallBack icb=new ICallBack() {
 
 			}
 		});
+
 		newest_version_dialog.show();
 	}
 	static ProgressDialog pd;
