@@ -65,6 +65,7 @@ import com.beikbank.android.utils.BeikBankConstant;
 import com.beikbank.android.utils.NumberManager;
 import com.beikbank.android.utils.Utils;
 import com.beikbank.android.utils.hongbao.HongbaoUtil;
+import com.beikbank.android.utils.hongbao.HongbaoUtil_v2;
 import com.beikbank.android.utils2.StateBarColor;
 import com.beikbank.android.widget.ClearableEditText;
 import com.beikbank.android.widget.CustomToast;
@@ -528,7 +529,8 @@ public class PurchaseActivity extends BaseActivity1 implements OnClickListener{
 //			mIntent.putExtra("gqb",gq);
 //			mIntent.setClass(this,PurchaseConfirmActivity.class);
 //			startActivity(mIntent);
-			if(list_yhq.size()>0)
+			ArrayList<getAllYouHuiQuan> list2= HongbaoUtil_v2.select1(list_yhq);
+			if(list2.size()>0)
 			{
 			    next(null);
 			}
@@ -553,7 +555,8 @@ public class PurchaseActivity extends BaseActivity1 implements OnClickListener{
 		 {
 		   mIntent.putExtra("cdd",obj);
 		 }
-		 if(list_yhq.size()>0)
+		ArrayList<getAllYouHuiQuan> list2= HongbaoUtil_v2.select1(list_yhq);
+		if(list2.size()>0)
 		 {
 			    mIntent.setClass(act,DingdanConfimActivity2.class);
 				startActivity(mIntent);
