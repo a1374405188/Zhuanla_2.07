@@ -818,8 +818,33 @@ android:configChanges="orientation|keyboardHidden|screenSize"
             android:name="com.beikbank.android.activity.DingdanConfimActivity2"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor" >
-           </activity> 
-  <!--  start-->
+           </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ShuJuQianYiActivity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ShuJuQianYiActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.ShuJuQianYiActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.PhoneChangeActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.beikbank.android.activity.PhoneChangeActivity3"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <!--  start-->
    <!--
     <receiver
     android:name="com.umeng.message.NotificationProxyBroadcastReceiver"

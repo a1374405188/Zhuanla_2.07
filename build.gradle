@@ -13,9 +13,20 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 21
     buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "coma.beikbank.android"
+        minSdkVersion 15
+        targetSdkVersion 21
 
+        ndk {
+            // Specifies the ABI configurations of your native
+            // libraries Gradle should build and package with your APK.
+            abiFilters 'x86',  'armeabi', 'armeabi-v7a','arm64-v8a','mips'
+
+        }
+    }
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -25,10 +36,11 @@ android {
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
+            jniLibs.srcDirs=['libs']
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+        //instrumentTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
@@ -37,6 +49,21 @@ android {
         // Adding new build types or product flavors should be accompanied
         // by a similar customization.
         debug.setRoot('build-types/debug')
-        release.setRoot('build-types/release')
+       // release.setRoot('build-types/release')
+    }
+    //ndk-build,已有Android.mk
+    externalNativeBuild {
+        ndkBuild {
+            path 'jni\\Android.mk'
+        }
+    }
+
+    buildTypes {  // build 类型
+        release {  //发布
+            minifyEnabled false  //混淆开启
+        }
+        debug {  //调试
+            minifyEnabled false  //混淆开启
+        }
     }
 }
