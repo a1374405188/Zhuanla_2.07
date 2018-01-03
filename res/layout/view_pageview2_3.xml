@@ -95,24 +95,22 @@
             >
             
             
-       
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
          
-         <LinearLayout
-             
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:gravity="center_vertical"
-              >
+
              
         
           <TextView
+              android:id="@+id/tv_zr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:textColor="#ffffffff"
                  android:textSize="16sp"
             android:text="昨日收益(元)"
             android:gravity="center"
-          
+            android:layout_centerInParent="true"
             
             />  
             <ImageView
@@ -121,9 +119,13 @@
                  android:layout_height="wrap_content"
                  android:padding="8dp"
                  android:src="@drawable/img_zhican_shouyi_v2"
+                android:layout_toRightOf="@+id/tv_zr"
+                android:layout_marginLeft="0dp"
+
                 />  
           
-            </LinearLayout>
+
+       </RelativeLayout>
          <TextView
             android:id="@+id/tv_zuori"
             android:layout_width="match_parent"
@@ -190,7 +192,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              android:textColor="#ff323232"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:text="0.00"
           android:layout_marginBottom="3dp"
             />
@@ -456,8 +458,8 @@
         android:background="@drawable/bg_item"
       >
       <ImageView
-          android:layout_width="20dp"
-          android:layout_height="20dp"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
           
           android:src="@drawable/img_zhican_qian"
           />
@@ -465,7 +467,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff323232"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="我的红包"
             android:layout_marginLeft="10dp"
             />
@@ -477,7 +479,7 @@
            android:layout_weight="1"
             android:gravity="center_vertical|right"
             android:textColor="#ffb0b0b0"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="0张可用"
             android:layout_marginLeft="10dp"
             />
@@ -514,8 +516,8 @@
          android:background="@drawable/bg_item"
       >
       <ImageView
-          android:layout_width="20dp"
-          android:layout_height="20dp"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
           
           android:src="@drawable/img_zhican_jiao"
           />
@@ -523,7 +525,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff323232"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="交易记录"
             android:layout_marginLeft="10dp"
             />
@@ -534,7 +536,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical|right"
             android:textColor="#ffb0b0b0"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="0.00"
             android:layout_marginLeft="10dp"
             android:visibility="invisible"
@@ -546,8 +548,30 @@
           android:src="@drawable/home2_right_img"
           />
   </LinearLayout>
-  
 
+      <!--  底部图片-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"
+          android:gravity="center"
+          >
+          <ImageView
+              android:layout_width="15dp"
+              android:layout_height="15dp"
+              android:src="@drawable/img_home_icon_cunguan"
+              android:layout_marginRight="3dp"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#ff999999"
+              android:textSize="12sp"
+              android:text="账户资金由恒丰银行存管"
+              />
+      </LinearLayout>
 <View
     android:layout_width="match_parent"
     android:layout_height="16dp"

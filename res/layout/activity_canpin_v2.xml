@@ -153,22 +153,20 @@
   </LinearLayout>
   
   <!-- 头部 -->
-    <LinearLayout 
+    <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"      
          android:orientation="horizontal"
          android:layout_marginLeft="16dp"
          android:layout_marginRight="16dp"
-         android:paddingTop="5dp"
-         android:paddingBottom="5dp"
+
     >
-            <LinearLayout 
+            <RelativeLayout
          android:id="@+id/ll_canpin"       
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"      
+         android:layout_width="100dp"
+         android:layout_height="50dp"
          android:orientation="vertical"
-         android:paddingTop="5dp"
-         android:paddingBottom="5dp"
+
        >
              <TextView
               android:id="@+id/tv_canpin"
@@ -178,33 +176,33 @@
                android:textColor="@color/bg_hong"
                android:textSize="16sp"
                android:layout_marginBottom="3dp"
+                 android:layout_centerInParent="true"
               />
              <View
                  android:id="@+id/v_canpin"
-                 android:layout_width="match_parent"
+                 android:layout_width="wrap_content"
                  android:layout_height="1dp"
                   
                   android:background="@color/bg_hong"
+                 android:layout_alignParentBottom="true"
                  />
-        </LinearLayout>
+        </RelativeLayout>
         
             
                <LinearLayout 
                     android:id="@+id/ll_xiangmu"  
                    android:layout_weight="1"
          android:layout_width="0px"
-         android:layout_height="wrap_content"      
+         android:layout_height="match_parent"
          android:orientation="vertical"
          android:gravity="center"
        >   
-       <LinearLayout 
+       <RelativeLayout
             
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"      
-         android:orientation="vertical"
-         android:gravity="center"
-            android:paddingTop="5dp"
-         android:paddingBottom="5dp"
+
+
+           android:layout_width="100dp"
+           android:layout_height="50dp"
            >
              <TextView
               android:id="@+id/tv_xiangmu"   
@@ -213,25 +211,25 @@
                android:text="项目信息"
                android:textColor="#ff333333"
                android:textSize="16sp"
-               android:layout_marginBottom="3dp"
+
+                 android:layout_centerInParent="true"
               />
              <View
                  android:layout_width="match_parent"
                  android:layout_height="1dp"
-                 android:id="@+id/v_xiangmu"   
-                
+                 android:id="@+id/v_xiangmu"
+                 android:layout_alignParentBottom="true"
                  />
              
-             </LinearLayout>
+             </RelativeLayout>
         </LinearLayout>
         
-                  <LinearLayout 
-                       android:id="@+id/ll_yigou"  
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"      
-         android:orientation="vertical"
-          android:paddingTop="5dp"
-         android:paddingBottom="5dp"
+                  <RelativeLayout
+                       android:id="@+id/ll_yigou"
+                      android:layout_width="100dp"
+                      android:layout_height="50dp"
+
+
        >
              <TextView
               android:id="@+id/tv_yigou"   
@@ -240,17 +238,21 @@
                android:text="已购用户"
               android:textColor="#ff333333"
                android:textSize="16sp"
-               android:layout_marginBottom="3dp"
+                 android:layout_centerInParent="true"
               />
              <View
                  android:layout_width="match_parent"
                  android:layout_height="1dp"
-                 android:id="@+id/v_yigou"   
-                
+                 android:id="@+id/v_yigou"
+                 android:layout_alignParentBottom="true"
                  />
-        </LinearLayout>
-        
+        </RelativeLayout>
+
+
+
+
   </LinearLayout>
+
   <!-- 可滑动区域-->
   
        <LinearLayout 
@@ -261,21 +263,21 @@
          
         
         >
-       <com.beikbank.android.widget.MyViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fadingEdge="none"
-        android:fadeScrollbars="false"
-      
-        android:scrollbars="none"
-        android:fadingEdgeLength="0px"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-       
-           >
-       </com.beikbank.android.widget.MyViewPager>
-         
-        </LinearLayout>
+
+           <com.beikbank.android.widget.MyViewPager
+               android:id="@+id/pager"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:fadeScrollbars="false"
+               android:fadingEdge="none"
+
+               android:fadingEdgeLength="0px"
+               android:scrollbarAlwaysDrawHorizontalTrack="false"
+               android:scrollbars="none"
+
+               ></com.beikbank.android.widget.MyViewPager>
+
+       </LinearLayout>
   <!-- 计算器-->
      <View
            android:layout_width="match_parent"

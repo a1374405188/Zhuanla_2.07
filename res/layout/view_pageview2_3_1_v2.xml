@@ -22,8 +22,8 @@
       >
       <ImageView
           android:id="@+id/img"
-          android:layout_width="20dp"
-          android:layout_height="20dp"
+          android:layout_width="18dp"
+          android:layout_height="18dp"
           
         
           />
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff323232"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="零活宝"
             android:layout_marginLeft="10dp"
             />
@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical|right"
             android:textColor="#ff666666"
-            android:textSize="13sp"
+            android:textSize="16sp"
             android:text="0.00"
             android:layout_marginLeft="10dp"
             />

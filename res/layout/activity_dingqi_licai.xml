@@ -30,14 +30,14 @@
         android:textSize="16sp"
         android:textColor="#ffffffff"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:text="持有资产(元)"
         />
     <TextView
         android:id="@+id/tv_zhican"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="40sp"
         android:textColor="#ffffffff"
        
         android:layout_marginBottom="30dp"

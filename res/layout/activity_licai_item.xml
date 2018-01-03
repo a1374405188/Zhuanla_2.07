@@ -1,229 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="wrap_content"
     android:background="@color/global_bg1"
     android:id="@+id/ll0"
     android:orientation="vertical"
+    android:minHeight="100dp"
     >
- 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#ffffffff"
-       >
-       <LinearLayout
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-           
-           >
-       <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:textColor="#ff333333"
-            android:text="月月赚"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-           />
-              <TextView
-            android:id="@+id/tv_xinshou"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#ffffffff"
-            android:text="新手专享"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:background="@drawable/bg_xinshou"
-            android:visibility="gone"
-           />
-              <View
-                  
-                   android:layout_width="0px"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                  
-                  />
-                       <TextView
-            android:id="@+id/tv_genxin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:textColor="#fffb5a5c"
-            android:text="下次份额更新"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:background="@drawable/bg_fenegengxin"
-            android:paddingTop="1dp"
-            android:paddingBottom="1dp"
-            android:visibility="gone"
-           />
-       </LinearLayout>
-       <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="16dp"
-           >
-         <LinearLayout
-            android:layout_width="0px"
-            android:layout_weight="1"
-            
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-           
-           >
-           
-             <LinearLayout
-                  android:layout_width="wrap_content"
-                
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                  >
-                  
-                 
-                 
-             <LinearLayout 
-                  android:layout_width="match_parent"
-                
-                    android:layout_height="match_parent"
-                  android:orientation="horizontal"
-                 >
+
+            >
+
             <TextView
-                 android:id="@+id/tv_shouyi"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:textSize="19sp"
-            android:textColor="#fffb5a5c"
-            android:text="10%"
-            android:gravity="bottom"
-           />
-            
-            
-                          <TextView
-              android:id="@+id/tv_jiaxi"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:textSize="15sp"
-            android:textColor="#fffb5a5c"
-            android:text="10%"
-            android:layout_marginLeft="3dp"
-            android:visibility="gone"
-            android:gravity="bottom"
-           />
-            </LinearLayout>
-             <TextView
-                
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="#ff999999"
-            android:text="预期年化"
-            android:layout_marginTop="3dp"
-            
-           />
-             
-             
-           
-           </LinearLayout>
-           
-     
-             
-             
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="月月赚"
+                android:textColor="#ff333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_xinshou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_xinshou"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="新手专享"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
             <View
+
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+
                 />
-                <View
-               android:layout_width="1px"
-               android:layout_height="35dp"
-               android:background="@color/line2"
-               android:layout_gravity="center"
-               android:layout_marginRight="16dp"
-             />
-           </LinearLayout>
-           
-      
-         
-         
-           <LinearLayout
-            android:layout_width="0px"
-            android:layout_weight="1"
-            
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-           >
+
             <TextView
-                  android:id="@+id/tv_qixian"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:textSize="17sp"
-            android:textColor="#ff999999"
-            android:text="期限30天"
-            android:gravity="bottom"
-            
-           />
-            
-            
-             <TextView
-                 android:id="@+id/tv_qigou"
+                android:id="@+id/tv_genxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_fenegengxin"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:text="下次份额更新"
+                android:textColor="#fffb5a5c"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textColor="#ff999999"
-            android:text="1元起购"
-             android:layout_marginTop="3dp"
-           />
-           
-           
-           </LinearLayout>
-           
-           
-           
-            <RelativeLayout
-                 android:layout_width="200px"
-               
-            
-                android:layout_height="200px"
-                 android:background="#ff000000"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="bottom"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
                 >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_shouyi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="10%"
+                            android:textColor="#fffb5a5c"
+                            android:textSize="19sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_jiaxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="bottom"
+                            android:text="10%"
+                            android:textColor="#fffb5a5c"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="预期年化"
+                        android:textColor="#ff999999"
+                        android:textSize="13sp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/line2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:paddingBottom="12dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_qixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="13sp"
+                    android:textColor="#ff999999"
+                    android:text="期限 30天"
+
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_qigou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#ff999999"
+                    android:text="1元起购"
+
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="200px"
+
+
+                android:layout_height="200px"
+                android:background="#ff000000">
+
                 <com.beikbank.android.huatu.YuanView
                     android:id="@+id/yuan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#ff000000"
-                    >
-                    
-                    
-                    </com.beikbank.android.huatu.YuanView>
-                     <TextView
-            android:id="@+id/tv_goumai"             
-            android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="#fffb5a5c"
-            android:text="购买"
-            
-           />
+                    android:background="#ff000000">
+
+
+                </com.beikbank.android.huatu.YuanView>
+
+                <TextView
+                    android:id="@+id/tv_goumai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="购买"
+                    android:textColor="#fffb5a5c"
+                    android:textSize="16sp"
+
+                    />
             </RelativeLayout>
-           
-       </LinearLayout>
-     </LinearLayout>
-     
-     <LinearLayout
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="@color/line2"
