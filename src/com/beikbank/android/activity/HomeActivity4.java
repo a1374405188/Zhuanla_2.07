@@ -18,6 +18,7 @@ import com.beikbank.android.data.Notice;
 import com.beikbank.android.data.Notice_data;
 import com.beikbank.android.data.Win;
 import com.beikbank.android.data.Win_data;
+import com.beikbank.android.data2.CheckUpdate_data;
 import com.beikbank.android.data2.ShuJuQianYi1_data;
 import com.beikbank.android.data2.TanChuan;
 import com.beikbank.android.data2.TanChuan_data;
@@ -25,6 +26,7 @@ import com.beikbank.android.data2.UserCheck2;
 import com.beikbank.android.data2.UserCheck2_data;
 import com.beikbank.android.dataparam.ShoushiIsSetParam;
 import com.beikbank.android.dataparam.WinParam;
+import com.beikbank.android.dataparam2.CheckUpdateParam;
 import com.beikbank.android.dataparam2.LoginQianParam;
 import com.beikbank.android.dataparam2.ShuJuQianYi1Param;
 import com.beikbank.android.dataparam2.UserCheckParam2;
@@ -158,7 +160,7 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 				//new MessageManager2(act, icb_message).start();
 			}
 		},5000);
-
+		checkUpdate();
 	}
     ICallBack icb_message=new ICallBack() {
 		
@@ -193,11 +195,41 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 		public void back(Object obj) {
 			if(obj!=null){
 				 
-				GengDuoActivity.showUpdataDialog(act,(String)obj);
+				//GengDuoActivity.showUpdataDialog(act,(String)obj);
 			}
 			
 		}
 	};
+	private void checkUpdate()
+	{
+        ICallBack icb=new ICallBack() {
+			@Override
+			public void back(Object obj) {
+               if(obj!=null)
+			   {
+
+				   CheckUpdate_data cd=(CheckUpdate_data)obj;
+				   String version=Utils.getVersion(act);
+				   if(!version.equals(cd.body.android))
+				   {
+					   if ("1".equals(cd.body.android_update)) {
+						   GengDuoActivity.showUpdataDialog(act,cd.body.android_url, true);
+					   } else {
+						   GengDuoActivity.showUpdataDialog(act,cd.body.android_url, false);
+					   }
+				   }
+			   }
+			}
+		};
+		CheckUpdateParam cp=new CheckUpdateParam();
+
+		ManagerParam mp=new ManagerParam();
+		mp.isShowDialog=false;
+		mp.isShowMsg=true;
+		TongYongManager2 tym=new TongYongManager2(this,icb,cp,mp);
+		tym.start();
+
+	}
 	/**
 	 * 设置推送信息
 	 */
@@ -640,19 +672,19 @@ public class HomeActivity4 extends BaseActivity1 implements View.OnClickListener
 		int index=getIntent().getIntExtra("indexgo",-1);
 		if(index==0)
 		{   
-			this.index=2;
+			this.index=index;
 			select(this.index);
 			//pv2.setItem(index);
 		}
 		else if(index==1)
 		{   
-			this.index=2;
+			this.index=index;
 			select(this.index);
 			//pv2.setItem(index);
 		}
 		else if(index==2)
 		{   
-			this.index=2;
+			this.index=index;
 			select(this.index);
 			//pv2.setItem(index);
 		}
