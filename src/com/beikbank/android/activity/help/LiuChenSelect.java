@@ -276,6 +276,7 @@ public class LiuChenSelect {
 					if(name==null||"".equals(name))
 					{
 						getName();
+						select();
 					}
 					else
 					{
@@ -306,7 +307,7 @@ public class LiuChenSelect {
 					 getUserOrXiuGai_data gd=(getUserOrXiuGai_data) obj;
 					 getUserOrXiuGai gu=gd.body.get(0);
 					 BeikBankApplication.setSharePref(BeikBankConstant.real_name,gu.real_name);
-					 select();
+
 				}
 			}
 		};

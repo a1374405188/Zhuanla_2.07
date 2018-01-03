@@ -2,7 +2,7 @@ package com.beikbank.android.share;
 
 public class Constants {
 	// 
-    public static final String APP_ID = "wxe3c47f4e9b21e0df";
+    public static final String APP_ID = "wx0276139c9a532601";
     
     public static class ShowMsgActivity {
 		public static final String STitle = "showmsg_title";

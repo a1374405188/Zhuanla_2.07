@@ -151,7 +151,7 @@ public class UserRecordAdapteer extends MBaseAdapter
 		android.widget.LinearLayout.LayoutParams lp3=new android.widget.LinearLayout.LayoutParams(ur2.width,LayoutParams.MATCH_PARENT);
 		if(position==0)
 		{
-			ll3.setBackgroundColor(0xffdd2238);
+			ll3.setBackgroundColor(0xfffb5a5c);
 			android.widget.LinearLayout.LayoutParams lp0=new android.widget.LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,du.dip2px(32));
 			lp0.topMargin=du.dip2px(16);
 			lp0.leftMargin=du.dip2px(16);

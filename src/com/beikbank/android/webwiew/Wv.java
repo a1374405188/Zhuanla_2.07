@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 
 import com.beikbank.android.activity.HomeActivity3;
+import com.beikbank.android.activity.HomeActivity4;
+import com.beikbank.android.activity.LoginRegActivity;
 import com.beikbank.android.conmon.SystemConfig;
 import com.beikbank.android.fragment.BeikBankApplication;
 import com.beikbank.android.net.HttpManager;
@@ -406,26 +408,44 @@ public String getid2()
  }
   /**
    * 
-   * @param index 0活期1定期2新手标
+   * @param index 0 首页 1 产品页 2跳转到登录/注册界面
+
    */
   @JavascriptInterface
   public void go(String index)
- {   
-	 Intent intent=new Intent(act,HomeActivity3.class);
-	 intent.putExtra("go","go");
-	 if("0".equals(index))
+ {
+	 if("2".equals(index))
 	 {
-		 intent.putExtra("indexgo",0);
+		 Intent intent=new Intent(act, LoginRegActivity.class);
+		 act.startActivity(intent);
 	 }
 	 else if("1".equals(index))
 	 {
+		 Intent intent=new Intent(act, HomeActivity4.class);
 		 intent.putExtra("indexgo",1);
+		 act.startActivity(intent);
 	 }
-	 else if("2".equals(index))
+	 else if("0".equals(index))
 	 {
-		 intent.putExtra("indexgo",2);
+		 Intent intent=new Intent(act, HomeActivity4.class);
+		 intent.putExtra("indexgo",0);
+		 act.startActivity(intent);
 	 }
+//	 Intent intent=new Intent(act,HomeActivity3.class);
+//	 intent.putExtra("go","go");
+//	 if("0".equals(index))
+//	 {
+//		 intent.putExtra("indexgo",0);
+//	 }
+//	 else if("1".equals(index))
+//	 {
+//		 intent.putExtra("indexgo",1);
+//	 }
+//	 else if("2".equals(index))
+//	 {
+//		 intent.putExtra("indexgo",2);
+//	 }
 	 
-	 act.startActivity(intent);
+	 //act.startActivity(intent);
  }
 }

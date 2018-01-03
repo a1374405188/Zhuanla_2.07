@@ -50,10 +50,14 @@ public class BankSupportActivity extends BaseActivity implements OnClickListener
 			
 			@Override
 			public void back(Object obj) {
-				getAllBank_data gd=(getAllBank_data) obj;
-				ArrayList<getAllBank> list=gd.body.result;
-				adapter=new SupportBanksAdapter(act, list);
-				 listview_support_banks.setAdapter(adapter);
+				if(obj!=null) {
+
+
+					getAllBank_data gd = (getAllBank_data) obj;
+					ArrayList<getAllBank> list = gd.body.result;
+					adapter = new SupportBanksAdapter(act, list);
+					listview_support_banks.setAdapter(adapter);
+				}
 			}
 		};
 		getAllBankParam gab=new getAllBankParam();

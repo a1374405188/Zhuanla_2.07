@@ -348,9 +348,9 @@ public class ChanPinActivityV2 extends BaseActivity1 implements OnClickListener{
 	View v_yigou;
 	private  void setTop()
 	{
-		LinearLayout ll_chanpin=(LinearLayout) findViewById(R.id.ll_canpin);
+		RelativeLayout ll_chanpin=(RelativeLayout) findViewById(R.id.ll_canpin);
 		LinearLayout ll_xiangmu=(LinearLayout) findViewById(R.id.ll_xiangmu);
-		LinearLayout ll_yigou=(LinearLayout) findViewById(R.id.ll_yigou);
+		RelativeLayout ll_yigou=(RelativeLayout) findViewById(R.id.ll_yigou);
 		
 		 tv_chanpin=(TextView) findViewById(R.id.tv_canpin);
 		 tv_xinagmu=(TextView) findViewById(R.id.tv_xiangmu);

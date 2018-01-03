@@ -65,11 +65,11 @@ public String   jpush_token;
  */
 public String     ras_model;
 /**
- * 用户类型
+ * 1ios;2android
  */
-public String      ras_type;
+public String      ras_type="2";
 /**
- * 用户类型
+ * APP版本
  */
 public String     soft_version;
 /**

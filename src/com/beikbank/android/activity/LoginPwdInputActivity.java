@@ -59,6 +59,7 @@ import com.beikbank.android.net.impl.LoginManager;
 import com.beikbank.android.net.impl.ThreadManagerSet;
 import com.beikbank.android.net.impl.TongYongManager2;
 import com.beikbank.android.utils.BeikBankConstant;
+import com.beikbank.android.utils.HuanjingInfo;
 import com.beikbank.android.utils.LockPatternUtils;
 import com.beikbank.android.utils.MD5;
 import com.beikbank.android.utils.Utils;
@@ -266,7 +267,12 @@ public class LoginPwdInputActivity extends BaseActivity1 implements OnClickListe
 			   lp.phone_number=phonenumber;
 			   lp.user_code=lq.user_code;
 			   lp.user_type=lq.user_type;
-			   
+			   lp.ip= com.beikbank.android.utils2.LoginInfo.getIPAddress(this);
+			   HuanjingInfo  hi= com.beikbank.android.utils2.LoginInfo.getHJ(this);
+			   lp.ras_model=hi.rasModel;
+			lp.soft_version=hi.softVersion;
+
+
 				TongYongManager2 tym=new TongYongManager2(act, icb5,lp);
 		    	tym.start();
 		    	

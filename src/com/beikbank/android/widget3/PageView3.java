@@ -1004,7 +1004,7 @@ private void yingcang()
 		
 		if(gd==null||gb==null)
 		{
-			tv_zuori.setText("0.0000");
+			tv_zuori.setText("0.00");
 			tv_zhichan.setText("0.00");
 			tv4.setText("0.00");
 		}

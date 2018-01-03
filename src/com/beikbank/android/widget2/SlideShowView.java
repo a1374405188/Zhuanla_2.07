@@ -92,15 +92,17 @@ public class SlideShowView extends FrameLayout {
     public SlideShowView(Context context) {
         this(context,null);
         // TODO Auto-generated constructor stub
+        initImageLoader(context);
     }
     public SlideShowView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
         // TODO Auto-generated constructor stub
+        initImageLoader(context);
     }
     public SlideShowView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.context = context;
-
+        initImageLoader(context);
 //		initImageLoader(context);
 //		
 //        initData();
@@ -143,7 +145,7 @@ public class SlideShowView extends FrameLayout {
     		}
     	}
     	
-        initImageLoader(context);
+
         initData();
         imageUrls=imgs;
         this.icb=icb;
@@ -210,7 +212,7 @@ public class SlideShowView extends FrameLayout {
     	
         imageViewsList = new ArrayList<ImageView>();
         dotViewsList = new ArrayList<View>();
-
+        map=new HashMap<Integer, Boolean>();
         // 
        // new GetListTask().execute("");
     }
@@ -220,7 +222,7 @@ public class SlideShowView extends FrameLayout {
     private void initUI(Context context){
     	if(imageUrls == null || imageUrls.length == 0)
     		return;
-    	
+        removeAllViews();
         LayoutInflater.from(context).inflate(R.layout.layout_slideshow, this, true);
         
         LinearLayout dotLayout = (LinearLayout)findViewById(R.id.dotLayout);
@@ -269,9 +271,10 @@ public class SlideShowView extends FrameLayout {
         
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setFocusable(true);
-        
-        viewPager.setAdapter(new MyPagerAdapter());
+        MyPagerAdapter ma=new MyPagerAdapter();
+        viewPager.setAdapter(ma);
         viewPager.setOnPageChangeListener(new MyPageChangeListener());
+        ma.notifyDataSetChanged();
     }
     
     /**

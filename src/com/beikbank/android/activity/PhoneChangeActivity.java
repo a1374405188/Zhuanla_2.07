@@ -119,6 +119,7 @@ public class PhoneChangeActivity extends BaseActivity1 implements OnClickListene
 					bu_yanzhenma.setEnabled(true);
 				} else {
 					bu.setEnabled(false);
+					bu_yanzhenma.setEnabled(false);
 				}
 			}
 

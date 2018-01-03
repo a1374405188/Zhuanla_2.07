@@ -96,11 +96,26 @@ public class PurchaseConfirmActivity extends BaseActivity1 implements
 		
 		  gcp=(GetChanPin) getIntent().getSerializableExtra("gcp");
 	      gqb=(getQianBao) getIntent().getSerializableExtra("gqb");
+	    	cdd=(CreateDingDan) getIntent().getSerializableExtra("cdd");
 	      money=getIntent().getStringExtra(TypeUtil.jiaoyi_money);
 	      initView();
-	      initData();
-	
-
+//		if(cdd==null)
+//		{
+//			initData();
+//		}
+		if(cdd!=null)
+		{
+			//银行卡购买调充值
+			String pay=BeikBankApplication.getSharePref(BeikBankConstant.pay_type);
+			if("2".equals(pay))
+			{
+				ChongZhiParam czp=new ChongZhiParam();
+				czp.order_id=cdd.order_id;
+				czp.user_code=BeikBankApplication.getUserCode();
+				TongYongManager2 tym2=new TongYongManager2(act, icb0, czp);
+				tym2.start();
+			}
+		}
 		// String
 		// play=BeikBankApplication.mSharedPref.getSharePrefString(SharePrefConstant.play_select);
 		// String
@@ -120,29 +135,29 @@ public class PurchaseConfirmActivity extends BaseActivity1 implements
 		// tym.start();
 
 	}
+	 ICallBack  icb0=new ICallBack() {
 
+		@Override
+		public void back(Object obj) {
+			if(obj!=null)
+			{
+				ChongZhi_data cd=(ChongZhi_data) obj;
+
+				if("0000".equals( cd.header.re_code))
+				{
+					if(clearedittext_transaction_password.length()>4)
+					{
+						button_next.setEnabled(true);
+					}
+				}
+			}
+
+		}
+	};
    private void initData()
    {
 	   
-	   final ICallBack  icb0=new ICallBack() {
-			
-			@Override
-			public void back(Object obj) {
-			  if(obj!=null)
-			  {
-				  ChongZhi_data cd=(ChongZhi_data) obj;
-				 
-				  if("0000".equals( cd.header.re_code))
-				  {   
-					  if(clearedittext_transaction_password.length()>4)
-					  {
-					    button_next.setEnabled(true);
-					  }
-				  }
-			  }
-				
-			}
-		};
+
 //		   ICallBack icb=new ICallBack() {
 //				
 //				@Override
@@ -177,21 +192,9 @@ public class PurchaseConfirmActivity extends BaseActivity1 implements
 //			 tym2.start();
 	   
 			 
-			 cdd=(CreateDingDan) getIntent().getSerializableExtra("cdd");
+
 			 
-			   if(cdd!=null)
-			   {  
-				   //银行卡购买调充值
-				   String pay=BeikBankApplication.getSharePref(BeikBankConstant.pay_type);
-				   if("2".equals(pay))
-				   {
-			       ChongZhiParam czp=new ChongZhiParam();
-				   czp.order_id=cdd.order_id;
-				czp.user_code=BeikBankApplication.getUserCode();
-				TongYongManager2 tym2=new TongYongManager2(act, icb0, czp);
-				tym2.start();
-				   }
-			   }
+
 	   
    }
 

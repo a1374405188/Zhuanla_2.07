@@ -727,7 +727,7 @@ public class PageView1 extends LinearLayout implements OnClickListener {
 			   SpannableStringBuilder sb = new SpannableStringBuilder(s+"%"); // 包装字体内容  
 		        //ForegroundColorSpan fcs = new ForegroundColorSpan(0xff333333); // 设置字体颜色  
 		       // StyleSpan bss = new StyleSpan(android.graphics.Typeface.BOLD); // 设置字体样式  
-		        AbsoluteSizeSpan ass = new AbsoluteSizeSpan(DensityUtil.sp2px(act, 16));  // 设置字体大小  
+		        AbsoluteSizeSpan ass = new AbsoluteSizeSpan(DensityUtil.sp2px(act, 25));  // 设置字体大小
 		        //sb.setSpan(fcs, 2, gdq.current_principal_balance.length()+3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
 		        //sb.setSpan(bss, 0, 20, Spannable.SPAN_INCLUSIVE_INCLUSIVE);  
 		        sb.setSpan(ass,0,s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  

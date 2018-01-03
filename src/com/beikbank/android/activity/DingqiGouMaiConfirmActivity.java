@@ -105,8 +105,10 @@ public class DingqiGouMaiConfirmActivity extends BaseActivity1 implements
 		      cdd=(CreateDingDan) getIntent().getSerializableExtra("cdd");
 		      money=getIntent().getStringExtra(TypeUtil.jiaoyi_money);
 		      initView();
-		     // initData();
-		      
+		if(cdd==null) {
+			initData();
+
+		}
 		      
 		      if(cdd!=null)
 			   {  

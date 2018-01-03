@@ -439,13 +439,30 @@ public class WelcomeActivity extends BaseActivity1{
 				 BeikBankApplication.setSharePref(BeikBankConstant.zhanghao,gb.acc_id);
 				 BeikBankApplication.setSharePref(BeikBankConstant.icon_url,gb.icon_url);
 				 BeikBankApplication.setSharePref(BeikBankConstant.logo_url,gb.logo_url);
-				 Intent intent=new Intent(act,HomeActivity4.class);
-				 startActivity(intent);
+				 boolean first=BeikBankApplication.mSharedPref.getSharePrefBoolean(BeikBankConstant.first_open,true);
+				 if(first)
+				 {
+					 startAimActivity(YingdaoActivity.class);
+					 BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.first_open,false);
+				 }
+				 else
+				 {
+					 startAimActivity(HomeActivity4.class);
+				 }
 			 }
 			 else
 			 {
-				 Intent intent=new Intent(act,HomeActivity4.class);
-				 startActivity(intent);
+				 boolean first=BeikBankApplication.mSharedPref.getSharePrefBoolean(BeikBankConstant.first_open,true);
+				 if(first)
+				 {
+					 startAimActivity(YingdaoActivity.class);
+					 BeikBankApplication.mSharedPref.putSharePrefBoolean(BeikBankConstant.first_open,false);
+				 }
+				 else
+				 {
+					 startAimActivity(HomeActivity4.class);
+				 }
+
 			 }
 				finish();
 			}

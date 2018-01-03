@@ -213,8 +213,8 @@ public class SlideShowView2 extends FrameLayout {
 		iv4.setBackgroundResource(R.drawable.img_start4);
 
 		ImageView iv5 = new ImageView(context);
-		iv5.setBackgroundResource(R.drawable.img_start5);
-		iv5.setOnClickListener(new OnClickListener() {
+		//iv5.setBackgroundResource(R.drawable.img_start5);
+		iv4.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -230,7 +230,7 @@ public class SlideShowView2 extends FrameLayout {
 		imageViewsList.add(iv2);
 		imageViewsList.add(iv3);
 		imageViewsList.add(iv4);
-		imageViewsList.add(iv5);
+		//imageViewsList.add(iv5);
 		// 一步任务获取图片
 		// new GetListTask().execute("");
 	}

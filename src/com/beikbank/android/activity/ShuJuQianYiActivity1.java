@@ -105,7 +105,7 @@ public class ShuJuQianYiActivity1 extends BaseActivity1 implements OnClickListen
 
 
 
-			SpannableStringBuilder sb2 = new SpannableStringBuilder("2. 选择银行卡对应的账号作为主账号：若在赚啦理财绑定过多张银行卡，则需选择一张银行卡对应的账号作为主账号，除主账号外，其余账号不能进行充值和购买，只支持转让、回款和提现，直至账户资金清零。"); // 包装字体内容
+			SpannableStringBuilder sb2 = new SpannableStringBuilder("2. 使用您选择的手机号进行登录：选择完成后，使用您选择的手机号登录即可正常使用。"); // 包装字体内容
 			ForegroundColorSpan fcs2 = new ForegroundColorSpan(0xff333333); // 设置字体颜色
 			sb2.setSpan(fcs2, 0,18, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 			ForegroundColorSpan fcs22 = new ForegroundColorSpan(0xff666666); // 设置字体颜色
@@ -118,7 +118,7 @@ public class ShuJuQianYiActivity1 extends BaseActivity1 implements OnClickListen
 			sb3.setSpan(fcs2, 0,18, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 			ForegroundColorSpan fcs33 = new ForegroundColorSpan(0xff666666); // 设置字体颜色
 			sb3.setSpan(fcs33, 19,sb3.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-			tv3.setText(sb3);
+		//	tv3.setText(sb3);
 
 			bu.setEnabled(true);
 			bu.setOnClickListener(this);
