@@ -16,7 +16,8 @@ android {
     compileSdkVersion 21
     buildToolsVersion '25.0.0'
     defaultConfig {
-        applicationId "coma.beikbank.android"
+        applicationId "com.beikbank.android"
+        manifestPlaceholders = [app_name:"赚啦理财" ,icon: "@drawable/app_logo3",jg:"com.beikbank.android.permission.JPUSH_MESSAGE"]
         minSdkVersion 15
         targetSdkVersion 21
 
@@ -57,13 +58,76 @@ android {
             path 'jni\\Android.mk'
         }
     }
+    productFlavors {
 
+
+        baidu {
+
+            buildConfigField 'String', 'SOURCES_CODE', '"1"'
+        }
+
+        xiaomi {
+            buildConfigField 'String', 'SOURCES_CODE', '"8"'
+        }
+        vivo {
+            buildConfigField 'String', 'SOURCES_CODE', '"20"'
+        }
+        huawei {
+            buildConfigField 'String', 'SOURCES_CODE', '"12"'
+        }
+        meizu {
+            buildConfigField 'String', 'SOURCES_CODE', '"14"'
+        }
+        a360 {
+            buildConfigField 'String', 'SOURCES_CODE', '"2"'
+        }
+        yrb {
+            buildConfigField 'String', 'SOURCES_CODE', '"6"'
+        }
+        oppo {
+            buildConfigField 'String', 'SOURCES_CODE', '"13"'
+        }
+        a91 {
+            buildConfigField 'String', 'SOURCES_CODE', '"3"'
+        }
+        wdj {
+            buildConfigField 'String', 'SOURCES_CODE', '"5"'
+        }
+
+
+
+//     公共云
+        ggy {
+            applicationId "coma.beikbank.android"
+            manifestPlaceholders = [app_name:"赚啦公共" ,icon: "@drawable/app_logo1",jg:"coma.beikbank.android.permission.JPUSH_MESSAGE"]
+            buildConfigField 'String', 'SOURCES_CODE', '"5"'
+        }
+//    模拟
+        mn {
+            applicationId "comb.beikbank.android"
+            manifestPlaceholders = [app_name:"赚啦模拟" ,icon: "@drawable/app_logo2",jg:"comb.beikbank.android.permission.JPUSH_MESSAGE"]
+            buildConfigField 'String', 'SOURCES_CODE', '"5"'
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'beike'
+            keyPassword '68806727'
+            storeFile file('D:/work_2018_1_8/Zhuanla_2.0/BeikBank.keystore')
+            storePassword '68806727'
+        }
+    }
     buildTypes {  // build 类型
         release {  //发布
-            minifyEnabled false  //混淆开启
+            minifyEnabled true  //混淆开启
+            signingConfig signingConfigs.release
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-project.txt'
+
         }
         debug {  //调试
             minifyEnabled false  //混淆开启
         }
     }
+
 }
